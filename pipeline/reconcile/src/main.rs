@@ -76,7 +76,7 @@ fn main() -> Result<()> {
     let out = entries_path.with_file_name(FINAL_GATES_FILE);
     report
         .write(&out)
-        .with_context(|| format!("ghi {}", out.display()))?;
+        .with_context(|| format!("writing {}", out.display()))?;
 
     println!();
     println!("== Gate report: {} ==", out.display());

@@ -734,7 +734,7 @@ fn main() -> Result<()> {
     );
     report
         .write(&gate_path)
-        .with_context(|| format!("ghi {}", gate_path.display()))?;
+        .with_context(|| format!("writing {}", gate_path.display()))?;
     println!();
     println!("wrote the gate 1/2/3 results to {}", gate_path.display());
     for r in &report.results {
@@ -753,7 +753,7 @@ fn main() -> Result<()> {
             File::create(&out).with_context(|| format!("creating {}", out.display()))?,
         );
         for r in &records {
-            serde_json::to_writer(&mut w, r).context("ghi entries.jsonl")?;
+            serde_json::to_writer(&mut w, r).context("writing entries.jsonl")?;
             w.write_all(
                 b"
 ",

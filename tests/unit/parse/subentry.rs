@@ -37,8 +37,8 @@ fn the_ir_shape_covers_94_percent() {
     let s = parse_sub_entry(&segs).expect("splits");
 
     assert_eq!(s.han_form, None);
-    assert_eq!(s.reading_form.slice(&t), "― gươm");
-    assert_eq!(s.definition.map(|d| d.slice(&t)), Some(". Nạm gươm."));
+    assert_eq!(s.reading_form.slice(&t), "― gươm.");
+    assert_eq!(s.definition.map(|d| d.slice(&t)), Some("Nạm gươm."));
     assert_eq!(s.italic_segments, 1);
     assert!(!s.needs_review());
 }
@@ -53,7 +53,7 @@ fn many_dots_in_the_definition_do_not_move_the_boundary() {
     ];
     let t = line_text(&segs);
     let s = parse_sub_entry(&segs).expect("splits");
-    assert_eq!(s.reading_form.slice(&t), "― chôm");
+    assert_eq!(s.reading_form.slice(&t), "― chôm.");
     assert!(
         s.definition
             .map(|d| d.slice(&t))
@@ -70,7 +70,50 @@ fn the_form_may_end_with_the_placeholder() {
     ];
     let t = line_text(&segs);
     let s = parse_sub_entry(&segs).expect("splits");
-    assert_eq!(s.reading_form.slice(&t), "Chính giữa ―");
+    assert_eq!(s.reading_form.slice(&t), "Chính giữa ―.");
+}
+
+// ── The stop that closes the form ────────────────────────────────────────────
+
+#[test]
+fn the_stop_closing_the_form_is_not_left_heading_the_definition() {
+    // p.753 — `Cây ―. id.` The print sets that stop in the REGULAR font, so a split on style
+    // alone hands it to the definition: the columns then read `Cây Róng` + `. id.`, a dot
+    // floating in the definition column and a space between form and stop the print never set.
+    let segs = [italic("Cây ―"), regular(". id.")];
+    let t = line_text(&segs);
+    let s = parse_sub_entry(&segs).expect("splits");
+    assert_eq!(s.reading_form.slice(&t), "Cây ―.");
+    assert_eq!(s.definition.map(|d| d.slice(&t)), Some("id."));
+}
+
+#[test]
+fn only_the_first_stop_moves() {
+    // p.17 — `— ý. . Ý là ý nghĩa…`. The print sets more than one stop on 417 lines. One of
+    // them closes the form; what the other is, the page does not say, and the Wikisource
+    // transcription is divided (9 of the 14 comparable lines keep a dot on the form, 5 do
+    // not). So it stays where it was printed instead of being guessed away.
+    let segs = [italic("— ý"), regular(". . Ý là ý nghĩa, léo lắc")];
+    let t = line_text(&segs);
+    let s = parse_sub_entry(&segs).expect("splits");
+    assert_eq!(s.reading_form.slice(&t), "— ý.");
+    assert_eq!(
+        s.definition.map(|d| d.slice(&t)),
+        Some(". Ý là ý nghĩa, léo lắc")
+    );
+}
+
+#[test]
+fn a_stop_with_nothing_after_it_stays_where_it_was_printed() {
+    // p.67 — `Huyết ― Vốn liến của mình; tiền mình phải đổ máu mà làm ra` is set entirely in
+    // italic, and the regular run is the bare stop; the rest is on the next line.
+    // Moving that stop would leave the definition EMPTY, and emptiness is the signal
+    // `merge_wrapped_forms` reads — the line would be folded into the sub-entry after it.
+    let segs = [italic("Huyết ― Vốn liến của mình"), regular(". ")];
+    let t = line_text(&segs);
+    let s = parse_sub_entry(&segs).expect("splits");
+    assert_eq!(s.reading_form.slice(&t), "Huyết ― Vốn liến của mình");
+    assert_eq!(s.definition.map(|d| d.slice(&t)), Some("."));
 }
 
 // ── With a Han part ──────────────────────────────────────────────────────────
@@ -86,11 +129,8 @@ fn the_hir_shape_has_a_han_compound_in_front() {
     let t = line_text(&segs);
     let s = parse_sub_entry(&segs).expect("splits");
     assert_eq!(s.han_form.map(|h| h.slice(&t)), Some("娑婆世界"));
-    assert_eq!(s.reading_form.slice(&t), "Ta ― thế giái");
-    assert_eq!(
-        s.definition.map(|d| d.slice(&t)),
-        Some(". Ngao du khắp chỗ.")
-    );
+    assert_eq!(s.reading_form.slice(&t), "Ta ― thế giái.");
+    assert_eq!(s.definition.map(|d| d.slice(&t)), Some("Ngao du khắp chỗ."));
 }
 
 #[test]
@@ -106,7 +146,7 @@ fn the_rhir_shape_opens_with_the_han_column_placeholder() {
     let t = line_text(&segs);
     let s = parse_sub_entry(&segs).expect("splits");
     assert_eq!(s.han_form.map(|h| h.slice(&t)), Some("| 意"));
-    assert_eq!(s.reading_form.slice(&t), "― ý");
+    assert_eq!(s.reading_form.slice(&t), "― ý.");
 }
 
 #[test]
@@ -121,7 +161,7 @@ fn the_hrir_shape_has_the_placeholder_after_a_han_character() {
     let t = line_text(&segs);
     let s = parse_sub_entry(&segs).expect("splits");
     assert_eq!(s.han_form.map(|h| h.slice(&t)), Some("瘖 |"));
-    assert_eq!(s.reading_form.slice(&t), "Ám ―");
+    assert_eq!(s.reading_form.slice(&t), "Ám ―.");
 }
 
 // ── The placeholder is set in italic but belongs to the Han column ───────────
@@ -141,7 +181,7 @@ fn an_italic_placeholder_piece_does_not_start_the_form() {
     let t = line_text(&segs);
     let s = parse_sub_entry(&segs).expect("splits");
     assert_eq!(s.han_form.map(|h| h.slice(&t)), Some("女 | 男 婚"));
-    assert_eq!(s.reading_form.slice(&t), "Nữ ― nam hôn");
+    assert_eq!(s.reading_form.slice(&t), "Nữ ― nam hôn.");
     assert_eq!(s.italic_segments, 1);
     assert!(
         !s.needs_review(),
@@ -171,7 +211,7 @@ fn a_placeholder_glued_to_the_front_of_the_form_is_split_off() {
     let t = line_text(&segs);
     let s = parse_sub_entry(&segs).expect("splits");
     assert_eq!(s.han_form.map(|h| h.slice(&t)), Some("| 吾 以 及 人 之 |"));
-    assert_eq!(s.reading_form.slice(&t), "— ngô — dĩ cập nhơn chi —");
+    assert_eq!(s.reading_form.slice(&t), "— ngô — dĩ cập nhơn chi —.");
     assert!(!s.needs_review());
 }
 
@@ -191,7 +231,7 @@ fn a_form_interrupted_by_a_han_font_is_taken_whole_and_flagged() {
     let t = line_text(&segs);
     let s = parse_sub_entry(&segs).expect("splits");
     assert_eq!(s.han_form, None);
-    assert_eq!(s.reading_form.slice(&t), "(癆) ― tổn");
+    assert_eq!(s.reading_form.slice(&t), "(癆) ― tổn.");
     assert_eq!(s.italic_segments, 2);
     assert!(
         s.needs_review(),
@@ -242,6 +282,9 @@ fn a_whitespace_only_italic_piece_does_not_count_as_a_form() {
 fn the_three_parts_cover_the_line_with_no_gap_and_no_overlap() {
     let cases: Vec<Vec<StyledSegment<'_>>> = vec![
         vec![italic("― gươm"), regular(". Nạm gươm.")],
+        vec![italic("Cây ―"), regular(". id.")],
+        vec![italic("— ý"), regular(". . Ý là ý nghĩa")],
+        vec![italic("Huyết ― Vốn liến"), regular(". ")],
         vec![
             han("娑婆世界"),
             italic(" Ta ― thế giái"),
@@ -365,7 +408,10 @@ fn a_comma_between_two_han_phrases_does_not_end_the_han_column() {
         s.han_form.map(|h| h.slice(&t)),
         Some("人 莫 用, 用 人 莫 |")
     );
-    assert_eq!(s.reading_form.slice(&t), "― nhơn mạc dụng, dụng nhơn mạc ―");
+    assert_eq!(
+        s.reading_form.slice(&t),
+        "― nhơn mạc dụng, dụng nhơn mạc ―."
+    );
     assert!(!s.needs_review());
 }
 
@@ -377,5 +423,5 @@ fn a_comma_cannot_drag_a_quoc_ngu_form_into_the_han_column() {
     let t = line_text(&segs);
     let s = parse_sub_entry(&segs).expect("splits");
     assert_eq!(s.han_form.map(|h| h.slice(&t)), Some("甲 |"));
-    assert_eq!(s.reading_form.slice(&t), "Tối ―, gia ―");
+    assert_eq!(s.reading_form.slice(&t), "Tối ―, gia ―.");
 }

@@ -22,6 +22,10 @@
 //!
 //! What remains flagged is the form genuinely interrupted by another font — 7 lines, e.g.
 //! `Ẩn 微 Ẩn vi` — where no rule of the book says which side the Han belongs to.
+//!
+//! Style is also not quite enough at the OTHER end of the form: the print sets the full stop
+//! that closes the form in the regular font, so style alone leaves it heading the definition.
+//! [`separator_stop_end`] gives it back to the form, where the page puts it.
 
 use dnqatv_core::model::TextStyle;
 
@@ -43,7 +47,8 @@ pub struct StyledSegment<'a> {
 pub struct SubEntryLine {
     /// The Han part before the form, including any `|` placeholder inside it.
     pub han_form: Option<Span>,
-    /// The Quốc ngữ form — the italic part, taken from the first italic piece to the last.
+    /// The Quốc ngữ form — the italic part, from the first italic piece to the last, plus the
+    /// full stop that closes it. See [`separator_stop_end`] for why that stop is not italic.
     pub reading_form: Span,
     /// The definition. `None` when the definition starts on the next line.
     pub definition: Option<Span>,
@@ -96,6 +101,8 @@ pub fn parse_sub_entry(segments: &[StyledSegment<'_>]) -> Option<SubEntryLine> {
 
     let text = line_text(segments);
     let form_start = quoc_ngu_starts_at(&text, offsets[first], offsets[last + 1]);
+    let after_italic = offsets[last + 1];
+    let form_end = separator_stop_end(&text, after_italic).unwrap_or(after_italic);
 
     // Count only the italic pieces at or after the column boundary. The stray `| ` piece
     // skipped above is set in italic but sits in the HAN column, so counting it would keep
@@ -107,8 +114,8 @@ pub fn parse_sub_entry(segments: &[StyledSegment<'_>]) -> Option<SubEntryLine> {
         .count();
 
     let han_form = trimmed_span(&text, 0, form_start);
-    let reading_form = trimmed_span(&text, form_start, offsets[last + 1])?;
-    let definition = trimmed_span(&text, offsets[last + 1], total);
+    let reading_form = trimmed_span(&text, form_start, form_end)?;
+    let definition = trimmed_span(&text, form_end, total);
 
     Some(SubEntryLine {
         han_form,
@@ -253,6 +260,37 @@ fn quoc_ngu_starts_at(text: &str, from: usize, to: usize) -> usize {
     } else {
         from
     }
+}
+
+/// Where the full stop between the form and its definition ends, if the print sets one.
+///
+/// The typesetter sets that stop in the REGULAR font, not the italic of the form:
+///
+/// ```text
+/// [italic "Cây ―"][regular ". id."]
+/// ```
+///
+/// So a split on style alone hands it to the definition, and the fields come back out as
+/// form `Cây ―` + definition `. id.` — a dot floating at the head of the definition column,
+/// reading as `Cây Róng . id.` with a space the print never sets. The stop closes the form:
+/// the page says `Cây ―. id.` and so does the form span now.
+///
+/// Measured over the 57,878 sub-entries of the body: 57,780 definitions open with `. ` and
+/// no other shape of leading dot occurs anywhere. The remaining 98 open with a lowercase
+/// letter — wrapped tails, which carry no stop because their form sits on the line above.
+///
+/// Nothing moves unless visible text follows the stop. A sub-entry whose definition begins
+/// on the NEXT line must keep an empty definition, because that emptiness is the signal
+/// [`merge_wrapped_forms`] reads; swallowing the last character of such a line would invent
+/// a sub-entry the book does not print.
+fn separator_stop_end(text: &str, from: usize) -> Option<usize> {
+    let rest = text.get(from..)?;
+    let lead = rest.len() - rest.trim_start().len();
+    let after = rest.get(lead..)?.strip_prefix('.')?;
+    if after.trim().is_empty() {
+        return None;
+    }
+    Some(from + lead + '.'.len_utf8())
 }
 
 /// The byte range with whitespace trimmed from both ends; `None` if it is all whitespace.
