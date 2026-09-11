@@ -36,6 +36,9 @@ Step 4 needs a one-time snapshot of the other edition:
 node tools/fetch-wikisource.mjs        # writes data/wikisource/, safe to re-run
 ```
 
+The PDFs are not in git: they are sources, not code, and one of them is past what GitHub
+accepts. Put them under `docs/` yourself before running step 1 — `.gitignore` keeps them out.
+
 Filenames under `docs/` are NFD on disk. A hand-typed NFC string will not open them — use a
 glob (`docs/*2026*.pdf`).
 
