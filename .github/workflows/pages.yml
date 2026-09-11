@@ -49,6 +49,17 @@ jobs:
             exit 1
           fi
 
+      # `app.js` builds its HTML by hand, so the failures it can produce are the ones a type
+      # system would have caught: an `undefined` in a sentence, an `[object Object]`, a route
+      # that throws. Render every route here and a reader never meets one. This needs nothing
+      # but the committed `static-site/` — the pipeline inputs are not in git and not wanted.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Render every route outside a browser
+        run: node tools/check-static-site.mjs
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

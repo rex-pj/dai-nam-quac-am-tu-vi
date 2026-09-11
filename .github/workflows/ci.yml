@@ -1,6 +1,15 @@
 name: CI
 
-on: [push, pull_request]
+# The static edition under `static-site/` carries its own workflow and its own check, and
+# neither it nor prose can break a Rust build — so a push touching only those skips this job.
+# Pull requests stay unfiltered: a required check that never reports is worse than a slow one.
+on:
+  push:
+    paths-ignore:
+      - "static-site/**"
+      - "docs/**"
+      - "**.md"
+  pull_request:
 
 env:
   CARGO_TERM_COLOR: always
