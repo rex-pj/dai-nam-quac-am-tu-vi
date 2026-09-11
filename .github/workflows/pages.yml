@@ -1,0 +1,57 @@
+name: Pages
+
+# Publishes the standalone static edition in `static-site/` to GitHub Pages.
+#
+# Why an Action rather than Settings → Pages → "deploy from a branch": that menu only offers
+# the repository root or `/docs`, and `docs/` here holds 251 MB of source PDFs that have no
+# business being published. An artifact upload can point at any directory.
+#
+# Nothing is built here. `static-site/` is committed ready to serve, because the inputs it is
+# built from (`data/*.jsonl`) are NOT in git — so a build step on a runner would have nothing
+# to read. Regenerate locally with `node tools/build-static-site.mjs` and commit the result.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'static-site/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time, and never cancel one halfway: a half-published site is worse
+# than an old one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # The site must not depend on where it is served from: every path in it is relative and
+      # routing happens in the fragment, so it works at a domain root and under /<repo>/ alike.
+      - name: Refuse root-absolute paths
+        run: |
+          hits=$(grep -rn 'href="/\|src="/\|url("/' static-site --include='*.html' --include='*.css' --include='*.js' || true)
+          if [ -n "$hits" ]; then
+            echo "$hits"
+            echo "::error::A root-absolute path breaks the site when served under /<repo>/."
+            exit 1
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: static-site
+      - id: deployment
+        uses: actions/deploy-pages@v4

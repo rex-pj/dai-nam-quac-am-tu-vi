@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đại Nam Quấc Âm Tự Vị</title>
+<meta name="description" content="Tra tìm Đại Nam Quấc Âm Tự Vị — bộ tự vị Quốc ngữ đầu tiên do người Việt biên soạn, Huình-Tịnh Paulus Của, 1895–1896.">
+<link rel="stylesheet" href="tinh/main.css">
+<link rel="icon" href="tinh/favicon.svg" type="image/svg+xml">
+<!--FONT_PRELOAD--><link rel="preload" href="tinh/fonts/NomNaTong-bmp.ttf" as="font" type="font/ttf" crossorigin><!--/FONT_PRELOAD-->
+</head>
+<body>
+<!-- The skip link is the FIRST focus stop: navigation comes before content in the DOM, so
+     without it every visit means tabbing past 22 letter chips.
+
+     It carries no href: the fragment is the router here, so `#main` would be read as a route
+     and land on a not-found page. app.js moves focus instead. -->
+<a class="skip-link" href="#" data-skip-link>Bỏ qua, tới phần chính</a>
+
+<header class="site-head">
+  <div class="wrap site-head__inner">
+    <!-- Not an <h1>: each view renders its own. -->
+    <p class="site-title">
+      <a href="#/">Đại Nam Quấc Âm Tự Vị<small>Huình-Tịnh Paulus Của · 1895–1896</small></a>
+    </p>
+    <nav class="site-nav" aria-label="Các trang khác">
+      <a href="#/trang/10">Trang in</a>
+      <a href="#/gioi-thieu">Giới thiệu</a>
+      <a href="#/pham-chat-du-lieu">Phẩm chất dữ liệu</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap shell">
+  <div class="rail">
+    <div class="rail-search">
+      <form class="search" role="search" data-search-form>
+        <label class="visually-hidden" for="q">Tra tìm</label>
+        <div class="search__field">
+          <input class="search__input" id="q" name="q" type="search" data-search-input
+                 placeholder="Gõ âm hoặc dán chữ…"
+                 autocomplete="off" autocapitalize="off" spellcheck="false">
+          <button class="search__submit" type="submit">Tra</button>
+        </div>
+        <div class="modes" role="group" aria-label="Chế độ tra tìm" data-modes>
+          <button class="mode-chip" type="submit" value="auto" data-mode-chip="auto" aria-pressed="true">Tự nhận</button>
+          <button class="mode-chip" type="submit" value="han-nom" data-mode-chip="han-nom" aria-pressed="false">Chữ Hán-Nôm</button>
+          <button class="mode-chip" type="submit" value="quoc-ngu" data-mode-chip="quoc-ngu" aria-pressed="false">Âm Quốc ngữ</button>
+          <button class="mode-chip" type="submit" value="toan-van" data-mode-chip="toan-van" aria-pressed="false">Toàn văn</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="rail-browse">
+      <nav aria-label="Duyệt theo vần">
+        <h2 class="rail__title">Vần</h2>
+        <ul class="letters" data-letters></ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- tabindex="-1" so the skip link can move focus here; it stays out of the tab order. -->
+  <main id="main" class="content" tabindex="-1" data-main>
+    <p class="muted">Đang mở tự vị…</p>
+  </main>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>
+      Nội dung là nguyên văn <em>Đại Nam Quấc Âm Tự Vị</em> (Sài Gòn, 1895–1896), số hoá trong
+      bản điện tử 2026. Chỗ nào chương trình <strong>suy diễn</strong> thay vì chép nguyên văn
+      đều được đánh dấu.
+    </p>
+    <p>
+      <a href="#/pham-chat-du-lieu">Phẩm chất dữ liệu</a> ·
+      <a href="#/gioi-thieu">Về bản in</a>
+    </p>
+  </div>
+</footer>
+
+<script src="tinh/app.js" type="module"></script>
+</body>
+</html>
