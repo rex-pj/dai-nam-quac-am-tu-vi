@@ -516,12 +516,25 @@ fn a_section_heading_and_its_body_share_one_width() {
 /// explained no `@font-face` is declared here. Earlier, another test passed wrongly for the
 /// same reason. A comment is not a rule — strip it first, then judge.
 fn without_comments(css: &str) -> String {
-    let mut out = String::with_capacity(css.len());
-    let mut rest = css;
-    while let Some(open) = rest.find("/*") {
+    without_spans(css, "/*", "*/")
+}
+
+/// The same, for the `{# … #}` comments of a template.
+///
+/// Stripping them line by line does not work: a comment runs over several lines, and only its
+/// first one starts with `{#`. A test that filtered the continuation by matching a phrase from
+/// the comment went red the day that comment was rewritten.
+fn without_template_comments(html: &str) -> String {
+    without_spans(html, "{#", "#}")
+}
+
+fn without_spans(text: &str, open_mark: &str, close_mark: &str) -> String {
+    let mut out = String::with_capacity(text.len());
+    let mut rest = text;
+    while let Some(open) = rest.find(open_mark) {
         out.push_str(&rest[..open]);
-        match rest[open..].find("*/") {
-            Some(close) => rest = &rest[open + close + 2..],
+        match rest[open..].find(close_mark) {
+            Some(close) => rest = &rest[open + close + close_mark.len()..],
             None => return out,
         }
     }
@@ -792,14 +805,7 @@ fn every_page_has_one_h1_and_it_describes_the_page_content() {
     // page has two <h1> and screen readers lose the clue to the real content.
     let dir = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../../frontend/templates");
     let base = std::fs::read_to_string(dir.join("base.html")).expect("reading base");
-    let base_code = base
-        .lines()
-        .filter(|l| !l.trim_start().starts_with("{#") && !l.contains("nên để nó làm"))
-        .collect::<Vec<_>>()
-        .join(
-            "
-",
-        );
+    let base_code = without_template_comments(&base);
     assert!(
         !base_code.contains("<h1"),
         "the page frame must carry no <h1>; each page has its own"

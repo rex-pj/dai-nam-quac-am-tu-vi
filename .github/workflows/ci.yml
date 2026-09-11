@@ -8,7 +8,8 @@ name: CI
 #
 # `ci.yml` itself is deliberately NOT ignored: a change to this file must prove itself here.
 # Pull requests stay unfiltered too — a required check that never reports is worse than a slow
-# one.
+# one, and they are what exercises `tools/check-comment-language.mjs` when the change is to
+# the checker rather than to the comments it reads.
 on:
   push:
     paths-ignore:
@@ -75,3 +76,13 @@ jobs:
             echo "::error::A fallback value in the pipeline fabricates data. Fail explicitly."
             exit 1
           fi
+
+      # A comment is one programmer talking to the next, so it is English — see CLAUDE.md.
+      # The book itself stays Vietnamese, quoted freely inside those English comments, so
+      # this cannot be a grep for diacritics; the checker looks for Vietnamese grammar.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Comments must be English
+        run: node tools/check-comment-language.mjs

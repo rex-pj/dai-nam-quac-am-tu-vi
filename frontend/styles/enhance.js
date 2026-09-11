@@ -1,18 +1,18 @@
-/* Tăng cường dần — trang phải chạy đầy đủ khi file này không tải được.
+/* Progressive enhancement — the page must work in full when this file fails to load.
  *
- * Công cụ học thuật hay bị dùng trong môi trường lạ: máy thư viện, mạng yếu, trình đọc màn
- * hình, trình duyệt chặn script. Vì vậy mọi thứ ở đây chỉ THÊM tiện nghi, không có tính năng
- * nào chỉ tồn tại nhờ JavaScript:
- *   - Công tắc "Hiện dạng đầy đủ" là một <details>/checkbox hoạt động bằng CSS.
- *   - Tìm kiếm là <form method="get">, chạy khi không có JS.
- *   - Chip chế độ là <a> thật, có href.
+ * A scholarly tool gets used in strange conditions: a library machine, a weak connection, a
+ * screen reader, a browser that blocks scripts. So everything here only ADDS comfort, and no
+ * feature exists that lives on JavaScript alone:
+ *   - The "Hiện dạng đầy đủ" switch is a <details>/checkbox driven by CSS.
+ *   - Search is a real <form method="get">, and runs without JS.
+ *   - The mode chips are real <a> elements, with an href.
  */
 (function () {
   "use strict";
 
-  /* ── Phím tắt ────────────────────────────────────────────────────────────
-     "/" nhảy vào ô tìm, Esc xoá. Bỏ qua khi con trỏ đang ở trong một ô nhập,
-     nếu không thì gõ chữ "/" trong truy vấn sẽ bị nuốt.                      */
+  /* ── Keyboard shortcuts ──────────────────────────────────────────────────
+     "/" jumps to the search box, Esc clears it. Skipped while the caret sits
+     in a field, or a "/" typed inside a query would be swallowed.            */
   document.addEventListener("keydown", function (e) {
     var tag = (e.target && e.target.tagName) || "";
     var typing = tag === "INPUT" || tag === "TEXTAREA" || e.target.isContentEditable;
@@ -30,10 +30,10 @@
     }
   });
 
-  /* ── Chép tự dạng ────────────────────────────────────────────────────────
-     Người dùng KHÔNG gõ được 𨰲, nên chép là thao tác chính chứ không phải phụ.
-     Nút chỉ được thêm khi trình duyệt thật sự chép được — một nút bấm không có
-     tác dụng còn tệ hơn không có nút.                                        */
+  /* ── Copying a glyph ─────────────────────────────────────────────────────
+     A reader CANNOT type 𨰲, so copying is the primary action, not a nicety.
+     The button appears only where the browser can really copy — a button that
+     does nothing is worse than no button at all.                             */
   if (navigator.clipboard && window.isSecureContext) {
     document.querySelectorAll("[data-copy]").forEach(function (btn) {
       btn.hidden = false;
@@ -50,9 +50,9 @@
     });
   }
 
-  /* ── Chip chế độ tự sáng theo nội dung đang gõ ───────────────────────────
-     Chỉ là gợi ý trực quan: giá trị thật vẫn do <select>/liên kết quyết định.
-     Dải ký tự phải khớp `core::search::is_han_nom`; lệch nhau thì chip nói dối. */
+  /* ── The mode chip lights up to follow what is being typed ───────────────
+     A visual hint only: the <select>/link still decides the value that is sent.
+     The ranges must match `core::search::is_han_nom`; drift and the chip lies. */
   var input = document.querySelector("[data-search-input]");
   var autoChip = document.querySelector('[data-mode-chip="auto"]');
   if (input && autoChip) {
@@ -68,22 +68,22 @@
     update();
   }
 
-  /* ── Công tắc "Hiện dạng đầy đủ" ─────────────────────────────────────────
-     CSS đã làm phần hiện/ẩn; ở đây chỉ ghi nhớ lựa chọn trong phiên làm việc,
-     để người đang tra nhiều mục không phải bấm lại ở từng trang.             */
+  /* ── The "Hiện dạng đầy đủ" switch ───────────────────────────────────────
+     CSS already does the showing and hiding; this only remembers the choice for
+     the session, so that reading many entries does not mean clicking on each. */
   var toggle = document.querySelector("[data-expand-toggle]");
   var list = document.querySelector("[data-sub-list]");
   if (toggle && list) {
     var KEY = "dnqatv:hien-dang-day-du";
     var stored = null;
-    try { stored = sessionStorage.getItem(KEY); } catch (e) { /* chế độ riêng tư */ }
+    try { stored = sessionStorage.getItem(KEY); } catch (e) { /* Private mode. */ }
     if (stored === "1") {
       toggle.checked = true;
       list.classList.add("show-expanded");
     }
     toggle.addEventListener("change", function () {
       list.classList.toggle("show-expanded", toggle.checked);
-      try { sessionStorage.setItem(KEY, toggle.checked ? "1" : "0"); } catch (e) { /* bỏ qua */ }
+      try { sessionStorage.setItem(KEY, toggle.checked ? "1" : "0"); } catch (e) { /* Ignored. */ }
     });
   }
 })();

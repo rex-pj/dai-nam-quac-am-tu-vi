@@ -1,14 +1,15 @@
-{# Cột điều hướng bên trái — khai MỘT lần cho cả trang web.
+{# The left-hand navigation column — declared ONCE for the whole site.
 
-   Trước đây 7/12 template tự chèn ô tìm và 4/12 tự chèn chip vần. Gom về đây không chỉ để
-   bớt lặp: nó đưa tự dạng lên đầu màn hình ở trang chữ đầu, và giữ ô tìm trong tầm mắt suốt
-   phiên — tự vị là công cụ TRA, tần suất tra lại rất cao.
+   Before this, 7 of 12 templates pasted in their own search box and 4 of 12 their own letter
+   chips. Gathering it here is not only about repetition: it lifts the glyph to the top of the
+   screen on an entry page, and keeps the search box in view for the whole session — a tự vị
+   is a tool for LOOKING THINGS UP, and that is done again and again.
 
-   `.rail` là một <div> TRỐNG NGHĨA, cố ý. Nó tồn tại để desktop có một khối duy nhất mà
-   dính (`position: sticky`), còn di động thì `display: contents` cho hai con bên trong tự
-   thành hai ô lưới nằm hai phía của nội dung. `display: contents` từng có tiếng là xoá
-   phần tử khỏi cây accessibility — nhưng cái mất là VAI TRÒ, mà thẻ này vốn không có vai
-   trò nào. Hai <nav> bên trong giữ nguyên landmark của chúng. #}
+   `.rail` is a SEMANTICALLY EMPTY <div>, deliberately. It exists so that desktop has one
+   single block to make sticky (`position: sticky`), while on mobile `display: contents` lets
+   its two children become grid cells on either side of the content. `display: contents` has a
+   reputation for removing an element from the accessibility tree — but what is removed is the
+   ROLE, and this element never had one. The two <nav> elements inside keep their landmarks. #}
 <div class="rail">
   <div class="rail-search">
     {% include "partial/search_box.html" %}

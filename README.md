@@ -86,5 +86,10 @@ CI runs `cargo fmt --all --check`, `cargo clippy --workspace --all-targets -- -D
 - **no `unwrap_or`/`unwrap_or_default` anywhere under `pipeline/`** — a fallback value in the
   pipeline fabricates data, so absence must be expressed in the type or handled explicitly
 
+and `node tools/check-comment-language.mjs`, which enforces the one rule a grep cannot: **every
+comment is English**. The book stays Vietnamese wherever a reader meets it, and a comment may
+quote it freely, but the sentence around the quote is English — see `CLAUDE.md`. `review/` is
+exempt: those dossiers are written for the person filling them in.
+
 Integration tests under `tests/integration/` need a live database and skip without one; the
 rest run anywhere.

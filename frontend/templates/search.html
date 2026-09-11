@@ -11,9 +11,9 @@
     <span class="muted">{{ total }} chữ đầu</span>
   </div>
 
-  {# ── Cầu nối chính tả: GỢI Ý, không bao giờ viết lại chữ bạn gõ ────────────
-     Hiện cả khi đã có kết quả. `nhân` có 14 chữ đầu và `nhơn` có 13 chữ đầu KHÁC;
-     chỉ gợi ý khi rỗng sẽ giấu mất đúng một nửa. ─────────────────────────── #}
+  {# ── The spelling bridge: a SUGGESTION, never a rewrite of what was typed ──
+     Shown even when there are results. `nhân` has 14 entries and `nhơn` has 13 DIFFERENT
+     ones; suggesting only on an empty result would hide exactly half. ─────── #}
   {% if orthography | length > 0 %}
     <div class="bridge">
       <p class="bridge__title">Chính tả 1895 ↔ nay</p>
@@ -31,7 +31,7 @@
   {% endif %}
 
   {% if groups | length > 0 %}
-    {# Nhóm theo LÝ DO KHỚP — người tra cần biết vì sao một kết quả xuất hiện. #}
+    {# Grouped by WHY IT MATCHED — a reader needs to know why a result is here. #}
     {% for g in groups %}
       <section class="result-group">
         <h3 class="result-group__label">

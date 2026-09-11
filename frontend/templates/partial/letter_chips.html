@@ -1,7 +1,8 @@
-{# 22 chữ theo ĐÚNG thứ tự bản in: … H Y K … — Y ở vị trí của I, không có I/F/J/W/Z.
+{# The 22 letters in the EXACT order of the print: … H Y K … — Y stands where I would, and
+   there is no I/F/J/W/Z.
 
-   Không tự bọc <nav>: chỗ gọi (rail.html) đã cung cấp landmark rồi, bọc thêm là sinh ra hai
-   landmark chồng nhau cho cùng một danh sách. #}
+   No <nav> of its own: the caller (rail.html) already supplies the landmark, and wrapping
+   again would nest two landmarks around one list. #}
 <ul class="letters">
   {% for l in letters %}
     <li><a class="letter-chip {% if l.active %}is-active{% endif %}" href="{{ l.url }}"

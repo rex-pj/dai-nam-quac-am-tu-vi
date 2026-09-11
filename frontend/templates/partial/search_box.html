@@ -1,12 +1,12 @@
-{# Ô tìm kiếm. Là <form method="get"> thật, nên chạy khi không có JavaScript.
+{# The search box. A real <form method="get">, so it works with no JavaScript.
 
-   Ô nhập và nút "Tra" ghép thành một khung liền. Enter đã gửi form nên nút chủ yếu là
-   affordance cho người dùng cảm ứng và cho người tắt JavaScript. #}
+   The field and the "Tra" button join into one continuous frame. Enter already submits, so the
+   button is mostly an affordance for touch, and for anyone with JavaScript turned off. #}
 <form class="search {% if query %}search--has-query{% endif %}"
       action="/tra-tim" method="get" role="search">
   <label class="visually-hidden" for="q">Tra tìm</label>
-  {# Ô nhập và nút nằm trong MỘT khung: đọc ra là một điều khiển, không phải hai thứ rời
-     nhau xếp chồng. Nút chỉ ngăn bằng một đường kẻ dọc. #}
+  {# Field and button sit inside ONE frame: it reads as a single control, not as two separate
+     things placed side by side. Only a vertical rule divides the button off. #}
   <div class="search__field">
     <input class="search__input" id="q" name="q" type="search" data-search-input
            value="{{ query | default(value='') }}"

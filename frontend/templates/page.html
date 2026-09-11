@@ -20,8 +20,9 @@
 {% endif %}
 
 {% if page.image_path %}
-  {# Khung cuộn ngang: ảnh bản in là thứ để đối chứng TỪNG CHỮ, ép thu nhỏ cho vừa cột thì
-     không còn tác dụng gì. Kèm liên kết mở ảnh gốc cho ai cần phóng to hết cỡ. #}
+  {# A horizontally scrolling frame: the printed image is there to be checked CHARACTER BY
+     CHARACTER, and shrunk to fit the column it would be good for nothing. A link to the
+     original comes with it, for anyone who needs full magnification. #}
   <div class="page-image-frame">
     <img class="page-image" src="{{ page.image_path }}" loading="lazy"
          alt="Ảnh chụp trang {% if page.printed_page %}{{ page.printed_page }}{% else %}{{ page.pdf_page }}{% endif %} của bản in">
@@ -39,7 +40,7 @@
 
 <div class="section-head">
   <h2>Chữ đầu của trang này</h2>
-  {# Trang in không phân trang: đây là TRỌN số chữ đầu của nó, nên không có phân số. #}
+  {# A printed page is never paginated: this is its ENTIRE count of entries, so no fraction. #}
   <span class="muted">{{ entries | length | so }} chữ đầu</span>
 </div>
 {% for e in entries %}

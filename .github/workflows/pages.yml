@@ -60,6 +60,12 @@ jobs:
       - name: Render every route outside a browser
         run: node tools/check-static-site.mjs
 
+      # `ci.yml` skips a push confined to `static-site/`, so the comment rule is re-checked
+      # here over what this workflow publishes. `tinh/main.css` is built by concatenating
+      # `frontend/styles/main.css`, and a Vietnamese comment rides along with it.
+      - name: Comments must be English
+        run: node tools/check-comment-language.mjs $(git ls-files static-site)
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

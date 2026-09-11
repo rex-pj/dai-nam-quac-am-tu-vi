@@ -9,7 +9,7 @@
 {% block content %}
 
 <article>
-  {# ── Đầu trang: tự dạng là hình ảnh chủ đạo, không phải một con chữ trong dòng ── #}
+  {# ── The head of the page: the glyph is the dominant image, not a letter in a line ── #}
   <div class="entry-head">
     {% if entry.glyph.no_unicode %}
       <span class="glyph glyph--display glyph--{{ entry.glyph.kind }}" lang="{{ entry.glyph.lang }}"
@@ -28,14 +28,15 @@
         <span class="pos-badge" title="{{ entry.pos_name }}">{{ entry.pos_label }}</span>
         <span class="muted">{{ entry.pos_name }}</span>
         {% if entry.glyph.char %}
-          {# Người dùng không gõ được chữ Nôm — chép là thao tác chính, không phải phụ. #}
+          {# A reader cannot type chữ Nôm — copying is the primary action here, not a secondary one. #}
           <button class="copy-btn" type="button" data-copy="{{ entry.glyph.char }}" hidden>chép chữ</button>
         {% endif %}
       </p>
       {% if entry.glyph.no_system_font and not has_nom_font %}
-        {# Khác hẳn "chưa có mã Unicode": chữ này CÓ mã, nhưng mã ấy chỉ có nghĩa bên trong
-           font Nôm Na Tống mà bản in dùng. Chưa ship font thì mọi máy đều thấy ô vuông, và
-           nói ra vẫn hơn để người đọc tưởng dữ liệu hỏng. #}
+        {# Quite different from "no Unicode code point yet": this glyph HAS one, but it means
+           something only inside the Nôm Na Tống font the print uses. Until that font ships,
+           every machine shows a box, and saying so beats letting a reader conclude the data
+           is broken. #}
         <p>
           <span class="chip-no-unicode">Cần font Nôm Na Tống</span>
           <span class="muted">— tự dạng này dùng mã riêng của font bản in
@@ -77,7 +78,7 @@
   {% if entry.sub_entry_count > 0 %}
     <div class="section-head">
       <h2>Mục con · {{ entry.sub_entry_count }}</h2>
-      {# Công tắc hoạt động bằng CSS; JavaScript chỉ ghi nhớ lựa chọn. #}
+      {# The switch works in CSS; JavaScript only remembers the choice. #}
       <label class="mode-chip" for="expand">
         <input type="checkbox" id="expand" data-expand-toggle> Hiện dạng đầy đủ
       </label>
@@ -98,10 +99,10 @@
               <span class="sub-han" lang="vi-Hani">{% if s.han_expanded %}{{ s.han_expanded }}{% else %}{{ s.han_form }}{% endif %}</span>
             {% endif %}
             {% if s.has_placeholder %}
-              {# Nguyên văn: dấu thế chỗ bọc <abbr> để trình đọc màn hình đọc đúng âm chữ đầu
-                 thay vì đọc "gạch ngang". Các mẩu đã cắt sẵn ở view model. #}
+              {# Verbatim: the placeholder is wrapped in <abbr> so a screen reader speaks the entry
+                 reading rather than "dash". The pieces were cut in the view model. #}
               <span class="form-verbatim">{% for part in s.form_parts %}{% if part.placeholder %}<abbr class="placeholder" title="{{ s.placeholder_title }}">{{ part.text }}</abbr>{% else %}{{ part.text }}{% endif %}{% endfor %}</span>
-              {# Suy diễn: gạch chân chấm, để người đọc luôn biết chữ nào là lời sách. #}
+              {# Derived: a dotted underline, so a reader always knows which words are the book's. #}
               <span class="form-expanded derived" title="dạng suy diễn, không phải nguyên văn bản in">{{ s.form_expanded }}</span>
             {% else %}
               <span>{{ s.form }}</span>
@@ -114,7 +115,7 @@
     </ul>
   {% endif %}
 
-  {# ── Nguồn gốc luôn trong tầm một cú nhấp ── #}
+  {# ── Provenance always within one click ── #}
   {% if page %}
     <div class="provenance">
       <span>

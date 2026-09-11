@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-{# Băng trên đã mang tên sách nhưng nó không còn là <h1>. Trang chủ vẫn cần một <h1> cho
-   trình đọc màn hình và máy tìm kiếm, chỉ là không cần nhìn thấy hai lần. #}
+{# The band above already carries the title of the book, but it is no longer an <h1>. The home
+   page still needs one for screen readers and search engines; it just need not be seen twice. #}
 <h1 class="visually-hidden">{{ site_title }} — tra tìm</h1>
-{# Ô tìm và 22 vần đã thường trực ở cột trái, nên trang chủ KHÔNG dựng ô tìm thứ hai — hai ô
-   tìm trên cùng một trang vừa trùng `id="q"` vừa bắt người đọc chọn xem nên gõ vào đâu.
-   Phần còn lại là thứ cho trang chủ một lý do tồn tại: một chữ đầu để đọc, một đoạn giới thiệu,
-   và số liệu nói thẳng dữ liệu đang ở đâu. #}
+{# The search box and the 22 letters are already permanent in the left column, so the home page
+   builds NO second search box — two of them on one page would both duplicate `id="q"` and make
+   the reader choose where to type. What remains is what earns the home page its existence: an
+   entry to read, an introduction, and figures that say plainly where the data stands. #}
 
 {% if featured %}
   <div class="section-head"><h2>Chữ đầu hôm nay</h2></div>
@@ -20,7 +20,7 @@
       <p>{{ featured.gloss }}</p>
     </div>
 
-    {# Xuất xứ dồn về mép phải: khối dùng hết bề rộng cột một cách có chủ ý. #}
+    {# Provenance pushed to the right edge: the block deliberately spans the full column width. #}
     <div class="featured__meta">
       <p><span class="pos-badge" title="{{ featured.pos_name }}">{{ featured.pos_label }}</span></p>
       <p>
@@ -32,7 +32,7 @@
   </article>
 {% endif %}
 
-{# Tiêu đề và thân bài phải cùng bề rộng — xem `.section--prose` trong main.css. #}
+{# Heading and prose must share one width — see `.section--prose` in main.css. #}
 <section class="section--prose">
   <div class="section-head"><h2>Về cuốn sách này</h2></div>
   <div class="prose">
