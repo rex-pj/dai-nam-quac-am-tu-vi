@@ -1,0 +1,41 @@
+[package]
+name = "dnqatv-parse-core"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "dnqatv_parse_core"
+path = "src/lib.rs"
+
+[dependencies]
+dnqatv-core = { path = "../../crates/core" }
+thiserror.workspace = true
+
+[lints]
+workspace = true
+
+[[test]]
+name = "parse_span"
+path = "../../tests/unit/parse/span.rs"
+
+[[test]]
+name = "parse_line"
+path = "../../tests/unit/parse/line.rs"
+
+[[test]]
+name = "parse_headword"
+path = "../../tests/unit/parse/headword.rs"
+
+[[test]]
+name = "parse_assemble"
+path = "../../tests/unit/parse/assemble.rs"
+
+[[test]]
+name = "parse_subentry"
+path = "../../tests/unit/parse/subentry.rs"
+
+[[test]]
+name = "parse_expand"
+path = "../../tests/unit/parse/expand.rs"

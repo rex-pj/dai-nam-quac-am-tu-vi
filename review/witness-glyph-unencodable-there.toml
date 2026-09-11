@@ -1,0 +1,393 @@
+# Chốt ⑥ — glyph_unencodable_there: 38 chỗ.
+#
+# SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Nhân chứng: bản chép Wikisource của bản in 1895-96, chụp lại trong data/wikisource/
+# (số hiệu bản sửa từng trang ghi ở PROVENANCE.json). Bản chép ấy mang giấy phép CC BY-SA —
+# dùng để ĐỐI CHIẾU, không bưng vào dữ liệu.
+#
+# Hai bản in khác nhau thì lệch nhau là thường. Chỉ `column_boundary` và `glyph_differs`
+# mới là lời tố rằng mình đọc sai trang; còn lại là tư liệu.
+#
+# quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
+
+[[glyph_unencodable_there]]
+key          = "29|Bạm|󰀶|󰀶"
+printed_page = 29
+reading      = "Bạm"
+ours         = "󰀶"
+theirs       = "󰀶"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/40"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "29|Bằm|𨮍|󰗶"
+printed_page = 29
+reading      = "Bằm"
+ours         = "𨮍"
+theirs       = "󰗶"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/40"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "30|Bẳm|󰍚|󰍚"
+printed_page = 30
+reading      = "Bẳm"
+ours         = "󰍚"
+theirs       = "󰍚"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/40"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "30|Bầm|󰒽|󰒽"
+printed_page = 30
+reading      = "Bầm"
+ours         = "󰒽"
+theirs       = "󰒽"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/40"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "80|Cạ|󰈑|󰈑"
+printed_page = 80
+reading      = "Cạ"
+ours         = "󰈑"
+theirs       = "󰈑"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/98"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "138|Chới|󰇯|󰇯"
+printed_page = 138
+reading      = "Chới"
+ours         = "󰇯"
+theirs       = "󰇯"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/165"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "142|Chóp|󰙋|󰙋"
+printed_page = 142
+reading      = "Chóp"
+ours         = "󰙋"
+theirs       = "󰙋"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/169"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "203|Dẻm|󰃷|󰃷"
+printed_page = 203
+reading      = "Dẻm"
+ours         = "󰃷"
+theirs       = "󰃷"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/242"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "297|Ễ|󰂳|󰂳"
+printed_page = 297
+reading      = "Ễ"
+ours         = "󰂳"
+theirs       = "󰂳"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/350"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "318|Giằm|󰈎|󰈎"
+printed_page = 318
+reading      = "Giằm"
+ours         = "󰈎"
+theirs       = "󰈎"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/378"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "336|Gở|󰇌|󰇌"
+printed_page = 336
+reading      = "Gở"
+ours         = "󰇌"
+theirs       = "󰇌"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/400"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "375|Hoang|盲|盲|肓"
+printed_page = 375
+reading      = "Hoang"
+ours         = "盲"
+theirs       = "盲|肓"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/446"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "398|Hựu|叉|叉|又"
+printed_page = 398
+reading      = "Hựu"
+ours         = "叉"
+theirs       = "叉|又"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/473"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "405|Kè|󱖤|󱖤"
+printed_page = 405
+reading      = "Kè"
+ours         = "󱖤"
+theirs       = "󱖤"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/481"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "482|Lều|󰆐|󰆐"
+printed_page = 482
+reading      = "Lều"
+ours         = "󰆐"
+theirs       = "󰆐"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/574"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "488|Lim|󱕨|󱕨"
+printed_page = 488
+reading      = "Lim"
+ours         = "󱕨"
+theirs       = "󱕨"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/581"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "504|Lông|󰽱|󰽱"
+printed_page = 504
+reading      = "Lông"
+ours         = "󰽱"
+theirs       = "󰽱"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/600"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "536|Manh|肓|肓|盲"
+printed_page = 536
+reading      = "Manh"
+ours         = "肓"
+theirs       = "肓|盲"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/22"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "572|Mưởng|𥕊|𥕊|nguyên văn bên phải là 莾"
+printed_page = 572
+reading      = "Mưởng"
+ours         = "𥕊"
+theirs       = "𥕊|nguyên văn bên phải là 莾"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/65"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "652|Niu|󰂄|󰂄"
+printed_page = 652
+reading      = "Niu"
+ours         = "󰂄"
+theirs       = "󰂄"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/154"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "652|Nịu|󰂄|󰂄"
+printed_page = 652
+reading      = "Nịu"
+ours         = "󰂄"
+theirs       = "󰂄"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/154"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "732|Rày|󰉨|󰉨"
+printed_page = 732
+reading      = "Rày"
+ours         = "󰉨"
+theirs       = "󰉨"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/247"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "770|Sân|󱌨|󱌨"
+printed_page = 770
+reading      = "Sân"
+ours         = "󱌨"
+theirs       = "󱌨"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/289"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "886|Thúng|𥴗|𥴗|nguyên văn:trên ⺮ dưới 綂"
+printed_page = 886
+reading      = "Thúng"
+ours         = "𥴗"
+theirs       = "𥴗|nguyên văn:trên ⺮ dưới 綂"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/430"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "906|Tố|訢|訢|訴"
+printed_page = 906
+reading      = "Tố"
+ours         = "訢"
+theirs       = "訢|訴"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/453"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "908|Tóa|󰌠|󰌠"
+printed_page = 908
+reading      = "Tóa"
+ours         = "󰌠"
+theirs       = "󰌠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/455"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "912|Tom|󰑖|󰑖"
+printed_page = 912
+reading      = "Tom"
+ours         = "󰑖"
+theirs       = "󰑖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/460"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "912|Tóm|󰑖|󰑖"
+printed_page = 912
+reading      = "Tóm"
+ours         = "󰑖"
+theirs       = "󰑖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/460"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "930|Trẻ|󱎣|󱎣"
+printed_page = 930
+reading      = "Trẻ"
+ours         = "󱎣"
+theirs       = "󱎣"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/481"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "940|Trói|󰑚|󰑚"
+printed_page = 940
+reading      = "Trói"
+ours         = "󰑚"
+theirs       = "󰑚"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/493"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "961|Tủa|󰌠|󰌠"
+printed_page = 961
+reading      = "Tủa"
+ours         = "󰌠"
+theirs       = "󰌠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/517"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "972|Ú|󰁏|󰁏"
+printed_page = 972
+reading      = "Ú"
+ours         = "󰁏"
+theirs       = "󰁏"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/530"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "984|Vằm|󰗶|󰗶"
+printed_page = 984
+reading      = "Vằm"
+ours         = "󰗶"
+theirs       = "󰗶"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/542"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "995|Ví|󰂇|󰂇"
+printed_page = 995
+reading      = "Ví"
+ours         = "󰂇"
+theirs       = "󰂇"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/555"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "1001|Vợ|󰄯|󰄯"
+printed_page = 1001
+reading      = "Vợ"
+ours         = "󰄯"
+theirs       = "󰄯"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/561"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "1022|Xẻn|󰘄|󰘄"
+printed_page = 1022
+reading      = "Xẻn"
+ours         = "󰘄"
+theirs       = "󰘄"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/583"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "1027|Xòa|󰌠|󰌠"
+printed_page = 1027
+reading      = "Xòa"
+ours         = "󰌠"
+theirs       = "󰌠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/590"
+quality      = 1
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "1030|Xởn|󰘄|󰘄"
+printed_page = 1030
+reading      = "Xởn"
+ours         = "󰘄"
+theirs       = "󰘄"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/594"
+quality      = 1
+verified_by  = ""

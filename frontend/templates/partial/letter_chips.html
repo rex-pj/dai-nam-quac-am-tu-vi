@@ -1,0 +1,10 @@
+{# 22 chữ theo ĐÚNG thứ tự bản in: … H Y K … — Y ở vị trí của I, không có I/F/J/W/Z.
+
+   Không tự bọc <nav>: chỗ gọi (rail.html) đã cung cấp landmark rồi, bọc thêm là sinh ra hai
+   landmark chồng nhau cho cùng một danh sách. #}
+<ul class="letters">
+  {% for l in letters %}
+    <li><a class="letter-chip {% if l.active %}is-active{% endif %}" href="{{ l.url }}"
+           {% if l.active %}aria-current="page"{% endif %}>{{ l.letter }}</a></li>
+  {% endfor %}
+</ul>

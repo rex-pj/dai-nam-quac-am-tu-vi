@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+{% block title %}Phẩm chất dữ liệu — {{ site_title }}{% endblock %}
+{% block description %}Kết quả các phép kiểm dữ liệu, số mục còn chờ người đối chứng bản in, và những chỗ bản in vốn đã thiếu sẵn.{% endblock %}
+
+{% block content %}
+<h1>Phẩm chất dữ liệu</h1>
+
+<div class="prose">
+  <p>
+    Với một cuốn tự vị, <strong>đáng tin hay không là tất cả</strong>. Vì vậy trang này bày ra
+    sẵn chỗ dữ liệu còn yếu, thay vì để người đọc tự dò ra.
+  </p>
+  <p>
+    Lề luật chi phối toàn bộ bản điện tử này: <strong>không được đoán</strong>. Chỗ nào lớp văn
+    bản gốc không nói rõ, chương trình dừng lại và biên vào hồ sơ chờ người xét — thay vì điền
+    một giá trị nghe cho xuôi tai.
+  </p>
+</div>
+
+<section class="section--prose">
+<div class="section-head"><h2>Đã nạp</h2></div>
+<table class="stats">
+  <tbody>
+    <tr><th scope="row">Chữ đầu</th><td class="num">{{ stats.entries | so }}</td></tr>
+    <tr><th scope="row">Mục con</th><td class="num">{{ stats.sub_entries | so }}</td></tr>
+    <tr><th scope="row">Tự dạng Hán-Nôm khác nhau</th><td class="num">{{ stats.glyphs | so }}</td></tr>
+    <tr><th scope="row">Trang</th><td class="num">{{ stats.pages | so }}</td></tr>
+  </tbody>
+</table>
+
+<div class="section-head"><h2>Chờ người đối chứng</h2></div>
+<table class="stats">
+  <tbody>
+    <tr>
+      <th scope="row">Dòng chữ đầu khả nghi</th>
+      <td class="num">{{ stats.entries_needing_review | so }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Mục con khả nghi</th>
+      <td class="num">{{ stats.sub_entries_needing_review | so }}</td>
+    </tr>
+  </tbody>
+</table>
+<p class="muted">
+  Hai con số nầy <strong>không tự nhỏ lại được nữa</strong>. Chỗ nào máy phân xử được thì đã
+  phân xử rồi; chỗ còn lại là chỗ chính bản in không nói rõ, phải người mở ảnh trang ra coi.
+  Trong đó có <strong>hai dòng sẽ không bao giờ hết</strong>: bản in thiếu dấu chấm sau nhãn
+  từ loại, mà thêm dấu chấm vào tức là sửa sách.
+</p>
+
+<div class="section-head"><h2>Chỗ bản in vốn không có chữ để mà xếp</h2></div>
+<table class="stats">
+  <tbody>
+    <tr>
+      <th scope="row">Chữ đầu dùng ảnh cho tự dạng</th>
+      <td class="num">{{ stats.image_only_glyphs | so }}</td>
+    </tr>
+  </tbody>
+</table>
+<p class="muted">
+  Con số nầy <strong>không phải chỗ đáng ngờ</strong> — nó là chỗ chắc chắn nhứt trong cả bộ
+  dữ liệu. Bấy nhiêu tự dạng chưa hề có mã Unicode, nên bản 2026 cắt ảnh từ bản in thay vì
+  gán một chữ trông gần giống. Đem so với bản chép độc lập của bản in gốc 1895 — làm cách
+  đây hơn trăm năm, bởi người khác — thì <strong>28 trong số đó người ta cũng bó tay y
+  hệt</strong>. Hai lần chép, hai lần đụng cùng một bức tường.
+</p>
+</section>
+
+<div class="prose">
+  <h2>Năm phép kiểm phải đạt trước khi nạp</h2>
+  <p>
+    Dữ liệu đi từ bản in vào cơ sở dữ liệu qua hai bước: bước <strong>rút</strong> đọc bản
+    điện tử và tách ra từng chữ đầu, bước <strong>nạp</strong> ghi kết quả ấy vào cơ sở dữ liệu.
+    Bước rút chạy năm phép kiểm dưới đây và biên kết quả thành một <strong>bản phúc
+    trình</strong>. Bước nạp đọc bản phúc trình ấy trước tiên, và <strong>chối không chạy</strong>
+    nếu phúc trình không có, nếu có phép kiểm nào không đạt, hoặc nếu phúc trình được làm ra từ
+    một file dữ liệu khác với file đang nạp — một bản phúc trình toàn “đạt” nhưng của lần chạy
+    cũ còn nguy hiểm hơn là không có bản nào.
+  </p>
+  <ol>
+    <li>
+      <strong>Không đoán tự dạng.</strong> Mỗi chữ Hán-Nôm trong bản điện tử được ghi bằng một
+      mã. Gặp mã tra không ra, chương trình dừng lại và báo lỗi, chứ không thay bằng một chữ
+      trông gần giống.
+    </li>
+    <li>
+      <strong>Dòng chữ đầu không sót phần nào.</strong> Mỗi dòng chữ đầu được cắt thành các phần
+      — tự dạng, âm, dấu riêng, lời giải nghĩa. Ghép các phần ấy lại phải ra đúng dòng ban đầu:
+      không mẩu nào của dòng bị bỏ ra ngoài.
+    </li>
+    <li>
+      <strong>Không mất, không nhân đôi con chữ.</strong> Mọi con chữ của thân sách phải nằm
+      trong đúng một phần, đúng một lần. Chỗ chênh hiện nay là <strong>1 con chữ trên tổng
+      2.148.972</strong>, và chỗ chênh ấy là một lỗi của chính bản in, đã có hồ sơ.
+    </li>
+    <li>
+      <strong>Đối chứng với bảng tra đi kèm.</strong> Bản điện tử có kèm một bảng “Mục Từ”
+      4.678 dòng do người lập. Mọi tự dạng chương trình rút được đều đem so với bảng ấy, để
+      bắt những chữ chương trình có mà bảng không có — tức những chữ chương trình có thể đã
+      đặt ra. Số chữ như vậy: <strong>0</strong>.
+    </li>
+    <li>
+      <strong>Thứ lớp chữ đầu đúng như sách.</strong> Sách xếp mục theo bảng
+      <a href="/gioi-thieu">22 chữ riêng của nó</a>, không theo bảng chữ Latin. Đọc suốt từ đầu
+      đến cuối, không mục nào được đứng trật lên trước mục lẽ ra đi trước nó. Số chỗ ngược thứ
+      lớp: <strong>0</strong>.
+    </li>
+  </ol>
+
+  <h2>Một con mắt thứ hai, không phải của chương trình</h2>
+  <p>
+    Năm phép kiểm trên đều đọc chung một nguồn: bản điện tử 2026. Chúng chứng được chương
+    trình <strong>tự nó không mâu thuẫn</strong>, chớ không chứng được nó <strong>đọc trúng
+    trang sách</strong>. Muốn biết điều sau thì phải có người khác, đọc riêng, rồi đem so.
+  </p>
+  <p>
+    Người ấy có sẵn: trên <a href="https://vi.wikisource.org/">Wikisource</a> có bản chép tay
+    của <strong>bản in gốc 1895–96</strong> — bản hai cuốn do chính Huình Tịnh Của xuất bản,
+    trước bản 2026 hơn trăm năm. Bản điện tử nầy chụp lại trọn bộ ấy rồi đem đối chiếu từng
+    mục một: cùng một cuốn sách, hai lần chép, hai người khác nhau.
+  </p>
+  <p>
+    Phép đối chiếu ấy <strong>không phải phép kiểm chặn nạp</strong>, và cố ý như vậy. Hai bản
+    in là hai bản khác nhau — bản 1895 có phần <em>Bổ di</em> thêm mục mà bản sau gộp vào —
+    nên lệch nhau là lẽ thường. Bắt chúng phải khớp tuyệt đối thì hoặc nó kêu inh ỏi vô ích,
+    hoặc rồi có ngày người ta hạ ngưỡng cho êm tai. Nên nó chỉ xếp chỗ lệch thành từng loại
+    rồi biên vào hồ sơ cho người xét, và chỉ đếm riêng loại <strong>thật sự tố rằng mình đọc
+    sai trang</strong>: ranh giới cột Hán / cột Quốc ngữ đặt khác chỗ, hoặc hai bên cùng có mã
+    chữ mà mã khác nhau.
+  </p>
+  <p>
+    Nó đã trả công ngay lượt chạy đầu. Nó bắt được một lỗi gom mục: mấy câu tục ngữ chữ nho
+    dài quá một dòng, bản in phải xuống dòng, mà chương trình tưởng là hai mục con rời —
+    <strong>14 chỗ</strong>, nay ráp lại rồi. Và nó xác nhận một chuyện quan trọng hơn: trong
+    <strong>29 mục từ</strong> mà bản 2026 phải đặt ảnh vì không có mã Unicode, người chép bản
+    1895 cũng bó tay y hệt ở <strong>28 mục</strong>. Hai lần chép độc lập, cùng đụng một bức
+    tường — đó là bằng cớ chắc nhứt có được rằng chỗ ấy quả thật chưa có mã, chớ không phải
+    tại ai đọc ẩu.
+  </p>
+
+  <h2>Những chỗ bản in vốn đã thiếu sẵn</h2>
+  <p>
+    Không phải chỗ nào trông sai cũng là lỗi của chương trình. Bản điện tử 2026 gồm ảnh chụp
+    từng trang, kèm một <strong>lớp văn bản</strong> — phần chữ máy đọc được, nằm dưới ảnh. Vài
+    chỗ chính bản in giấy, hoặc chính lớp văn bản ấy, đã thiếu sẵn; ở những chỗ ấy “sửa cho
+    đẹp” tức là đặt chuyện không có trong sách. Nên chương trình để y nguyên và biên lại:
+  </p>
+  <ul>
+    <li>
+      <strong>Hai dòng</strong> chữ đầu có dấu riêng in thiếu dấu chấm — <code>n</code> thay
+      vì <code>n.</code>. Chương trình chỉ chịu nhãn có dấu chấm, nên không nhận một chữ trơ
+      trọi làm dấu riêng.
+    </li>
+    <li>
+      <strong>Bốn dòng</strong> in dấu phết thay dấu chấm — <code>c,</code> thay vì
+      <code>c.</code>. Cũng không chịu, vì cùng một lẽ.
+    </li>
+    <li>
+      <strong>152 chỗ</strong> lớp văn bản dính hai tiếng vào nhau vì thiếu khoảng trắng. Giữ y
+      nguyên, không tự chen khoảng trắng vào.
+    </li>
+    <li>
+      <strong>Năm tự dạng</strong> có trong bảng “Mục Từ” mà lớp văn bản của bản điện tử không
+      hề chứa — bằng cớ người lập bảng đã có thêm nguồn nào đó ngoài lớp văn bản.
+    </li>
+  </ul>
+
+  <h2>Chỗ nào là lời sách, chỗ nào là chương trình suy ra</h2>
+  <p>
+    Trong mục con, bản in không lặp lại chữ đang giải nghĩa mà thế nó bằng một dấu gạch. Như
+    dưới chữ đầu <strong>Lõm</strong>, sách in mục con là
+    “<span class="placeholder">―</span> gươm” — dấu gạch ấy thế chỗ cho chữ <strong>Lõm</strong>,
+    nên đọc cho trọn là <span class="derived">Lõm gươm</span>.
+  </p>
+  <p>
+    Vì vậy mỗi mục con được giữ <strong>hai dạng</strong>: dạng <strong>y như bản in</strong>
+    (<span class="placeholder">―</span> gươm), và dạng <strong>suy ra</strong> đã thế dấu gạch
+    bằng âm của chữ đầu (<span class="derived">Lõm gươm</span>), theo đúng phép mà chính sách đã
+    nói ở trang DẤU RIÊNG. Trang tra tìm hiện dạng y như bản in trước; dạng suy ra thì luôn có gạch
+    chân chấm, để không ai lầm nó với lời sách.
+  </p>
+</div>
+
+<p><a href="/api/v1/pham-chat-du-lieu">Số liệu này dưới dạng JSON →</a></p>
+{% endblock %}

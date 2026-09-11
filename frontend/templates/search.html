@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}{% if query %}“{{ query }}” — tra tìm{% else %}Tra tìm{% endif %} · {{ site_title }}{% endblock %}
+{% block head_extra %}<meta name="robots" content="noindex">{% endblock %}
+
+{% block content %}
+
+{% if query %}
+  <div class="section-head">
+    <h1>Kết quả cho “{{ query }}”</h1>
+    <span class="muted">{{ total }} chữ đầu</span>
+  </div>
+
+  {# ── Cầu nối chính tả: GỢI Ý, không bao giờ viết lại chữ bạn gõ ────────────
+     Hiện cả khi đã có kết quả. `nhân` có 14 chữ đầu và `nhơn` có 13 chữ đầu KHÁC;
+     chỉ gợi ý khi rỗng sẽ giấu mất đúng một nửa. ─────────────────────────── #}
+  {% if orthography | length > 0 %}
+    <div class="bridge">
+      <p class="bridge__title">Chính tả 1895 ↔ nay</p>
+      <p>
+        {% for s in orthography %}<a class="bridge__link" href="{{ s.url }}">{{ s.text }}</a>{% endfor %}
+      </p>
+      <p class="bridge__note">
+        {{ orthography.0.reason }}. Đây là <strong>gợi ý</strong>: hai dạng chính tả thường là
+        <em>hai chữ đầu khác nhau</em> trong sách, nên chữ bạn gõ của bạn không bị sửa.
+        {% if not orthography.0.verified %}
+          <br><span class="muted">Cặp này chưa có người đối chứng bản in.</span>
+        {% endif %}
+      </p>
+    </div>
+  {% endif %}
+
+  {% if groups | length > 0 %}
+    {# Nhóm theo LÝ DO KHỚP — người tra cần biết vì sao một kết quả xuất hiện. #}
+    {% for g in groups %}
+      <section class="result-group">
+        <h3 class="result-group__label">
+          {{ g.label }} <span class="result-group__count">· {{ g.count }}</span>
+        </h3>
+        {% for e in g.entries %}
+          {% include "partial/entry_row.html" %}
+        {% endfor %}
+      </section>
+    {% endfor %}
+  {% else %}
+    <p>Không tìm thấy chữ đầu nào khớp “{{ query }}”.</p>
+
+    {% if did_you_mean | length > 0 %}
+      <div class="section-head"><h2>Có thể bạn đang tìm</h2></div>
+      {% for e in did_you_mean %}
+        {% include "partial/entry_row.html" %}
+      {% endfor %}
+    {% endif %}
+
+    <div class="section-head"><h2>Hoặc thử</h2></div>
+    <ul>
+      <li><a href="/tra-tim?q={{ query }}&amp;che_do=toan-van">Tìm “{{ query }}” trong phần giải nghĩa</a></li>
+      <li><a href="/van/a">Duyệt theo vần</a></li>
+    </ul>
+  {% endif %}
+{% else %}
+  <p class="muted">Gõ một âm Quốc ngữ, dán một chữ Hán-Nôm, hoặc tìm một cụm trong lời giải nghĩa.</p>
+{% endif %}
+{% endblock %}

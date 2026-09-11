@@ -1,0 +1,20 @@
+[package]
+name = "dnqatv-font-core"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "dnqatv_font_core"
+path = "src/lib.rs"
+
+[dependencies]
+thiserror.workspace = true
+
+[lints]
+workspace = true
+
+[[test]]
+name = "font_sfnt"
+path = "../../tests/unit/font/sfnt.rs"

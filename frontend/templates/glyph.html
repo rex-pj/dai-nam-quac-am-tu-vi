@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}{{ glyph.char }} — {{ site_title }}{% endblock %}
+{% block description %}Mọi âm đọc của tự dạng {{ glyph.char }} trong Đại Nam Quấc Âm Tự Vị.{% endblock %}
+{% block content %}
+
+<div class="entry-head">
+  <span class="glyph glyph--display glyph--{{ glyph.kind }}" role="img"
+        lang="{{ glyph.lang }}" aria-label="{{ glyph.aria_label }}">{{ glyph.char }}</span>
+  <div class="entry-head__text">
+    <h1 class="entry-reading" lang="{{ glyph.lang }}">{{ glyph.char }}</h1>
+    <p class="muted">
+      Một tự dạng thường mang nhiều âm đọc; bên dưới là mọi chữ đầu dùng chữ này.
+    </p>
+    <p><button class="copy-btn" type="button" data-copy="{{ glyph.char }}" hidden>chép chữ</button></p>
+  </div>
+</div>
+
+<div class="section-head">
+  <h2>Các âm đọc</h2>
+  <span class="muted">{{ entries | length }} chữ đầu</span>
+</div>
+{% for e in entries %}
+  {% include "partial/entry_row.html" %}
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,19 @@
+[package]
+name = "dnqatv-cli"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "dnqatv"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+dnqatv-adapter-db = { path = "../adapter-db" }
+dnqatv-config = { path = "../config" }
+tokio.workspace = true
+
+[lints]
+workspace = true

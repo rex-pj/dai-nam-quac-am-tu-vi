@@ -1,0 +1,132 @@
+# Chốt ④ — tự dạng mà TẬP ÂM ĐỌC của parser khác bảng Mục Từ.
+#
+# 4.673 tự dạng đối chứng được; 4.659 khớp nguyên văn; 14 tự dạng dưới đây khác.
+# Không dùng ngưỡng phần trăm: mỗi tự dạng ở đây phải có lý do do người viết, và chốt ④ chỉ
+# xanh khi MỌI điểm lệch đều có mặt trong hồ sơ này. Một tự dạng lệch mới xuất hiện mà chưa
+# ai ghi vào đây sẽ làm chốt đỏ và chặn `import`.
+#
+# Bốn nhóm nguyên nhân, và chúng khác nhau về bản chất:
+#
+#   am_kep_ngan_bang_dau_phay
+#       Bản in ghi hai âm trên cùng dòng mục từ, ngăn bằng dấu phẩy (`Tảo, Táo`). Bảng Mục Từ
+#       tách thành hai; parser GIỮ NGUYÊN VĂN. Tách là một phép đoán về ý định bản in, và
+#       chính phép đoán ấy từng tạo ra bốn ca "lệch" giả khi đối chứng lần đầu.
+#
+#   nhan_dung_dau_phay
+#       Bản in ghi `c,` thay `c.` (4 dòng, tr.976–978). Parser cố ý không nhận dấu phẩy làm
+#       nhãn, nên phần `c,` còn lẫn trong âm đọc. Xem thêm review/gate4-index.toml.
+#
+#   am_trong_ngoac_tach_rieng
+#       Bản in ghi `Đàu (đào)`. Parser lưu `Đàu` vào `reading` và `đào` vào `alternate` —
+#       hai trường khác nhau; bảng Mục Từ gộp cả cụm thành một chuỗi. Đây là khác biệt về
+#       MÔ HÌNH, không phải về dữ liệu: không có chữ nào mất đi.
+#
+#   bang_gan_tu_dang_cho_muc_dung_anh
+#       Bảng gán một tự dạng cho mục từ mà bản in dùng ẢNH. Lớp text của PDF đánh dấu chỗ đó
+#       là `.notdef`, nên parser không thể biết. Đây là dấu vết của nguồn thứ hai mà người
+#       lập bảng có — cùng hiện tượng với nhóm `missing_glyph` ở gate4-index.toml.
+#
+# LỊCH SỬ: hồ sơ này từng có 17 mục. Ba mục (辰 Thìn, 對 Tụi, 焠 Tui) hoá ra là BUG THẬT —
+# bản in ghi nhãn dính `c.n.` không khoảng trắng ở 4 dòng, và parser đánh rơi trọn cả bốn mục
+# từ. Chính chốt ④ bắt được. Đã sửa; mục từ 7.683 → 7.687.
+
+[[reading_diff]]
+glyph      = "㩒"
+kind       = "am_kep_ngan_bang_dau_phay"
+parser     = "Cắm, cặm"
+index      = "Cắm | cặm"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "乏"
+kind       = "am_kep_ngan_bang_dau_phay"
+parser     = "Mặp, Mắp"
+index      = "Mắp | Mặp"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "掃"
+kind       = "am_kep_ngan_bang_dau_phay"
+parser     = "Tảo, Táo"
+index      = "Táo | Tảo"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "標"
+kind       = "am_kep_ngan_bang_dau_phay"
+parser     = "Biêu,"
+index      = "(tiêu) | Biêu"
+note       = "vừa có âm kép ngăn bằng dấu phẩy, vừa có âm trong ngoặc đứng riêng ở bảng"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "塋"
+kind       = "nhan_dung_dau_phay"
+parser     = "Uinh  c,"
+index      = "Uinh"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "應"
+kind       = "nhan_dung_dau_phay"
+parser     = "Ưng  c,"
+index      = "Ưng"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "殃"
+kind       = "nhan_dung_dau_phay"
+parser     = "Ương  c,"
+index      = "Ương"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "螢"
+kind       = "nhan_dung_dau_phay"
+parser     = "Uinh  c,"
+index      = "Uinh"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "佻"
+kind       = "am_trong_ngoac_tach_rieng"
+parser     = "Đàu"
+index      = "Đàu (đào)"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "杜"
+kind       = "am_trong_ngoac_tach_rieng"
+parser     = "Đậu"
+index      = "Đậu (đỗ)"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "興"
+kind       = "am_trong_ngoac_tach_rieng"
+parser     = "Hấng"
+index      = "Hấng (Hứng) n"
+note       = "bảng giữ luôn cả nhãn `n` thiếu dấu chấm; xem review/label-typos.toml tr.353"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "鄧"
+kind       = "am_trong_ngoac_tach_rieng"
+parser     = "Đậng"
+index      = "Đậng (đựng)"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "鐙"
+kind       = "am_trong_ngoac_tach_rieng"
+parser     = "Đâng"
+index      = "Đâng (đưng)"
+verified_by = ""
+
+[[reading_diff]]
+glyph      = "樣"
+kind       = "bang_gan_tu_dang_cho_muc_dung_anh"
+parser     = "Dáng"
+index      = "Dáng | Dạng"
+note       = "mục từ Dạng ở tr.198 dùng ảnh cho tự dạng; bảng gán cho nó chữ 樣"
+verified_by = ""

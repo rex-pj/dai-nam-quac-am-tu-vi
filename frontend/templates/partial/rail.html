@@ -1,0 +1,23 @@
+{# Cột điều hướng bên trái — khai MỘT lần cho cả trang web.
+
+   Trước đây 7/12 template tự chèn ô tìm và 4/12 tự chèn chip vần. Gom về đây không chỉ để
+   bớt lặp: nó đưa tự dạng lên đầu màn hình ở trang chữ đầu, và giữ ô tìm trong tầm mắt suốt
+   phiên — tự vị là công cụ TRA, tần suất tra lại rất cao.
+
+   `.rail` là một <div> TRỐNG NGHĨA, cố ý. Nó tồn tại để desktop có một khối duy nhất mà
+   dính (`position: sticky`), còn di động thì `display: contents` cho hai con bên trong tự
+   thành hai ô lưới nằm hai phía của nội dung. `display: contents` từng có tiếng là xoá
+   phần tử khỏi cây accessibility — nhưng cái mất là VAI TRÒ, mà thẻ này vốn không có vai
+   trò nào. Hai <nav> bên trong giữ nguyên landmark của chúng. #}
+<div class="rail">
+  <div class="rail-search">
+    {% include "partial/search_box.html" %}
+  </div>
+
+  <div class="rail-browse">
+    <nav aria-label="Duyệt theo vần">
+      <h2 class="rail__title">Vần</h2>
+      {% include "partial/letter_chips.html" %}
+    </nav>
+  </div>
+</div>

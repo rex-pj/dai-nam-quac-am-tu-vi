@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Vần {{ letter }} — {{ site_title }}{% endblock %}
+{% block content %}
+
+<div class="section-head">
+  <h1>Vần {{ letter }}</h1>
+  {# Bao nhiêu dòng trên trang này, trên tổng số của cả vần. #}
+  <span class="muted">
+    {%- if count.partial -%}
+      {{ count.shown | so }} / {{ count.total | so }} chữ đầu
+    {%- else -%}
+      {{ count.total | so }} chữ đầu
+    {%- endif -%}
+  </span>
+</div>
+
+{% for e in entries %}
+  {% include "partial/entry_row.html" %}
+{% endfor %}
+
+<nav class="nav-pair" aria-label="Phân trang">
+  {% if previous_page > 0 %}
+    <a href="/van/{{ letter_slug }}?trang={{ previous_page }}">‹ Trang trước</a>
+  {% else %}<span></span>{% endif %}
+  {% if has_more %}
+    <a href="/van/{{ letter_slug }}?trang={{ next_page }}">Trang sau ›</a>
+  {% else %}<span></span>{% endif %}
+</nav>
+{% endblock %}

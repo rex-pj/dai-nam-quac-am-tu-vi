@@ -1,0 +1,322 @@
+# Dòng có ký tự thế chỗ nhưng KHÔNG in nghiêng — hai tín hiệu nhận mục con mâu thuẫn.
+#
+# Bản in mã hoá hình thái mục con bằng chữ NGHIÊNG. Đo trên 78.870 dòng nội dung thân sách:
+#   nghiêng + thế chỗ   57.892  -> mục con
+#   không  + không      18.188  -> dòng tiếp
+#   chỉ nghiêng          2.751  -> văn trích in nghiêng, không phải mục con
+#   chỉ thế chỗ            39  -> chính là danh sách này
+#
+# Chuong trinh xep chung vao "dong tiep" de khong bia ra muc con.
+# Moi dong can nguoi doi chieu anh trang goc roi ghi quyet dinh vao role_confirmed.
+
+[[ambiguous_line]]
+pdf_page       = 11
+printed_page   = 10
+text           = "Sánh, thứ hai. Nhơn — 姻 \\"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 19
+printed_page   = 18
+text           = "Cái —. Đồ bằng đất rộng như miệng chậu mà lớn."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 20
+printed_page   = 19
+text           = "| 龍震 — long chấn. áo quan quân."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 24
+printed_page   = 23
+text           = "gái trinh tiết ; người Phước–kiến, con họ Lâm, chết thành thần,"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 25
+printed_page   = 24
+text           = "lớn, nhỏ, dài, vắn, tùy theo hình tích nó mà kêu. Cờ ―. Cuộc"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 82
+printed_page   = 81
+text           = "—!"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 84
+printed_page   = 83
+text           = "– vật, thì là người thông hiểu các việc."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 99
+printed_page   = 98
+text           = "紀級 Kỉ —. Tầng thứ, phẩm bậc."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 109
+printed_page   = 108
+text           = "| 炙鍼灸 — cứu. Dùng phép chích, phép đốt."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 110
+printed_page   = 109
+text           = "mắt — òa: Nước mắt tràn trề."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 124
+printed_page   = 123
+text           = "—. Con Người ở đời được vừa ý mình là hơn."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 125
+printed_page   = 124
+text           = "tánh — thân. Cha con là tình ruột thịt, phải thương yêu nhau"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 255
+printed_page   = 254
+text           = "chẳng thà – đàng đi buôn Giành lợi một mình."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 285
+printed_page   = 284
+text           = "楡 Thất chi – ngung thâu chi tang du, nghĩa là mất phía đông"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 304
+printed_page   = 303
+text           = "vàng, thổ sản Bình – thuận, tánh nó mát, có nhiều người dùng"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 307
+printed_page   = 306
+text           = "mà cột lại, hoặc kẹp lại. Bắt nguwoif ta mà cặp gắp (thói Cao –"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 316
+printed_page   = 315
+text           = "― tửu . Cữ rượu. | 盜 ― đạo . Xa lánh việc trộm cướp. | 殺 ―"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 332
+printed_page   = 331
+text           = "Đồng–nai cũng là giọng Quảng."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 350
+printed_page   = 349
+text           = "mà nhớ công nghiệp Giái – tử - thôi. ( Coi sự tích nơi chữ túc)."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 351
+printed_page   = 350
+text           = "Biên – Hoà."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 353
+printed_page   = 352
+text           = "không nghiệp – thì là không có lòng -, nghĩa là không có lòng"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 393
+printed_page   = 392
+text           = "với đàng Minh – hương là dân tùng phép quan tĩnh."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 396
+printed_page   = 395
+text           = "Annam mới lấy đất Biên – hòa."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 397
+printed_page   = 396
+text           = "Hồng – mao lập phụ đầu: Hồng – kông."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 397
+printed_page   = 396
+text           = "kêu là Bần-quì, về hạt Tân – an. Tích rằng, ông Hương lãnh đi"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 397
+printed_page   = 396
+text           = "vận lương cho Đức Gia – long, thuyền về tới khúc sông ấy bèn"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 397
+printed_page   = 396
+text           = "chìm mà chết tại đó. Đức Cao – hoàng, nghĩ vì ông ấy ở hết"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 399
+printed_page   = 398
+text           = "chẳng bằng mình: lời đức Phu – tử dạy phải làm."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 541
+printed_page   = 540
+text           = "Con―lntròng.Tingm ngs nsácắớ"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 544
+printed_page   = 543
+text           = "Mà – châu (người Khách)."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 547
+printed_page   = 546
+text           = "Mét―.Métxanh,khôngcómáu.  Lên"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 550
+printed_page   = 549
+text           = "Kín―.(Coich kín).  ữMột ― kín"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 566
+printed_page   = 565
+text           = "―trang―l a.Tu itácb ngnhau.ứổằ"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 570
+printed_page   = 569
+text           = "tĩnh Bình–Thuận."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 571
+printed_page   = 570
+text           = "Tiếng Triều–châu, chỉ nghĩa là cữa, thường hiểu là phía, bề,"
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 679
+printed_page   = 678
+text           = "Thiên – chúa."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 713
+printed_page   = 712
+text           = "Thấy người ăn khoai, mình vác mai chạy –."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 799
+printed_page   = 798
+text           = "Làng Sứng (ở tĩnh Quản–nam)."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""
+
+[[ambiguous_line]]
+pdf_page       = 950
+printed_page   = 949
+text           = "Tên làng thuộc tĩnh Quảng–trị."
+role_assumed   = "continuation"
+role_confirmed = ""
+verified_by    = ""

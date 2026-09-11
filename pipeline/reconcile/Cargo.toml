@@ -1,0 +1,21 @@
+[package]
+name = "dnqatv-reconcile"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "reconcile"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.104"
+calamine = "0.36.1"
+dnqatv-core = { path = "../../crates/core" }
+dnqatv-gate-report = { path = "../gate-report" }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+
+[lints]
+workspace = true

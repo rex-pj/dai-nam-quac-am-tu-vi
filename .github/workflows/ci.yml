@@ -1,0 +1,60 @@
+name: CI
+
+on: [push, pull_request]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Formatting
+        run: cargo fmt --all --check
+
+      - name: Clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+
+      - name: Test
+        run: cargo test --workspace
+
+      # ── The plan's constraints, turned into machine-checkable gates ──
+      # The gates below strip comment lines: the very comments explaining a rule contain the
+      # forbidden keyword, and that produced a false alarm once.
+
+      - name: No magic strings in the query builder
+        run: |
+          hits=$(grep -rn 'Expr::cust\|execute_unprepared' crates/ --include='*.rs' \
+                 | grep -v 'migration/src/pg_ddl.rs' \
+                 | grep -v '^[^:]*:[0-9]*: *//' || true)
+          if [ -n "$hits" ]; then
+            echo "$hits"
+            echo "::error::Raw SQL outside pg_ddl.rs. Use the typed builder."
+            exit 1
+          fi
+
+      - name: Table and column names must be Iden, not strings
+        run: |
+          hits=$(grep -rn 'Alias::new' crates/ --include='*.rs' \
+                 | grep -v '^[^:]*:[0-9]*: *//' || true)
+          if [ -n "$hits" ]; then
+            echo "$hits"
+            echo "::error::Alias::new used. Use #[derive(DeriveIden)]."
+            exit 1
+          fi
+
+      - name: The pipeline must have no silent fallback
+        run: |
+          hits=$(grep -rn 'unwrap_or_default\|unwrap_or(' pipeline/ --include='*.rs' \
+                 | grep -v '^[^:]*:[0-9]*: *//' || true)
+          if [ -n "$hits" ]; then
+            echo "$hits"
+            echo "::error::A fallback value in the pipeline fabricates data. Fail explicitly."
+            exit 1
+          fi

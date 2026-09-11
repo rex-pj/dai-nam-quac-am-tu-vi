@@ -1,0 +1,2793 @@
+# Chốt ⑥ — entry_only_here: 278 chỗ.
+#
+# SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Nhân chứng: bản chép Wikisource của bản in 1895-96, chụp lại trong data/wikisource/
+# (số hiệu bản sửa từng trang ghi ở PROVENANCE.json). Bản chép ấy mang giấy phép CC BY-SA —
+# dùng để ĐỐI CHIẾU, không bưng vào dữ liệu.
+#
+# Hai bản in khác nhau thì lệch nhau là thường. Chỉ `column_boundary` và `glyph_differs`
+# mới là lời tố rằng mình đọc sai trang; còn lại là tư liệu.
+#
+# quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
+
+[[entry_only_here]]
+key          = "10|A|阿|"
+printed_page = 10
+reading      = "A"
+ours         = "阿"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "10|A|丫|"
+printed_page = 10
+reading      = "A"
+ours         = "丫"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "10|A|阿|"
+printed_page = 10
+reading      = "A"
+ours         = "阿"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "10|Á|亞|"
+printed_page = 10
+reading      = "Á"
+ours         = "亞"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "10|Á|瘂|"
+printed_page = 10
+reading      = "Á"
+ours         = "瘂"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "10|À|阿|"
+printed_page = 10
+reading      = "À"
+ours         = "阿"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "10|Ả|妸|"
+printed_page = 10
+reading      = "Ả"
+ours         = "妸"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "10|Ác|惡|"
+printed_page = 10
+reading      = "Ác"
+ours         = "惡"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "18|Áng|盎|"
+printed_page = 18
+reading      = "Áng"
+ours         = "盎"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "18|Ảng|坱|"
+printed_page = 18
+reading      = "Ảng"
+ours         = "坱"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "18|Ảng|映|"
+printed_page = 18
+reading      = "Ảng"
+ours         = "映"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "25|Bạc|舶|"
+printed_page = 25
+reading      = "Bạc"
+ours         = "舶"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "25|Bấc|北|"
+printed_page = 25
+reading      = "Bấc"
+ours         = "北"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "27|Bài|排|"
+printed_page = 27
+reading      = "Bài"
+ours         = "排"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "30|Ban|班|"
+printed_page = 30
+reading      = "Ban"
+ours         = "班"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "31|Ban|搬|"
+printed_page = 31
+reading      = "Ban"
+ours         = "搬"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "31|Ban|搬|"
+printed_page = 31
+reading      = "Ban"
+ours         = "搬"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "31|Ban|班|"
+printed_page = 31
+reading      = "Ban"
+ours         = "班"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "31|Bán|半|"
+printed_page = 31
+reading      = "Bán"
+ours         = "半"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "32|Bàn|槃|"
+printed_page = 32
+reading      = "Bàn"
+ours         = "槃"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "32|Bàn|盤|"
+printed_page = 32
+reading      = "Bàn"
+ours         = "盤"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "33|Bần|貧|"
+printed_page = 33
+reading      = "Bần"
+ours         = "貧"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "34|Bang|邦|"
+printed_page = 34
+reading      = "Bang"
+ours         = "邦"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "34|Báng|謗|"
+printed_page = 34
+reading      = "Báng"
+ours         = "謗"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "34|Bàng|傍|"
+printed_page = 34
+reading      = "Bàng"
+ours         = "傍"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "35|Băng|冰|"
+printed_page = 35
+reading      = "Băng"
+ours         = "冰"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "37|Bánh|軿|"
+printed_page = 37
+reading      = "Bánh"
+ours         = "軿"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "37|Bành|彭|"
+printed_page = 37
+reading      = "Bành"
+ours         = "彭"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "38|Bao|褒|"
+printed_page = 38
+reading      = "Bao"
+ours         = "褒"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "38|Báo|豹|"
+printed_page = 38
+reading      = "Báo"
+ours         = "豹"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "39|Bảo|保|"
+printed_page = 39
+reading      = "Bảo"
+ours         = "保"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "40|Bát|撥|"
+printed_page = 40
+reading      = "Bát"
+ours         = "撥"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "40|Bát|捌|"
+printed_page = 40
+reading      = "Bát"
+ours         = "捌"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "40|Bát|捌|"
+printed_page = 40
+reading      = "Bát"
+ours         = "捌"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "42|Bật|弼|"
+printed_page = 42
+reading      = "Bật"
+ours         = "弼"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "43|Bàu|泡|"
+printed_page = 43
+reading      = "Bàu"
+ours         = "泡"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "44|Bệ|被|"
+printed_page = 44
+reading      = "Bệ"
+ours         = "被"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "44|Bế|閉|"
+printed_page = 44
+reading      = "Bế"
+ours         = "閉"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "45|Bể|𣷷|"
+printed_page = 45
+reading      = "Bể"
+ours         = "𣷷"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "51|Bích|壁|"
+printed_page = 51
+reading      = "Bích"
+ours         = "壁"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "52|Biện|卞|"
+printed_page = 52
+reading      = "Biện"
+ours         = "卞"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "53|Biền|便|"
+printed_page = 53
+reading      = "Biền"
+ours         = "便"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "53|Biển|𣷷|"
+printed_page = 53
+reading      = "Biển"
+ours         = "𣷷"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "54|Biêu,|標|"
+printed_page = 54
+reading      = "Biêu,"
+ours         = "標"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "57|Bình|瓶|"
+printed_page = 57
+reading      = "Bình"
+ours         = "瓶"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "57|Bình|屏|"
+printed_page = 57
+reading      = "Bình"
+ours         = "屏"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "58|Bò|蜅|"
+printed_page = 58
+reading      = "Bò"
+ours         = "蜅"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "60|Bộ|簿|"
+printed_page = 60
+reading      = "Bộ"
+ours         = "簿"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "61|Bộ|步|"
+printed_page = 61
+reading      = "Bộ"
+ours         = "步"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "61|Bộ|捕|"
+printed_page = 61
+reading      = "Bộ"
+ours         = "捕"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "61|Bồ|蒲|"
+printed_page = 61
+reading      = "Bồ"
+ours         = "蒲"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "61|Bồ|葡|"
+printed_page = 61
+reading      = "Bồ"
+ours         = "葡"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "61|Bồ|匍|"
+printed_page = 61
+reading      = "Bồ"
+ours         = "匍"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "62|Bổ|補|"
+printed_page = 62
+reading      = "Bổ"
+ours         = "補"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "64|Bối|貝|"
+printed_page = 64
+reading      = "Bối"
+ours         = "貝"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "88|Cầm|擒|"
+printed_page = 88
+reading      = "Cầm"
+ours         = "擒"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "91|Cấn|艮|"
+printed_page = 91
+reading      = "Cấn"
+ours         = "艮"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "92|Cần|竿|"
+printed_page = 92
+reading      = "Cần"
+ours         = "竿"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "92|Cang|剛|"
+printed_page = 92
+reading      = "Cang"
+ours         = "剛"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "93|Cảng|港|"
+printed_page = 93
+reading      = "Cảng"
+ours         = "港"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "93|Căng|矜|"
+printed_page = 93
+reading      = "Căng"
+ours         = "矜"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "96|Cáo|告|"
+printed_page = 96
+reading      = "Cáo"
+ours         = "告"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "97|Cấp|給|"
+printed_page = 97
+reading      = "Cấp"
+ours         = "給"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "98|Cắt|割|"
+printed_page = 98
+reading      = "Cắt"
+ours         = "割"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "102|Cầu|橋|"
+printed_page = 102
+reading      = "Cầu"
+ours         = "橋"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "107|Chăm|占|"
+printed_page = 107
+reading      = "Chăm"
+ours         = "占"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "114|Chấp|執|"
+printed_page = 114
+reading      = "Chấp"
+ours         = "執"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "120|Chênh|征|"
+printed_page = 120
+reading      = "Chênh"
+ours         = "征"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "120|Cheo|招|"
+printed_page = 120
+reading      = "Cheo"
+ours         = "招"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "139|Chơn|真|"
+printed_page = 139
+reading      = "Chơn"
+ours         = "真"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "150|Chưng|徵|"
+printed_page = 150
+reading      = "Chưng"
+ours         = "徵"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "152|Chửng|拯|"
+printed_page = 152
+reading      = "Chửng"
+ours         = "拯"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "154|Chuộng|重|"
+printed_page = 154
+reading      = "Chuộng"
+ours         = "重"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "159|Cổ|古|"
+printed_page = 159
+reading      = "Cổ"
+ours         = "古"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "174|Củ|矩|"
+printed_page = 174
+reading      = "Củ"
+ours         = "矩"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "175|Cừ|渠|"
+printed_page = 175
+reading      = "Cừ"
+ours         = "渠"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "178|Cúc|菊|"
+printed_page = 178
+reading      = "Cúc"
+ours         = "菊"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "181|Cung|宮|"
+printed_page = 181
+reading      = "Cung"
+ours         = "宮"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "182|Cung|弓|"
+printed_page = 182
+reading      = "Cung"
+ours         = "弓"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "182|Cung|躬|"
+printed_page = 182
+reading      = "Cung"
+ours         = "躬"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "189|Da|椰|"
+printed_page = 189
+reading      = "Da"
+ours         = "椰"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "201|Dấu|酉|"
+printed_page = 201
+reading      = "Dấu"
+ours         = "酉"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "206|Dịch|易|"
+printed_page = 206
+reading      = "Dịch"
+ours         = "易"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "224|Dương|楊|"
+printed_page = 224
+reading      = "Dương"
+ours         = "楊"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "224|Dương|洋|"
+printed_page = 224
+reading      = "Dương"
+ours         = "洋"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "224|Dương|羊|"
+printed_page = 224
+reading      = "Dương"
+ours         = "羊"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "235|Đàn|彈|"
+printed_page = 235
+reading      = "Đàn"
+ours         = "彈"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "238|Đàng|糖|"
+printed_page = 238
+reading      = "Đàng"
+ours         = "糖"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "238|Đàng|螳|"
+printed_page = 238
+reading      = "Đàng"
+ours         = "螳"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "239|Đăng|簦|"
+printed_page = 239
+reading      = "Đăng"
+ours         = "簦"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "240|Đâng|鐙|"
+printed_page = 240
+reading      = "Đâng"
+ours         = "鐙"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "240|Đậng|鄧|"
+printed_page = 240
+reading      = "Đậng"
+ours         = "鄧"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "244|Đạo|導|"
+printed_page = 244
+reading      = "Đạo"
+ours         = "導"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "244|Đạo|盜|"
+printed_page = 244
+reading      = "Đạo"
+ours         = "盜"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "245|Đào|逃|"
+printed_page = 245
+reading      = "Đào"
+ours         = "逃"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "245|Đào|濤|"
+printed_page = 245
+reading      = "Đào"
+ours         = "濤"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "248|Đàu|佻|"
+printed_page = 248
+reading      = "Đàu"
+ours         = "佻"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "249|Đậu|杜|"
+printed_page = 249
+reading      = "Đậu"
+ours         = "杜"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "249|Đậu|痘|"
+printed_page = 249
+reading      = "Đậu"
+ours         = "痘"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "251|Đầu|投|"
+printed_page = 251
+reading      = "Đầu"
+ours         = "投"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "253|Đề|題|"
+printed_page = 253
+reading      = "Đề"
+ours         = "題"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "253|Đề|蹄|"
+printed_page = 253
+reading      = "Đề"
+ours         = "蹄"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "253|Đề|啼|"
+printed_page = 253
+reading      = "Đề"
+ours         = "啼"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "261|Điếm|坫|"
+printed_page = 261
+reading      = "Điếm"
+ours         = "坫"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "263|Điệp|疊|"
+printed_page = 263
+reading      = "Điệp"
+ours         = "疊"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "265|Đinh|疔|"
+printed_page = 265
+reading      = "Đinh"
+ours         = "疔"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "268|Độ|鍍|"
+printed_page = 268
+reading      = "Độ"
+ours         = "鍍"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "269|Độ|渡|"
+printed_page = 269
+reading      = "Độ"
+ours         = "渡"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "269|Đồ|圖|"
+printed_page = 269
+reading      = "Đồ"
+ours         = "圖"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "270|Đồ|途|"
+printed_page = 270
+reading      = "Đồ"
+ours         = "途"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "270|Đồ|塗|"
+printed_page = 270
+reading      = "Đồ"
+ours         = "塗"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "270|Đồ|荼|"
+printed_page = 270
+reading      = "Đồ"
+ours         = "荼"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "270|Đồ|屠|"
+printed_page = 270
+reading      = "Đồ"
+ours         = "屠"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "271|Đổ|賭|"
+printed_page = 271
+reading      = "Đổ"
+ours         = "賭"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "272|Đoái|兌|"
+printed_page = 272
+reading      = "Đoái"
+ours         = "兌"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "274|Đọc|鐲|"
+printed_page = 274
+reading      = "Đọc"
+ours         = "鐲"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "275|Độc|獨|"
+printed_page = 275
+reading      = "Độc"
+ours         = "獨"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "275|Độc|讀|"
+printed_page = 275
+reading      = "Độc"
+ours         = "讀"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "276|Độc|牘|"
+printed_page = 276
+reading      = "Độc"
+ours         = "牘"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "285|Đồng|銅|"
+printed_page = 285
+reading      = "Đồng"
+ours         = "銅"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "286|Đồng|仝|"
+printed_page = 286
+reading      = "Đồng"
+ours         = "仝"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "286|Đồng|桐|"
+printed_page = 286
+reading      = "Đồng"
+ours         = "桐"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "286|Đồng|筒|"
+printed_page = 286
+reading      = "Đồng"
+ours         = "筒"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "294|Đương. c|當|"
+printed_page = 294
+reading      = "Đương. c"
+ours         = "當"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "310|Gia|家|"
+printed_page = 310
+reading      = "Gia"
+ours         = "家"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "311|Gia|加|"
+printed_page = 311
+reading      = "Gia"
+ours         = "加"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "312|Giá|架|"
+printed_page = 312
+reading      = "Giá"
+ours         = "架"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "312|Giá|駕|"
+printed_page = 312
+reading      = "Giá"
+ours         = "駕"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "312|Giá|稼|"
+printed_page = 312
+reading      = "Giá"
+ours         = "稼"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "312|Giá|嫁|"
+printed_page = 312
+reading      = "Giá"
+ours         = "嫁"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "312|Giá|這|"
+printed_page = 312
+reading      = "Giá"
+ours         = "這"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "313|Giả|者|"
+printed_page = 313
+reading      = "Giả"
+ours         = "者"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "316|Giải|蠏|"
+printed_page = 316
+reading      = "Giải"
+ours         = "蠏"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "323|Giáo|教|"
+printed_page = 323
+reading      = "Giáo"
+ours         = "教"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "343|Hạ|夏|"
+printed_page = 343
+reading      = "Hạ"
+ours         = "夏"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "343|Hạ|厦|"
+printed_page = 343
+reading      = "Hạ"
+ours         = "厦"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "343|Hạ|睱|"
+printed_page = 343
+reading      = "Hạ"
+ours         = "睱"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "343|Hạ|賀|"
+printed_page = 343
+reading      = "Hạ"
+ours         = "賀"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "343|Hà|遐|"
+printed_page = 343
+reading      = "Hà"
+ours         = "遐"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "343|Hà|苛|"
+printed_page = 343
+reading      = "Hà"
+ours         = "苛"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "343|Hà|荷|"
+printed_page = 343
+reading      = "Hà"
+ours         = "荷"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "344|Hà|蚵|"
+printed_page = 344
+reading      = "Hà"
+ours         = "蚵"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "344|Hà|何|"
+printed_page = 344
+reading      = "Hà"
+ours         = "何"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "344|Hà|呵|"
+printed_page = 344
+reading      = "Hà"
+ours         = "呵"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "344|Hà|瘕|"
+printed_page = 344
+reading      = "Hà"
+ours         = "瘕"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "348|Hàm|唅|"
+printed_page = 348
+reading      = "Hàm"
+ours         = "唅"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "348|Hàm|啣|"
+printed_page = 348
+reading      = "Hàm"
+ours         = "啣"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "348|Hàm|銜|"
+printed_page = 348
+reading      = "Hàm"
+ours         = "銜"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "349|Hàn|韓|"
+printed_page = 349
+reading      = "Hàn"
+ours         = "韓"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "350|Hàn|翰|"
+printed_page = 350
+reading      = "Hàn"
+ours         = "翰"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "351|Hàng|降|"
+printed_page = 351
+reading      = "Hàng"
+ours         = "降"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "352|Hấng|興|"
+printed_page = 352
+reading      = "Hấng"
+ours         = "興"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "354|Hành|莖|"
+printed_page = 354
+reading      = "Hành"
+ours         = "莖"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "354|Hảnh|倖|"
+printed_page = 354
+reading      = "Hảnh"
+ours         = "倖"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "357|Hậu|候|"
+printed_page = 357
+reading      = "Hậu"
+ours         = "候"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "357|Hậu|堠|"
+printed_page = 357
+reading      = "Hậu"
+ours         = "堠"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "359|Hề|兮|"
+printed_page = 359
+reading      = "Hề"
+ours         = "兮"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "359|Hề|奚|"
+printed_page = 359
+reading      = "Hề"
+ours         = "奚"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "368|Hô|瑚|"
+printed_page = 368
+reading      = "Hô"
+ours         = "瑚"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "369|Hồ|湖|"
+printed_page = 369
+reading      = "Hồ"
+ours         = "湖"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "369|Hồ|狐|"
+printed_page = 369
+reading      = "Hồ"
+ours         = "狐"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "369|Hồ|糊|"
+printed_page = 369
+reading      = "Hồ"
+ours         = "糊"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "369|Hồ|壺|"
+printed_page = 369
+reading      = "Hồ"
+ours         = "壺"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "369|Hồ|乎|"
+printed_page = 369
+reading      = "Hồ"
+ours         = "乎"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "369|Hồ|乎|"
+printed_page = 369
+reading      = "Hồ"
+ours         = "乎"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "370|Hổ|虎|"
+printed_page = 370
+reading      = "Hổ"
+ours         = "虎"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "370|Hổ|琥|"
+printed_page = 370
+reading      = "Hổ"
+ours         = "琥"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "371|Hoa|華|"
+printed_page = 371
+reading      = "Hoa"
+ours         = "華"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "371|Họa|禍|"
+printed_page = 371
+reading      = "Họa"
+ours         = "禍"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "373|Hoặc|或|"
+printed_page = 373
+reading      = "Hoặc"
+ours         = "或"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "373|Hoặc|惑|"
+printed_page = 373
+reading      = "Hoặc"
+ours         = "惑"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "384|Hôn|昏|"
+printed_page = 384
+reading      = "Hôn"
+ours         = "昏"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "384|Hồn|渾|"
+printed_page = 384
+reading      = "Hồn"
+ours         = "渾"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "392|Huyền|絃|"
+printed_page = 392
+reading      = "Huyền"
+ours         = "絃"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "392|Huyền|懸|"
+printed_page = 392
+reading      = "Huyền"
+ours         = "懸"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "393|Huinh|縈|"
+printed_page = 393
+reading      = "Huinh"
+ours         = "縈"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "396|Hương|鄉|"
+printed_page = 396
+reading      = "Hương"
+ours         = "鄉"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "398|Hữu|有|"
+printed_page = 398
+reading      = "Hữu"
+ours         = "有"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "402|Yêu|腰|"
+printed_page = 402
+reading      = "Yêu"
+ours         = "腰"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "402|Yêu|妖|"
+printed_page = 402
+reading      = "Yêu"
+ours         = "妖"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "402|Yêu|幺|"
+printed_page = 402
+reading      = "Yêu"
+ours         = "幺"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "402|Yêu|要|"
+printed_page = 402
+reading      = "Yêu"
+ours         = "要"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "441|Kỳ|岐|"
+printed_page = 441
+reading      = "Kỳ"
+ours         = "岐"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "442|Kỳ|圻|"
+printed_page = 442
+reading      = "Kỳ"
+ours         = "圻"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "448|Kim|針|"
+printed_page = 448
+reading      = "Kim"
+ours         = "針"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "449|Kim|今|"
+printed_page = 449
+reading      = "Kim"
+ours         = "今"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "495|Lộc|鹿|"
+printed_page = 495
+reading      = "Lộc"
+ours         = "鹿"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "523|Ma|麻|"
+printed_page = 523
+reading      = "Ma"
+ours         = "麻"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "526|Mạch|貊|"
+printed_page = 526
+reading      = "Mạch"
+ours         = "貊"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "527|Mạch|陌|"
+printed_page = 527
+reading      = "Mạch"
+ours         = "陌"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "527|Mạch|麦|"
+printed_page = 527
+reading      = "Mạch"
+ours         = "麦"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "527|Mai|枚|"
+printed_page = 527
+reading      = "Mai"
+ours         = "枚"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "562|Môn|菛|"
+printed_page = 562
+reading      = "Môn"
+ours         = "菛"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "597|Nghệ|藝|"
+printed_page = 597
+reading      = "Nghệ"
+ours         = "藝"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "614|Ngữ|禦|"
+printed_page = 614
+reading      = "Ngữ"
+ours         = "禦"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "618|Nguyệt|刖|"
+printed_page = 618
+reading      = "Nguyệt"
+ours         = "刖"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "641|Nhơn|仁|"
+printed_page = 641
+reading      = "Nhơn"
+ours         = "仁"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "641|Nhơn|姻|"
+printed_page = 641
+reading      = "Nhơn"
+ours         = "姻"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "641|Nhơn|因|"
+printed_page = 641
+reading      = "Nhơn"
+ours         = "因"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "658|Nội|內|"
+printed_page = 658
+reading      = "Nội"
+ours         = "內"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "667|Nước|着|"
+printed_page = 667
+reading      = "Nước"
+ours         = "着"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "689|Phát|髮|"
+printed_page = 689
+reading      = "Phát"
+ours         = "髮"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "698|Phong|風|"
+printed_page = 698
+reading      = "Phong"
+ours         = "風"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "699|Phong|鋒|"
+printed_page = 699
+reading      = "Phong"
+ours         = "鋒"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "699|Phong|蜂|"
+printed_page = 699
+reading      = "Phong"
+ours         = "蜂"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "699|Phong|丰|"
+printed_page = 699
+reading      = "Phong"
+ours         = "丰"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "699|Phong|豐|"
+printed_page = 699
+reading      = "Phong"
+ours         = "豐"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "701|Phụ|婦|"
+printed_page = 701
+reading      = "Phụ"
+ours         = "婦"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "701|Phụ|父|"
+printed_page = 701
+reading      = "Phụ"
+ours         = "父"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "711|Quái|掛|"
+printed_page = 711
+reading      = "Quái"
+ours         = "掛"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "713|Quan|冠|"
+printed_page = 713
+reading      = "Quan"
+ours         = "冠"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "714|Quan|棺|"
+printed_page = 714
+reading      = "Quan"
+ours         = "棺"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "714|Quan|貫|"
+printed_page = 714
+reading      = "Quan"
+ours         = "貫"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "714|Quan|關|"
+printed_page = 714
+reading      = "Quan"
+ours         = "關"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "714|Quan|觀|"
+printed_page = 714
+reading      = "Quan"
+ours         = "觀"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "716|Quân|軍|"
+printed_page = 716
+reading      = "Quân"
+ours         = "軍"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "716|Quân|均|"
+printed_page = 716
+reading      = "Quân"
+ours         = "均"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "716|Quân|鈞|"
+printed_page = 716
+reading      = "Quân"
+ours         = "鈞"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "717|Quang|絖|"
+printed_page = 717
+reading      = "Quang"
+ours         = "絖"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "717|Quang|胘|"
+printed_page = 717
+reading      = "Quang"
+ours         = "胘"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "725|Quỉ|詭|"
+printed_page = 725
+reading      = "Quỉ"
+ours         = "詭"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "725|Quỉ|餽|"
+printed_page = 725
+reading      = "Quỉ"
+ours         = "餽"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "728|Quốc|𪅦|"
+printed_page = 728
+reading      = "Quốc"
+ours         = "𪅦"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "769|Sàn|孱|"
+printed_page = 769
+reading      = "Sàn"
+ours         = "孱"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "781|Sinh|笙|"
+printed_page = 781
+reading      = "Sinh"
+ours         = "笙"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "781|Sinh|𥑥|"
+printed_page = 781
+reading      = "Sinh"
+ours         = "𥑥"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "781|Sinh|牲|"
+printed_page = 781
+reading      = "Sinh"
+ours         = "牲"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "796|Suy|衰|"
+printed_page = 796
+reading      = "Suy"
+ours         = "衰"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "814|Tàn|傘|"
+printed_page = 814
+reading      = "Tàn"
+ours         = "傘"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "814|Tân|賔|"
+printed_page = 814
+reading      = "Tân"
+ours         = "賔"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "819|Táo|燥|"
+printed_page = 819
+reading      = "Táo"
+ours         = "燥"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "819|Táo|棗|"
+printed_page = 819
+reading      = "Táo"
+ours         = "棗"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "825|Tế|濟|"
+printed_page = 825
+reading      = "Tế"
+ours         = "濟"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "825|Tế|壻|"
+printed_page = 825
+reading      = "Tế"
+ours         = "壻"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "835|Thân|親|"
+printed_page = 835
+reading      = "Thân"
+ours         = "親"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "836|Thân|申|"
+printed_page = 836
+reading      = "Thân"
+ours         = "申"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "836|Thân|申|"
+printed_page = 836
+reading      = "Thân"
+ours         = "申"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "836|Thân|紳|"
+printed_page = 836
+reading      = "Thân"
+ours         = "紳"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "851|Thế|剃|"
+printed_page = 851
+reading      = "Thế"
+ours         = "剃"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "855|Thi|詩|"
+printed_page = 855
+reading      = "Thi"
+ours         = "詩"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "856|Thị|柿|"
+printed_page = 856
+reading      = "Thị"
+ours         = "柿"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "856|Thị|是|"
+printed_page = 856
+reading      = "Thị"
+ours         = "是"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "856|Thị|氏|"
+printed_page = 856
+reading      = "Thị"
+ours         = "氏"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "856|Thị|諡|"
+printed_page = 856
+reading      = "Thị"
+ours         = "諡"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "860|Thiên|篇|"
+printed_page = 860
+reading      = "Thiên"
+ours         = "篇"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "860|Thiên|偏|"
+printed_page = 860
+reading      = "Thiên"
+ours         = "偏"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "860|Thiên|遷|"
+printed_page = 860
+reading      = "Thiên"
+ours         = "遷"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "860|Thiên|千|"
+printed_page = 860
+reading      = "Thiên"
+ours         = "千"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "862|Thiệt|實|"
+printed_page = 862
+reading      = "Thiệt"
+ours         = "實"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "877|Thù|酬|"
+printed_page = 877
+reading      = "Thù"
+ours         = "酬"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "877|Thù|蛛|"
+printed_page = 877
+reading      = "Thù"
+ours         = "蛛"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "883|Thục|淑|"
+printed_page = 883
+reading      = "Thục"
+ours         = "淑"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "883|Thục|蜀|"
+printed_page = 883
+reading      = "Thục"
+ours         = "蜀"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "889|Thước|鑠|"
+printed_page = 889
+reading      = "Thước"
+ours         = "鑠"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "890|Thương|倉|"
+printed_page = 890
+reading      = "Thương"
+ours         = "倉"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "890|Thương|鶬|"
+printed_page = 890
+reading      = "Thương"
+ours         = "鶬"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "891|Thường|裳|"
+printed_page = 891
+reading      = "Thường"
+ours         = "裳"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "891|Thường|嘗|"
+printed_page = 891
+reading      = "Thường"
+ours         = "嘗"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "891|Thường|償|"
+printed_page = 891
+reading      = "Thường"
+ours         = "償"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "895|Tiên|仙|"
+printed_page = 895
+reading      = "Tiên"
+ours         = "仙"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "896|Tiên|鞭|"
+printed_page = 896
+reading      = "Tiên"
+ours         = "鞭"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "896|Tiện|羨|"
+printed_page = 896
+reading      = "Tiện"
+ours         = "羨"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "910|Tốc|觫|"
+printed_page = 910
+reading      = "Tốc"
+ours         = "觫"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "927|Tranh|貞|"
+printed_page = 927
+reading      = "Tranh"
+ours         = "貞"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "934|Tri|緇|"
+printed_page = 934
+reading      = "Tri"
+ours         = "緇"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "944|Trọng|仲|"
+printed_page = 944
+reading      = "Trọng"
+ours         = "仲"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "970|Tượng|象|"
+printed_page = 970
+reading      = "Tượng"
+ours         = "象"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "970|Tượng|匠|"
+printed_page = 970
+reading      = "Tượng"
+ours         = "匠"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "975|Uinh  c,|塋|"
+printed_page = 975
+reading      = "Uinh  c,"
+ours         = "塋"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "975|Uinh  c,|螢|"
+printed_page = 975
+reading      = "Uinh  c,"
+ours         = "螢"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "975|Ưng  c,|應|"
+printed_page = 975
+reading      = "Ưng  c,"
+ours         = "應"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "977|Ương  c,|殃|"
+printed_page = 977
+reading      = "Ương  c,"
+ours         = "殃"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "985|Văn|聞|"
+printed_page = 985
+reading      = "Văn"
+ours         = "聞"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "991|Vật|沕|"
+printed_page = 991
+reading      = "Vật"
+ours         = "沕"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "991|Vật|勿|"
+printed_page = 991
+reading      = "Vật"
+ours         = "勿"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "995|Vị|彙|"
+printed_page = 995
+reading      = "Vị"
+ours         = "彙"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "1006|Vụ|霧|"
+printed_page = 1006
+reading      = "Vụ"
+ours         = "霧"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""
+
+[[entry_only_here]]
+key          = "1007|Vụ|樗|"
+printed_page = 1007
+reading      = "Vụ"
+ours         = "樗"
+theirs       = ""
+witness_page = ""
+quality      = 0
+verified_by  = ""

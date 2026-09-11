@@ -1,0 +1,923 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Đại Nam Quấc Âm Tự Vị — hệ thị giác "giấy & son"
+   ───────────────────────────────────────────────────────────────────────────
+   Hướng cổ điển học thuật: nền giấy ngà ấm, chữ serif, điểm nhấn đỏ son (chu sa)
+   — màu của dấu khuyên và triện trong sách Hán-Nôm cổ — dùng rất tiết chế.
+
+   Ba quy tắc chi phối cả file này:
+
+   1. --son CHỈ dùng cho: tự dạng chữ đầu, dấu thế chỗ, trạng thái đang chọn.
+      Dùng nó cho nút bấm thường là làm mòn ý nghĩa của nó.
+   2. line-height 1.7 là SÀN, không phải lựa chọn thẩm mỹ. Dấu chồng tiếng Việt
+      (ế ộ ữ ẩ ợ) bị cắt ngọn ở line-height chật. Kiểm bằng chuỗi Ệ Ộ Ữ Ẫ Ợ.
+   3. Tự dạng Hán-Nôm được đối xử như HÌNH ẢNH CHỦ ĐẠO, không phải một ký tự
+      trong dòng văn bản. Ext-B và Nôm nét dày cần kích thước mới đọc được.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --paper:        #FAF6EE;
+  --paper-raised: #FFFDF8;
+  --ink:          #1C1917;
+  --ink-muted:    #6B6155;
+  --rule:         #E3DBCC;
+  --son:          #A63A2A;
+  --son-wash:     #F5E6E1;
+  --amber:        #B45309;
+  --amber-wash:   #FDF3E3;
+
+  --serif: "Noto Serif", "Times New Roman", Georgia, serif;
+  --sans:  "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --nom:   "Nom Na Tong", "BabelStone Han", "NomNaTongLight", "Han Nom A", "Han Nom B",
+           "Noto Serif CJK SC", serif;
+
+  --gap-1: 0.25rem;
+  --gap-2: 0.5rem;
+  --gap-3: 0.75rem;
+  --gap-4: 1rem;
+  --gap-6: 1.5rem;
+  --gap-8: 2rem;
+  --gap-12: 3rem;
+
+  --measure: 34rem;   /* bề rộng dễ đọc cho thân bài */
+  --rail: 14rem;      /* cột điều hướng trái */
+  /* 68 − 2 (padding) − 14 (cột trái) − 2 (khe) = 50rem cho nội dung, ĐÚNG BẰNG bề rộng
+     nội dung trước khi có cột trái. Nhờ vậy lưới 5 cột của dòng kết quả không phải sửa. */
+  --page-max: 68rem;
+
+  --radius: 3px;
+}
+
+/* Chế độ tối: ấm, không đen xanh. Giấy cũ dưới đèn vàng, không phải màn hình đen. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper:        #1A1713;
+    --paper-raised: #221E19;
+    --ink:          #EDE6D9;
+    --ink-muted:    #A39684;
+    --rule:         #3A332A;
+    --son:          #E0705C;
+    --son-wash:     #3A211C;
+    --amber:        #E9A23B;
+    --amber-wash:   #2E2517;
+  }
+}
+
+/* ── Nạp font ──────────────────────────────────────────────────────────────
+   Các khối @font-face KHÔNG nằm ở đây mà được sinh lúc chạy trong
+   `adapter-web::assets`, từ đúng những file thật sự có trong frontend/fonts/.
+
+   Vì sao: khai sẵn ba @font-face trong file tĩnh nghĩa là trỏ tới ba file có thể không
+   tồn tại. Trình duyệt im lặng với @font-face hỏng, nhưng `<link rel="preload">` thì
+   404 to tiếng trong console ở MỌI lần tải trang. Chương trình soi trước rồi mới khai.
+   ─────────────────────────────────────────────────────────────────────────── */
+/* ── Nền ──────────────────────────────────────────────────────────────────── */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.7;           /* SÀN — xem ghi chú đầu file */
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--ink); text-decoration-color: var(--rule); text-underline-offset: 2px; }
+a:hover { text-decoration-color: var(--son); }
+
+:focus-visible {
+  outline: 2px solid var(--son);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+
+/* Chỉ dành cho trình đọc màn hình.
+   Không dùng `display:none` hay `visibility:hidden` — hai cái đó giấu khỏi CẢ trình đọc
+   màn hình, tức là xoá luôn thứ ta đang cố cung cấp. Cách đúng là kéo ra khỏi khung nhìn
+   nhưng vẫn để trong cây accessibility. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--paper-raised);
+  padding: var(--gap-2) var(--gap-4);
+  z-index: 10;
+}
+.skip-link:focus { left: var(--gap-4); top: var(--gap-4); }
+
+.wrap {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--gap-4);
+}
+
+/* ── Khung hai cột ─────────────────────────────────────────────────────────
+   Đặt TÊN VÙNG chứ không dựa vào thứ tự con: trên di động ta đổi thứ tự hiển thị
+   (ô tìm → nội dung → vần) mà không phải đổi thứ tự DOM, nên không cần JavaScript
+   và cũng không phải nhân đôi markup.
+   ─────────────────────────────────────────────────────────────────────────── */
+.shell {
+  display: grid;
+  /* Hai cột, hai con: `.rail` rồi `.content`. Không cần đặt tên vùng ở đây — chỉ di động
+     mới phải xếp lại thứ tự, và chỗ đó mới cần tên. */
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  gap: var(--gap-6);
+  /* `start` là điều kiện để cột trái DÍNH được: một ô lưới bị kéo giãn hết chiều cao hàng
+     thì không còn chỗ nào để trượt, và `position: sticky` trở thành vô tác dụng. */
+  align-items: start;
+}
+
+/* Cả cột trái dính như MỘT khối.
+ *
+ * Từng thử cho riêng ô tìm dính: nó trượt xuống đè lên chính mấy hàng chip vần bên dưới,
+ * vì hai khối nằm chồng dọc trong cùng một cột. Cho riêng khối dưới dính thì phải biết
+ * trước chiều cao ô tìm — một con số ma. Bọc cả hai vào `.rail` rồi cho cái bọc dính là
+ * cách duy nhất không sinh ra chồng lấn và không cần con số nào.
+ *
+ * `max-height` + `overflow-y` cho màn hình thấp: không có nó thì trên laptop 600px, mấy
+ * chữ cuối bảng chữ cái nằm dưới đáy màn hình và không cách nào tới được. */
+.rail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-6);
+  position: sticky;
+  top: var(--gap-4);
+  max-height: calc(100dvh - var(--gap-8));
+  overflow-y: auto;
+  scrollbar-width: thin;
+  /* `overflow-y: auto` kéo theo cắt cả chiều ngang, nên viền focus của chip ngoài cùng bị
+     xén. Chừa 2px rồi bù lại bằng lề âm: vị trí nhìn thấy không đổi, mà viền có chỗ. */
+  padding-inline: 2px;
+  margin-inline: -2px;
+}
+.content {
+  /* KHÔNG đặt `grid-area` ở đây. Desktop chỉ có hai cột và hai con, tự xếp là đúng chỗ;
+     đặt tên vùng trong khi lưới desktop không khai `grid-template-areas` thì cái tên ấy
+     không trỏ vào đâu cả và trình duyệt đẩy phần tử xuống một hàng ngầm — nội dung tụt
+     hẳn xuống dưới cột trái. Tên vùng chỉ có nghĩa ở ngưỡng di động, và được đặt ở đó. */
+  min-width: 0;
+  /* Đường kẻ dọc để hai cột đọc ra là HAI CỘT. Không có nó, ở bề rộng vừa phải thì
+     "Gõ âm hoặc dán chữ…" và tiêu đề nội dung nằm trên cùng một hàng quang học và dính
+     vào nhau thành một dòng vô nghĩa. */
+  border-left: 1px solid var(--rule);
+  padding-left: var(--gap-6);
+  /* Đường kẻ chạy quá dòng chữ cuối một quãng rồi mới tới chân trang; không có nó thì kẻ
+     dừng giữa không trung và trông như trang bị cắt ngang. */
+  padding-bottom: var(--gap-8);
+}
+
+/* Khối đầu tiên của nội dung KHÔNG mang lề trên: `.section-head` có margin-top 2rem, nên
+   nội dung từng bắt đầu thấp hơn ô tìm bên trái đúng 32px và hai cột lệch nhau ngay ở dòng
+   đầu. Lề ấy dùng để ngăn CÁC MỤC với nhau, không phải để đẩy cả cột xuống.
+
+   Dòng thứ hai xử lý một cái bẫy: trang chủ mở đầu bằng một <h1> CHỈ DÀNH CHO TRÌNH ĐỌC
+   MÀN HÌNH. Nó không chiếm chỗ, nên quy tắc trên rơi vào nó, còn khối thật ngay sau vẫn
+   giữ nguyên 32px — chỉ riêng trang chủ tụt xuống, và bố cục không còn nhất quán. */
+.content > :first-child,
+.content > .visually-hidden:first-child + * {
+  margin-top: 0;
+}
+
+/* `minmax(0, 1fr)` ở trên và `min-width: 0` ở đây là BẮT BUỘC, không phải cho gọn:
+   cột `1fr` có min-width mặc định là min-content, nên một lời giải nghĩa dài đặt
+   `nowrap` sẽ nong cả lưới rộng hơn khung và làm toàn trang trượt ngang. */
+
+/* KHÔNG khối nào trong cột trái dính. Đây là một quyết định bị rút lại, ghi lại lý do:
+   ô tìm từng `position: sticky` với nền đục để nó luôn trong tầm mắt. Nhưng ô tìm và phần
+   duyệt vần là hai ô lưới nằm CHỒNG DỌC trong cùng một cột, nên khi cuộn, ô tìm trượt
+   xuống và **che mất mấy hàng chip vần** — trên màn hình hiện ra "VẦN", rồi một ô tìm lơ
+   lửng, rồi vài chip bị cắt ngang.
+
+   Cách sửa đúng là cho cả cột dính như MỘT khối, nhưng chúng buộc phải là hai ô lưới
+   riêng thì trên di động mới tách được ra hai phía của nội dung. Còn cho khối dưới dính
+   riêng thì phải biết trước chiều cao ô tìm — một con số ma, sai một chút là chồng nhau.
+
+   Giữa "không dính" và "dính nhưng che mất nội dung", chọn cái thứ nhất. */
+
+.rail__title {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  font-weight: 600;
+  margin: 0 0 var(--gap-2);
+}
+
+/* Bốn liên kết ít dùng đã chuyển lên băng tiêu đề — xem base.html. */
+
+/* ── Đầu trang ────────────────────────────────────────────────────────────── */
+
+.site-head {
+  border-bottom: 1px solid var(--rule);
+  padding: var(--gap-4) 0;
+  margin-bottom: var(--gap-8);
+}
+.site-head__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-4);
+  align-items: baseline;
+  justify-content: space-between;
+}
+.site-title {
+  font-size: 1.05rem;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+.site-title a { text-decoration: none; }
+.site-title small {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-4);
+  font-family: var(--sans);
+  font-size: 0.82rem;
+}
+.site-nav a { color: var(--ink-muted); }
+.site-nav a:hover { color: var(--ink); }
+
+/* ── Ô tìm kiếm ───────────────────────────────────────────────────────────── */
+
+/* Ô tìm là MỘT khối, không phải ba thứ xếp chồng.
+
+   Trước đây: ô nhập, rồi nút "Tra" mồ côi ở dòng dưới, rồi bốn chip chế độ — ba tầng phần
+   tử trông na ná nhau, không cái nào nói rõ mình là gì. Ghép ô nhập và nút thành một khung
+   liền thì mắt đọc ra một điều khiển, và bớt được một dòng chiều cao. */
+.search { margin: 0; }
+
+.search__field {
+  display: flex;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.search__field:focus-within {
+  border-color: var(--son);
+  /* Viền focus đặt ở KHUNG chứ không ở ô nhập: ô nhập đã bỏ viền riêng, nếu không đặt lại
+     ở đây thì người dùng bàn phím mất hẳn dấu hiệu đang đứng ở đâu. */
+  outline: 2px solid var(--son);
+  outline-offset: 2px;
+}
+.search__input {
+  /* `min-width: 0` bắt buộc: ô nhập trong flex có min-width mặc định theo `size`, không có
+     nó thì khung tràn ra ngoài cột 14rem. */
+  flex: 1;
+  min-width: 0;
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: var(--gap-2) var(--gap-3);
+  background: transparent;
+  color: var(--ink);
+  border: 0;
+}
+.search__input:focus { outline: none; }
+/* Nút gắn liền vào ô nhập, ngăn bằng một đường kẻ — đọc ra là một nửa của cùng điều khiển.
+   Nhẹ màu vì §5 nói trọng lượng thị giác thuộc về CHỮ, không thuộc về nút bấm; Enter vẫn
+   gửi form nên nút này chủ yếu cho người dùng cảm ứng. */
+.search__submit {
+  flex: none;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  padding: 0 var(--gap-3);
+  background: transparent;
+  color: var(--ink-muted);
+  border: 0;
+  border-left: 1px solid var(--rule);
+  cursor: pointer;
+}
+.search__submit:hover { color: var(--son); }
+
+/* Chip chế độ: dạy người dùng hệ thống đang hiểu gì mà không cần hướng dẫn. */
+.modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-2);
+  margin-top: var(--gap-3);
+  font-family: var(--sans);
+  font-size: 0.75rem;
+}
+.mode-chip {
+  padding: 2px var(--gap-3);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink-muted);
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+}
+.mode-chip[aria-pressed="true"], .mode-chip.is-active {
+  border-color: var(--son);
+  color: var(--son);
+  background: var(--son-wash);
+}
+
+/* ── Tự dạng ──────────────────────────────────────────────────────────────── */
+
+.glyph {
+  font-family: var(--nom);
+  color: var(--son);
+  line-height: 1;
+  font-feature-settings: normal;
+}
+.glyph--display { font-size: 3.5rem; }        /* 56px — chữ là nhân vật chính */
+.glyph--inline  { font-size: 1.15em; vertical-align: -0.08em; }
+.glyph--row     { font-size: 1.8rem; }
+a.glyph { text-decoration: none; }
+a.glyph:hover { text-decoration: underline; text-decoration-color: var(--son); }
+
+/* Chữ chưa có mã Unicode: bản in dùng ảnh. Không bao giờ thay bằng chữ gần giống. */
+.glyph--image_only::before {
+  content: "▨";
+  font-family: var(--sans);
+  color: var(--ink-muted);
+}
+.chip-no-unicode {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--amber);
+  background: var(--amber-wash);
+  border: 1px solid var(--amber);
+  border-radius: var(--radius);
+  padding: 1px var(--gap-2);
+  vertical-align: middle;
+}
+
+/* Chờ người đối chứng bản in. Khác hẳn "chưa có mã Unicode": cái kia là một sự thật đã
+   xác định, cái này là một câu hỏi chưa ai trả lời. */
+.chip-review {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--amber);
+  background: var(--amber-wash);
+  border: 1px solid var(--amber);
+  border-radius: var(--radius);
+  padding: 0 var(--gap-2);
+  vertical-align: middle;
+}
+
+/* ── Trang chữ đầu ─────────────────────────────────────────────────────────── */
+
+.entry-head {
+  display: flex;
+  gap: var(--gap-6);
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.entry-head__text { flex: 1; min-width: 12rem; }
+.entry-reading {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.25;
+  font-weight: 600;
+}
+.entry-alternate {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+.pos-badge {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1px var(--gap-2);
+}
+.entry-gloss {
+  max-width: var(--measure);
+  margin: var(--gap-4) 0 var(--gap-8);
+  font-size: 1.05rem;
+}
+
+.copy-btn {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  color: var(--ink-muted);
+  padding: 2px var(--gap-2);
+  cursor: pointer;
+}
+.copy-btn:hover { border-color: var(--son); color: var(--son); }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--gap-4);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--gap-2);
+  margin: var(--gap-8) 0 var(--gap-4);
+}
+.section-head :is(h1, h2) {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Ghi chú bên phải tiêu đề mục — số đếm, số trang PDF, đường dẫn phụ.
+   Nó vốn thừa hưởng chữ serif 1rem của thân bài, trong khi tiêu đề là sans 0.75rem viết hoa
+   thưa chữ: cái phụ in TO hơn cái chính, hai đầu một hàng ngang nói hai giọng khác nhau, nên
+   nhìn vào thấy lộn xộn. Đặt cùng giọng với tiêu đề, chỉ nhỏ hơn một bực và không viết hoa,
+   thì nó lui về đúng vai trò chú thích.
+
+   Quy tắc đặt ở KHE, không phải một lớp riêng cho mỗi trang: mọi tiêu đề mục đều dùng khe
+   này, nên một trang mới không thể quên. */
+.section-head > span {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  /* Chữ số cùng bề ngang: qua trang sau `1–30` thành `31–60` mà con số không nhảy chỗ. */
+  font-variant-numeric: tabular-nums;
+  /* Canh phải cho tề với lề nội dung khi ghi chú dài phải xuống hàng. */
+  text-align: right;
+}
+
+/* Mục con: hình thái | định nghĩa. Dưới 420px thì xếp chồng — canh hai cột vỡ. */
+.sub-list { list-style: none; margin: 0; padding: 0; }
+.sub-item {
+  display: grid;
+  grid-template-columns: minmax(7rem, 14rem) 1fr;
+  gap: var(--gap-4);
+  padding: var(--gap-2) 0;
+  border-bottom: 1px solid transparent;
+}
+.sub-item + .sub-item { border-top: 1px solid var(--rule); }
+.sub-form { font-weight: 600; }
+.sub-han { font-family: var(--nom); color: var(--ink-muted); margin-right: var(--gap-2); }
+.sub-def { color: var(--ink); }
+
+/* Dấu thế chỗ: tô son, và CÓ NGHĨA cho trình đọc màn hình nhờ <abbr title>. */
+.placeholder {
+  color: var(--son);
+  text-decoration: none;
+  border: 0;
+  cursor: help;
+}
+
+/* Dạng suy diễn hiện gạch chân chấm: người đọc luôn biết chữ nào là lời sách. */
+.derived {
+  border-bottom: 1px dotted var(--ink-muted);
+  color: var(--ink-muted);
+}
+
+/* Công tắc "Hiện dạng đầy đủ" — chỉ đổi cái được hiện, không đổi dữ liệu. */
+.sub-item .form-expanded { display: none; }
+.sub-list.show-expanded .form-verbatim { display: none; }
+.sub-list.show-expanded .form-expanded { display: inline; }
+
+/* ── Dải cảnh báo ─────────────────────────────────────────────────────────── */
+
+.notice {
+  border-left: 3px solid var(--amber);
+  background: var(--amber-wash);
+  padding: var(--gap-3) var(--gap-4);
+  margin: var(--gap-4) 0;
+  font-size: 0.9rem;
+}
+.notice a { color: var(--amber); }
+
+/* ── Kết quả tìm kiếm ─────────────────────────────────────────────────────── */
+
+.result-group { margin-bottom: var(--gap-8); }
+.result-group__label {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--gap-2);
+  margin-bottom: var(--gap-2);
+}
+.result-group__count { color: var(--ink-muted); font-weight: 400; }
+
+.entry-row {
+  display: grid;
+  grid-template-columns: 2.6rem minmax(5rem, 8rem) auto 1fr auto;
+  gap: var(--gap-3);
+  align-items: baseline;
+  padding: var(--gap-2) 0;
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+}
+.entry-row:hover { background: var(--paper-raised); }
+.entry-row__reading { font-weight: 600; }
+.entry-row__gloss {
+  color: var(--ink-muted);
+  /* Bắt buộc: cột `1fr` có min-width mặc định là min-content, nên một lời giải nghĩa dài
+     đặt `nowrap` sẽ nong cả dòng rộng hơn khung và làm TOÀN TRANG trượt ngang. */
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.entry-row__page {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+
+/* ── Gợi ý chính tả ───────────────────────────────────────────────────────── */
+
+.bridge {
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+  border-radius: var(--radius);
+  padding: var(--gap-4);
+  margin-bottom: var(--gap-6);
+}
+.bridge__title {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin: 0 0 var(--gap-2);
+}
+.bridge__link {
+  display: inline-block;
+  border: 1px solid var(--son);
+  color: var(--son);
+  background: var(--son-wash);
+  border-radius: var(--radius);
+  padding: 1px var(--gap-3);
+  text-decoration: none;
+  margin-right: var(--gap-2);
+}
+.bridge__note { font-size: 0.85rem; color: var(--ink-muted); }
+
+/* ── Chip chữ cái ─────────────────────────────────────────────────────────── */
+
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-2);
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--gap-6);
+}
+.letter-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* 5 chip một hàng trong cột 14rem. Nhỏ hơn nữa thì chạm tay khó ở di động. */
+  min-width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  background: var(--paper-raised);
+}
+.letter-chip.is-active {
+  border-color: var(--son);
+  color: var(--son);
+  background: var(--son-wash);
+}
+
+/* ── Trang in ─────────────────────────────────────────────────────────────── */
+
+.provenance {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--paper-raised);
+  padding: var(--gap-3) var(--gap-4);
+  margin-top: var(--gap-8);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-4);
+  justify-content: space-between;
+  align-items: center;
+}
+/* Ảnh trang in mất ~14rem cho cột trái. Cho nó khung cuộn ngang thay vì ép thu nhỏ:
+   ảnh bản in vốn là thứ để đối chứng TỪNG CHỮ, thu nhỏ thì không còn tác dụng gì. */
+.page-image-frame {
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+}
+.page-image { display: block; max-width: none; height: auto; }
+.page-image-missing {
+  border: 1px dashed var(--rule);
+  padding: var(--gap-8);
+  text-align: center;
+  color: var(--ink-muted);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+/* ── Bảng số liệu ─────────────────────────────────────────────────────────── */
+
+.stats { border-collapse: collapse; width: 100%; }
+.stats th, .stats td {
+  text-align: left;
+  padding: var(--gap-2) var(--gap-3);
+  border-bottom: 1px solid var(--rule);
+}
+.stats td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ── Bảng và mã trong phần đầu sách ───────────────────────────────────────── */
+
+/* Thân bài giữ ở bề rộng dòng đọc được (~34rem ≈ 70 ký tự).
+
+   NHƯNG: đường kẻ của tiêu đề mục vốn chạy hết bề rộng cột (52rem), nên dưới một tiêu đề
+   dài 52rem lại là đoạn văn chỉ rộng 34rem — 18rem còn lại trống trơn, và người đọc thấy
+   như trang bị hụt nội dung chứ không phải như một cột chữ có chủ ý.
+
+   Cách sửa: bọc CẢ tiêu đề LẪN thân bài trong `.section--prose`, để đường kẻ dừng đúng chỗ
+   chữ dừng. Bề rộng dòng vẫn giữ nguyên, chỉ có lời hứa của đường kẻ là được sửa cho đúng. */
+.section--prose { max-width: var(--measure); }
+.prose { max-width: var(--measure); }
+.prose h2 { font-size: 1.15rem; margin-top: var(--gap-8); }
+
+/* Bảng chữ dùng trong trang: thuật ngữ bên trái, lời sách bên phải.
+
+   Dùng `dl` chứ không phải bảng, vì đây là cặp thuật ngữ–nghĩa, và ở màn hình hẹp nó phải
+   xuống dòng thành khối chứ không co cột. */
+.glossary { margin: var(--gap-4) 0 0; }
+.glossary dt {
+  font-weight: 600;
+  margin-top: var(--gap-4);
+}
+.glossary dd {
+  margin: var(--gap-1) 0 0;
+  padding-left: var(--gap-4);
+  border-left: 2px solid var(--rule);
+  color: var(--ink-muted);
+}
+
+pre, code {
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+  font-size: 0.85em;
+}
+pre { overflow-x: auto; background: var(--paper-raised); padding: var(--gap-3); border-radius: var(--radius); }
+
+/* ── Trang chủ ────────────────────────────────────────────────────────────── */
+
+/* Khối số liệu ở trang chủ: bốn con số, dàn đều hết bề rộng cột. */
+.figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: var(--gap-4);
+  margin: 0 0 var(--gap-4);
+}
+/* Con số ở TRÊN, nhãn ở dưới.
+
+   Trước đây ngược lại, và mỗi cột còn đeo thêm một `border-top` 2px. Bốn đường kẻ rời nhau
+   nằm sát ngay trên bốn nhãn chữ hoa nhỏ, cách đường kẻ của tiêu đề mục chỉ hơn chục pixel
+   — đọc ra thành một nét gạch đứt chạy ngang qua chính các nhãn ấy.
+
+   Bỏ hẳn kẻ theo cột: tiêu đề mục phía trên đã có kẻ rồi, và bốn con số đủ lớn để tự thành
+   bốn nhóm. `column-reverse` đảo thứ tự HIỂN THỊ mà giữ `<dt>` trước `<dd>` trong DOM —
+   HTML đòi vậy, và trình đọc màn hình cũng cần nghe nhãn trước con số. */
+.figures div {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--gap-1);
+}
+.figures dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.figures dd {
+  margin: 0;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Chữ đầu hôm nay: dùng hết bề rộng cột một cách có chủ ý — tự dạng bên trái, lời giải
+   nghĩa ở giữa, xuất xứ dồn về mép phải. Một khối ngắn thả nổi giữa cột rộng trông như
+   trang bị hụt nội dung, dù chẳng thiếu gì. */
+.featured {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--gap-6);
+  align-items: start;
+  margin-bottom: var(--gap-6);
+  padding-bottom: var(--gap-4);
+}
+.featured__reading { margin: 0 0 var(--gap-2); font-size: 1.4rem; }
+.featured__body { min-width: 0; }
+.featured__meta {
+  text-align: right;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+.featured__meta p { margin: 0 0 var(--gap-2); }
+
+/* Câu chú nhỏ bằng font sans — dùng cho gợi ý dưới ô tìm và các dòng dẫn nguồn. */
+.hint {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+.note {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  max-width: var(--measure);
+}
+
+
+/* ── Chân trang ───────────────────────────────────────────────────────────── */
+
+.site-foot {
+  border-top: 1px solid var(--rule);
+  /* Nội dung đã có padding-bottom riêng; cộng thêm 3rem nữa thành một mảng trống lớn giữa
+     dòng chữ cuối và vạch chân trang. */
+  margin-top: 0;
+  padding: var(--gap-6) 0 var(--gap-8);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+}
+.site-foot a { color: var(--ink-muted); }
+
+.muted { color: var(--ink-muted); }
+.nav-pair { display: flex; justify-content: space-between; gap: var(--gap-4); margin-top: var(--gap-8); font-family: var(--sans); font-size: 0.85rem; }
+
+/* ── Di động ──────────────────────────────────────────────────────────────── */
+
+/* Cột trái hẹp lại trước khi bỏ hẳn — 12rem vẫn đủ 5 chip một hàng. */
+@media (max-width: 1099px) {
+  :root { --rail: 12rem; }
+}
+
+/* Dưới ngưỡng này xếp chồng, và ĐỔI THỨ TỰ: ô tìm (dùng mỗi lần) lên trên nội dung,
+   22 chip vần (thao tác duyệt, phụ trên điện thoại) xuống dưới.
+
+   Đổi bằng vùng lưới nên không cần JavaScript. Đánh đổi: thứ tự DOM (ô tìm → vần →
+   nội dung) khác thứ tự nhìn thấy, nên trình đọc màn hình nghe điều hướng trước nội
+   dung — đúng thông lệ "nav rồi main", và skip-link ở đầu trang để nhảy qua. */
+@media (max-width: 899px) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "search"
+      "content"
+      "browse";
+    gap: var(--gap-6);
+  }
+  /* `display: contents` làm `.rail` biến mất khỏi lưới và hai con của nó trở thành ô lưới
+     trực tiếp — nhờ vậy nội dung chen được vào GIỮA ô tìm và phần duyệt vần. */
+  .rail {
+    display: contents;
+  }
+  .rail-search { grid-area: search; }
+  .content { grid-area: content; }
+  .rail-browse { grid-area: browse; }
+  /* Trên di động chỉ ô tìm dính. Ở đây nó KHÔNG đè lên phần duyệt vần như trên desktop,
+     vì phần ấy đã nằm dưới nội dung, cách xa hàng chục màn hình.
+
+     Lề âm hai bên để thanh tràn hết bề ngang: nếu để nguyên trong `.wrap` thì nền chỉ rộng
+     bằng cột chữ, và nội dung cuộn phía sau sẽ lòi ra ở hai mép — trông như thanh bị vỡ. */
+  /* Nhảy neo (skip-link → #main) đưa mục tiêu lên sát đỉnh, mà đỉnh đang bị thanh tìm kiếm
+     che. Con số này chỉ là khoảng lùi khi cuộn — lệch một chút thì chỉ thoáng hơn hoặc sát
+     hơn, không làm vỡ bố cục như con số ma từng dùng cho `top` của khối dính. */
+  html { scroll-padding-top: 5rem; }
+
+  .rail-search {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    margin-inline: calc(var(--gap-4) * -1);
+    padding: var(--gap-3) var(--gap-4);
+  }
+  .content {
+    /* Xếp chồng rồi thì không còn hai cột để ngăn. */
+    border-left: 0;
+    padding-left: 0;
+  }
+  .rail-browse {
+    border-top: 1px solid var(--rule);
+    padding-top: var(--gap-4);
+  }
+
+  /* Vùng chạm. 1.9rem = 30px là kích thước cho CON TRỎ, không phải cho ngón tay; hướng dẫn
+     phổ biến là tối thiểu 44px. Trên desktop chip nhỏ để 5 cái vừa một hàng trong cột 14rem
+     — ràng buộc ấy không còn khi đã xếp chồng, nên phóng to lại. */
+  .letter-chip {
+    min-width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.05rem;
+  }
+  /* Chip chế độ chiếm ~70px trong thanh dính, và khi CHƯA có truy vấn thì bấm chúng chỉ
+     gửi đi một tìm kiếm rỗng — tốn chỗ thường trực để dẫn tới ngõ cụt. Trên di động chỉ
+     hiện khi đã có truy vấn, tức khi chúng thật sự dùng để chạy lại theo chế độ khác.
+     Desktop giữ nguyên: ở đó cột trái không thiếu chỗ, và chúng còn dạy người dùng biết
+     hệ thống hiểu truy vấn theo kiểu gì. */
+  .modes { display: none; }
+  .search--has-query .modes { display: flex; }
+
+  .mode-chip { padding: var(--gap-2) var(--gap-3); }
+  .search__submit { padding: 0 var(--gap-4); }
+}
+
+@media (max-width: 640px) {
+  /* Ba cột của chữ đầu hôm nay vỡ ở đây; xếp chồng và trả xuất xứ về canh trái. */
+  .featured { grid-template-columns: auto 1fr; }
+  .featured__meta { grid-column: 1 / -1; text-align: left; }
+
+  /* Dòng kết quả: ĐẶT CHỖ TƯỜNG MINH, không để lưới tự xếp.
+
+     Trước đây lưới là `2.2rem 1fr` và năm phần tử tự tìm ô, kết quả là bốn hàng mỗi mục
+     từ — trong đó nhãn `n.` chiếm trọn một hàng một mình. Vần H có 443 mục; bốn hàng mỗi
+     mục là gần hai nghìn hàng phải cuộn qua.
+
+         呵 │ Hạ                    │ n.
+            │ Tiếng thở ra; tiếng…  │ tr.342
+
+     Tự dạng trải hai hàng nên nó neo cả khối; âm đọc và nhãn cùng một hàng vì đó là thứ
+     người ta quét mắt tìm. */
+  .entry-row {
+    grid-template-columns: 2.2rem minmax(0, 1fr) auto;
+    row-gap: var(--gap-1);
+    column-gap: var(--gap-3);
+    align-items: start;
+  }
+  .entry-row .glyph        { grid-area: 1 / 1 / 3 / 2; align-self: center; }
+  .entry-row__reading      { grid-area: 1 / 2 / 2 / 3; }
+  .entry-row .pos-badge    { grid-area: 1 / 3 / 2 / 4; justify-self: end; }
+  .entry-row__gloss        { grid-area: 2 / 2 / 3 / 3; }
+  .entry-row__page         { grid-area: 2 / 3 / 3 / 4; justify-self: end; }
+
+  /* Cắt lời giải nghĩa ở hai dòng: đủ để biết mục này nói về gì, mà danh sách vẫn quét
+     được. Một dòng thì trên màn hình hẹp gần như không nói được gì; để tràn tự do thì
+     443 mục thành một cuộn dài vô tận. */
+  .entry-row__gloss {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 420px) {
+  /* Canh hai cột vỡ dưới ngưỡng này; xếp chồng thay vì thu nhỏ chữ. */
+  .sub-item { grid-template-columns: 1fr; gap: var(--gap-1); }
+  .entry-reading { font-size: 1.6rem; }
+  /* Tự dạng VẪN phải lớn — không thu nhỏ chữ đầu để nhét vừa màn hình. */
+  .glyph--display { font-size: 3rem; }
+}
+
+/* ── In ra giấy ───────────────────────────────────────────────────────────── */
+
+@media print {
+  .site-nav, .search, .modes, .nav-pair, .copy-btn { display: none; }
+  /* Bản in giấy không có chỗ cho điều hướng. */
+  .rail-search, .rail-browse { display: none; }
+  .shell { display: block; }
+  body { background: #fff; color: #000; }
+  .glyph { color: #000; }
+}

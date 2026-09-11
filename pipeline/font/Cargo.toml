@@ -1,0 +1,24 @@
+[package]
+name = "dnqatv-font"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "dnqatv-font"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+dnqatv-font-core = { path = "../font-core" }
+lopdf = { version = "0.45.0", default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[lints]
+workspace = true
+
+[[test]]
+name = "font_coverage"
+path = "../../tests/unit/font/coverage.rs"

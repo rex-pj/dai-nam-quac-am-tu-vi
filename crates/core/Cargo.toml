@@ -1,0 +1,31 @@
+[package]
+name = "dnqatv-core"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "dnqatv_core"
+path = "src/lib.rs"
+
+[dependencies]
+async-trait = "0.1.92"
+thiserror.workspace = true
+unicode-normalization.workspace = true
+
+[lints]
+workspace = true
+
+# Tests live in the external tests/ directory, wired in by path.
+[[test]]
+name = "core_text"
+path = "../../tests/unit/core/text.rs"
+
+[[test]]
+name = "core_model"
+path = "../../tests/unit/core/model.rs"
+
+[[test]]
+name = "core_search"
+path = "../../tests/unit/core/search.rs"

@@ -1,0 +1,1074 @@
+# Chuỗi chữ Latin dính liền trong LỚP TEXT của bản 2026.
+#
+# KHÔNG phải lỗi trích xuất — đã kiểm tận mã glyph: chuỗi TJ trong PDF thật sự thiếu glyph
+# khoảng trắng ở những chỗ này (vd. trang 537: Á o r a ― Á o r á c h r ã . .).
+#
+# Căn cứ để coi là bất thường: tiếng Việt viết rời từng âm tiết, và trên 578.763 "từ" của
+# thân sách thì 99,5% dài không quá 5 ký tự. Chuỗi Latin liền từ 8 ký tự trở lên, không có
+# gạch nối, gần như chắc chắn là nhiều âm tiết bị dính.
+#
+# Cần người đối chiếu ảnh trang gốc rồi ghi chuỗi đúng vào corrected.
+
+[[jammed_text]]
+pdf_page     = 181
+printed_page = 180
+found        = "phongTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 181
+printed_page = 180
+found        = "cùiThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 181
+printed_page = 180
+found        = "thổiCũng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 181
+printed_page = 180
+found        = "cướiChính"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 181
+printed_page = 180
+found        = "canhLăng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 181
+printed_page = 180
+found        = "câyTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 181
+printed_page = 180
+found        = "gốiChẳng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 181
+printed_page = 180
+found        = "númThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 182
+printed_page = 181
+found        = "cẳngNgười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 182
+printed_page = 181
+found        = "nhườngBộ"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 182
+printed_page = 181
+found        = "cungChốn"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 183
+printed_page = 182
+found        = "giặcCung"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 183
+printed_page = 182
+found        = "câyHoàng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 183
+printed_page = 182
+found        = "dângDâng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 183
+printed_page = 182
+found        = "nghềCùng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 183
+printed_page = 182
+found        = "thôiTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "vớiNguyện"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "đượcNgười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "lắmNgười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "lắmThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "mìnhNước"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "điếngThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "cưởngNói"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "cuốcChết"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "chơiCách"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 184
+printed_page = 183
+found        = "chơiCuộc"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 185
+printed_page = 184
+found        = "xuốngNói"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 185
+printed_page = 184
+found        = "chơiCười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 185
+printed_page = 184
+found        = "cườiNghe"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 186
+printed_page = 185
+found        = "chímNgười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 186
+printed_page = 185
+found        = "cườiCười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 186
+printed_page = 185
+found        = "lớnChẳng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 187
+printed_page = 186
+found        = "cươngĐốc"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 187
+printed_page = 186
+found        = "địchDưới"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 187
+printed_page = 186
+found        = "gấpThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 187
+printed_page = 186
+found        = "xuốngCây"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 188
+printed_page = 187
+found        = "xuốngCạo"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 188
+printed_page = 187
+found        = "cẳngThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 188
+printed_page = 187
+found        = "chẹpThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 188
+printed_page = 187
+found        = "càngChút"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 188
+printed_page = 187
+found        = "mớiTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 188
+printed_page = 187
+found        = "idThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 188
+printed_page = 187
+found        = "cứuThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 192
+printed_page = 191
+found        = "gìThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 192
+printed_page = 191
+found        = "ngayThẳng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 192
+printed_page = 191
+found        = "hoàiChạy"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 193
+printed_page = 192
+found        = "treoTiền"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 193
+printed_page = 192
+found        = "trờiQuản"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 193
+printed_page = 192
+found        = "nhớpnhớp"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 194
+printed_page = 193
+found        = "ngangThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 194
+printed_page = 193
+found        = "độngTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 195
+printed_page = 194
+found        = "tiếngLâm"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 196
+printed_page = 195
+found        = "đàngNgười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 196
+printed_page = 195
+found        = "bằngThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 197
+printed_page = 196
+found        = "idThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 197
+printed_page = 196
+found        = "nghiThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 197
+printed_page = 196
+found        = "làngThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 199
+printed_page = 198
+found        = "ngàyKhai"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 201
+printed_page = 200
+found        = "thôngKhông"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 201
+printed_page = 200
+found        = "khuâyTai"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 201
+printed_page = 200
+found        = "cửiNghĩa"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 201
+printed_page = 200
+found        = "đắpthường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 201
+printed_page = 200
+found        = "vàoThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 202
+printed_page = 201
+found        = "chơnThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 203
+printed_page = 202
+found        = "thấptiền"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 203
+printed_page = 202
+found        = "xuốngCầm"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 204
+printed_page = 203
+found        = "ngheTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 208
+printed_page = 207
+found        = "nhauCuộc"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 208
+printed_page = 207
+found        = "vậyTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 208
+printed_page = 207
+found        = "treotronglòng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 209
+printed_page = 208
+found        = "cókẻmsắt"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 211
+printed_page = 210
+found        = "thanhLời"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 211
+printed_page = 210
+found        = "tíchChàng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 211
+printed_page = 210
+found        = "hoặcduyên"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 211
+printed_page = 210
+found        = "sâuTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 212
+printed_page = 211
+found        = "thườngtảvề"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 213
+printed_page = 212
+found        = "Phảiđượcvợ"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 214
+printed_page = 213
+found        = "lạiThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 214
+printed_page = 213
+found        = "tiềnThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 216
+printed_page = 215
+found        = "sôngGiữa"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 217
+printed_page = 216
+found        = "chồngLại"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 217
+printed_page = 216
+found        = "đuôiChạy"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 221
+printed_page = 220
+found        = "trượngDùn"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 222
+printed_page = 221
+found        = "hạpMiệng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 222
+printed_page = 221
+found        = "duyênNói"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 222
+printed_page = 221
+found        = "chuộtKhác"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 223
+printed_page = 222
+found        = "dấpKhông"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 224
+printed_page = 223
+found        = "theoThầy"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 224
+printed_page = 223
+found        = "chừngTrên"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 225
+printed_page = 224
+found        = "lòngTượng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 225
+printed_page = 224
+found        = "dươngCũng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 225
+printed_page = 224
+found        = "thiêngTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 225
+printed_page = 224
+found        = "đôngBiển"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 226
+printed_page = 225
+found        = "giàDưỡng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 231
+printed_page = 230
+found        = "hìnhChức"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 233
+printed_page = 232
+found        = "xuốngĐãy"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 233
+printed_page = 232
+found        = "nầyTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 233
+printed_page = 232
+found        = "ngườiNgười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 237
+printed_page = 236
+found        = "phướcÔng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 237
+printed_page = 236
+found        = "tiếnThuở"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 238
+printed_page = 237
+found        = "đàngNgười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 238
+printed_page = 237
+found        = "quaTrong"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 238
+printed_page = 237
+found        = "lâuKhách"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 239
+printed_page = 238
+found        = "đènTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 240
+printed_page = 239
+found        = "lòngThuốc"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 243
+printed_page = 242
+found        = "nhằmĐánh"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 243
+printed_page = 242
+found        = "thươngBộ"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 243
+printed_page = 242
+found        = "lạiThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 244
+printed_page = 243
+found        = "biểnThuyền"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 245
+printed_page = 244
+found        = "linhThầy"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 245
+printed_page = 244
+found        = "nàoNgười"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 245
+printed_page = 244
+found        = "nàoKhách"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 246
+printed_page = 245
+found        = "xuốngTrong"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 246
+printed_page = 245
+found        = "chơnHiếp"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 247
+printed_page = 246
+found        = "nướcCũng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 249
+printed_page = 248
+found        = "sinhTrời"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 249
+printed_page = 248
+found        = "chạcCũng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 251
+printed_page = 250
+found        = "hếtThường"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 252
+printed_page = 251
+found        = "trướcCũng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 253
+printed_page = 252
+found        = "tuổiTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 254
+printed_page = 253
+found        = "chừngNhắm"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 255
+printed_page = 254
+found        = "xỉaNghĩa"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 261
+printed_page = 260
+found        = "chínhĐích"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 263
+printed_page = 262
+found        = "ruộngQuan"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 264
+printed_page = 263
+found        = "dứtThiên"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 269
+printed_page = 268
+found        = "nhuộmlàm"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 270
+printed_page = 269
+found        = "bọnLuống"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 384
+printed_page = 383
+found        = "trònTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 390
+printed_page = 389
+found        = "phépTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 403
+printed_page = 402
+found        = "lớpTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 407
+printed_page = 406
+found        = "Quinquina"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 419
+printed_page = 418
+found        = "biểnTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 451
+printed_page = 450
+found        = "biệtĐàng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 470
+printed_page = 469
+found        = "mìnhTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 507
+printed_page = 506
+found        = "ngoàiTên"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 508
+printed_page = 507
+found        = "nhétTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 512
+printed_page = 511
+found        = "chặpTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 537
+printed_page = 536
+found        = "Áoráchrã"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 547
+printed_page = 546
+found        = "khôngcómáu"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 564
+printed_page = 563
+found        = "thángCái"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 597
+printed_page = 596
+found        = "rứtTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 605
+printed_page = 604
+found        = "choTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 606
+printed_page = 605
+found        = "dàyTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 620
+printed_page = 619
+found        = "tuổiTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 625
+printed_page = 624
+found        = "thửTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 636
+printed_page = 635
+found        = "tốtTiếng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 697
+printed_page = 696
+found        = "ngựaNgựa"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 711
+printed_page = 710
+found        = "hoặcchướng"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 758
+printed_page = 757
+found        = "trắngRối"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 792
+printed_page = 791
+found        = "treennon"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 871
+printed_page = 870
+found        = "nhenmảnh"
+corrected    = ""
+verified_by  = ""
+
+[[jammed_text]]
+pdf_page     = 1001
+printed_page = 1000
+found        = "xuốngCũng"
+corrected    = ""
+verified_by  = ""

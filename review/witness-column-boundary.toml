@@ -1,0 +1,63 @@
+# Chốt ⑥ — column_boundary: 5 chỗ.
+#
+# SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Nhân chứng: bản chép Wikisource của bản in 1895-96, chụp lại trong data/wikisource/
+# (số hiệu bản sửa từng trang ghi ở PROVENANCE.json). Bản chép ấy mang giấy phép CC BY-SA —
+# dùng để ĐỐI CHIẾU, không bưng vào dữ liệu.
+#
+# Hai bản in khác nhau thì lệch nhau là thường. Chỉ `column_boundary` và `glyph_differs`
+# mới là lời tố rằng mình đọc sai trang; còn lại là tư liệu.
+#
+# quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
+
+[[column_boundary]]
+key          = "260|Địch|寡不 | 衆 ¦ Quả bất \\_ chúng|寡 不 - 衆 ¦ Quả bất _ chúng"
+printed_page = 260
+reading      = "Địch"
+ours         = "寡不 | 衆 ¦ Quả bất \\_ chúng"
+theirs       = "寡 不 - 衆 ¦ Quả bất _ chúng"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/307"
+quality      = 1
+verified_by  = ""
+
+[[column_boundary]]
+key          = "470|Láo|¦ ― (văn bản không rõ)|¦ - {{không rõ}}"
+printed_page = 470
+reading      = "Láo"
+ours         = "¦ ― (văn bản không rõ)"
+theirs       = "¦ - {{không rõ}}"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/559"
+quality      = 1
+verified_by  = ""
+
+[[column_boundary]]
+key          = "685|Phân|¦ bỏ― cho người|¦ Thương người dưỡng thể thương thân, ghét người dưỡng thể bỏ- cho người"
+printed_page = 685
+reading      = "Phân"
+ours         = "¦ bỏ― cho người"
+theirs       = "¦ Thương người dưỡng thể thương thân, ghét người dưỡng thể bỏ- cho người"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/191"
+quality      = 1
+verified_by  = ""
+
+[[column_boundary]]
+key          = "1008|Vừa|¦ ― ― vậy|¦ -- vậy"
+printed_page = 1008
+reading      = "Vừa"
+ours         = "¦ ― ― vậy"
+theirs       = "¦ -- vậy"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/568"
+quality      = 1
+verified_by  = ""
+
+[[column_boundary]]
+key          = "1008|Vừa|¦ ― ― cái miệng|¦ -- cái miệng"
+printed_page = 1008
+reading      = "Vừa"
+ours         = "¦ ― ― cái miệng"
+theirs       = "¦ -- cái miệng"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/568"
+quality      = 1
+verified_by  = ""

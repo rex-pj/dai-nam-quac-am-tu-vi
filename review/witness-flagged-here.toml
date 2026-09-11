@@ -1,0 +1,113 @@
+# Chốt ⑥ — flagged_here: 10 chỗ.
+#
+# SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Nhân chứng: bản chép Wikisource của bản in 1895-96, chụp lại trong data/wikisource/
+# (số hiệu bản sửa từng trang ghi ở PROVENANCE.json). Bản chép ấy mang giấy phép CC BY-SA —
+# dùng để ĐỐI CHIẾU, không bưng vào dữ liệu.
+#
+# Hai bản in khác nhau thì lệch nhau là thường. Chỉ `column_boundary` và `glyph_differs`
+# mới là lời tố rằng mình đọc sai trang; còn lại là tư liệu.
+#
+# quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
+
+[[flagged_here]]
+key          = "18|Ảng|Bồn. Cái —. Đồ bằng đất rộng như miệng chậu mà lớn.|Đồ bằng đất rộng miệng mà thấp."
+printed_page = 18
+reading      = "Ảng"
+ours         = "Bồn. Cái —. Đồ bằng đất rộng như miệng chậu mà lớn."
+theirs       = "Đồ bằng đất rộng miệng mà thấp."
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/26"
+quality      = 3
+verified_by  = ""
+
+[[flagged_here]]
+key          = "108|Châm|Dùng đồ nhọn mà chích; kề bên lửa mà đốt; đâm vào, chích vào, chỉ vào. | 炙鍼灸 — cứu. Dùng phép chích, phép đốt. (Thầy thuốc).|Dùng đồ nhọn mà chích; kề bên lửa mà đốt; đâm vào, chích vào, chỉ vào."
+printed_page = 108
+reading      = "Châm"
+ours         = "Dùng đồ nhọn mà chích; kề bên lửa mà đốt; đâm vào, chích vào, chỉ vào. | 炙鍼灸 — cứu. Dùng phép chích, phép đốt. (Thầy thuốc)."
+theirs       = "Dùng đồ nhọn mà chích; kề bên lửa mà đốt; đâm vào, chích vào, chỉ vào."
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/131"
+quality      = 3
+verified_by  = ""
+
+[[flagged_here]]
+key          = "191|Dai|¦ Ngồi ― 乖 作 Ngồi ― quai tác|¦ Ngồi - 乖 作 Ngồi – quai tác"
+printed_page = 191
+reading      = "Dai"
+ours         = "¦ Ngồi ― 乖 作 Ngồi ― quai tác"
+theirs       = "¦ Ngồi - 乖 作 Ngồi – quai tác"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/228"
+quality      = 1
+verified_by  = ""
+
+[[flagged_here]]
+key          = "221|Duyệt|¦ Phiệt ― 閥 ―|¦ Phiệt – 閥 -"
+printed_page = 221
+reading      = "Duyệt"
+ours         = "¦ Phiệt ― 閥 ―"
+theirs       = "¦ Phiệt – 閥 -"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/262"
+quality      = 1
+verified_by  = ""
+
+[[flagged_here]]
+key          = "229|Đặc|英䧺 | 立 ¦ Anh hùng ― lập hay là 獨 立 độc lập|英 䧺 - 立 ¦ Anh hùng – lập hay là 獨 立 độc lập"
+printed_page = 229
+reading      = "Đặc"
+ours         = "英䧺 | 立 ¦ Anh hùng ― lập hay là 獨 立 độc lập"
+theirs       = "英 䧺 - 立 ¦ Anh hùng – lập hay là 獨 立 độc lập"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/271"
+quality      = 1
+verified_by  = ""
+
+[[flagged_here]]
+key          = "355|Hảo|¦ Háo 惡 ― ố|¦ Háo 惡 - ố"
+printed_page = 355
+reading      = "Hảo"
+ours         = "¦ Háo 惡 ― ố"
+theirs       = "¦ Háo 惡 - ố"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/422"
+quality      = 1
+verified_by  = ""
+
+[[flagged_here]]
+key          = "546|Meo|Nổi sương, nổi mốc; ngoài chót, ngoài chéo. Mét―.Métxanh,khôngcómáu.  Lên|Nổi sương, nổi mốc; ngoài chót, ngoài chéo."
+printed_page = 546
+reading      = "Meo"
+ours         = "Nổi sương, nổi mốc; ngoài chót, ngoài chéo. Mét―.Métxanh,khôngcómáu.  Lên"
+theirs       = "Nổi sương, nổi mốc; ngoài chót, ngoài chéo."
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/34"
+quality      = 1
+verified_by  = ""
+
+[[flagged_here]]
+key          = "570|Mửng|Tiếng Triều–châu, chỉ nghĩa là cữa, thường hiểu là phía, bề, cách thể.(Tiếng điếm đàng).|Tiếng Triều–châu, chỉ nghĩa là cữa, thường hiểu là phía, bề, cách thể.(Tiếng điếm đàng)."
+printed_page = 570
+reading      = "Mửng"
+ours         = "Tiếng Triều–châu, chỉ nghĩa là cữa, thường hiểu là phía, bề, cách thể.(Tiếng điếm đàng)."
+theirs       = "Tiếng Triều–châu, chỉ nghĩa là cữa, thường hiểu là phía, bề, cách thể.(Tiếng điếm đàng)."
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/62"
+quality      = 1
+verified_by  = ""
+
+[[flagged_here]]
+key          = "798|Sứng|Làng Sứng (ở tĩnh Quản–nam).|Làng Sứng (ở tĩnh Quản–nam)."
+printed_page = 798
+reading      = "Sứng"
+ours         = "Làng Sứng (ở tĩnh Quản–nam)."
+theirs       = "Làng Sứng (ở tĩnh Quản–nam)."
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/324"
+quality      = 3
+verified_by  = ""
+
+[[flagged_here]]
+key          = "949|Trùi|Tên làng thuộc tĩnh Quảng–trị. Làng-. Id.|Tên làng thuộc tĩnh Quảng–trị."
+printed_page = 949
+reading      = "Trùi"
+ours         = "Tên làng thuộc tĩnh Quảng–trị. Làng-. Id."
+theirs       = "Tên làng thuộc tĩnh Quảng–trị."
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/503"
+quality      = 1
+verified_by  = ""

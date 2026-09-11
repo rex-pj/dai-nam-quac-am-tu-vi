@@ -1,0 +1,80 @@
+# Cầu nối chính tả 1895 ↔ nay.
+#
+# ĐỌC KỸ TRƯỚC KHI THÊM DÒNG. Bảng này **chỉ sinh gợi ý**; nó không bao giờ được dùng để viết
+# lại truy vấn của người dùng, và không bao giờ được dùng để gộp hai mục từ.
+#
+# Lý do là một phép đo, không phải một ý kiến: trong chính cuốn sách này, phần lớn các cặp
+# "chính tả cũ / chính tả nay" là HAI MỤC TỪ RIÊNG BIỆT, mỗi mục có định nghĩa riêng.
+#
+#   quấc ✓ và quốc ✓ · sanh ✓ và sinh ✓ · chánh ✓ và chính ✓ · nhựt ✓ và nhật ✓ · bịnh ✓ và bệnh ✓
+#
+# Chuẩn hoá tự động sẽ trộn nghĩa của hai mục từ khác nhau — đúng kiểu đoán mà cả dự án này
+# được dựng lên để chống. Vì vậy mỗi dòng ở đây chỉ nói: "nếu người tra gõ A, có thể họ cũng
+# muốn xem B", và giao diện hiện nó thành một liên kết để họ tự bấm.
+#
+# Hai lớp KHÁC NHAU, đừng lẫn:
+#   - Đặt dấu (`tòa`/`toà`) là phép biến đổi cơ học, không đổi nghĩa → xử lý ở `text::fold`,
+#     KHÔNG cần bảng này.
+#   - Biến thể chính tả (dưới đây) có thể là hai mục từ → chỉ gợi ý.
+#
+# `verified_by` để trống nghĩa là chưa có người đối chiếu bản in.
+
+[[pair]]
+old = "quấc"
+new = "quốc"
+note = "cả hai đều là mục từ trong sách; nhan đề sách dùng dạng 1895"
+verified_by = ""
+
+[[pair]]
+old = "sanh"
+new = "sinh"
+note = "cả hai đều là mục từ"
+verified_by = ""
+
+[[pair]]
+old = "chánh"
+new = "chính"
+note = "cả hai đều là mục từ"
+verified_by = ""
+
+[[pair]]
+old = "nhựt"
+new = "nhật"
+note = "cả hai đều là mục từ"
+verified_by = ""
+
+[[pair]]
+old = "bịnh"
+new = "bệnh"
+note = "cả hai đều là mục từ"
+verified_by = ""
+
+[[pair]]
+old = "nhơn"
+new = "nhân"
+note = "cả hai đều là mục từ; đo được 13 mục `nhơn` và 14 mục `nhân`"
+verified_by = ""
+
+[[pair]]
+old = "huình"
+new = "huỳnh"
+note = "dạng 1895 của họ Huỳnh, cũng là họ của chính tác giả Huình-Tịnh Paulus Của"
+verified_by = ""
+
+[[pair]]
+old = "ngãi"
+new = "nghĩa"
+note = "biến âm Nam Kỳ; cần người đối chiếu trước khi tin"
+verified_by = ""
+
+[[pair]]
+old = "thiệt"
+new = "thật"
+note = "biến âm Nam Kỳ"
+verified_by = ""
+
+[[pair]]
+old = "trển"
+new = "trên"
+note = "biến âm Nam Kỳ"
+verified_by = ""

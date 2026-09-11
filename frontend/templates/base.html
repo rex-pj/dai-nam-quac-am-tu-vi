@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site_title }}{% endblock %}</title>
+<meta name="description" content="{% block description %}Tra tìm Đại Nam Quấc Âm Tự Vị — bộ tự vị Quốc ngữ đầu tiên do người Việt biên soạn, Huình-Tịnh Paulus Của, 1895–1896.{% endblock %}">
+{% block head_extra %}{% endblock %}
+<link rel="stylesheet" href="/tinh/main.css">
+<link rel="icon" href="{{ favicon_path }}" type="image/svg+xml">
+{# Chỉ preload khi file font THẬT SỰ có trên đĩa, và chỉ dải BMP: hai dải kia chỉ cần ở
+   những trang có chữ Ext-B/PUA. Trỏ tới file không tồn tại là 404 mỗi lần tải trang. #}
+{% if font_preload %}
+<link rel="preload" href="{{ font_preload }}" as="font" type="{{ font_preload_type }}" crossorigin>
+{% endif %}
+</head>
+<body>
+{# Skip-link là focus ĐẦU TIÊN của trang. Bố cục này đặt điều hướng trước nội dung trong DOM,
+   nên không có nó thì mỗi lần vào trang là một lần đi qua 22 chip vần bằng bàn phím. #}
+<a class="skip-link" href="#main">Bỏ qua, tới phần chính</a>
+
+<header class="site-head">
+  <div class="wrap site-head__inner">
+    {# KHÔNG phải <h1>: mỗi trang có <h1> riêng của nó. Băng tiêu đề lặp trên mọi trang,
+       nên để nó làm <h1> thì trang chữ đầu có HAI <h1> và trình đọc màn hình mất manh mối
+       về nội dung thật của trang. #}
+    <p class="site-title">
+      <a href="/">{{ site_title }}<small>{{ site_subtitle }}</small></a>
+    </p>
+    {# Bốn liên kết ít dùng: thuộc băng tiêu đề, không chiếm chỗ trong cột tra tìm. #}
+    <nav class="site-nav" aria-label="Các trang khác">
+      {# Trang đầu của thân sách: số in 10, tức trang PDF 11. URL mang số in. #}
+      <a href="/trang/10">Trang in</a>
+      <a href="/gioi-thieu">Giới thiệu</a>
+      <a href="/pham-chat-du-lieu">Phẩm chất dữ liệu</a>
+      <a href="/api/v1">API mở</a>
+    </nav>
+  </div>
+</header>
+
+{# Lưới hai cột đặt tên vùng. Đặt tên vùng chứ không dựa vào thứ tự con là có chủ ý: trên di
+   động ta đổi thứ tự HIỂN THỊ (ô tìm → nội dung → vần) mà không phải đổi thứ tự DOM. #}
+<div class="wrap shell">
+  {% include "partial/rail.html" %}
+
+  <main id="main" class="content">
+  {% block content %}{% endblock %}
+  </main>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>
+      Nội dung là nguyên văn <em>Đại Nam Quấc Âm Tự Vị</em> (Sài Gòn, 1895–1896), số hoá trong
+      bản điện tử 2026. Chỗ nào chương trình <strong>suy diễn</strong> thay vì chép nguyên văn
+      đều được đánh dấu.
+    </p>
+    <p>
+      <a href="/pham-chat-du-lieu">Phẩm chất dữ liệu</a> ·
+      <a href="/api/v1">API mở</a> ·
+      <a href="/gioi-thieu">Về bản in</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/tinh/enhance.js" defer></script>
+</body>
+</html>

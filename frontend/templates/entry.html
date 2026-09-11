@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% block title %}{{ entry.reading }}{% if entry.glyph.char %} {{ entry.glyph.char }}{% endif %} — {{ site_title }}{% endblock %}
+{% block description %}{{ entry.reading }} ({{ entry.pos_name }}): {{ entry.gloss }}{% endblock %}
+{% block head_extra %}
+<link rel="canonical" href="{{ base_url }}{{ canonical_path }}">
+{% endblock %}
+
+{% block content %}
+
+<article>
+  {# ── Đầu trang: tự dạng là hình ảnh chủ đạo, không phải một con chữ trong dòng ── #}
+  <div class="entry-head">
+    {% if entry.glyph.no_unicode %}
+      <span class="glyph glyph--display glyph--{{ entry.glyph.kind }}" lang="{{ entry.glyph.lang }}"
+            role="img" aria-label="{{ entry.glyph.aria_label }}">{{ entry.glyph.char }}</span>
+    {% else %}
+      <a class="glyph glyph--display glyph--{{ entry.glyph.kind }}" href="{{ entry.glyph.url }}"
+         lang="{{ entry.glyph.lang }}" aria-label="{{ entry.glyph.aria_label }}">{{ entry.glyph.char }}</a>
+    {% endif %}
+
+    <div class="entry-head__text">
+      <h1 class="entry-reading">{{ entry.reading }}</h1>
+      {% if entry.alternate %}
+        <p class="entry-alternate">âm khác trong bản in: <strong>{{ entry.alternate }}</strong></p>
+      {% endif %}
+      <p>
+        <span class="pos-badge" title="{{ entry.pos_name }}">{{ entry.pos_label }}</span>
+        <span class="muted">{{ entry.pos_name }}</span>
+        {% if entry.glyph.char %}
+          {# Người dùng không gõ được chữ Nôm — chép là thao tác chính, không phải phụ. #}
+          <button class="copy-btn" type="button" data-copy="{{ entry.glyph.char }}" hidden>chép chữ</button>
+        {% endif %}
+      </p>
+      {% if entry.glyph.no_system_font and not has_nom_font %}
+        {# Khác hẳn "chưa có mã Unicode": chữ này CÓ mã, nhưng mã ấy chỉ có nghĩa bên trong
+           font Nôm Na Tống mà bản in dùng. Chưa ship font thì mọi máy đều thấy ô vuông, và
+           nói ra vẫn hơn để người đọc tưởng dữ liệu hỏng. #}
+        <p>
+          <span class="chip-no-unicode">Cần font Nôm Na Tống</span>
+          <span class="muted">— tự dạng này dùng mã riêng của font bản in
+            (U+{{ entry.glyph.codepoint_hex }}); máy chưa cài font sẽ thấy một ô vuông.
+            <a href="/gioi-thieu">Vì sao</a>.</span>
+        </p>
+      {% endif %}
+      {% if entry.glyph.no_unicode %}
+        <p>
+          <span class="chip-no-unicode">Chữ chưa có mã Unicode</span>
+          <span class="muted">— bản in 2026 dùng ảnh cho tự dạng này.
+            <a href="/gioi-thieu">Xem ghi chú của ban biên tập</a>.</span>
+        </p>
+        {% if entry.shape_note %}
+          <p class="muted">
+            <strong>Hình chữ:</strong> <span class="derived">{{ entry.shape_note }}</span>
+            — lời tả lấy từ bản chép Wikisource của bản in 1895, đã có người của bản điện tử
+            này đối chiếu ảnh trang rồi ký nhận. Đây là <em>tả hình</em>, không phải mã chữ:
+            chương trình vẫn không gán mã nào cho tự dạng này.
+          </p>
+        {% endif %}
+      {% endif %}
+      {% if entry.inherits_glyph %}
+        <p class="muted">Chữ đầu này dùng lại tự dạng của mục liền trước trong bản in.</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if entry.needs_review %}
+    <div class="notice">
+      <strong>Dòng chữ đầu này có chỗ khả nghi trong bản in</strong> và đang chờ người đối chứng.
+      Chương trình cố ý <em>không đoán</em>: chữ hiện đúng như lớp văn bản của bản điện tử.
+      {% if entry.printed_page %}<a href="{{ entry.page_url }}">Xem trang in {{ entry.printed_page }}</a>.{% endif %}
+    </div>
+  {% endif %}
+
+  <p class="entry-gloss">{{ entry.gloss }}</p>
+
+  {% if entry.sub_entry_count > 0 %}
+    <div class="section-head">
+      <h2>Mục con · {{ entry.sub_entry_count }}</h2>
+      {# Công tắc hoạt động bằng CSS; JavaScript chỉ ghi nhớ lựa chọn. #}
+      <label class="mode-chip" for="expand">
+        <input type="checkbox" id="expand" data-expand-toggle> Hiện dạng đầy đủ
+      </label>
+    </div>
+
+    {% if entry.any_sub_needs_review %}
+      <div class="notice">
+        Một số mục con bên dưới có dạng chữ bị font khác chen giữa trong lớp văn bản gốc và
+        đang chờ người xét lại; chúng đều có ghi chú ngay tại chỗ.
+      </div>
+    {% endif %}
+
+    <ul class="sub-list" data-sub-list>
+      {% for s in entry.sub_entries %}
+        <li class="sub-item">
+          <span class="sub-form">
+            {% if s.han_form %}
+              <span class="sub-han" lang="vi-Hani">{% if s.han_expanded %}{{ s.han_expanded }}{% else %}{{ s.han_form }}{% endif %}</span>
+            {% endif %}
+            {% if s.has_placeholder %}
+              {# Nguyên văn: dấu thế chỗ bọc <abbr> để trình đọc màn hình đọc đúng âm chữ đầu
+                 thay vì đọc "gạch ngang". Các mẩu đã cắt sẵn ở view model. #}
+              <span class="form-verbatim">{% for part in s.form_parts %}{% if part.placeholder %}<abbr class="placeholder" title="{{ s.placeholder_title }}">{{ part.text }}</abbr>{% else %}{{ part.text }}{% endif %}{% endfor %}</span>
+              {# Suy diễn: gạch chân chấm, để người đọc luôn biết chữ nào là lời sách. #}
+              <span class="form-expanded derived" title="dạng suy diễn, không phải nguyên văn bản in">{{ s.form_expanded }}</span>
+            {% else %}
+              <span>{{ s.form }}</span>
+            {% endif %}
+            {% if s.needs_review %}<span class="chip-review" title="chờ người đối chứng bản in">?</span>{% endif %}
+          </span>
+          <span class="sub-def">{{ s.definition }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {# ── Nguồn gốc luôn trong tầm một cú nhấp ── #}
+  {% if page %}
+    <div class="provenance">
+      <span>
+        {% if page.printed_page %}Trang in <strong>{{ page.printed_page }}</strong> ·{% endif %}
+        PDF {{ page.pdf_page }}
+        {% if page.head_first %}<span class="muted"> · đầu trang: {{ page.head_first }}</span>{% endif %}
+      </span>
+      <a href="{{ page.url }}">Xem nguyên bản →</a>
+    </div>
+  {% endif %}
+
+  <nav class="nav-pair" aria-label="Chữ đầu liền kề theo thứ tự sách">
+    {% if previous %}<a href="{{ previous.url }}">‹ {{ previous.reading }}</a>{% else %}<span></span>{% endif %}
+    {% if next %}<a href="{{ next.url }}">{{ next.reading }} ›</a>{% else %}<span></span>{% endif %}
+  </nav>
+</article>
+{% endblock %}

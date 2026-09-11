@@ -1,0 +1,5 @@
+# Forbidding unwrap/expect/panic in production code avoids silent bugs and runtime crashes.
+# In tests, panicking IS the correct behaviour — a broken test must stop immediately.
+allow-unwrap-in-tests = true
+allow-expect-in-tests = true
+allow-panic-in-tests = true

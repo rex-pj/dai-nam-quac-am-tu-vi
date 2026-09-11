@@ -1,0 +1,40 @@
+[package]
+name = "dnqatv-adapter-web"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "dnqatv_adapter_web"
+path = "src/lib.rs"
+
+[dependencies]
+axum = "0.8.9"
+dnqatv-app = { path = "../app" }
+dnqatv-config = { path = "../config" }
+dnqatv-core = { path = "../core" }
+dnqatv-font-core = { path = "../../pipeline/font-core" }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+tera = "1.20.1"
+thiserror.workspace = true
+tower-http = { version = "0.6.11", features = ["fs", "trace", "compression-gzip"] }
+utoipa = "5"
+
+[dev-dependencies]
+async-trait = "0.1.92"
+dnqatv-testkit = { path = "../../tests/testkit" }
+tokio = { workspace = true }
+tower = { version = "0.5", features = ["util"] }
+
+[lints]
+workspace = true
+
+[[test]]
+name = "web_templates"
+path = "../../tests/unit/web/templates.rs"
+
+[[test]]
+name = "web_router"
+path = "../../tests/unit/web/router.rs"

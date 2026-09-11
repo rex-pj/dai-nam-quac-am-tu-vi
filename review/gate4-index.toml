@@ -1,0 +1,91 @@
+# Chốt ④ — các điểm lệch giữa dữ liệu parse và bảng Mục Từ.
+#
+# Nguyen tac: KHONG dung nguong phan tram. Moi diem lech phai duoc sua hoac co ly do
+# do nguoi viet o day. "99% khop" khong noi gi ve 1% kia.
+#
+# Ket qua hien tai: 0 tu dang BIA (quan trong nhat), 5 tu dang bo sot, 14 tap am doc khac.
+# Cac tap am doc khac nam o ho so rieng: review/gate4-readings.toml
+
+# ── Nhóm 1: tự dạng bảng Mục Từ có mà lớp text của PDF KHÔNG hề chứa ───────────
+# Đã kiểm: cả 5 chữ này không xuất hiện một lần nào trong toàn bộ lớp text.
+# Đây là bằng chứng bảng Mục Từ KHÔNG suy ra được hoàn toàn từ lớp text — người lập bảng
+# hẳn có thêm nguồn khác (bản dựng trang, hoặc nhận dạng thủ công).
+# Kế toán khớp: 4.673 (parser) + 5 (nhóm này) = 4.678 (bảng).
+
+[[missing_glyph]]
+glyph        = "㮷"
+codepoint    = "U+3BB7"
+in_text_layer = "không xuất hiện lần nào"
+verified_by  = ""
+
+[[missing_glyph]]
+glyph        = "忖"
+codepoint    = "U+5FD6"
+in_text_layer = "không xuất hiện lần nào"
+verified_by  = ""
+
+[[missing_glyph]]
+glyph        = "𠨡"
+codepoint    = "U+20A21"
+in_text_layer = "không xuất hiện lần nào"
+verified_by  = ""
+
+[[missing_glyph]]
+glyph        = "𣑕"
+codepoint    = "U+23455"
+in_text_layer = "không xuất hiện lần nào"
+verified_by  = ""
+
+[[missing_glyph]]
+glyph        = "𥶮"
+codepoint    = "U+25DAE"
+in_text_layer = "không xuất hiện lần nào"
+verified_by  = ""
+
+# ── Nhóm 2: nhãn dùng dấu PHẨY thay dấu chấm (lỗi bản in) ─────────────────────
+# Parser cố ý không nhận `c,` làm nhãn: nhận liều sẽ mở cửa cho việc đọc nhầm
+# dấu phẩy trong âm đọc thành nhãn. Hậu quả là 4 âm đọc này còn lẫn `c,`.
+
+[[comma_label]]
+pdf_page     = 976
+printed_page = 975
+glyph        = "塋"
+line         = "塋  Uinh  c, n."
+corrected    = ""
+verified_by  = ""
+
+[[comma_label]]
+pdf_page     = 976
+printed_page = 975
+glyph        = "螢"
+line         = "螢  Uinh  c, n."
+corrected    = ""
+verified_by  = ""
+
+[[comma_label]]
+pdf_page     = 976
+printed_page = 975
+glyph        = "應"
+line         = "應  Ưng  c, n."
+corrected    = ""
+verified_by  = ""
+
+[[comma_label]]
+pdf_page     = 978
+printed_page = 977
+glyph        = "殃"
+line         = "殃  Ương  c, n."
+corrected    = ""
+verified_by  = ""
+
+# ── Nhóm 3: khác biệt do MÔ HÌNH, không phải lỗi ──────────────────────────────
+# a) Bang tach dau phay, parser giu nguyen van:
+#      㩒  parser "Cắm, cặm"        bang "Cắm" + "cặm"
+#      掃  parser "Tảo, Táo"        bang "Táo" + "Tảo"
+#      乏  parser "Mặp, Mắp"        bang "Mắp" + "Mặp"
+#    Tach dau phay la mot phep doan — ban in viet lien mot muc hai am.
+# b) Bang gop am trong ngoac vao am doc, parser tach thanh truong `alternate`:
+#      佻  parser "Đàu" + alternate "(đào)"   bang "Đàu (đào)"
+#      杜  parser "Đậu" + alternate "(đỗ)"    bang "Đậu (đỗ)"
+#      標  parser "Biêu," + alternate "(tiêu)" bang "Biêu" + "(tiêu)"
+#    Ca hai deu dung; chi khac cach mo hinh hoa.

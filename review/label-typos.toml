@@ -1,0 +1,33 @@
+# Dòng mục từ có nhãn từ loại thiếu dấu chấm trong bản in.
+#
+# Đo được 7.622 dòng mục từ; các dạng đuôi nhãn:
+#   "n."     4.491
+#   "c."     2.585
+#   "c. n."    543
+#   "n. c."      3
+#   "c n."       1   <- thiếu dấu chấm ở nhãn thứ nhất
+#   "n  c."      1   <- thiếu dấu chấm ở nhãn thứ nhất
+#
+# Chuong trinh KHONG nhan `c` hay `n` tran lam nhan: doan nhu vay se mo cua cho viec
+# doc nham chu thuong trong am doc thanh nhan. Hai dong nay noi len o chot kiem tra.
+#
+# Đây là toàn bộ phần chưa giải thích được của chốt ③ ở mức ký tự:
+# 2.148.972 ký tự nội dung, chênh lệch đúng 1 ký tự, chính là chữ `c` ở trang 353.
+
+[[label_typo]]
+pdf_page     = 295
+printed_page = 294
+line         = "當  Đương. c  n."
+issue        = "nhãn `c` thiếu dấu chấm; nó rơi vào âm đọc nên chốt bảo toàn không thấy, chốt nhãn lạc bắt được"
+caught_by    = "reading_has_stray_label"
+corrected    = ""
+verified_by  = ""
+
+[[label_typo]]
+pdf_page     = 353
+printed_page = 352
+line         = "興  Hấng (Hứng) n  c."
+issue        = "nhãn `n` thiếu dấu chấm; đây là 1 ký tự duy nhất chưa vào trường nào trên toàn bộ 2.148.972 ký tự"
+caught_by    = "check_coverage"
+corrected    = ""
+verified_by  = ""

@@ -1,0 +1,20 @@
+{# Một dòng kết quả. Mọi quyết định hiển thị đã xong ở view model; đây chỉ in ra. #}
+<a class="entry-row" href="{{ e.url }}">
+  <span class="glyph glyph--row glyph--{{ e.glyph.kind }}" lang="{{ e.glyph.lang }}"
+        {% if e.glyph.no_system_font and not has_nom_font %}
+        title="Tự dạng này dùng mã riêng của font bản in; máy chưa cài font Nôm Na Tống sẽ thấy ô vuông"
+        {% endif %}
+        aria-label="{{ e.glyph.aria_label }}">{{ e.glyph.char }}</span>
+  <span class="entry-row__reading">
+    {# Không bọc thêm ngoặc: cả 43 âm Hán-Việt đã mang sẵn dấu ngoặc TỪ BẢN IN. Bọc lần nữa
+     ra "A ((Nha.))" — tầng hiển thị thêm con chữ sách không hề in. #}
+    {{ e.reading }}{% if e.alternate %} <span class="muted">{{ e.alternate }}</span>{% endif %}
+  </span>
+  <span class="pos-badge" title="{{ e.pos_name }}">{{ e.pos_label }}</span>
+  <span class="entry-row__gloss">
+    {# Mục đang chờ người đối chứng phải nói ra ngay ở danh sách, không đợi tới khi mở trang:
+       người quét mắt qua kết quả cần biết chỗ nào chưa chắc. #}
+    {% if e.needs_review %}<span class="chip-review" title="chờ người đối chứng bản in">?</span> {% endif %}{{ e.gloss }}
+  </span>
+  <span class="entry-row__page">{% if e.printed_page %}tr.{{ e.printed_page }}{% else %}tr.PDF {{ e.pdf_page }}{% endif %}</span>
+</a>

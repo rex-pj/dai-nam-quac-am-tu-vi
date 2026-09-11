@@ -1,0 +1,17 @@
+[package]
+name = "dnqatv-testkit"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "dnqatv_testkit"
+path = "src/lib.rs"
+
+[dependencies]
+async-trait = "0.1.92"
+dnqatv-core = { path = "../../crates/core" }
+
+[lints]
+workspace = true

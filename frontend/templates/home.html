@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+{# Băng trên đã mang tên sách nhưng nó không còn là <h1>. Trang chủ vẫn cần một <h1> cho
+   trình đọc màn hình và máy tìm kiếm, chỉ là không cần nhìn thấy hai lần. #}
+<h1 class="visually-hidden">{{ site_title }} — tra tìm</h1>
+{# Ô tìm và 22 vần đã thường trực ở cột trái, nên trang chủ KHÔNG dựng ô tìm thứ hai — hai ô
+   tìm trên cùng một trang vừa trùng `id="q"` vừa bắt người đọc chọn xem nên gõ vào đâu.
+   Phần còn lại là thứ cho trang chủ một lý do tồn tại: một chữ đầu để đọc, một đoạn giới thiệu,
+   và số liệu nói thẳng dữ liệu đang ở đâu. #}
+
+{% if featured %}
+  <div class="section-head"><h2>Chữ đầu hôm nay</h2></div>
+  <article class="featured">
+    <a class="glyph glyph--display glyph--{{ featured.glyph.kind }}" href="{{ featured.url }}"
+       lang="{{ featured.glyph.lang }}" aria-label="{{ featured.glyph.aria_label }}">{{ featured.glyph.char }}</a>
+
+    <div class="featured__body">
+      <h3 class="featured__reading"><a href="{{ featured.url }}">{{ featured.reading }}</a></h3>
+      <p>{{ featured.gloss }}</p>
+    </div>
+
+    {# Xuất xứ dồn về mép phải: khối dùng hết bề rộng cột một cách có chủ ý. #}
+    <div class="featured__meta">
+      <p><span class="pos-badge" title="{{ featured.pos_name }}">{{ featured.pos_label }}</span></p>
+      <p>
+        <a href="{{ featured.page_url }}">
+          {% if featured.printed_page %}Trang in {{ featured.printed_page }}{% else %}PDF {{ featured.pdf_page }}{% endif %} →
+        </a>
+      </p>
+    </div>
+  </article>
+{% endif %}
+
+{# Tiêu đề và thân bài phải cùng bề rộng — xem `.section--prose` trong main.css. #}
+<section class="section--prose">
+  <div class="section-head"><h2>Về cuốn sách này</h2></div>
+  <div class="prose">
+    <p>
+      <em>Đại Nam Quấc Âm Tự Vị</em> của Huình-Tịnh Paulus Của (Sài Gòn, 1895–1896) là bộ tự vị
+      Quốc ngữ đầu tiên do người Việt biên soạn. Mỗi chữ đầu gồm một tự dạng Hán hoặc Nôm, âm đọc
+      Quốc ngữ, dấu riêng (<code>c.</code> <code>n.</code> <code>cn.</code>), lời giải nghĩa,
+      và các mục con dẫn ra cách dùng.
+    </p>
+    <p>
+      Sách xếp theo <strong>22 chữ</strong>, và thứ tự ấy không phải bảng chữ Latin: chữ
+      <strong>Y</strong> đứng ở vị trí của I, và không có I, F, J, W, Z. Cột bên trái giữ đúng
+      thứ tự bản in.
+    </p>
+    <p>
+      Bản điện tử này giữ <strong>nguyên văn</strong>. Chỗ nào chương trình suy diễn — chẳng hạn
+      thay dấu <span class="placeholder">―</span> bằng âm chữ đầu — đều được ghi dấu cho rõ, và
+      người đọc bật tắt được.
+    </p>
+  </div>
+</section>
+
+{% if stats %}
+  <div class="section-head">
+    <h2>Đã số hoá</h2>
+    <span class="muted"><a href="/pham-chat-du-lieu">Phẩm chất dữ liệu →</a></span>
+  </div>
+  <dl class="figures">
+    <div><dt>Chữ đầu</dt><dd>{{ stats.entries | so }}</dd></div>
+    <div><dt>Mục con</dt><dd>{{ stats.sub_entries | so }}</dd></div>
+    <div><dt>Tự dạng</dt><dd>{{ stats.glyphs | so }}</dd></div>
+    <div><dt>Trang</dt><dd>{{ stats.pages | so }}</dd></div>
+  </dl>
+  <p class="note">
+    Trong đó <strong>{{ stats.entries_needing_review | so }}</strong> dòng chữ đầu và
+    <strong>{{ stats.sub_entries_needing_review | so }}</strong> mục con còn chờ người đối chứng bản in,
+    và <strong>{{ stats.image_only_glyphs | so }}</strong> chữ đầu có tự dạng chưa được gán mã Unicode.
+    Với một cuốn tự vị, nói ra chỗ còn yếu mới là chỗ đáng tin.
+  </p>
+{% endif %}
+{% endblock %}

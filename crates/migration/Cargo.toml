@@ -1,0 +1,22 @@
+[package]
+name = "dnqatv-migration"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "dnqatv_migration"
+path = "src/lib.rs"
+
+[dependencies]
+async-trait = "0.1.92"
+dnqatv-core = { path = "../core" }
+sea-orm-migration = { workspace = true }
+
+[lints]
+workspace = true
+
+[[test]]
+name = "migration_sql"
+path = "../../tests/unit/migration/sql_snapshot.rs"

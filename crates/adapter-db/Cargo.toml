@@ -1,0 +1,38 @@
+[package]
+name = "dnqatv-adapter-db"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "dnqatv_adapter_db"
+path = "src/lib.rs"
+
+[dependencies]
+async-trait = "0.1.92"
+dnqatv-config = { path = "../config" }
+dnqatv-core = { path = "../core" }
+dnqatv-entity = { path = "../entity" }
+dnqatv-migration = { path = "../migration" }
+sea-orm.workspace = true
+sea-orm-migration.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tokio.workspace = true
+
+[lints]
+workspace = true
+
+[[test]]
+name = "db_redaction"
+path = "../../tests/unit/adapter_db/redaction.rs"
+
+[[test]]
+name = "db_schema"
+path = "../../tests/integration/db/schema.rs"
+
+[[test]]
+name = "db_repository"
+path = "../../tests/integration/db/repository.rs"

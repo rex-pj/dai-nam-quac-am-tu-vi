@@ -1,0 +1,275 @@
+# Mục từ có tự dạng chỉ tồn tại dưới dạng ẢNH trong bản điện tử 2026.
+#
+# Trang LƯU Ý của bản 2026 liệt kê 22 chữ như vậy. Trích xuất tìm được 29.
+# Chênh lệch KHÔNG được tự ý bỏ qua — mỗi dòng dưới đây cần người đối chiếu với ảnh trang gốc
+# rồi điền verified_by/verified_on. Trước khi đủ chữ ký, bước import phải từ chối nạp.
+#
+# Sinh tự động từ data/pages.jsonl. Cột documented = có mặt trong danh sách trang LƯU Ý hay không.
+
+[[image_glyph]]
+reading      = "Bấm"
+pdf_page     = 31
+printed_page = 30
+line         = "Bấm  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Bờn"
+pdf_page     = 68
+printed_page = 67
+line         = "Bờn  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Chày"
+pdf_page     = 107
+printed_page = 106
+line         = "Chày  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Chích"
+pdf_page     = 127
+printed_page = 126
+line         = "Chích  c."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Chiếu"
+pdf_page     = 129
+printed_page = 128
+line         = "Chiếu  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Choản"
+pdf_page     = 137
+printed_page = 136
+line         = "Choản  n."
+documented_in_luu_y = false
+note = "KHÔNG có trong danh sách 22 chữ ở trang LƯU Ý — cần đối chiếu ảnh trang gốc."
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Cùi"
+pdf_page     = 180
+printed_page = 179
+line         = "Cùi  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Dạng"
+pdf_page     = 198
+printed_page = 197
+line         = "**  Dạng  c."
+documented_in_luu_y = false
+note = "KHÔNG có trong danh sách 22 chữ ở trang LƯU Ý — cần đối chiếu ảnh trang gốc."
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Đăm"
+pdf_page     = 234
+printed_page = 233
+line         = "Đăm  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Đắm"
+pdf_page     = 234
+printed_page = 233
+line         = "Đắm  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Đầm"
+pdf_page     = 235
+printed_page = 234
+line         = "Đầm  c."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Đâm"
+pdf_page     = 235
+printed_page = 234
+line         = "Đâm  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Đấm"
+pdf_page     = 235
+printed_page = 234
+line         = "Đấm  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Đẫm"
+pdf_page     = 235
+printed_page = 234
+line         = "Đẫm  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Ghe"
+pdf_page     = 308
+printed_page = 307
+line         = "Ghe  n."
+documented_in_luu_y = false
+note = "KHÔNG có trong danh sách 22 chữ ở trang LƯU Ý — cần đối chiếu ảnh trang gốc."
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Gi  (Gê.)"
+pdf_page     = 311
+printed_page = 310
+line         = "Gi  (Gê.)  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Huĩnh"
+pdf_page     = 394
+printed_page = 393
+line         = "Huĩnh  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Khén"
+pdf_page     = 420
+printed_page = 419
+line         = "Khén  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Khí"
+pdf_page     = 423
+printed_page = 422
+line         = "Khí  c."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Khín"
+pdf_page     = 425
+printed_page = 424
+line         = "Khín  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Nâu"
+pdf_page     = 584
+printed_page = 583
+line         = "Nâu  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Suôn"
+pdf_page     = 799
+printed_page = 798
+line         = "Suôn  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Thỏn"
+pdf_page     = 874
+printed_page = 873
+line         = "**  Thỏn  n."
+documented_in_luu_y = false
+note = "KHÔNG có trong danh sách 22 chữ ở trang LƯU Ý — cần đối chiếu ảnh trang gốc."
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Thốn"
+pdf_page     = 875
+printed_page = 874
+line         = "**  Thốn  c."
+documented_in_luu_y = false
+note = "KHÔNG có trong danh sách 22 chữ ở trang LƯU Ý — cần đối chiếu ảnh trang gốc."
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Toi"
+pdf_page     = 911
+printed_page = 910
+line         = "**  Toi  n."
+documented_in_luu_y = false
+note = "KHÔNG có trong danh sách 22 chữ ở trang LƯU Ý — cần đối chiếu ảnh trang gốc."
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Trấng"
+pdf_page     = 927
+printed_page = 926
+line         = "**  Trấng  n."
+documented_in_luu_y = false
+note = "KHÔNG có trong danh sách 22 chữ ở trang LƯU Ý — cần đối chiếu ảnh trang gốc."
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Trễ"
+pdf_page     = 932
+printed_page = 931
+line         = "Trễ  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Tría"
+pdf_page     = 936
+printed_page = 935
+line         = "Tría  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""
+
+[[image_glyph]]
+reading      = "Trứng"
+pdf_page     = 953
+printed_page = 952
+line         = "Trứng  n."
+documented_in_luu_y = true
+verified_by  = ""
+verified_on  = ""

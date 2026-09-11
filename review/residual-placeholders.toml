@@ -1,0 +1,22 @@
+# Hình thái mục con còn chứa dấu thế chỗ `|` sau khi suy diễn.
+#
+# SINH TỰ ĐỘNG bởi `parse` — đừng sửa tay phần thân. Chữ ký ở `verified_by` thì được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Hồ sơ nầy từng có 829 dòng. Nguyên do không phải bản in mờ ám, mà là bộ tách đọc sai ranh
+# giới cột: thợ sắp chữ đặt dấu `|` và các khoảng trắng giữa chữ Hán bằng phông NGHIÊNG, nên
+# quy tắc "lấy từ mẩu nghiêng đầu tới mẩu nghiêng cuối" khởi sự ngay giữa cột Hán rồi kéo
+# luôn phần Hán qua cột Quốc ngữ.
+#
+# `quoc_ngu_starts_at` trong pipeline/parse-core/src/subentry.rs trả phần ấy về chỗ của nó.
+# Ranh giới mới đã đối chiếu với bản chép Wikisource của bản in 1895-96: 679 dòng khớp,
+# KHÔNG dòng nào nghịch.
+#
+# Mấy dòng còn lại đều có đáp án sẵn trong review/witness-column-boundary.toml — bản 1895
+# ngắt cột ở đâu thì chép ở đó. Vẫn để người xem quyết, vì hai bản in không phải một.
+
+[[residual_placeholder]]
+key          = "62|Đồ 鹵 | Đồ tổ ―"
+pdf_page     = 62
+form         = "Đồ 鹵 | Đồ tổ ―"
+verified_by  = ""

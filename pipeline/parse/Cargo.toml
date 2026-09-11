@@ -1,0 +1,21 @@
+[package]
+name = "dnqatv-parse"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "parse"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.104"
+dnqatv-core = { path = "../../crates/core" }
+dnqatv-gate-report = { path = "../gate-report" }
+dnqatv-parse-core = { path = "../parse-core" }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+
+[lints]
+workspace = true

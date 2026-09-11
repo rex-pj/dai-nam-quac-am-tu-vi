@@ -1,0 +1,20 @@
+[package]
+name = "dnqatv-witness"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "witness"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.104"
+dnqatv-gate-report = { path = "../gate-report" }
+dnqatv-witness-core = { path = "../witness-core" }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+
+[lints]
+workspace = true

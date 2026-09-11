@@ -1,0 +1,53 @@
+# Chốt ⑥ — glyph_differs: 4 chỗ.
+#
+# SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Nhân chứng: bản chép Wikisource của bản in 1895-96, chụp lại trong data/wikisource/
+# (số hiệu bản sửa từng trang ghi ở PROVENANCE.json). Bản chép ấy mang giấy phép CC BY-SA —
+# dùng để ĐỐI CHIẾU, không bưng vào dữ liệu.
+#
+# Hai bản in khác nhau thì lệch nhau là thường. Chỉ `column_boundary` và `glyph_differs`
+# mới là lời tố rằng mình đọc sai trang; còn lại là tư liệu.
+#
+# quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
+
+[[glyph_differs]]
+key          = "18|Ảng|盎|坱"
+printed_page = 18
+reading      = "Ảng"
+ours         = "盎"
+theirs       = "坱"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/26"
+quality      = 3
+verified_by  = ""
+
+[[glyph_differs]]
+key          = "112|Chặng|拯|𣑕"
+printed_page = 112
+reading      = "Chặng"
+ours         = "拯"
+theirs       = "𣑕"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/135"
+quality      = 3
+verified_by  = ""
+
+[[glyph_differs]]
+key          = "462|Lâm|霖|𩄞"
+printed_page = 462
+reading      = "Lâm"
+ours         = "霖"
+theirs       = "𩄞"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/549"
+quality      = 1
+verified_by  = ""
+
+[[glyph_differs]]
+key          = "661|Nợn|赧|𧹠"
+printed_page = 661
+reading      = "Nợn"
+ours         = "赧"
+theirs       = "𧹠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/165"
+quality      = 3
+verified_by  = ""

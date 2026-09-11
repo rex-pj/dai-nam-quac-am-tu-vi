@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}API mở — {{ site_title }}{% endblock %}
+{% block description %}API JSON mở cho Đại Nam Quấc Âm Tự Vị: tra tìm, chữ đầu, tự dạng, trang in.{% endblock %}
+
+{% block content %}
+<h1>API mở · v1</h1>
+
+<div class="prose">
+  <p>
+    Đặc tả OpenAPI: <a href="{{ spec_url }}"><code>{{ spec_url }}</code></a>.
+    Không cần khoá, không giới hạn số lần gọi; chỉ mong bạn ghi nguồn.
+  </p>
+
+  <h2>Hai quy ước cần biết trước</h2>
+  <ol>
+    <li>
+      Mỗi mục con có <code>form</code> (<strong>nguyên văn bản in</strong>, còn dấu thế chỗ như
+      <code>― gươm</code>) và <code>form_expanded</code> (<strong>suy diễn</strong>,
+      <code>Lõm gươm</code>). Đừng dùng lẫn: một cái là lời sách, một cái là thứ chương trình
+      suy ra theo quy tắc ở trang DẤU RIÊNG.
+    </li>
+    <li>
+      Dấu thanh <strong>có nghĩa phân biệt</strong>. <code>Ả</code>, <code>Á</code>,
+      <code>À</code> là ba chữ đầu khác nhau, và API không bao giờ tự bỏ dấu chữ bạn gõ của bạn.
+    </li>
+  </ol>
+
+  <h2>Các endpoint</h2>
+  <table class="stats">
+    <tbody>
+      <tr>
+        <th scope="row"><code>GET /api/v1/tra-tim?q=</code></th>
+        <td>Tra tìm. Mỗi kết quả kèm <code>tier</code> — <em>lý do</em> nó xuất hiện.</td>
+      </tr>
+      <tr>
+        <th scope="row"><code>GET /api/v1/muc-tu/{slug}</code></th>
+        <td>Một chữ đầu và mọi mục con của nó.</td>
+      </tr>
+      <tr>
+        <th scope="row"><code>GET /api/v1/chu/{glyph}</code></th>
+        <td>Mọi chữ đầu dùng một tự dạng Hán-Nôm.</td>
+      </tr>
+      <tr>
+        <th scope="row"><code>GET /api/v1/trang/{n}</code></th>
+        <td>
+          Một trang in và các chữ đầu của nó. <code>{n}</code> là <strong>số in trên
+          giấy</strong> (3–1037); ba trang không có số in gọi bằng <code>pdf-1</code>,
+          <code>pdf-2</code>, <code>pdf-10</code>.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"><code>GET /api/v1/pham-chat-du-lieu</code></th>
+        <td>Số liệu phẩm chất dữ liệu.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Thử nhanh</h2>
+  <pre><code>curl "http://127.0.0.1:8080/api/v1/tra-tim?q=l%C3%B5m"
+curl "http://127.0.0.1:8080/api/v1/muc-tu/lom-4"
+curl "http://127.0.0.1:8080/api/v1/tra-tim?q=n%E1%BA%A1m%20g%C6%B0%C6%A1m&amp;che_do=toan-van"</code></pre>
+
+  <h2>Sáu hạng xếp</h2>
+  <p>Giá trị có thể của <code>tier</code>, theo đúng thứ tự ưu tiên:</p>
+  <ul>
+    <li><code>trung-khit</code> — trùng khít cả dấu thanh</li>
+    <li><code>trung-tu-dang</code> — trùng tự dạng Hán-Nôm</li>
+    <li><code>bat-dau-bang</code> — âm đọc bắt đầu bằng chữ bạn gõ</li>
+    <li><code>bo-dau</code> — trùng sau khi bỏ dấu</li>
+    <li><code>trong-loi-giai-nghia</code> — khớp trong lời giải nghĩa hoặc mục con (đường của tra ngược)</li>
+    <li><code>gan-giong</code> — gần giống, theo độ tương tự ba con chữ</li>
+  </ul>
+</div>
+{% endblock %}

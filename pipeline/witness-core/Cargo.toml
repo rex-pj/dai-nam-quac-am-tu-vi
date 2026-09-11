@@ -1,0 +1,28 @@
+[package]
+name = "dnqatv-witness-core"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "dnqatv_witness_core"
+path = "src/lib.rs"
+
+[dependencies]
+dnqatv-core = { path = "../../crates/core" }
+
+[lints]
+workspace = true
+
+[[test]]
+name = "witness_template"
+path = "../../tests/unit/witness/template.rs"
+
+[[test]]
+name = "witness_text"
+path = "../../tests/unit/witness/text.rs"
+
+[[test]]
+name = "witness_align"
+path = "../../tests/unit/witness/align.rs"

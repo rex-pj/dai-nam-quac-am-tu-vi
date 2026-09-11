@@ -1,0 +1,6693 @@
+# Chốt ⑥ — entry_only_there: 668 chỗ.
+#
+# SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Nhân chứng: bản chép Wikisource của bản in 1895-96, chụp lại trong data/wikisource/
+# (số hiệu bản sửa từng trang ghi ở PROVENANCE.json). Bản chép ấy mang giấy phép CC BY-SA —
+# dùng để ĐỐI CHIẾU, không bưng vào dữ liệu.
+#
+# Hai bản in khác nhau thì lệch nhau là thường. Chỉ `column_boundary` và `glyph_differs`
+# mới là lời tố rằng mình đọc sai trang; còn lại là tư liệu.
+#
+# quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
+
+[[entry_only_there]]
+key          = "0|阿]]||[[wikt:阿"
+printed_page = 0
+reading      = "阿]]"
+ours         = ""
+theirs       = "[[wikt:阿"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|丫]]||[[wikt:丫"
+printed_page = 0
+reading      = "丫]]"
+ours         = ""
+theirs       = "[[wikt:丫"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|阿]]||[[wikt:阿"
+printed_page = 0
+reading      = "阿]]"
+ours         = ""
+theirs       = "[[wikt:阿"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|亞]]||[[wikt:亞"
+printed_page = 0
+reading      = "亞]]"
+ours         = ""
+theirs       = "[[wikt:亞"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|瘂]]||[[wikt:瘂"
+printed_page = 0
+reading      = "瘂]]"
+ours         = ""
+theirs       = "[[wikt:瘂"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|阿]]||[[wikt:阿"
+printed_page = 0
+reading      = "阿]]"
+ours         = ""
+theirs       = "[[wikt:阿"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|妸]]||[[wikt:妸"
+printed_page = 0
+reading      = "妸]]"
+ours         = ""
+theirs       = "[[wikt:妸"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|惡]]||[[wikt:惡"
+printed_page = 0
+reading      = "惡]]"
+ours         = ""
+theirs       = "[[wikt:惡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/17"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|{{đính chính|Ang|Ảng|Trang:Đại Nam quấc âm tự vị 1.pdf/14}}||盎"
+printed_page = 0
+reading      = "{{đính chính|Ang|Ảng|Trang:Đại Nam quấc âm tự vị 1.pdf/14}}"
+ours         = ""
+theirs       = "盎"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/26"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Áng||盎"
+printed_page = 0
+reading      = "Áng"
+ours         = ""
+theirs       = "盎"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/26"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ảng||映"
+printed_page = 0
+reading      = "Ảng"
+ours         = ""
+theirs       = "映"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/26"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/31"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||把"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = "把"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/32"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/34"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bạc||舶"
+printed_page = 0
+reading      = "Bạc"
+ours         = ""
+theirs       = "舶"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/34"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/35"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/36"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/37"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/38"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/39"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/41"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||班"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = "班"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/41"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ban||搬"
+printed_page = 0
+reading      = "Ban"
+ours         = ""
+theirs       = "搬"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/41"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ban||班"
+printed_page = 0
+reading      = "Ban"
+ours         = ""
+theirs       = "班"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/41"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/42"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/43"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/44"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/45"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/46"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/47"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/48"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/49"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bánh||軿"
+printed_page = 0
+reading      = "Bánh"
+ours         = ""
+theirs       = "軿"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/49"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/50"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bao||褒"
+printed_page = 0
+reading      = "Bao"
+ours         = ""
+theirs       = "褒"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/50"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/51"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Báo||豹"
+printed_page = 0
+reading      = "Báo"
+ours         = ""
+theirs       = "豹"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/51"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/52"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/53"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bát||撥"
+printed_page = 0
+reading      = "Bát"
+ours         = ""
+theirs       = "撥"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/53"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bát||捌"
+printed_page = 0
+reading      = "Bát"
+ours         = ""
+theirs       = "捌"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/53"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/54"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/55"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/56"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bàu||泡"
+printed_page = 0
+reading      = "Bàu"
+ours         = ""
+theirs       = "泡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/56"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/57"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/58"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bệ||被"
+printed_page = 0
+reading      = "Bệ"
+ours         = ""
+theirs       = "被"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/58"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/59"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bể||𣷷"
+printed_page = 0
+reading      = "Bể"
+ours         = ""
+theirs       = "𣷷"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/59"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/60"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/61"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/62"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/63"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/64"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/65"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/66"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bích||壁"
+printed_page = 0
+reading      = "Bích"
+ours         = ""
+theirs       = "壁"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/66"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/67"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Biện||卞"
+printed_page = 0
+reading      = "Biện"
+ours         = ""
+theirs       = "卞"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/67"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/68"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Biển||𣷷"
+printed_page = 0
+reading      = "Biển"
+ours         = ""
+theirs       = "𣷷"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/68"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/69"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Biêu, (tiêu)||標"
+printed_page = 0
+reading      = "Biêu, (tiêu)"
+ours         = ""
+theirs       = "標"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/69"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/71"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/72"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bình||瓶"
+printed_page = 0
+reading      = "Bình"
+ours         = ""
+theirs       = "瓶"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/72"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bình||屏"
+printed_page = 0
+reading      = "Bình"
+ours         = ""
+theirs       = "屏"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/72"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/73"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/74"
+quality      = 2
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bò||蜅"
+printed_page = 0
+reading      = "Bò"
+ours         = ""
+theirs       = "蜅"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/74"
+quality      = 2
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/75"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/76"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bộ||簿"
+printed_page = 0
+reading      = "Bộ"
+ours         = ""
+theirs       = "簿"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/76"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/77"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bộ||步"
+printed_page = 0
+reading      = "Bộ"
+ours         = ""
+theirs       = "步"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/77"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bộ||捕"
+printed_page = 0
+reading      = "Bộ"
+ours         = ""
+theirs       = "捕"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/77"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/78"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bồ||葡"
+printed_page = 0
+reading      = "Bồ"
+ours         = ""
+theirs       = "葡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/78"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bồ||匍"
+printed_page = 0
+reading      = "Bồ"
+ours         = ""
+theirs       = "匍"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/78"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/79"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/80"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/82"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/83"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Bồn||盆"
+printed_page = 0
+reading      = "Bồn"
+ours         = ""
+theirs       = "盆"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/83"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/85"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/86"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/87"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/88"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/89"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/90"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/91"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/92"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/94"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/95"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/96"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/97"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/112"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/211"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/212"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/213"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/215"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/217"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Cung||宮"
+printed_page = 0
+reading      = "Cung"
+ours         = ""
+theirs       = "宮"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/217"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Cung||弓"
+printed_page = 0
+reading      = "Cung"
+ours         = ""
+theirs       = "弓"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/217"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Cung||躬"
+printed_page = 0
+reading      = "Cung"
+ours         = ""
+theirs       = "躬"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/217"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/218"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/220"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/221"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/222"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/226"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Da||椰"
+printed_page = 0
+reading      = "Da"
+ours         = ""
+theirs       = "椰"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/226"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/230"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/233"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/234"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/237"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/240"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Dấu||酉"
+printed_page = 0
+reading      = "Dấu"
+ours         = ""
+theirs       = "酉"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/240"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/242"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/246"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Dịch||易"
+printed_page = 0
+reading      = "Dịch"
+ours         = ""
+theirs       = "易"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/246"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/249"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/251"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/254"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/255"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/256"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/257"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/259"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/260"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/263"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/266"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Dương||楊"
+printed_page = 0
+reading      = "Dương"
+ours         = ""
+theirs       = "楊"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/266"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Dương||洋"
+printed_page = 0
+reading      = "Dương"
+ours         = ""
+theirs       = "洋"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/266"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Dương||羊"
+printed_page = 0
+reading      = "Dương"
+ours         = ""
+theirs       = "羊"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/266"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/267"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/272"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/274"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/275"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/280"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/281"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đàng||糖"
+printed_page = 0
+reading      = "Đàng"
+ours         = ""
+theirs       = "糖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/281"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đàng||螳"
+printed_page = 0
+reading      = "Đàng"
+ours         = ""
+theirs       = "螳"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/281"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/282"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đăng||簦"
+printed_page = 0
+reading      = "Đăng"
+ours         = ""
+theirs       = "簦"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/282"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đâng (đưng)||鐙"
+printed_page = 0
+reading      = "Đâng (đưng)"
+ours         = ""
+theirs       = "鐙"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/283"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đậng (đựng)||鄧"
+printed_page = 0
+reading      = "Đậng (đựng)"
+ours         = ""
+theirs       = "鄧"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/283"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/284"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/285"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/286"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/287"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/288"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đạo||導"
+printed_page = 0
+reading      = "Đạo"
+ours         = ""
+theirs       = "導"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/288"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đạo||盜"
+printed_page = 0
+reading      = "Đạo"
+ours         = ""
+theirs       = "盜"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/288"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/289"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đào||逃"
+printed_page = 0
+reading      = "Đào"
+ours         = ""
+theirs       = "逃"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/289"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đào||濤"
+printed_page = 0
+reading      = "Đào"
+ours         = ""
+theirs       = "濤"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/289"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/291"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/292"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/293"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đàu (đào)||佻"
+printed_page = 0
+reading      = "Đàu (đào)"
+ours         = ""
+theirs       = "佻"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/293"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đậu (đỗ)||杜"
+printed_page = 0
+reading      = "Đậu (đỗ)"
+ours         = ""
+theirs       = "杜"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/294"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/295"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đậu||痘"
+printed_page = 0
+reading      = "Đậu"
+ours         = ""
+theirs       = "痘"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/295"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/296"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đầu||投"
+printed_page = 0
+reading      = "Đầu"
+ours         = ""
+theirs       = "投"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/296"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/297"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/299"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đề||題"
+printed_page = 0
+reading      = "Đề"
+ours         = ""
+theirs       = "題"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/299"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đề||蹄"
+printed_page = 0
+reading      = "Đề"
+ours         = ""
+theirs       = "蹄"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/299"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đề||啼"
+printed_page = 0
+reading      = "Đề"
+ours         = ""
+theirs       = "啼"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/299"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/302"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/303"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/307"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/308"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Điếm||坫"
+printed_page = 0
+reading      = "Điếm"
+ours         = ""
+theirs       = "坫"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/308"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/311"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Điệp||疊"
+printed_page = 0
+reading      = "Điệp"
+ours         = ""
+theirs       = "疊"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/311"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/313"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đinh||疔"
+printed_page = 0
+reading      = "Đinh"
+ours         = ""
+theirs       = "疔"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/313"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/315"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/317"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Độ||鍍"
+printed_page = 0
+reading      = "Độ"
+ours         = ""
+theirs       = "鍍"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/317"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Độ||渡"
+printed_page = 0
+reading      = "Độ"
+ours         = ""
+theirs       = "渡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/317"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/318"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đồ||圖"
+printed_page = 0
+reading      = "Đồ"
+ours         = ""
+theirs       = "圖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/318"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đồ||途"
+printed_page = 0
+reading      = "Đồ"
+ours         = ""
+theirs       = "途"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/318"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/319"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đồ||塗"
+printed_page = 0
+reading      = "Đồ"
+ours         = ""
+theirs       = "塗"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/319"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đồ||荼"
+printed_page = 0
+reading      = "Đồ"
+ours         = ""
+theirs       = "荼"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/319"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đồ||屠"
+printed_page = 0
+reading      = "Đồ"
+ours         = ""
+theirs       = "屠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/319"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/320"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đổ||賭"
+printed_page = 0
+reading      = "Đổ"
+ours         = ""
+theirs       = "賭"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/320"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/321"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/323"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/324"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đọc||鐲"
+printed_page = 0
+reading      = "Đọc"
+ours         = ""
+theirs       = "鐲"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/324"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/325"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Độc||獨"
+printed_page = 0
+reading      = "Độc"
+ours         = ""
+theirs       = "獨"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/325"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Độc||讀"
+printed_page = 0
+reading      = "Độc"
+ours         = ""
+theirs       = "讀"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/325"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Độc||牘"
+printed_page = 0
+reading      = "Độc"
+ours         = ""
+theirs       = "牘"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/325"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/326"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/327"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/329"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/332"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/333"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/337"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đồng||銅"
+printed_page = 0
+reading      = "Đồng"
+ours         = ""
+theirs       = "銅"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/337"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đồng||仝"
+printed_page = 0
+reading      = "Đồng"
+ours         = ""
+theirs       = "仝"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/337"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/338"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đồng||桐"
+printed_page = 0
+reading      = "Đồng"
+ours         = ""
+theirs       = "桐"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/338"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đồng||筒"
+printed_page = 0
+reading      = "Đồng"
+ours         = ""
+theirs       = "筒"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/338"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/339"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/341"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/344"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/346"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/347"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Đương||當"
+printed_page = 0
+reading      = "Đương"
+ours         = ""
+theirs       = "當"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/348"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/353"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/354"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/355"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/356"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/357"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/358"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/359"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/365"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/366"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/368"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Gia||家"
+printed_page = 0
+reading      = "Gia"
+ours         = ""
+theirs       = "家"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/368"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/369"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Gia||加"
+printed_page = 0
+reading      = "Gia"
+ours         = ""
+theirs       = "加"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/369"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/370"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Giá||架"
+printed_page = 0
+reading      = "Giá"
+ours         = ""
+theirs       = "架"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/370"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Giá||駕"
+printed_page = 0
+reading      = "Giá"
+ours         = ""
+theirs       = "駕"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/370"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Giá||稼"
+printed_page = 0
+reading      = "Giá"
+ours         = ""
+theirs       = "稼"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/370"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Giá||嫁"
+printed_page = 0
+reading      = "Giá"
+ours         = ""
+theirs       = "嫁"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/370"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Giá||這"
+printed_page = 0
+reading      = "Giá"
+ours         = ""
+theirs       = "這"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/371"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/372"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Giả||者"
+printed_page = 0
+reading      = "Giả"
+ours         = ""
+theirs       = "者"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/372"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/373"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/375"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Giải||蠏"
+printed_page = 0
+reading      = "Giải"
+ours         = ""
+theirs       = "蠏"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/375"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/376"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/378"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/379"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/382"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/383"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/385"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Giáo||教"
+printed_page = 0
+reading      = "Giáo"
+ours         = ""
+theirs       = "教"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/385"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/390"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/391"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/393"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/395"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/396"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/397"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/398"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/399"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/400"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/401"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/402"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/406"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/408"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hạ||夏"
+printed_page = 0
+reading      = "Hạ"
+ours         = ""
+theirs       = "夏"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/408"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hạ||厦"
+printed_page = 0
+reading      = "Hạ"
+ours         = ""
+theirs       = "厦"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/408"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hạ||睱"
+printed_page = 0
+reading      = "Hạ"
+ours         = ""
+theirs       = "睱"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/408"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hạ||賀"
+printed_page = 0
+reading      = "Hạ"
+ours         = ""
+theirs       = "賀"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/408"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/409"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hà||遐"
+printed_page = 0
+reading      = "Hà"
+ours         = ""
+theirs       = "遐"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/409"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hà||苛"
+printed_page = 0
+reading      = "Hà"
+ours         = ""
+theirs       = "苛"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/409"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hà||荷"
+printed_page = 0
+reading      = "Hà"
+ours         = ""
+theirs       = "荷"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/409"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hà||蚵"
+printed_page = 0
+reading      = "Hà"
+ours         = ""
+theirs       = "蚵"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/409"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hà||何"
+printed_page = 0
+reading      = "Hà"
+ours         = ""
+theirs       = "何"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/409"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hà||呵"
+printed_page = 0
+reading      = "Hà"
+ours         = ""
+theirs       = "呵"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/409"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hà||瘕"
+printed_page = 0
+reading      = "Hà"
+ours         = ""
+theirs       = "瘕"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/409"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/411"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/412"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/413"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/414"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hàm||唅"
+printed_page = 0
+reading      = "Hàm"
+ours         = ""
+theirs       = "唅"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/414"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hàm||啣"
+printed_page = 0
+reading      = "Hàm"
+ours         = ""
+theirs       = "啣"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/414"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hàm||銜"
+printed_page = 0
+reading      = "Hàm"
+ours         = ""
+theirs       = "銜"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/414"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/415"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/416"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hàn||韓"
+printed_page = 0
+reading      = "Hàn"
+ours         = ""
+theirs       = "韓"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/416"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hàn||翰"
+printed_page = 0
+reading      = "Hàn"
+ours         = ""
+theirs       = "翰"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/416"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/418"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hàng||降"
+printed_page = 0
+reading      = "Hàng"
+ours         = ""
+theirs       = "降"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/418"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hấng (Hứng) n||興"
+printed_page = 0
+reading      = "Hấng (Hứng) n"
+ours         = ""
+theirs       = "興"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/419"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/421"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hành||莖"
+printed_page = 0
+reading      = "Hành"
+ours         = ""
+theirs       = "莖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/421"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/423"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/424"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/425"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hậu||候"
+printed_page = 0
+reading      = "Hậu"
+ours         = ""
+theirs       = "候"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/425"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hậu||堠"
+printed_page = 0
+reading      = "Hậu"
+ours         = ""
+theirs       = "堠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/425"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/427"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hề||奚"
+printed_page = 0
+reading      = "Hề"
+ours         = ""
+theirs       = "奚"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/427"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/429"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/430"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/432"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/434"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/435"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/436"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/437"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/439"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hồ||狐"
+printed_page = 0
+reading      = "Hồ"
+ours         = ""
+theirs       = "狐"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/439"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hồ||糊"
+printed_page = 0
+reading      = "Hồ"
+ours         = ""
+theirs       = "糊"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/439"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hồ||壺"
+printed_page = 0
+reading      = "Hồ"
+ours         = ""
+theirs       = "壺"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/439"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hồ||乎"
+printed_page = 0
+reading      = "Hồ"
+ours         = ""
+theirs       = "乎"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/439"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/440"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hổ||琥"
+printed_page = 0
+reading      = "Hổ"
+ours         = ""
+theirs       = "琥"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/440"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/441"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hoa||華"
+printed_page = 0
+reading      = "Hoa"
+ours         = ""
+theirs       = "華"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/441"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/442"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/443"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/444"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hoặc||惑"
+printed_page = 0
+reading      = "Hoặc"
+ours         = ""
+theirs       = "惑"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/444"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/445"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/448"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/449"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/450"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/451"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/452"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/454"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/455"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/457"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hồn||渾"
+printed_page = 0
+reading      = "Hồn"
+ours         = ""
+theirs       = "渾"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/457"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/460"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/461"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/462"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/466"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Huyền||絃"
+printed_page = 0
+reading      = "Huyền"
+ours         = ""
+theirs       = "絃"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/466"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Huyền||懸"
+printed_page = 0
+reading      = "Huyền"
+ours         = ""
+theirs       = "懸"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/466"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/468"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/469"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/470"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hương||鄉"
+printed_page = 0
+reading      = "Hương"
+ours         = ""
+theirs       = "鄉"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/470"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/471"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/472"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/473"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hữu||有"
+printed_page = 0
+reading      = "Hữu"
+ours         = ""
+theirs       = "有"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/473"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/475"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/478"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Yêu||妖"
+printed_page = 0
+reading      = "Yêu"
+ours         = ""
+theirs       = "妖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/478"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Yêu||幺"
+printed_page = 0
+reading      = "Yêu"
+ours         = ""
+theirs       = "幺"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/478"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Yêu||要"
+printed_page = 0
+reading      = "Yêu"
+ours         = ""
+theirs       = "要"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/478"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/479"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/482"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/483"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/484"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/485"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/487"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/490"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/492"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/494"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Khất||乞"
+printed_page = 0
+reading      = "Khất"
+ours         = ""
+theirs       = "乞"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/495"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/505"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/510"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/517"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/519"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/522"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/524"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Kỳ||岐"
+printed_page = 0
+reading      = "Kỳ"
+ours         = ""
+theirs       = "岐"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/524"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Kỳ||圻"
+printed_page = 0
+reading      = "Kỳ"
+ours         = ""
+theirs       = "圻"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/524"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/530"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/532"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Kim||針"
+printed_page = 0
+reading      = "Kim"
+ours         = ""
+theirs       = "針"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/532"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Kim||今"
+printed_page = 0
+reading      = "Kim"
+ours         = ""
+theirs       = "今"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/532"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|- cổ hoặc cổ -||"
+printed_page = 0
+reading      = "- cổ hoặc cổ -"
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/532"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/533"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/539"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/541"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/544"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/545"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Lan||欄"
+printed_page = 0
+reading      = "Lan"
+ours         = ""
+theirs       = "欄"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/550"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Lạn||爤"
+printed_page = 0
+reading      = "Lạn"
+ours         = ""
+theirs       = "爤"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/551"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Lăn||鄰"
+printed_page = 0
+reading      = "Lăn"
+ours         = ""
+theirs       = "鄰"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/551"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Lặn||𣵰"
+printed_page = 0
+reading      = "Lặn"
+ours         = ""
+theirs       = "𣵰"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/551"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Lần||吝"
+printed_page = 0
+reading      = "Lần"
+ours         = ""
+theirs       = "吝"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/551"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/556"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/563"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/566"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/568"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/572"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/577"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/580"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/588"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/590"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Lộc||鹿"
+printed_page = 0
+reading      = "Lộc"
+ours         = ""
+theirs       = "鹿"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/590"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/594"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/595"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/596"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/601"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/602"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/603"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/604"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/606"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/611"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/612"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/613"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Can||肝"
+printed_page = 0
+reading      = "Can"
+ours         = ""
+theirs       = "肝"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/3"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Cơ||幾"
+printed_page = 0
+reading      = "Cơ"
+ours         = ""
+theirs       = "幾"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/3"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Dinh||盈"
+printed_page = 0
+reading      = "Dinh"
+ours         = ""
+theirs       = "盈"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/3"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Huần||圜"
+printed_page = 0
+reading      = "Huần"
+ours         = ""
+theirs       = "圜"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Huẩn||恍"
+printed_page = 0
+reading      = "Huẩn"
+ours         = ""
+theirs       = "恍"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Hung||胸"
+printed_page = 0
+reading      = "Hung"
+ours         = ""
+theirs       = "胸"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Huợt||活"
+printed_page = 0
+reading      = "Huợt"
+ours         = ""
+theirs       = "活"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Láng||"
+printed_page = 0
+reading      = "Láng"
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Me||"
+printed_page = 0
+reading      = "Me"
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Nậm||"
+printed_page = 0
+reading      = "Nậm"
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ngẩu||偶"
+printed_page = 0
+reading      = "Ngẩu"
+ours         = ""
+theirs       = "偶"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Phúng||賵"
+printed_page = 0
+reading      = "Phúng"
+ours         = ""
+theirs       = "賵"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Sanh||旌"
+printed_page = 0
+reading      = "Sanh"
+ours         = ""
+theirs       = "旌"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/4"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ma||麻"
+printed_page = 0
+reading      = "Ma"
+ours         = ""
+theirs       = "麻"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/6"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/8"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/11"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Mạch||貊"
+printed_page = 0
+reading      = "Mạch"
+ours         = ""
+theirs       = "貊"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/11"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Mạch||陌"
+printed_page = 0
+reading      = "Mạch"
+ours         = ""
+theirs       = "陌"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/11"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Mạch||麦"
+printed_page = 0
+reading      = "Mạch"
+ours         = ""
+theirs       = "麦"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/11"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/12"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Mai||枚"
+printed_page = 0
+reading      = "Mai"
+ours         = ""
+theirs       = "枚"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/12"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/13"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/14"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/17"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/31"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Mầu||牟"
+printed_page = 0
+reading      = "Mầu"
+ours         = ""
+theirs       = "牟"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/31"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/32"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/34"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/42"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/47"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/48"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/49"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/53"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Môn||菛"
+printed_page = 0
+reading      = "Môn"
+ours         = ""
+theirs       = "菛"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/53"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/58"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/59"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/61"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/63"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/73"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/74"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/75"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/86"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ngẫm||吟"
+printed_page = 0
+reading      = "Ngẫm"
+ours         = ""
+theirs       = "吟"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/88"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ngàn||𠦳"
+printed_page = 0
+reading      = "Ngàn"
+ours         = ""
+theirs       = "𠦳"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/88"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/89"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/91"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/92"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/93"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/94"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Nghệ||藝"
+printed_page = 0
+reading      = "Nghệ"
+ours         = ""
+theirs       = "藝"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/94"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/100"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/101"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/102"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/105"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/106"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/107"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/113"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ngữ||禦"
+printed_page = 0
+reading      = "Ngữ"
+ours         = ""
+theirs       = "禦"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/113"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/115"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/117"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Nguyệt||刖"
+printed_page = 0
+reading      = "Nguyệt"
+ours         = ""
+theirs       = "刖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/117"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/118"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/119"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/120"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/124"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/128"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/129"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/131"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/133"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/142"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Nhơn||仁"
+printed_page = 0
+reading      = "Nhơn"
+ours         = ""
+theirs       = "仁"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/142"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Nhơn||姻"
+printed_page = 0
+reading      = "Nhơn"
+ours         = ""
+theirs       = "姻"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/142"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Nhơn||因"
+printed_page = 0
+reading      = "Nhơn"
+ours         = ""
+theirs       = "因"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/142"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/143"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/152"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/156"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/158"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/161"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Nội||內"
+printed_page = 0
+reading      = "Nội"
+ours         = ""
+theirs       = "內"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/161"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/166"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/167"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/171"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Nước||着"
+printed_page = 0
+reading      = "Nước"
+ours         = ""
+theirs       = "着"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/171"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/172"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/176"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/186"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/196"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Phát||髮"
+printed_page = 0
+reading      = "Phát"
+ours         = ""
+theirs       = "髮"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/196"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/204"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/206"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/207"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Phong||風"
+printed_page = 0
+reading      = "Phong"
+ours         = ""
+theirs       = "風"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/207"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/208"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Phong||鋒"
+printed_page = 0
+reading      = "Phong"
+ours         = ""
+theirs       = "鋒"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/208"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Phong||蜂"
+printed_page = 0
+reading      = "Phong"
+ours         = ""
+theirs       = "蜂"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/208"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Phong||丰"
+printed_page = 0
+reading      = "Phong"
+ours         = ""
+theirs       = "丰"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/208"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Phong||豐"
+printed_page = 0
+reading      = "Phong"
+ours         = ""
+theirs       = "豐"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/208"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/211"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Phụ||婦"
+printed_page = 0
+reading      = "Phụ"
+ours         = ""
+theirs       = "婦"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/211"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Phụ||父"
+printed_page = 0
+reading      = "Phụ"
+ours         = ""
+theirs       = "父"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/211"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/215"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/217"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/222"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/223"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quái||掛"
+printed_page = 0
+reading      = "Quái"
+ours         = ""
+theirs       = "掛"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/223"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/224"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/225"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quan||冠"
+printed_page = 0
+reading      = "Quan"
+ours         = ""
+theirs       = "冠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/225"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quan||棺"
+printed_page = 0
+reading      = "Quan"
+ours         = ""
+theirs       = "棺"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/225"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quan||貫"
+printed_page = 0
+reading      = "Quan"
+ours         = ""
+theirs       = "貫"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/225"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quan||關"
+printed_page = 0
+reading      = "Quan"
+ours         = ""
+theirs       = "關"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/225"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/226"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quan||觀"
+printed_page = 0
+reading      = "Quan"
+ours         = ""
+theirs       = "觀"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/226"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/227"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/228"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quân||軍"
+printed_page = 0
+reading      = "Quân"
+ours         = ""
+theirs       = "軍"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/228"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quân||均"
+printed_page = 0
+reading      = "Quân"
+ours         = ""
+theirs       = "均"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/228"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quân||鈞"
+printed_page = 0
+reading      = "Quân"
+ours         = ""
+theirs       = "鈞"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/228"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/229"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/230"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quang||絖"
+printed_page = 0
+reading      = "Quang"
+ours         = ""
+theirs       = "絖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/230"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quang||胘"
+printed_page = 0
+reading      = "Quang"
+ours         = ""
+theirs       = "胘"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/230"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/231"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/235"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/236"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/239"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quỉ||詭"
+printed_page = 0
+reading      = "Quỉ"
+ours         = ""
+theirs       = "詭"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/239"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quỉ||餽"
+printed_page = 0
+reading      = "Quỉ"
+ours         = ""
+theirs       = "餽"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/239"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/240"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/242"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Quốc||𪅦"
+printed_page = 0
+reading      = "Quốc"
+ours         = ""
+theirs       = "𪅦"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/242"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/244"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/245"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/247"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/249"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/250"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/260"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/261"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/267"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Rỗi||"
+printed_page = 0
+reading      = "Rỗi"
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/267"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/271"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/277"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/289"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Sàn||孱"
+printed_page = 0
+reading      = "Sàn"
+ours         = ""
+theirs       = "孱"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/289"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/303"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Sinh||笙"
+printed_page = 0
+reading      = "Sinh"
+ours         = ""
+theirs       = "笙"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/303"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Sinh||𥑥"
+printed_page = 0
+reading      = "Sinh"
+ours         = ""
+theirs       = "𥑥"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/303"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Sinh||牲"
+printed_page = 0
+reading      = "Sinh"
+ours         = ""
+theirs       = "牲"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/303"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/311"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/321"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Suy||衰"
+printed_page = 0
+reading      = "Suy"
+ours         = ""
+theirs       = "衰"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/321"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/337"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/338"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/342"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/343"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tàn||傘"
+printed_page = 0
+reading      = "Tàn"
+ours         = ""
+theirs       = "傘"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/343"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/344"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tân||賔"
+printed_page = 0
+reading      = "Tân"
+ours         = ""
+theirs       = "賔"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/344"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tánh||性"
+printed_page = 0
+reading      = "Tánh"
+ours         = ""
+theirs       = "性"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/348"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/350"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Táo||燥"
+printed_page = 0
+reading      = "Táo"
+ours         = ""
+theirs       = "燥"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/350"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Táo||棗"
+printed_page = 0
+reading      = "Táo"
+ours         = ""
+theirs       = "棗"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/350"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/352"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/357"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tế||濟"
+printed_page = 0
+reading      = "Tế"
+ours         = ""
+theirs       = "濟"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/357"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tế||壻"
+printed_page = 0
+reading      = "Tế"
+ours         = ""
+theirs       = "壻"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/357"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/358"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/361"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/362"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/369"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thân||親"
+printed_page = 0
+reading      = "Thân"
+ours         = ""
+theirs       = "親"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/369"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thân||申"
+printed_page = 0
+reading      = "Thân"
+ours         = ""
+theirs       = "申"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/370"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thân||申"
+printed_page = 0
+reading      = "Thân"
+ours         = ""
+theirs       = "申"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/370"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thân||紳"
+printed_page = 0
+reading      = "Thân"
+ours         = ""
+theirs       = "紳"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/370"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/373"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/379"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/380"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/388"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thế||剃"
+printed_page = 0
+reading      = "Thế"
+ours         = ""
+theirs       = "剃"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/388"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/393"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thi||詩"
+printed_page = 0
+reading      = "Thi"
+ours         = ""
+theirs       = "詩"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/393"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/394"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thị||柿"
+printed_page = 0
+reading      = "Thị"
+ours         = ""
+theirs       = "柿"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/394"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thị||是"
+printed_page = 0
+reading      = "Thị"
+ours         = ""
+theirs       = "是"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/394"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thị||氏"
+printed_page = 0
+reading      = "Thị"
+ours         = ""
+theirs       = "氏"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/394"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thị||諡"
+printed_page = 0
+reading      = "Thị"
+ours         = ""
+theirs       = "諡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/394"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/399"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thiên||篇"
+printed_page = 0
+reading      = "Thiên"
+ours         = ""
+theirs       = "篇"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/399"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thiên||偏"
+printed_page = 0
+reading      = "Thiên"
+ours         = ""
+theirs       = "偏"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/399"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thiên||遷"
+printed_page = 0
+reading      = "Thiên"
+ours         = ""
+theirs       = "遷"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/399"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thiên||千"
+printed_page = 0
+reading      = "Thiên"
+ours         = ""
+theirs       = "千"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/399"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/402"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thiệt||實"
+printed_page = 0
+reading      = "Thiệt"
+ours         = ""
+theirs       = "實"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/402"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/404"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/420"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thù||酬"
+printed_page = 0
+reading      = "Thù"
+ours         = ""
+theirs       = "酬"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/420"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thù||蛛"
+printed_page = 0
+reading      = "Thù"
+ours         = ""
+theirs       = "蛛"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/420"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/426"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/427"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thục||淑"
+printed_page = 0
+reading      = "Thục"
+ours         = ""
+theirs       = "淑"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/427"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thục||蜀"
+printed_page = 0
+reading      = "Thục"
+ours         = ""
+theirs       = "蜀"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/427"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thuế||說"
+printed_page = 0
+reading      = "Thuế"
+ours         = ""
+theirs       = "說"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/428"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/434"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thước||鑠"
+printed_page = 0
+reading      = "Thước"
+ours         = ""
+theirs       = "鑠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/434"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/435"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thương||倉"
+printed_page = 0
+reading      = "Thương"
+ours         = ""
+theirs       = "倉"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/435"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thương||鶬"
+printed_page = 0
+reading      = "Thương"
+ours         = ""
+theirs       = "鶬"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/435"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/436"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thường||裳"
+printed_page = 0
+reading      = "Thường"
+ours         = ""
+theirs       = "裳"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/436"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thường||嘗"
+printed_page = 0
+reading      = "Thường"
+ours         = ""
+theirs       = "嘗"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/436"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Thường||償"
+printed_page = 0
+reading      = "Thường"
+ours         = ""
+theirs       = "償"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/436"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/441"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tiên||仙"
+printed_page = 0
+reading      = "Tiên"
+ours         = ""
+theirs       = "仙"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/441"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tiên||鞭"
+printed_page = 0
+reading      = "Tiên"
+ours         = ""
+theirs       = "鞭"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/441"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/442"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tiện||羨"
+printed_page = 0
+reading      = "Tiện"
+ours         = ""
+theirs       = "羨"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/442"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/448"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/452"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/453"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/454"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/457"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/458"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tốc||觫"
+printed_page = 0
+reading      = "Tốc"
+ours         = ""
+theirs       = "觫"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/458"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/460"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/461"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/471"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/478"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tranh||貞"
+printed_page = 0
+reading      = "Tranh"
+ours         = ""
+theirs       = "貞"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/478"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/485"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/486"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tri||緇"
+printed_page = 0
+reading      = "Tri"
+ours         = ""
+theirs       = "緇"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/486"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/494"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/495"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/498"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Trọng||仲"
+printed_page = 0
+reading      = "Trọng"
+ours         = ""
+theirs       = "仲"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/498"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/500"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/502"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tú||<!--宿-->"
+printed_page = 0
+reading      = "Tú"
+ours         = ""
+theirs       = "<!--宿-->"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/511"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/521"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/522"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/523"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/527"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tượng||象"
+printed_page = 0
+reading      = "Tượng"
+ours         = ""
+theirs       = "象"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/527"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Tượng||匠"
+printed_page = 0
+reading      = "Tượng"
+ours         = ""
+theirs       = "匠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/527"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Uinh||塋"
+printed_page = 0
+reading      = "Uinh"
+ours         = ""
+theirs       = "塋"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/532"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Uinh||螢"
+printed_page = 0
+reading      = "Uinh"
+ours         = ""
+theirs       = "螢"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/532"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ưng||應"
+printed_page = 0
+reading      = "Ưng"
+ours         = ""
+theirs       = "應"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/533"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ương||殃"
+printed_page = 0
+reading      = "Ương"
+ours         = ""
+theirs       = "殃"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/535"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/544"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Văn||聞"
+printed_page = 0
+reading      = "Văn"
+ours         = ""
+theirs       = "聞"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/544"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/545"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/550"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Vật||沕"
+printed_page = 0
+reading      = "Vật"
+ours         = ""
+theirs       = "沕"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/550"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Vật||勿"
+printed_page = 0
+reading      = "Vật"
+ours         = ""
+theirs       = "勿"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/550"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/551"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Vể||浘"
+printed_page = 0
+reading      = "Vể"
+ours         = ""
+theirs       = "浘"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/552"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Vếch||辟"
+printed_page = 0
+reading      = "Vếch"
+ours         = ""
+theirs       = "辟"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/552"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/554"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/555"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Vị||彙"
+printed_page = 0
+reading      = "Vị"
+ours         = ""
+theirs       = "彙"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/555"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/567"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Vụ||霧"
+printed_page = 0
+reading      = "Vụ"
+ours         = ""
+theirs       = "霧"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/567"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Vụ||樗"
+printed_page = 0
+reading      = "Vụ"
+ours         = ""
+theirs       = "樗"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/567"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/568"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/572"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|||"
+printed_page = 0
+reading      = ""
+ours         = ""
+theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/574"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Xẩm||耽"
+printed_page = 0
+reading      = "Xẩm"
+ours         = ""
+theirs       = "耽"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/578"
+quality      = 1
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Xước||綽"
+printed_page = 0
+reading      = "Xước"
+ours         = ""
+theirs       = "綽"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/600"
+quality      = 1
+verified_by  = ""

@@ -1,0 +1,29 @@
+[package]
+name = "dnqatv-app"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "dnqatv_app"
+path = "src/lib.rs"
+
+[dependencies]
+async-trait = "0.1.92"
+dnqatv-core = { path = "../core" }
+serde = { version = "1.0.229", features = ["derive"] }
+thiserror.workspace = true
+toml = "1"
+
+[dev-dependencies]
+async-trait = "0.1.92"
+dnqatv-testkit = { path = "../../tests/testkit" }
+tokio.workspace = true
+
+[lints]
+workspace = true
+
+[[test]]
+name = "app_services"
+path = "../../tests/unit/app/services.rs"

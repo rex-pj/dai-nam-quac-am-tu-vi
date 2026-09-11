@@ -1,0 +1,303 @@
+# Chốt ⑥ — shape_note_available: 29 chỗ.
+#
+# SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Nhân chứng: bản chép Wikisource của bản in 1895-96, chụp lại trong data/wikisource/
+# (số hiệu bản sửa từng trang ghi ở PROVENANCE.json). Bản chép ấy mang giấy phép CC BY-SA —
+# dùng để ĐỐI CHIẾU, không bưng vào dữ liệu.
+#
+# Hai bản in khác nhau thì lệch nhau là thường. Chỉ `column_boundary` và `glyph_differs`
+# mới là lời tố rằng mình đọc sai trang; còn lại là tư liệu.
+#
+# quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
+
+[[shape_note_available]]
+key          = "30|Bấm||𢶸"
+printed_page = 30
+reading      = "Bấm"
+ours         = ""
+theirs       = "𢶸"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/40"
+quality      = 1
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "67|Bờn||⿰口胖"
+printed_page = 67
+reading      = "Bờn"
+ours         = ""
+theirs       = "⿰口胖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/84"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "106|Chày||⿰扌跱"
+printed_page = 106
+reading      = "Chày"
+ours         = ""
+theirs       = "⿰扌跱"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/129"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "126|Chích||⿰石庶, dị thể của 蹠"
+printed_page = 126
+reading      = "Chích"
+ours         = ""
+theirs       = "⿰石庶, dị thể của 蹠"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/152"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "128|Chiếu||⿱⺮昭"
+printed_page = 128
+reading      = "Chiếu"
+ours         = ""
+theirs       = "⿱⺮昭"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/154"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "136|Choản||𣑕"
+printed_page = 136
+reading      = "Choản"
+ours         = ""
+theirs       = "𣑕"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/162"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "179|Cùi||⿰衤鬼"
+printed_page = 179
+reading      = "Cùi"
+ours         = ""
+theirs       = "⿰衤鬼"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/214"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "197|Dạng||dị thể của 樣, phần dưới bên phải thay vì 永 là 豕"
+printed_page = 197
+reading      = "Dạng"
+ours         = ""
+theirs       = "dị thể của 樣, phần dưới bên phải thay vì 永 là 豕"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/235"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "233|Đăm||󰝡"
+printed_page = 233
+reading      = "Đăm"
+ours         = ""
+theirs       = "󰝡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/276"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "233|Đắm||⿰氵󰝡"
+printed_page = 233
+reading      = "Đắm"
+ours         = ""
+theirs       = "⿰氵󰝡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/276"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "234|Đầm||⿰氵󰝡"
+printed_page = 234
+reading      = "Đầm"
+ours         = ""
+theirs       = "⿰氵󰝡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/276"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "234|Đâm||⿰金󰝡"
+printed_page = 234
+reading      = "Đâm"
+ours         = ""
+theirs       = "⿰金󰝡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/276"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "234|Đấm||⿰扌󰝡"
+printed_page = 234
+reading      = "Đấm"
+ours         = ""
+theirs       = "⿰扌󰝡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/277"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "234|Đẫm||⿰足󰝡"
+printed_page = 234
+reading      = "Đẫm"
+ours         = ""
+theirs       = "⿰足󰝡"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/277"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "307|Ghe||dị thể của 𥡴, bên trái là 木 chứ không phải 禾"
+printed_page = 307
+reading      = "Ghe"
+ours         = ""
+theirs       = "dị thể của 𥡴, bên trái là 木 chứ không phải 禾"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/363"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "310|Gi||trên:𥫗, dưới:支"
+printed_page = 310
+reading      = "Gi"
+ours         = ""
+theirs       = "trên:𥫗, dưới:支"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/367"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "393|Huĩnh||⿰木縈"
+printed_page = 393
+reading      = "Huĩnh"
+ours         = ""
+theirs       = "⿰木縈"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/467"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "419|Khén||⿰火看"
+printed_page = 419
+reading      = "Khén"
+ours         = ""
+theirs       = "⿰火看"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/498"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "422|Khí||⿰木器"
+printed_page = 422
+reading      = "Khí"
+ours         = ""
+theirs       = "⿰木器"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/501"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "424|Khín||⿰口遣"
+printed_page = 424
+reading      = "Khín"
+ours         = ""
+theirs       = "⿰口遣"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/503"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "583|Nâu||⿰口芇"
+printed_page = 583
+reading      = "Nâu"
+ours         = ""
+theirs       = "⿰口芇"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/78"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "798|Suôn||⿰食侖"
+printed_page = 798
+reading      = "Suôn"
+ours         = ""
+theirs       = "⿰食侖"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/324"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "873|Thỏn||trái:牜 bỏ nét hất ở dưới, phải:寸"
+printed_page = 873
+reading      = "Thỏn"
+ours         = ""
+theirs       = "trái:牜 bỏ nét hất ở dưới, phải:寸"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/415"
+quality      = 1
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "874|Thốn||trái:牜 bỏ nét hất ở dưới, phải:寸"
+printed_page = 874
+reading      = "Thốn"
+ours         = ""
+theirs       = "trái:牜 bỏ nét hất ở dưới, phải:寸"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/415"
+quality      = 1
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "910|Toi||trên:⺮, dưới:摧"
+printed_page = 910
+reading      = "Toi"
+ours         = ""
+theirs       = "trên:⺮, dưới:摧"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/458"
+quality      = 1
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "926|Trấng||trên:壯, dưới:卵, dị thể của 𫧾"
+printed_page = 926
+reading      = "Trấng"
+ours         = ""
+theirs       = "trên:壯, dưới:卵, dị thể của 𫧾"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/477"
+quality      = 1
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "931|Trễ||trái:礼, phải:‹ (dấu nháy)"
+printed_page = 931
+reading      = "Trễ"
+ours         = ""
+theirs       = "trái:礼, phải:‹ (dấu nháy)"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/482"
+quality      = 1
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "935|Tría||⿰口致"
+printed_page = 935
+reading      = "Tría"
+ours         = ""
+theirs       = "⿰口致"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/487"
+quality      = 3
+verified_by  = ""
+
+[[shape_note_available]]
+key          = "952|Trứng||⿱壯卵"
+printed_page = 952
+reading      = "Trứng"
+ours         = ""
+theirs       = "⿱壯卵"
+witness_page = "Trang:Đại Nam quấc âm tự vị 2.pdf/506"
+quality      = 3
+verified_by  = ""
