@@ -1,4 +1,4 @@
-# Chốt ⑥ — entry_only_there: 668 chỗ.
+# Chốt ⑥ — entry_only_there: 661 chỗ.
 #
 # SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
 # nguyên qua mỗi lần sinh lại, khớp theo `key`.
@@ -13,91 +13,21 @@
 # quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
 
 [[entry_only_there]]
-key          = "0|阿]]||[[wikt:阿"
-printed_page = 0
-reading      = "阿]]"
-ours         = ""
-theirs       = "[[wikt:阿"
-witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
-quality      = 3
-verified_by  = ""
-
-[[entry_only_there]]
-key          = "0|丫]]||[[wikt:丫"
-printed_page = 0
-reading      = "丫]]"
-ours         = ""
-theirs       = "[[wikt:丫"
-witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
-quality      = 3
-verified_by  = ""
-
-[[entry_only_there]]
-key          = "0|阿]]||[[wikt:阿"
-printed_page = 0
-reading      = "阿]]"
-ours         = ""
-theirs       = "[[wikt:阿"
-witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
-quality      = 3
-verified_by  = ""
-
-[[entry_only_there]]
-key          = "0|亞]]||[[wikt:亞"
-printed_page = 0
-reading      = "亞]]"
-ours         = ""
-theirs       = "[[wikt:亞"
-witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
-quality      = 3
-verified_by  = ""
-
-[[entry_only_there]]
-key          = "0|瘂]]||[[wikt:瘂"
-printed_page = 0
-reading      = "瘂]]"
-ours         = ""
-theirs       = "[[wikt:瘂"
-witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
-quality      = 3
-verified_by  = ""
-
-[[entry_only_there]]
-key          = "0|阿]]||[[wikt:阿"
-printed_page = 0
-reading      = "阿]]"
-ours         = ""
-theirs       = "[[wikt:阿"
-witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
-quality      = 3
-verified_by  = ""
-
-[[entry_only_there]]
-key          = "0|妸]]||[[wikt:妸"
-printed_page = 0
-reading      = "妸]]"
-ours         = ""
-theirs       = "[[wikt:妸"
-witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
-quality      = 3
-verified_by  = ""
-
-[[entry_only_there]]
-key          = "0|惡]]||[[wikt:惡"
-printed_page = 0
-reading      = "惡]]"
-ours         = ""
-theirs       = "[[wikt:惡"
-witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
-quality      = 3
-verified_by  = ""
-
-[[entry_only_there]]
 key          = "0|||"
 printed_page = 0
 reading      = ""
 ours         = ""
 theirs       = ""
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/17"
+quality      = 3
+verified_by  = ""
+
+[[entry_only_there]]
+key          = "0|Ác||鵶"
+printed_page = 0
+reading      = "Ác"
+ours         = ""
+theirs       = "鵶"
 witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/17"
 quality      = 3
 verified_by  = ""

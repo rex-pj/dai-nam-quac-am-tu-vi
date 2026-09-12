@@ -15,7 +15,8 @@ use std::path::PathBuf;
 use anyhow::{Context, Result, bail};
 use dnqatv_core::model::{GlyphChar, GlyphKind, PdfPage, TextStyle};
 use dnqatv_gate_report::dossier::{
-    DossierRow, LabelTypos, ResidualPlaceholders, caught_by, write_dossier,
+    DossierRow, GlossInitialsLost, GlossInitialsRestored, LabelTypos, ResidualPlaceholders,
+    ScanReading, ScanReadings, caught_by, write_dossier,
 };
 use dnqatv_gate_report::{Fingerprint, Gate, GateReport, GateResult};
 use dnqatv_parse_core::assemble::{assemble, check_partition};
@@ -76,6 +77,18 @@ impl LineRecord {
 /// The entry format version. The next step refuses to read on a mismatch.
 const ENTRY_SCHEMA_VERSION: u32 = 1;
 
+/// One definition whose opening capital the 2026 text layer mislaid.
+///
+/// Used for both dossiers: `letter` carries the restored capital, or `'\0'` when the letter
+/// is gone from the text layer altogether and only the scan can supply it.
+struct GlossInitialFix {
+    page: u16,
+    reading: String,
+    letter: char,
+    line: String,
+    gloss: String,
+}
+
 /// The prose at the top of `review/residual-placeholders.toml`. Vietnamese, like every
 /// dossier: these files are read by the people doing the checking, not by the program.
 const RESIDUAL_DOSSIER_HEADER: &str = "\
@@ -95,6 +108,47 @@ const RESIDUAL_DOSSIER_HEADER: &str = "\
 #
 # Mấy dòng còn lại đều có đáp án sẵn trong review/witness-column-boundary.toml — bản 1895
 # ngắt cột ở đâu thì chép ở đó. Vẫn để người xem quyết, vì hai bản in không phải một.
+";
+
+/// The prose at the top of `review/gloss-initial-restored.toml`.
+const GLOSS_RESTORED_DOSSIER_HEADER: &str = "\
+# Chữ hoa mở đầu lời chú giải, lấy lại được từ một nhãn `dấu riêng` giả.
+#
+# SINH TỰ ĐỘNG bởi `parse` — đừng sửa tay phần thân. Chữ ký ở `verified_by` thì được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Bản in 1895 đặt `壓  Áp. c. Ngăn, giữ, đè, nhận xuống.` — MỘT nhãn. Lớp chữ bản 2026 lại
+# ghi `壓  Áp  c. n.` rồi xuống hàng `găn, giữ, đè, nhận xuống.`: chữ `N` của \"Ngăn\" bị
+# xếp thành nhãn `n.`, lời chú giải mất chữ đầu.
+#
+# Phép thử hẹp, không có chỗ nào đoán: dòng phải mang HƠN MỘT nhãn (bỏ cái chót đi thì mục
+# vẫn còn dấu riêng), và lời chú giải phải mở đầu bằng chữ THƯỜNG — sách nầy không hề vậy,
+# chú giải là một câu, mở đầu bằng chữ hoa. Chữ trả lại chính là chữ của cái nhãn ấy.
+#
+# Đã dò: cả 210 chỗ đều khớp với bản chép độc lập của bản in 1895, và riêng 壓 Áp thì đã mở
+# ảnh trang in ra coi tận mắt (cuốn 1, ảnh 29).
+#
+#   node tools/scan-page.mjs 1 29 ap.png 0.50 0.52 0.96 0.70
+";
+
+/// The prose at the top of `review/gloss-initial-lost.toml`.
+const GLOSS_LOST_DOSSIER_HEADER: &str = "\
+# Lời chú giải mở đầu bằng chữ THƯỜNG, mà chương trình không trả lại được chữ hoa.
+#
+# SINH TỰ ĐỘNG bởi `parse` — đừng sửa tay phần thân. Chữ ký ở `verified_by` thì được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Khác với gloss-initial-restored.toml: ở đó cái nhãn thừa còn giữ được chữ bị mất, nên trả
+# về chỗ cũ là xong. Còn đây thì chữ ấy không còn trong lớp chữ nữa — mục chỉ có một nhãn,
+# hoặc nhãn không phải là chữ bị mất. Bản chép Wikisource cũng hỏng y như vậy (hai bản ấy
+# chung một gốc, coi README), nên KHÔNG có nhân chứng nào ngoài mực trên giấy.
+#
+# Cách tra: lấy số `pdf_page`, trừ 1 ra số trang bản in 2026, rồi tìm mục ấy trong bản 1895
+# mà mở ảnh ra coi:
+#
+#   node tools/scan-page.mjs <cuốn> <ảnh> ra.png [x0 y0 x1 y1]
+#
+# Ký vào `verified_by` nghĩa là: đã mở ảnh coi, và chữ ghi ở `gloss` đúng như bản in.
 ";
 
 /// The file name for this step gate results.
@@ -398,6 +452,13 @@ fn main() -> Result<()> {
     let mut no_substitution = 0usize;
     let mut residual: Vec<(u16, String)> = Vec::new();
     let mut han_blocked_by_image: usize = 0;
+    let scan_rows = ScanReadings::load(&review_dir())
+        .context("reading review/scan-verified.toml")?
+        .reading;
+    let mut scan_applied: usize = 0;
+    let mut scan_found: std::collections::BTreeSet<usize> = std::collections::BTreeSet::new();
+    let mut gloss_initials_restored: Vec<GlossInitialFix> = Vec::new();
+    let mut gloss_initials_lost: Vec<GlossInitialFix> = Vec::new();
 
     // An entry reusing the previous glyph inherits its derivation context too.
     let mut context: Option<(Option<String>, String)> = None;
@@ -409,6 +470,7 @@ fn main() -> Result<()> {
         let mut alternate: Option<String> = None;
         let mut pos: Vec<&'static str> = Vec::new();
         let mut gloss_prefix = String::new();
+        let mut headword = None;
 
         if e.inherits_glyph {
             if let Some(c) = parse_continued_headword(&head.text) {
@@ -424,6 +486,7 @@ fn main() -> Result<()> {
             ));
             alternate = h.alternate.map(|a| a.slice(&head.text).to_owned());
             pos = h.pos_list().iter().map(|p| p.db_value()).collect();
+            headword = Some(h);
         }
 
         let Some((glyph, reading)) = context.as_ref() else {
@@ -438,6 +501,42 @@ fn main() -> Result<()> {
         let mut gloss = gloss_prefix;
         for i in &e.gloss_lines {
             join_text(&mut gloss, stream[*i].text.trim());
+        }
+
+        // Put back the capital the 2026 rebuild filed as a part-of-speech label. The test
+        // lives in `parse-core` with the evidence; here we only apply what it decides, and
+        // record every single one so the repair can be audited against the scan.
+        if let Some(h) = headword.as_ref()
+            && let Some(fix) = h.gloss_initial_label(&head.text, &gloss)
+        {
+            pos.retain(|p| *p != fix.dropped.db_value());
+            gloss.insert(0, fix.letter);
+            gloss_initials_restored.push(GlossInitialFix {
+                page: head.page,
+                reading: reading.clone(),
+                letter: fix.letter,
+                line: head.text.trim().to_owned(),
+                gloss: gloss.clone(),
+            });
+        }
+
+        // What is left: a definition still opening in lowercase, which this book never does.
+        // Nothing here is repaired — the label was the entry's only one, or there was no
+        // label to give the letter back. Both editions are damaged in the same way on these,
+        // so only the 1895 scan can settle them.
+        if gloss
+            .trim_start()
+            .chars()
+            .next()
+            .is_some_and(char::is_lowercase)
+        {
+            gloss_initials_lost.push(GlossInitialFix {
+                page: head.page,
+                reading: reading.clone(),
+                letter: '\0',
+                line: head.text.trim().to_owned(),
+                gloss: gloss.clone(),
+            });
         }
 
         let mut subs: Vec<SubEntryParts> = Vec::new();
@@ -533,6 +632,37 @@ fn main() -> Result<()> {
             .as_deref()
             .and_then(|g| GlyphChar::parse(g).ok())
             .map_or(GlyphKind::ImageOnly, |c| c.kind());
+
+        // A reading somebody settled against the 1895 scan. Only a SIGNED row is applied:
+        // an unsigned one is a claim about a page, not a decision yet. Every row is looked
+        // for whether signed or not, so gate ⑧ can tell a stale dossier from a live one.
+        let mut subs = subs;
+        for (i, r) in scan_rows.iter().enumerate() {
+            if r.pdf_page != head.page {
+                continue;
+            }
+            let mut seen = gloss.contains(r.was.as_str());
+            for sub in &subs {
+                seen |= sub.form.contains(r.was.as_str())
+                    || sub.form_expanded.contains(r.was.as_str())
+                    || sub.definition.contains(r.was.as_str());
+            }
+            if seen {
+                scan_found.insert(i);
+            }
+            if !r.reviewed.is_verified() {
+                continue;
+            }
+            if seen {
+                scan_applied += 1;
+            }
+            gloss = gloss.replace(r.was.as_str(), r.now.as_str());
+            for sub in &mut subs {
+                sub.form = sub.form.replace(r.was.as_str(), r.now.as_str());
+                sub.form_expanded = sub.form_expanded.replace(r.was.as_str(), r.now.as_str());
+                sub.definition = sub.definition.replace(r.was.as_str(), r.now.as_str());
+            }
+        }
 
         records.push(EntryRecord {
             schema_version: ENTRY_SCHEMA_VERSION,
@@ -656,6 +786,105 @@ fn main() -> Result<()> {
     );
 
     println!();
+    println!("== The opening capital of the definition ==");
+    println!(
+        "  restored from a spurious label: {}",
+        gloss_initials_restored.len()
+    );
+    for f in gloss_initials_restored.iter().take(5) {
+        println!(
+            "    tr{} {}: {:?}",
+            f.page,
+            f.reading,
+            f.gloss.chars().take(40).collect::<String>()
+        );
+    }
+    println!(
+        "  still missing (only the scan can say): {}",
+        gloss_initials_lost.len()
+    );
+    for f in gloss_initials_lost.iter().take(5) {
+        println!(
+            "    tr{} {}: {:?}",
+            f.page,
+            f.reading,
+            f.gloss.chars().take(40).collect::<String>()
+        );
+    }
+
+    let restored_rows: Vec<DossierRow> = gloss_initials_restored
+        .iter()
+        .map(|f| DossierRow {
+            key: format!("{}|{}|{}", f.page, f.reading, f.letter),
+            fields: vec![
+                ("pdf_page", f.page.into()),
+                ("reading", f.reading.clone().into()),
+                ("line", f.line.clone().into()),
+                ("restored", f.letter.to_string().into()),
+                ("gloss", f.gloss.clone().into()),
+            ],
+        })
+        .collect();
+    let restored_path = review_dir().join(GlossInitialsRestored::FILE);
+    let kept = write_dossier(
+        &restored_path,
+        "gloss_initial_restored",
+        GLOSS_RESTORED_DOSSIER_HEADER,
+        &restored_rows,
+    )?;
+    println!(
+        "  wrote {} ({} rows, {kept} signature(s) carried over)",
+        restored_path.display(),
+        restored_rows.len()
+    );
+
+    let lost_rows: Vec<DossierRow> = gloss_initials_lost
+        .iter()
+        .map(|f| DossierRow {
+            key: format!("{}|{}", f.page, f.reading),
+            fields: vec![
+                ("pdf_page", f.page.into()),
+                ("reading", f.reading.clone().into()),
+                ("line", f.line.clone().into()),
+                ("gloss", f.gloss.clone().into()),
+            ],
+        })
+        .collect();
+    let lost_path = review_dir().join(GlossInitialsLost::FILE);
+    let kept = write_dossier(
+        &lost_path,
+        "gloss_initial_lost",
+        GLOSS_LOST_DOSSIER_HEADER,
+        &lost_rows,
+    )?;
+    println!(
+        "  wrote {} ({} rows, {kept} signature(s) carried over)",
+        lost_path.display(),
+        lost_rows.len()
+    );
+
+    println!();
+    println!("== Gate 8: readings settled against the 1895 scan ==");
+    println!("  rows in review/scan-verified.toml: {}", scan_rows.len());
+    println!("  signed, and applied to an entry  : {scan_applied}");
+    let stale: Vec<&ScanReading> = scan_rows
+        .iter()
+        .enumerate()
+        .filter(|(i, _)| !scan_found.contains(i))
+        .map(|(_, r)| r)
+        .collect();
+    println!("  rows pointing at nothing        : {}", stale.len());
+    for r in stale.iter().take(8) {
+        println!("    tr{}: {:?} not found on that page", r.pdf_page, r.was);
+    }
+    for r in scan_rows.iter().filter(|r| !r.reviewed.is_verified()) {
+        println!(
+            "    tr{} {:?} -> {:?}  NOT SIGNED, so not applied — node tools/scan-page.mjs {} {} ra.png {}",
+            r.pdf_page, r.was, r.now, r.volume, r.scan_page, r.crop
+        );
+    }
+
+    println!();
     println!("== Gate 3 at the CHARACTER level: every character must sit in a field ==");
     println!("  content chars    : {char_total}");
     println!("  chars placed in a field: {char_covered}");
@@ -726,6 +955,20 @@ fn main() -> Result<()> {
                 dossiers.caught_by(caught_by::CHECK_COVERAGE)
             ),
         ),
+        // Gate ⑧. A row here changes the published text, so the one thing that must never
+        // happen is a row quietly pointing at nothing: the 2026 text layer changed, or the
+        // row names the wrong page, and either way it has stopped being evidence. Signing
+        // is a separate question — an unsigned row is reported every run, never applied.
+        GateResult::judge(
+            Gate::ScanVerified,
+            stale.len() as i64,
+            0,
+            format!(
+                "{} reading(s) settled against the scan, {scan_applied} applied; \
+                 every row still finds its wording on the page it names",
+                scan_rows.len()
+            ),
+        ),
     ];
     let report = GateReport::new(
         path.display().to_string(),
@@ -736,7 +979,7 @@ fn main() -> Result<()> {
         .write(&gate_path)
         .with_context(|| format!("writing {}", gate_path.display()))?;
     println!();
-    println!("wrote the gate 1/2/3 results to {}", gate_path.display());
+    println!("wrote the gate 1/2/3/8 results to {}", gate_path.display());
     for r in &report.results {
         println!(
             "  gate {} {:<45} measured {:>3} / allowed {:>3}  {}",

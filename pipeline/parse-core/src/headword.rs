@@ -89,6 +89,110 @@ impl HeadwordLine {
     pub const fn has_glyph(&self) -> bool {
         self.glyph.is_some()
     }
+
+    /// Whether the LAST label on this line is really the capital that opens the definition.
+    ///
+    /// The 2026 edition rebuilt its text layer, and on 210 entries that rebuild turned the
+    /// opening capital of the gloss into a second part-of-speech label. `壓 Áp` is the plain
+    /// case: the 1895 print sets
+    ///
+    /// ```text
+    /// 壓  Áp. c. Ngăn, giữ, đè, nhận xuống.
+    /// ```
+    ///
+    /// — ONE label — while the 2026 text layer emits `壓  Áp  c. n.` on one line and
+    /// `găn, giữ, đè, nhận xuống.` on the next. The `N` became `n.`, and 210 definitions lost
+    /// their first letter. The independent 1895 transcription agrees with the print on every
+    /// one of the 210, and the scan was read by eye for `壓 Áp` itself.
+    ///
+    /// The test is deliberately narrow, and neither half of it is a guess:
+    ///
+    /// * the line carries **more than one** label, so removing the last still leaves the
+    ///   entry with a part of speech — a single label is never touched;
+    /// * the definition begins with a **lowercase** letter, which this book never does: a
+    ///   gloss is a sentence and opens with a capital.
+    ///
+    /// The restored letter is the letter the label was made of, not a letter chosen to fit.
+    /// `cn.` cannot match: it is two letters, and this asks for exactly one.
+    pub fn gloss_initial_label(&self, line: &str, definition: &str) -> Option<GlossInitial> {
+        if self.labels.len() < 2 {
+            return None;
+        }
+        let opens_lowercase = definition
+            .trim_start()
+            .chars()
+            .next()
+            .is_some_and(char::is_lowercase);
+        if !opens_lowercase {
+            return None;
+        }
+
+        let (span, pos) = *self.labels.last()?;
+        let mut letters = span.slice(line).trim_end_matches('.').chars();
+        let letter = letters.next()?;
+        if letters.next().is_some() || !letter.is_ascii_alphabetic() {
+            return None;
+        }
+
+        // The letter must actually begin the word that follows. Vietnamese spelling settles
+        // this without a judgement call: `N` + `găn` is the onset *ng*, but `N` + `tụ` is not
+        // a syllable at all. Measured on the 211 candidates: 204 form a legal onset, and the
+        // 7 that do not are all places where the print really does set a second label and
+        // the sense after it opens in lowercase (`đoàn c. n. tụ; bầy, lũ.`).
+        let next = definition.trim_start().chars().next()?;
+        if !begins_syllable(letter, next) {
+            return None;
+        }
+
+        Some(GlossInitial {
+            letter: letter.to_ascii_uppercase(),
+            dropped: pos,
+        })
+    }
+}
+
+/// Whether `first` followed by `second` can open a Vietnamese syllable.
+///
+/// Only the onset matters here, so the table is the list of onsets the language has:
+/// single consonants, plus the digraphs and trigraphs `ch gh gi kh ng ngh nh ph qu th tr`.
+/// Everything else is settled by `second` being a vowel.
+///
+/// This is a fact about the language, not a threshold: it never needs tuning, and it is what
+/// separates `N` + `găn` (the onset *ng*) from `N` + `tụ` (no such syllable).
+pub fn begins_syllable(first: char, second: char) -> bool {
+    const VOWELS: &str = "aeiouy";
+    let head = first.to_ascii_lowercase();
+    // `fold` takes the tone and the vowel mark off, so `ố` and `ư` both arrive as a plain
+    // letter. It is the same function search uses, and it knows `đ` is not `d` plus a mark.
+    let folded = dnqatv_core::text::fold(&second.to_string());
+    let Some(bare) = folded.chars().next() else {
+        return false;
+    };
+
+    if VOWELS.contains(bare) {
+        return true;
+    }
+    matches!(
+        (head, bare),
+        ('c', 'h')
+            | ('g', 'h' | 'i')
+            | ('k', 'h')
+            | ('n', 'g' | 'h')
+            | ('p', 'h')
+            | ('q', 'u')
+            | ('t', 'h' | 'r')
+    )
+}
+
+/// A part-of-speech label that is really the first letter of the definition.
+///
+/// See [`HeadwordLine::gloss_initial_label`] for the evidence and the test.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct GlossInitial {
+    /// The letter to put back at the head of the definition, as the book capitalises it.
+    pub letter: char,
+    /// The label that has to go, because it was never a label.
+    pub dropped: Pos,
 }
 
 /// Whether this character is a Han-Nom glyph opening a headword line.

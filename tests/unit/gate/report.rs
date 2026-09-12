@@ -33,7 +33,7 @@ fn an_absent_gate_counts_as_a_failure() {
     assert!(!report.all_green());
     assert_eq!(
         report.authorize(Fingerprint::of(b"x")),
-        Err(ReportError::GatesMissing(vec![4, 5]))
+        Err(ReportError::GatesMissing(vec![4, 5, 7, 8]))
     );
 }
 
@@ -93,7 +93,8 @@ fn a_json_round_trip_returns_the_same_report() {
 fn every_gate_has_its_own_number_and_title() {
     let mut numbers: Vec<u8> = Gate::ALL.iter().map(|g| g.number()).collect();
     numbers.sort_unstable();
-    assert_eq!(numbers, vec![1, 2, 3, 4, 5]);
+    // 6 is absent on purpose: the witness step writes findings to review/, not a verdict.
+    assert_eq!(numbers, vec![1, 2, 3, 4, 5, 7, 8]);
     for g in Gate::ALL {
         assert!(!g.title().is_empty());
     }

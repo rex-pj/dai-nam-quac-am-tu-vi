@@ -81,3 +81,29 @@ fn a_sub_entry_before_any_headword_is_dropped() {
     assert_eq!(e.len(), 1);
     assert!(e[0].subs.is_empty());
 }
+
+#[test]
+fn a_piped_wikilink_does_not_shift_the_later_fields() {
+    // v1/23 — the transcriber linked the glyph to Wiktionary. The `|` inside `[[…|…]]` is
+    // the link's own separator, not a field separator: splitting there read the reading as
+    // "阿]]" and put eight rows into witness-entry-only-there.toml that were this parser's
+    // doing, not a difference between the two editions.
+    let t = template_fields(
+        "{{DNQATV/mục|[[wikt:阿|阿]]|A||c|Đèo, nương dựa, phụ theo.}}",
+        "DNQATV/mục",
+    );
+    assert_eq!(t.len(), 1);
+    assert_eq!(t[0].field(0), Some("[[wikt:阿|阿]]"));
+    assert_eq!(t[0].field(1), Some("A"));
+    assert_eq!(t[0].field(3), Some("c"));
+    assert_eq!(t[0].field(4), Some("Đèo, nương dựa, phụ theo."));
+}
+
+#[test]
+fn a_separator_after_a_closed_wikilink_still_separates() {
+    // The link must not swallow the rest of the call: once it closes, `|` divides again.
+    let t = template_fields("{{DNQATV/mục|[[a|b]]|R||n|G.}}", "DNQATV/mục");
+    assert_eq!(t[0].field(0), Some("[[a|b]]"));
+    assert_eq!(t[0].field(1), Some("R"));
+    assert_eq!(t[0].field(4), Some("G."));
+}

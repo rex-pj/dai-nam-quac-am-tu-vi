@@ -323,3 +323,82 @@ fn a_normal_headword_has_no_trailing_remainder() {
         assert!(!h.needs_review(), "{t:?}");
     }
 }
+
+// ── The capital the 2026 rebuild filed as a label ────────────────────────────
+
+#[test]
+fn the_last_label_gives_back_the_capital_that_opens_the_definition() {
+    // pdf_page 21, verbatim. The 1895 print sets ONE label and the gloss "Ngăn, giữ, đè,
+    // nhận xuống." — read off the scan, volume 1, image 29. The 2026 text layer turned that
+    // capital N into a second label and left "găn" on the following line.
+    let t = "壓  Áp  c. n.";
+    let h = parsed(t);
+    assert_eq!(h.pos_list(), vec![Pos::ChuNho, Pos::ChuNom]);
+
+    let fix = h
+        .gloss_initial_label(t, "găn, giữ, đè, nhận xuống.")
+        .expect("the trailing label is the N of Ngăn");
+    assert_eq!(fix.letter, 'N');
+    assert_eq!(fix.dropped, Pos::ChuNom);
+}
+
+#[test]
+fn a_definition_already_opening_with_a_capital_is_left_alone() {
+    // 蔭 Ấm really does carry two labels, and its gloss is a sentence like any other.
+    let t = "蔭  Ấm  c. n.";
+    assert_eq!(
+        parsed(t).gloss_initial_label(t, "Đồ đúc bằng đồng thau."),
+        None
+    );
+}
+
+#[test]
+fn a_single_label_is_never_taken_apart() {
+    // Removing the only label would leave the entry with no part of speech at all.
+    let t = "阿  A  c.";
+    assert_eq!(parsed(t).gloss_initial_label(t, "đèo, nương dựa."), None);
+}
+
+#[test]
+fn a_letter_that_cannot_open_the_word_is_refused() {
+    // `đoàn c. n. tụ; bầy, lũ.` — here the print really does set a second label, and the
+    // sense after it opens in lowercase. `N` + `tụ` is not a Vietnamese syllable, so the
+    // restoration must not fire. Measured: 7 of 211 candidates are of this shape.
+    let t = "團  Đoàn  c. n.";
+    assert_eq!(parsed(t).gloss_initial_label(t, "tụ; bầy, lũ."), None);
+    assert_eq!(
+        parsed(t).gloss_initial_label(t, "loại sắt cứng mà giòn."),
+        None
+    );
+}
+
+#[test]
+fn the_onset_rule_knows_vietnamese_spelling() {
+    use dnqatv_parse_core::begins_syllable;
+    // The onsets that actually exist: ng, ngh, nh, ch, kh, ph, th, tr, gh, gi, qu.
+    for (a, b) in [
+        ('n', 'g'),
+        ('n', 'h'),
+        ('c', 'h'),
+        ('t', 'r'),
+        ('g', 'i'),
+        ('q', 'u'),
+    ] {
+        assert!(begins_syllable(a, b), "{a}{b} is a real onset");
+    }
+    // A vowel always closes the question, tone mark and vowel mark included.
+    for c in ['a', 'ó', 'ố', 'ư', 'ề', 'ắ', 'ị'] {
+        assert!(begins_syllable('n', c), "n{c}");
+    }
+    // And the combinations Vietnamese does not have.
+    for (a, b) in [
+        ('n', 't'),
+        ('n', 'l'),
+        ('n', 'b'),
+        ('n', 'd'),
+        ('n', 'k'),
+        ('c', 'g'),
+    ] {
+        assert!(!begins_syllable(a, b), "{a}{b} is not an onset");
+    }
+}

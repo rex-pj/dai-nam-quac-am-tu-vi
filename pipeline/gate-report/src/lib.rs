@@ -21,7 +21,11 @@ use serde::{Deserialize, Serialize};
 /// The report format version.
 pub const REPORT_VERSION: u32 = 1;
 
-/// The five gates of the plan. An enum so no gate can be silently forgotten.
+/// The gates of the plan. An enum so no gate can be silently forgotten.
+///
+/// There is no `⑥` here on purpose. Gate ⑥ is the witness step, and it deliberately writes
+/// no result: the 1895 and 2026 editions genuinely differ, so a pass/fail number would either
+/// cry wolf or invite somebody to soften it. It sorts its findings into `review/` instead.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Serialize, Deserialize)]
 pub enum Gate {
     /// ① Glyph codes not found in the `/ToUnicode` CMap.
@@ -34,15 +38,21 @@ pub enum Gate {
     IndexReconciliation,
     /// ⑤ The ordering invariant under the collation of the book.
     CollationOrder,
+    /// ⑦ The corrections the print prints about itself.
+    PrintedErrata,
+    /// ⑧ Readings settled against the scan still point at something.
+    ScanVerified,
 }
 
 impl Gate {
-    pub const ALL: [Gate; 5] = [
+    pub const ALL: [Gate; 7] = [
         Self::UnmappedGlyphs,
         Self::HeadwordCoverage,
         Self::CharacterConservation,
         Self::IndexReconciliation,
         Self::CollationOrder,
+        Self::PrintedErrata,
+        Self::ScanVerified,
     ];
 
     pub const fn number(self) -> u8 {
@@ -52,6 +62,8 @@ impl Gate {
             Self::CharacterConservation => 3,
             Self::IndexReconciliation => 4,
             Self::CollationOrder => 5,
+            Self::PrintedErrata => 7,
+            Self::ScanVerified => 8,
         }
     }
 
@@ -62,6 +74,8 @@ impl Gate {
             Self::CharacterConservation => "Character conservation",
             Self::IndexReconciliation => "Reconciliation against the entry index",
             Self::CollationOrder => "Ordering invariant under the book collation",
+            Self::PrintedErrata => "The errata the print carries about itself",
+            Self::ScanVerified => "Readings settled against the 1895 scan",
         }
     }
 }

@@ -1,4 +1,4 @@
-# Chốt ⑥ — flagged_here: 10 chỗ.
+# Chốt ⑥ — flagged_here: 11 chỗ.
 #
 # SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
 # nguyên qua mỗi lần sinh lại, khớp theo `key`.
@@ -11,6 +11,16 @@
 # mới là lời tố rằng mình đọc sai trang; còn lại là tư liệu.
 #
 # quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
+
+[[flagged_here]]
+key          = "10|Á|Sánh, thứ hai. Nhơn — 姻 \\|Sánh, thứ hai. Nhơn — 姻"
+printed_page = 10
+reading      = "Á"
+ours         = "Sánh, thứ hai. Nhơn — 姻 \\"
+theirs       = "Sánh, thứ hai. Nhơn — 姻"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
 
 [[flagged_here]]
 key          = "18|Ảng|Bồn. Cái —. Đồ bằng đất rộng như miệng chậu mà lớn.|Đồ bằng đất rộng miệng mà thấp."
@@ -33,40 +43,40 @@ quality      = 3
 verified_by  = ""
 
 [[flagged_here]]
-key          = "191|Dai|¦ Ngồi ― 乖 作 Ngồi ― quai tác|¦ Ngồi - 乖 作 Ngồi – quai tác"
+key          = "191|Dai|¦ Ngồi ― 乖 作 Ngồi ― quai tác.|¦ Ngồi - 乖 作 Ngồi – quai tác"
 printed_page = 191
 reading      = "Dai"
-ours         = "¦ Ngồi ― 乖 作 Ngồi ― quai tác"
+ours         = "¦ Ngồi ― 乖 作 Ngồi ― quai tác."
 theirs       = "¦ Ngồi - 乖 作 Ngồi – quai tác"
 witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/228"
 quality      = 1
 verified_by  = ""
 
 [[flagged_here]]
-key          = "221|Duyệt|¦ Phiệt ― 閥 ―|¦ Phiệt – 閥 -"
+key          = "221|Duyệt|¦ Phiệt ― 閥 ―.|¦ Phiệt – 閥 -"
 printed_page = 221
 reading      = "Duyệt"
-ours         = "¦ Phiệt ― 閥 ―"
+ours         = "¦ Phiệt ― 閥 ―."
 theirs       = "¦ Phiệt – 閥 -"
 witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/262"
 quality      = 1
 verified_by  = ""
 
 [[flagged_here]]
-key          = "229|Đặc|英䧺 | 立 ¦ Anh hùng ― lập hay là 獨 立 độc lập|英 䧺 - 立 ¦ Anh hùng – lập hay là 獨 立 độc lập"
+key          = "229|Đặc|英䧺 | 立 ¦ Anh hùng ― lập hay là 獨 立 độc lập.|英 䧺 - 立 ¦ Anh hùng – lập hay là 獨 立 độc lập"
 printed_page = 229
 reading      = "Đặc"
-ours         = "英䧺 | 立 ¦ Anh hùng ― lập hay là 獨 立 độc lập"
+ours         = "英䧺 | 立 ¦ Anh hùng ― lập hay là 獨 立 độc lập."
 theirs       = "英 䧺 - 立 ¦ Anh hùng – lập hay là 獨 立 độc lập"
 witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/271"
 quality      = 1
 verified_by  = ""
 
 [[flagged_here]]
-key          = "355|Hảo|¦ Háo 惡 ― ố|¦ Háo 惡 - ố"
+key          = "355|Hảo|¦ Háo 惡 ― ố.|¦ Háo 惡 - ố"
 printed_page = 355
 reading      = "Hảo"
-ours         = "¦ Háo 惡 ― ố"
+ours         = "¦ Háo 惡 ― ố."
 theirs       = "¦ Háo 惡 - ố"
 witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/422"
 quality      = 1

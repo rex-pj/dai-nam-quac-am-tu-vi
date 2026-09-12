@@ -167,6 +167,146 @@ dossier_file!(
     /// `review/jammed-text.toml`
     JammedText, JammedTexts, jammed_text, "jammed-text.toml"
 );
+
+/// A definition whose opening capital the 2026 text layer filed as a part-of-speech label.
+///
+/// The repair is proved, not guessed — see `HeadwordLine::gloss_initial_label`. The row
+/// exists so the repair can be audited against the scan, not so a gate can count it.
+#[derive(Debug, Clone, Deserialize, PartialEq, Eq)]
+pub struct GlossInitialRestored {
+    pub pdf_page: u16,
+    pub reading: String,
+    /// The capital put back at the head of the definition.
+    pub restored: String,
+    #[serde(flatten)]
+    pub reviewed: Reviewed,
+}
+
+/// A definition still opening in lowercase, with no label left to supply the missing letter.
+///
+/// Both editions are damaged the same way on these, so the 1895 scan is the only witness.
+#[derive(Debug, Clone, Deserialize, PartialEq, Eq)]
+pub struct GlossInitialLost {
+    pub pdf_page: u16,
+    pub reading: String,
+    pub gloss: String,
+    #[serde(flatten)]
+    pub reviewed: Reviewed,
+}
+
+dossier_file!(
+    /// `review/gloss-initial-restored.toml`
+    GlossInitialRestored,
+    GlossInitialsRestored,
+    gloss_initial_restored,
+    "gloss-initial-restored.toml"
+);
+dossier_file!(
+    /// `review/gloss-initial-lost.toml`
+    GlossInitialLost,
+    GlossInitialsLost,
+    gloss_initial_lost,
+    "gloss-initial-lost.toml"
+);
+
+/// One line of the errata the 1895-96 print carries about itself.
+///
+/// `SAI SÓT` (volume 1) and `ĐÍNH NGOA 訂訛` (volume 2) are the author's own corrections, so
+/// this is the only witness in the repository that is neither a modern edition nor somebody
+/// else's transcription. Hand-kept: the rows were read off the scan, one at a time.
+#[derive(Debug, Clone, Deserialize, PartialEq, Eq)]
+pub struct Correction {
+    /// `SAI SÓT` or `ĐÍNH NGOA`.
+    pub source: String,
+    /// Which volume prints this correction, and on which of its scan pages.
+    pub source_volume: u8,
+    pub source_scan: u16,
+    /// The volume whose page numbering `printed_page_1895` uses.
+    pub applies_to: u8,
+    /// The page **of the 1895 print**, which is not the page number our records carry.
+    pub printed_page_1895: u16,
+    /// `glyph`, `text` or `note` — see the file header.
+    pub kind: String,
+    pub reading: String,
+    /// A fragment of OUR OWN gloss, used to pick the entry out of its homographs.
+    #[serde(default)]
+    pub anchor: String,
+    /// What the body of the print sets, and what the author says it should be.
+    #[serde(default)]
+    pub printed: String,
+    #[serde(default)]
+    pub corrected: String,
+    #[serde(default)]
+    pub note: String,
+    /// Why our data may stay as it is. Gate ⑦ fails on a deviation without one, and on one of
+    /// these left behind after the data was put right.
+    #[serde(default)]
+    pub reason: String,
+    #[serde(flatten)]
+    pub reviewed: Reviewed,
+}
+
+impl Correction {
+    pub const GLYPH: &'static str = "glyph";
+    pub const TEXT: &'static str = "text";
+
+    /// Whether somebody has written down why the data may differ from the print's own fix.
+    pub fn has_reason(&self) -> bool {
+        !self.reason.trim().is_empty()
+    }
+}
+
+dossier_file!(
+    /// `review/errata-ban-in.toml`
+    Correction,
+    Corrections,
+    correction,
+    "errata-ban-in.toml"
+);
+
+/// A reading settled by opening the 1895 scan and looking at the ink.
+///
+/// This is the only dossier that changes the published text, and the only one entitled to:
+/// every other witness here is a modern edition or somebody's transcription of one, while
+/// this row says what the print itself sets. CLAUDE.md says *never render a character the
+/// print did not set*; putting back a character the print DID set is that same rule read
+/// forwards.
+///
+/// The first row is `thế giới` on page 861, where the print reads `thế giái` twice over.
+/// Neither the 2026 edition nor the 1895 transcription could catch it — they share an ancestor
+/// and carry the same slip, and that Wikisource page is unproofread. What settled it was the
+/// ink. What found it was the book disagreeing with itself: `thế giái` elsewhere, 13 times.
+///
+/// Nothing is applied until somebody signs. An unsigned row is a claim about a page; a signed
+/// one is a person saying they opened the image and take responsibility. `volume`, `scan_page`
+/// and `crop` are there so the next person can re-open the very same view.
+#[derive(Debug, Clone, Deserialize, PartialEq, Eq)]
+pub struct ScanReading {
+    /// The page of the 2026 PDF the wording sits on.
+    pub pdf_page: u16,
+    /// What the 2026 text layer says.
+    pub was: String,
+    /// What the ink says.
+    pub now: String,
+    /// Where to look: the scan volume, its page, and the crop box for `tools/scan-page.mjs`.
+    pub volume: u8,
+    pub scan_page: u16,
+    #[serde(default)]
+    pub crop: String,
+    #[serde(default)]
+    pub note: String,
+    #[serde(flatten)]
+    pub reviewed: Reviewed,
+}
+
+dossier_file!(
+    /// `review/scan-verified.toml`
+    ScanReading,
+    ScanReadings,
+    reading,
+    "scan-verified.toml"
+);
+
 dossier_file!(
     /// `review/ambiguous-sub-entries.toml`
     AmbiguousLine,
@@ -253,6 +393,10 @@ pub struct Dossiers {
     pub ambiguous_lines: AmbiguousLines,
     pub gate4: Gate4Index,
     pub reading_diffs: ReadingDiffs,
+    pub gloss_initials_restored: GlossInitialsRestored,
+    pub gloss_initials_lost: GlossInitialsLost,
+    pub corrections: Corrections,
+    pub scan_readings: ScanReadings,
 }
 
 impl Dossiers {
@@ -266,6 +410,10 @@ impl Dossiers {
             ambiguous_lines: AmbiguousLines::load(review_dir)?,
             gate4: Gate4Index::load(review_dir)?,
             reading_diffs: ReadingDiffs::load(review_dir)?,
+            gloss_initials_restored: GlossInitialsRestored::load(review_dir)?,
+            gloss_initials_lost: GlossInitialsLost::load(review_dir)?,
+            corrections: Corrections::load(review_dir)?,
+            scan_readings: ScanReadings::load(review_dir)?,
         })
     }
 
@@ -279,6 +427,10 @@ impl Dossiers {
             + self.ambiguous_lines.unverified()
             + self.gate4.unverified()
             + self.reading_diffs.unverified()
+            + self.gloss_initials_restored.unverified()
+            + self.gloss_initials_lost.unverified()
+            + self.corrections.unverified()
+            + self.scan_readings.unverified()
     }
 
     pub fn total(&self) -> usize {
@@ -291,6 +443,10 @@ impl Dossiers {
             + self.gate4.missing_glyph.len()
             + self.gate4.comma_label.len()
             + self.reading_diffs.len()
+            + self.gloss_initials_restored.len()
+            + self.gloss_initials_lost.len()
+            + self.corrections.len()
+            + self.scan_readings.len()
     }
 }
 

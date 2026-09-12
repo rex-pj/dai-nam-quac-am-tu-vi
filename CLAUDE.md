@@ -59,6 +59,20 @@ ever sees it.
 - **Every deviation is either fixed or gets a dossier row in `review/`, with a reason a person
   wrote.** The allowed threshold **is** the dossier size (`pipeline/gate-report`). There is no
   number to edit, and deleting a dossier row turns the gate red too.
+- **A dictionary contradicting itself is evidence.** Page 861 read `thế giới` where the book
+  writes `thế giái` 13 other times, reads the headword 界 as *Giái*, and has no 界 *Giới* at
+  all. Both machine-readable sources carried the error, so only the scan could settle it —
+  but what *found* it was the internal inconsistency. Do not then turn that into a gate: the
+  book genuinely mixes `sanh`/`sinh` (68% modern), `chánh`/`chính` (75%), `thiệt`/`thật` (45%),
+  and flagging every compound spelled two ways yields 51 candidates of which one is a fault.
+  Settled readings go in `review/scan-verified.toml`, applied only once signed.
+- **Count your witnesses before you trust them.** Gate ⑥ was built on the assumption that the
+  Wikisource transcription is independent of the 2026 PDF. Measured: the two share 4,662 of
+  4,673 distinct glyphs, 716 of 721 rare glyphs that occur exactly once, and 31 of 32 *private
+  use* code points — numbers with no meaning outside one font. They have a common ancestor, so
+  agreement between them proves nothing about the print. Only two things are independent of
+  the 2026 text: **the ink** (`tools/scan-page.mjs`) and **the author's own errata**
+  (`review/errata-ban-in.toml`, gate ⑦). See README, "How independent the witnesses really are".
 - **Fail closed.** `import` refuses to load unless `gates.json` is green *and* was produced from
   the file being loaded — a stale green report is more dangerous than none.
 - Never render a character the print did not set. All 43 alternate readings already carry their
@@ -76,6 +90,18 @@ character" — that last one while the font sat embedded in our own PDF, 15.9 MB
 Before stating anything about an API, a tool's behaviour, or a number about the book: run it,
 read the source, measure it. Numbers about the dictionary come from `data/*.jsonl`, never from
 memory.
+
+**And measure the 2026 edition itself, not only our reading of it.** It is a rebuild, and its
+text layer has its own faults, which for a long time looked like ours:
+
+- 204 definitions lost their opening capital because the rebuild filed it as a second
+  part-of-speech label (`壓 Áp c. n.` + `găn, giữ…` for the print's `壓 Áp. c. Ngăn, giữ…`).
+  Every unit test passed throughout; what found it was one gloss reading `găn` instead of
+  `Ngăn`. `parse` now puts the letter back, under a rule Vietnamese spelling settles rather
+  than a judgement call — see `HeadwordLine::gloss_initial_label`.
+- The edition splices the author's errata into the running text without marking it, so
+  `| 炙 — cứu` came out `| 炙鍼灸 — cứu`, both the wrong character and its correction in one
+  Han column.
 
 ## The reader's Vietnamese is the book's Vietnamese
 
@@ -141,6 +167,25 @@ does not declare `sea-orm`, so persistence leaking into the domain fails to comp
   green and later a false red; `without_comments()` in `tests/unit/web/templates.rs` exists for
   it. A plain `grep` for a symbol will happily match the comment that forbids it.
 
+## Looking at the ink
+
+The 1895-96 scan is the only witness that owes nothing to the 2026 edition, so reach for it
+before arguing from any of the text files.
+
+```
+node tools/scan-page.mjs <volume 1|2> <scanPage> out.png [x0 y0 x1 y1]
+```
+
+- `scanPage` is **the page of the scan PDF**, and `docs vol N page = Wikisource scan page + 1`
+  (page 1 of each volume is the modern colour cover, which the tool refuses by design).
+- The 1895 printed page number is a third numbering again, and **not** the `printed_page` in
+  our records: that one counts the 2026 edition's 1,037 pages, the print has 1,204 in two
+  volumes. Do not compute one from the other — read the running head off the image.
+- The crop box is fractions of the page, which is how you get from a page to one entry
+  without a picture viewer.
+- `… HTC.pdf` is 700×1050 RGB and cannot settle a glyph. Do not reach for it because it is
+  the biggest file in `docs/`.
+
 ## This machine
 
 - **`python` / `python3` is a Microsoft Store stub that HANGS.** Never call it. Use `node`.
@@ -178,8 +223,9 @@ at a time when the repository had no git history to recover from.
 ```
 cargo fmt --all --check
 cargo clippy --workspace --all-targets -- -D warnings
-cargo test --workspace                      # 378 green as of 2026-09-11
+cargo test --workspace
 node tools/check-comment-language.mjs
+node tools/check-scan-page.mjs              # when tools/scan-page.mjs changed
 node tools/check-static-site.mjs            # when static-site/ or tools/ changed
 ```
 

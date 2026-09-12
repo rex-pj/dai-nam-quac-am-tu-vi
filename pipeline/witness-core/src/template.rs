@@ -45,8 +45,27 @@ pub fn template_fields(text: &str, name: &str) -> Vec<TemplateCall> {
         let mut cur = String::new();
         let mut i = start;
 
+        // A piped wikilink brings its own `|`, and it is not a field separator. Eight glyph
+        // fields in the snapshot are written `[[wikt:阿|阿]]`, and splitting there shifted
+        // every later field along: the reading came out `阿]]` and eight rows of
+        // `witness-entry-only-there.toml` were an artefact of this parser, not a difference
+        // between the two editions.
+        let mut link_depth = 0usize;
+
         while i < bytes.len() {
             let rest = &text[i..];
+            if rest.starts_with("[[") {
+                link_depth += 1;
+                cur.push_str("[[");
+                i += 2;
+                continue;
+            }
+            if rest.starts_with("]]") && link_depth > 0 {
+                link_depth -= 1;
+                cur.push_str("]]");
+                i += 2;
+                continue;
+            }
             if rest.starts_with("{{") {
                 depth += 1;
                 if depth > 1 {
@@ -66,8 +85,9 @@ pub fn template_fields(text: &str, name: &str) -> Vec<TemplateCall> {
                 i += 2;
                 continue;
             }
-            // Only a separator at the top level; inside a nested call it is that call's own.
-            if rest.starts_with('|') && depth == 1 {
+            // Only a separator at the top level; inside a nested call or a piped wikilink it
+            // belongs to that construct.
+            if rest.starts_with('|') && depth == 1 && link_depth == 0 {
                 fields.push(std::mem::take(&mut cur));
                 i += 1;
                 continue;

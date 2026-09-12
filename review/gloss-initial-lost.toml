@@ -1,0 +1,1160 @@
+# Lời chú giải mở đầu bằng chữ THƯỜNG, mà chương trình không trả lại được chữ hoa.
+#
+# SINH TỰ ĐỘNG bởi `parse` — đừng sửa tay phần thân. Chữ ký ở `verified_by` thì được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Khác với gloss-initial-restored.toml: ở đó cái nhãn thừa còn giữ được chữ bị mất, nên trả
+# về chỗ cũ là xong. Còn đây thì chữ ấy không còn trong lớp chữ nữa — mục chỉ có một nhãn,
+# hoặc nhãn không phải là chữ bị mất. Bản chép Wikisource cũng hỏng y như vậy (hai bản ấy
+# chung một gốc, coi README), nên KHÔNG có nhân chứng nào ngoài mực trên giấy.
+#
+# Cách tra: lấy số `pdf_page`, trừ 1 ra số trang bản in 2026, rồi tìm mục ấy trong bản 1895
+# mà mở ảnh ra coi:
+#
+#   node tools/scan-page.mjs <cuốn> <ảnh> ra.png [x0 y0 x1 y1]
+#
+# Ký vào `verified_by` nghĩa là: đã mở ảnh coi, và chữ ghi ở `gloss` đúng như bản in.
+
+[[gloss_initial_lost]]
+key          = "29|Bảy"
+pdf_page     = 29
+reading      = "Bảy"
+line         = "𠤩  Bảy  n."
+gloss        = "n"
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "57|Bính"
+pdf_page     = 57
+reading      = "Bính"
+line         = "柄  Bính  c."
+gloss        = "n Cán."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "67|Bốn"
+pdf_page     = 67
+reading      = "Bốn"
+line         = "𦊚  Bốn  n."
+gloss        = "hai hai; nhì nhì như tứ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "121|Chếnh"
+pdf_page     = 121
+reading      = "Chếnh"
+line         = "正  Chếnh  c."
+gloss        = "n."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "136|Choại"
+pdf_page     = 136
+reading      = "Choại"
+line         = "繸  Choại  n."
+gloss        = "loại dây hay mọc theo đất bâng, hay chịu mưa nắng, người ta hay dùng mà bện đăng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "196|Dạn"
+pdf_page     = 196
+reading      = "Dạn"
+line         = "演  Dạn  n."
+gloss        = "tầng quen, không hay sợ sệt."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "243|Đao"
+pdf_page     = 243
+reading      = "Đao"
+line         = "刀  Đao  c."
+gloss        = "bao, đồ để mà cắt cứa, gươm lớn lưỡi."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "261|Địch"
+pdf_page     = 261
+reading      = "Địch"
+line         = "笛  Địch  c."
+gloss        = "ống sáo, cây sáo. id. (Cây, ống đều là tiếng kêu kể)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "262|Điệm"
+pdf_page     = 262
+reading      = "Điệm"
+line         = "坫  Điệm  n."
+gloss        = "tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "274|Đoàn"
+pdf_page     = 274
+reading      = "Đoàn"
+line         = "團  Đoàn  c. n."
+gloss        = "tụ; bầy, lũ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "302|Gay"
+pdf_page     = 302
+reading      = "Gay"
+line         = "垓  Gay  n."
+gloss        = "làm cho chèo cho mắc lấy nhau; chèo kéo."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "304|Gan"
+pdf_page     = 304
+reading      = "Gan"
+line         = "肝  Gan  c."
+gloss        = "lá gan; mạnh mẽ, dạn dĩ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "305|Gang"
+pdf_page     = 305
+reading      = "Gang"
+line         = "鋼  Gang  c. n."
+gloss        = "loại sắt cứng mà giòn, đốt hay chẩy."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "309|Ghê"
+pdf_page     = 309
+reading      = "Ghê"
+line         = "醫  Ghê  n."
+gloss        = "sợ, bắt lạnh mình."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "323|Gianh"
+pdf_page     = 323
+reading      = "Gianh"
+line         = "江  Gianh  c."
+gloss        = "tên sông ở tại tĩnh Nghệ An."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "325|Giáp"
+pdf_page     = 325
+reading      = "Giáp"
+line         = "甲  Giáp  c."
+gloss        = "thứ nhứt, vầy, vổ, ấp, chữ đầu trong thập can."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "351|Hấn"
+pdf_page     = 351
+reading      = "Hấn"
+line         = "釁  Hấn  n."
+gloss        = "c."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "355|Hành"
+pdf_page     = 355
+reading      = "Hành"
+line         = "莖  Hành  n."
+gloss        = "cLoại rau lá tròn mà cay, đồ gia vị. Cây-. id. Rẻ-. Nguyên cây hành chia ra có củ có lá, một tết hành. Lá-. Cộng cây hành. Củ-. Gốc cây hành. -tỏi. Kêu chung cả hai thứ cỏ cay, hành nhỏ, tỏi lớn. Nói hành tỏi thì là nói hành. Ngọc-. Dương vật."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "363|Hi"
+pdf_page     = 363
+reading      = "Hi"
+line         = "稀  Hi  c."
+gloss        = "ít."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "459|Lây"
+pdf_page     = 459
+reading      = "Lây"
+line         = "唻  Lây  n."
+gloss        = "sang qua, truyền nhiễm, ( nói về tật bệnh)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "459|Lấy"
+pdf_page     = 459
+reading      = "Lấy"
+line         = "𥙩  Lấy  n."
+gloss        = "bắt trong tay, thâu lãnh, đem đi, cất đi, cầm, giành."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "459|Lẩy"
+pdf_page     = 459
+reading      = "Lẩy"
+line         = "禮  Lẩy  n."
+gloss        = "kình gan, gây gắt."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "460|Lam"
+pdf_page     = 460
+reading      = "Lam"
+line         = "藍  Lam  c."
+gloss        = "chàm, màu xanh."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "460|Lam"
+pdf_page     = 460
+reading      = "Lam"
+line         = "婪  Lam  c."
+gloss        = "một mình ít dùng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "460|Lạm"
+pdf_page     = 460
+reading      = "Lạm"
+line         = "濫  Lạm  c."
+gloss        = "tràn, trộm phép, làm quá phép."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "462|Lãm"
+pdf_page     = 462
+reading      = "Lãm"
+line         = "覽  Lãm  c."
+gloss        = "xem, coi."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "462|Lãm"
+pdf_page     = 462
+reading      = "Lãm"
+line         = "攬  Lãm  c."
+gloss        = "bắt lấy."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "462|Lăm"
+pdf_page     = 462
+reading      = "Lăm"
+line         = "林  Lăm  n."
+gloss        = "tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "462|Lăm"
+pdf_page     = 462
+reading      = "Lăm"
+line         = "𠄻  Lăm  n."
+gloss        = "tiếng kêu kể con năm ở sau các số mười, như nói mười lăm; hai mươi lăm; ba mươi lăm vv."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "462|Lắm"
+pdf_page     = 462
+reading      = "Lắm"
+line         = "廩  Lắm  n."
+gloss        = "rất, tiếng trợ từ, chỉ bậc cùng tốt."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "463|Lắm"
+pdf_page     = 463
+reading      = "Lắm"
+line         = "覽  Lắm  n."
+gloss        = "tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "463|Lâm"
+pdf_page     = 463
+reading      = "Lâm"
+line         = "林  Lâm  c."
+gloss        = "rừng, rú."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "463|Lâm"
+pdf_page     = 463
+reading      = "Lâm"
+line         = "霖  Lâm  c."
+gloss        = "mưa thuận, mưa dai, ( một mình ít dùng)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "463|Lậm"
+pdf_page     = 463
+reading      = "Lậm"
+line         = "濫  Lậm  n."
+gloss        = "sai, lầm."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "463|Lấm"
+pdf_page     = 463
+reading      = "Lấm"
+line         = "淋  Lấm  n."
+gloss        = "vấy bùn, vấy đất, không sạch sẽ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "463|Lầm"
+pdf_page     = 463
+reading      = "Lầm"
+line         = "林  Lầm  n."
+gloss        = "thô ngộ, sai suyển, tại vô ý mà quên lộn, mắc mưu, bị gạt."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "464|Lẫm"
+pdf_page     = 464
+reading      = "Lẫm"
+line         = "廩  Lẫm  c."
+gloss        = "đụn , vựa , chỗ chứa lúa thóc."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "464|Lan"
+pdf_page     = 464
+reading      = "Lan"
+line         = "蘭  Lan  c. n."
+gloss        = "loài cỏ dài lá mà nhỏ, bông nó thơm nhẹ; tủa ra, nhảy ra, rải ra."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "464|Làn"
+pdf_page     = 464
+reading      = "Làn"
+line         = "闌  Làn  n."
+gloss        = "chừng tên đạn đi tới; bề xa cách từ đâu đến đâu."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "464|Lằn"
+pdf_page     = 464
+reading      = "Lằn"
+line         = "𧋻  Lằn  n."
+gloss        = "dấu xếp, dấu cấn xuống mà dài; dấu roi vọt đánh xuống; đường mối kiến đi mòn."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "465|Lân"
+pdf_page     = 465
+reading      = "Lân"
+line         = "隣  Lân  c."
+gloss        = "láng diềng, một xóm, một ấp."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "465|Lận"
+pdf_page     = 465
+reading      = "Lận"
+line         = "吝  Lận  n."
+gloss        = "làm gian, ăn lận, gạt gẫm."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "465|Lấn"
+pdf_page     = 465
+reading      = "Lấn"
+line         = "吝  Lấn  n."
+gloss        = "xô đẩy, thôi thúc, lấy mình mà ép mà dừa đi; trổi hơn."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "465|Lần"
+pdf_page     = 465
+reading      = "Lần"
+line         = "吝  Lần  n."
+gloss        = "phiên ,thứ; tầng bậc; lừa theo; cứ theo phiên thứ; một khi một ít."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "474|Lạt"
+pdf_page     = 474
+reading      = "Lạt"
+line         = "𤁕  Lạt  n."
+gloss        = "không mặn mòi, không đậm."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "491|Lô"
+pdf_page     = 491
+reading      = "Lô"
+line         = "盧  Lô  n."
+gloss        = "cCái cốt, cái gốc (ít dùng)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "495|Loại"
+pdf_page     = 495
+reading      = "Loại"
+line         = "類  Loại  c."
+gloss        = "loài, giống, thải ra."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "505|Lộng"
+pdf_page     = 505
+reading      = "Lộng"
+line         = "弄  Lộng  n."
+gloss        = "cBộ cao rộng, bộ nghinh nganh không sợ phép ; lồng vào, thả phóng, chạy theo mé biển, giỡn chơi."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "516|Lung"
+pdf_page     = 516
+reading      = "Lung"
+line         = "篭  Lung  n."
+gloss        = "cHung hăng, không giữ lễ phép, không biết kiêng sợ, theo tính nóng nảy, hung bạo; Tiếng trợ từ, chỉ nghĩa là nhiều, là mạnh mẽ; chuông lồng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "516|Lủng"
+pdf_page     = 516
+reading      = "Lủng"
+line         = "隴  Lủng  n."
+gloss        = "cTrống ra, có lỗ, phủng, mất đáy, tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "517|Lược"
+pdf_page     = 517
+reading      = "Lược"
+line         = "畧  Lược  n."
+gloss        = "cĐồ dùng mà chải đầu; sơ qua, trải qua, tóm tắt."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "524|Mạ"
+pdf_page     = 524
+reading      = "Mạ"
+line         = "𥡗  Mạ  n. C"
+gloss        = "ây lúa mới mọc, lúa gieo để mà cấy."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "525|Mả"
+pdf_page     = 525
+reading      = "Mả"
+line         = "𡏢  Mả  n. C"
+gloss        = "uộc xây đắp, để làm dấu tích, tại chỗ chôn người ta."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "525|Mã"
+pdf_page     = 525
+reading      = "Mã"
+line         = "馬  Mã  c. N"
+gloss        = "gựa; vể vang, bóng dáng bày ra."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "537|Manh"
+pdf_page     = 537
+reading      = "Manh"
+line         = "氓  Manh  n."
+gloss        = "cĐồ rách rã ra từ tầm, từ miếng; dán.."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "545|Mè"
+pdf_page     = 545
+reading      = "Mè"
+line         = "楣  Mè  n. C"
+gloss        = "ây cưa từ lát dài, để mà phụ theo rui; thứ cây nhỏ có trái, có hột nhỏ vô số, người ta hay ăn cùng ép dầu."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "545|Mê"
+pdf_page     = 545
+reading      = "Mê"
+line         = "糜  Mê  n. C"
+gloss        = "ái lườn ghe, cái lòng thúng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "563|Mỏng"
+pdf_page     = 563
+reading      = "Mỏng"
+line         = "蒙  Mỏng  n."
+gloss        = "thưa ít, không có bề dày."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "598|Nghè"
+pdf_page     = 598
+reading      = "Nghè"
+line         = "儀  Nghè  n."
+gloss        = "cCả nhận, miết xuống làm cho dễ, cho trơn, tiếng xưng hô các người thi đậu."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "647|Nhũng"
+pdf_page     = 647
+reading      = "Nhũng"
+line         = "冗  Nhũng  n."
+gloss        = "cXấu hổ ; dư ra, bề bộn, tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "654|Nổ"
+pdf_page     = 654
+reading      = "Nổ"
+line         = "弩  Nổ  n."
+gloss        = "cBể phá thình lình, kêu ra tiếng ; cái ná."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "669|Nương"
+pdf_page     = 669
+reading      = "Nương"
+line         = "娘  Nương  n."
+gloss        = "cNhờ theo, lấy thế; nàng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "677|Ôn"
+pdf_page     = 677
+reading      = "Ôn"
+line         = "温  Ôn  c."
+gloss        = "âm; làm cho nhớ lại."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "719|Quạnh"
+pdf_page     = 719
+reading      = "Quạnh"
+line         = "瓊  Quạnh  n."
+gloss        = "vắng vẻ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "719|Quành"
+pdf_page     = 719
+reading      = "Quành"
+line         = "瓊  Quành  n."
+gloss        = "tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "719|Quánh"
+pdf_page     = 719
+reading      = "Quánh"
+line         = "𥗏  Quánh  n."
+gloss        = "khô cứng, chai cứng, thứ đất chai có lộn sắt."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "737|Ráng"
+pdf_page     = 737
+reading      = "Ráng"
+line         = "蓢  Ráng  n."
+gloss        = "thứ cây ở nước, cộng dài láy dày, người ta hay dùng mà làm chổi."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "738|Rằng"
+pdf_page     = 738
+reading      = "Rằng"
+line         = "浪  Rằng  n."
+gloss        = "nói, gọi, nói ra như vầy, nói như vầy."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "738|Ranh"
+pdf_page     = 738
+reading      = "Ranh"
+line         = "棦  Ranh  n."
+gloss        = "chỗ ngăn rào làm giái hạn."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "739|Ranh"
+pdf_page     = 739
+reading      = "Ranh"
+line         = "伶  Ranh  n."
+gloss        = "sinh để không nên, nhỏ mọn."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "739|Rảnh"
+pdf_page     = 739
+reading      = "Rảnh"
+line         = "冷  Rảnh  n."
+gloss        = "hết việc mần, không có việc mần, thung dung, khoan khoát."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "739|Rãnh"
+pdf_page     = 739
+reading      = "Rãnh"
+line         = "泠  Rãnh  n."
+gloss        = "mương, đàng nước."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "739|Rao"
+pdf_page     = 739
+reading      = "Rao"
+line         = "哰  Rao  n."
+gloss        = "truyền cho ai nấy biết."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "739|Rào"
+pdf_page     = 739
+reading      = "Rào"
+line         = "𣓿  Rào  n."
+gloss        = "cây, nọc trồng giăng mà ngăn chung quanh nhà đất; dung cây, nọc trồng giăng chung quanh nhà mà ngăn giữ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "740|Rạo"
+pdf_page     = 740
+reading      = "Rạo"
+line         = "棹  Rạo  n."
+gloss        = "cây trồng có hàng, để mà đóng dây cùng chặn đường cả đi ; tiếng kêu giòn."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "740|Rảo"
+pdf_page     = 740
+reading      = "Rảo"
+line         = "走  Rảo  n."
+gloss        = "chạy rểu, chạy đi khắp chỗ, thưa thớt."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "740|Rạp"
+pdf_page     = 740
+reading      = "Rạp"
+line         = "𧄵  Rạp  n."
+gloss        = "cuộc làm ra mà che mưa nắng, như kéo trền, lợp lá vv.; ngà sát xuống."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "740|Ráp"
+pdf_page     = 740
+reading      = "Ráp"
+line         = "撘  Ráp  n."
+gloss        = "đấu, lắp."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "740|Rấp"
+pdf_page     = 740
+reading      = "Rấp"
+line         = "泣  Rấp  n."
+gloss        = "tấp vào, mắc vào."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "740|Rát"
+pdf_page     = 740
+reading      = "Rát"
+line         = "𤌣  Rát  n."
+gloss        = "nóng đốt, xót xa."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "741|Rất"
+pdf_page     = 741
+reading      = "Rất"
+line         = "慄  Rất  n."
+gloss        = "tiếng chỉ bậc tột, phần nhiều hơn hết, lắm lắm."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "741|Rau"
+pdf_page     = 741
+reading      = "Rau"
+line         = "蔞  Rau  n."
+gloss        = "loại ngọn cỏ lá cây người ta hay ăn."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "741|Rảu"
+pdf_page     = 741
+reading      = "Rảu"
+line         = "老  Rảu  n."
+gloss        = "tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "741|Ráu"
+pdf_page     = 741
+reading      = "Ráu"
+line         = "𠸫  Ráu  n."
+gloss        = "tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "742|Rầu"
+pdf_page     = 742
+reading      = "Rầu"
+line         = "愁  Rầu  c. n."
+gloss        = "buồn bả, cực khổ trong lòng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "742|Ré"
+pdf_page     = 742
+reading      = "Ré"
+line         = "哩  Ré  n."
+gloss        = "la lớn tiếng mà giọng ét; ghé, tạt (nói về mưa nắng)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "742|Rẽ"
+pdf_page     = 742
+reading      = "Rẽ"
+line         = "𥘶  Rẽ  n."
+gloss        = "phân ra, chia ra, rạch ra, để riêng ra; nhánh, sườn cây quạt."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "742|Rè"
+pdf_page     = 742
+reading      = "Rè"
+line         = "提  Rè  n."
+gloss        = "chẻ ra, bể ra; tiếng kêu như thanh la bể."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "742|Rê"
+pdf_page     = 742
+reading      = "Rê"
+line         = "𪏭  Rê  n."
+gloss        = "băng rinh (đồ nặng); kéo dài ra."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "743|Rế"
+pdf_page     = 743
+reading      = "Rế"
+line         = "締  Rế  n."
+gloss        = "đồ thắt bằng mây tre để mà bợ lấy nồi niêu trách trả, hoặc để mà đựng vật khác."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "743|Rề"
+pdf_page     = 743
+reading      = "Rề"
+line         = "提  Rề  n."
+gloss        = "bằng xách (đồ nặng), làm như dời, đầy."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "743|Rèm"
+pdf_page     = 743
+reading      = "Rèm"
+line         = "簾  Rèm  n."
+gloss        = "tấm phên, tấm sáo, đồ đương kết bằng tre để treo trước mái nhà mà che sương nắng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "743|Ren"
+pdf_page     = 743
+reading      = "Ren"
+line         = "蓮  Ren  n."
+gloss        = "khổ lụa hàng làm ra mặt võng hoặc có rìa; tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "743|Rén"
+pdf_page     = 743
+reading      = "Rén"
+line         = "練  Rén  n."
+gloss        = "sẽ lén, nhẹ nhàng, êm thấm."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "743|Rèn"
+pdf_page     = 743
+reading      = "Rèn"
+line         = "鍊  Rèn  n."
+gloss        = "luyện sắt, đốt sắt mà làm ra đồ dao rựav.v."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "744|Rên"
+pdf_page     = 744
+reading      = "Rên"
+line         = "噒  Rên  n."
+gloss        = "than thở, làm ra tiếng thảm thương vì sự đau đớn khó chịu."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "744|Rền"
+pdf_page     = 744
+reading      = "Rền"
+line         = "𡃚  Rền  n."
+gloss        = "gầm chuyển, nổi tiếng vang dầy, rúng động."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "744|Reo"
+pdf_page     = 744
+reading      = "Reo"
+line         = "嘹  Reo  n."
+gloss        = "nói tiếng vui mừng, kêu la vui vẻ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "744|Réo"
+pdf_page     = 744
+reading      = "Réo"
+line         = "嘹  Réo  n."
+gloss        = "cứ tên ai mà kêu lớn."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "744|Rèo"
+pdf_page     = 744
+reading      = "Rèo"
+line         = "獠  Rèo  n."
+gloss        = "đeo lấy nhau, quấn lấy nhau (thường nói về rắn rít)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "744|Rẻo"
+pdf_page     = 744
+reading      = "Rẻo"
+line         = "釕  Rẻo  n."
+gloss        = "bìa chéo, thẻo nhỏ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "744|Rệp"
+pdf_page     = 744
+reading      = "Rệp"
+line         = "蠟  Rệp  n."
+gloss        = "loại trùng hôi, giẹp mình mà đen, hay hút máu người ta."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "744|Rẹt"
+pdf_page     = 744
+reading      = "Rẹt"
+line         = "洌  Rẹt  n."
+gloss        = "nổ ra, văng ra, bắn ra mà kêu."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "744|Rét"
+pdf_page     = 744
+reading      = "Rét"
+line         = "洌  Rét  n."
+gloss        = "lạnh lẽo ; ten sét."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "745|Rêu"
+pdf_page     = 745
+reading      = "Rêu"
+line         = "𦼔  Rêu  n."
+gloss        = "thứ rong cỏ rất nhỏ hay đóng vào vật khác."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "745|Rêu"
+pdf_page     = 745
+reading      = "Rêu"
+line         = "嘹  Rêu  n."
+gloss        = "tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "745|Rệu"
+pdf_page     = 745
+reading      = "Rệu"
+line         = "料  Rệu  n."
+gloss        = "rã, bấy, rướm ra, chảy nước."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "760|Rượn"
+pdf_page     = 760
+reading      = "Rượn"
+line         = "扙  Rượn  n."
+gloss        = "dạt ra, chảng ra, muốn đứt, muốn rã, muốn rách, (áo quần); ham hố quá."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "766|Sạch"
+pdf_page     = 766
+reading      = "Sạch"
+line         = "瀝  Sạch  n."
+gloss        = "vẹn vẻ, trong trẻo, không có bợn nhơ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "772|Săng"
+pdf_page     = 772
+reading      = "Săng"
+line         = "棱  Săng  n. C"
+gloss        = "ây cối; hòm chôn người ta."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "793|Sứ"
+pdf_page     = 793
+reading      = "Sứ"
+line         = "使  Sứ  c."
+gloss        = "kẻ lãnh mạng đi việc gì, người nhà nước sai."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "794|Sua"
+pdf_page     = 794
+reading      = "Sua"
+line         = "篘  Sua  n."
+gloss        = "cái vòng, cái niền kết trong lòng cái nón để mà đội cho vững."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "822|Tát"
+pdf_page     = 822
+reading      = "Tát"
+line         = "薩  Tát  n."
+gloss        = "cLập thế lấy nước cho ráo, vầy nước đi; tên riêng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "825|Tê"
+pdf_page     = 825
+reading      = "Tê"
+line         = "痹  Tê  c. n."
+gloss        = "da thịt ê đi, có chích cũng không biết đau, máu không chạy."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "825|Tệ"
+pdf_page     = 825
+reading      = "Tệ"
+line         = "弊  Tệ  c."
+gloss        = "hư, mòn, bại hoại, thiệt hại; cực khổ, khó chịu."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "853|Thêm"
+pdf_page     = 853
+reading      = "Thêm"
+line         = "𣸸  Thêm  n."
+gloss        = "c Gia tăng, tăng số, làm ra cho nhiều."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "871|Thoát"
+pdf_page     = 871
+reading      = "Thoát"
+line         = "脫  Thoát  c."
+gloss        = "khỏi, xẩy khỏi, ra khỏi; vượt khỏi; vụt đi; cởi, lột; chóng qua."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "883|Thuần"
+pdf_page     = 883
+reading      = "Thuần"
+line         = "純  Thuần  c."
+gloss        = "trọn vẹn, tinh anh."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "913|Tom"
+pdf_page     = 913
+reading      = "Tom"
+line         = "󰑖  Tom  n."
+gloss        = "gom lại, cột thâu lại; làm phép tóm giữ (theo Mên, Mọi)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "928|Tranh"
+pdf_page     = 928
+reading      = "Tranh"
+line         = "𦱊  Tranh  n."
+gloss        = "loài cỏ lá dài, cao rộng, người ta hay dùng mà lợp nhà."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "967|Tụng"
+pdf_page     = 967
+reading      = "Tụng"
+line         = "誦  Tụng  c."
+gloss        = "đọc. Kinh. Đọc kinh."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "967|Túng"
+pdf_page     = 967
+reading      = "Túng"
+line         = "縱  Túng  n."
+gloss        = "cBó buộc lại một chỗ, mất thong thả ; chật hẹp ; ngặt nghèo ; buông ra, thả ra, không cầu thúc, (ấy là nghĩa chữ túng).Phóng, thả."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "968|Tùng"
+pdf_page     = 968
+reading      = "Tùng"
+line         = "從  Tùng  c."
+gloss        = "theo, nương theo, phụ theo, làm phó."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1014|Xá"
+pdf_page     = 1014
+reading      = "Xá"
+line         = "赦  Xá  c."
+gloss        = "tha."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1015|Xấc"
+pdf_page     = 1015
+reading      = "Xấc"
+line         = "倬  Xấc  n."
+gloss        = "y mình, cậy thế,càng ngang, không biết kính vì ai."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1015|Xách"
+pdf_page     = 1015
+reading      = "Xách"
+line         = "捇  Xách  n."
+gloss        = "nắm quai mà nhắc lên, cắm má dở hồng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1016|Xạch"
+pdf_page     = 1016
+reading      = "Xạch"
+line         = "捇  Xạch  n."
+gloss        = "tiếng vật mềm sa xuống đất, (nghe cái xạch)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1016|Xái"
+pdf_page     = 1016
+reading      = "Xái"
+line         = "屎  Xái  c."
+gloss        = "phần."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1016|Xay"
+pdf_page     = 1016
+reading      = "Xay"
+line         = "槎  Xay  n."
+gloss        = "dùng máy xây mà cà đồ hột cho tróc vỏ hoặc nghiền nó cho nát như bột."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1017|Xam"
+pdf_page     = 1017
+reading      = "Xam"
+line         = "攙  Xam  c."
+gloss        = "trộn lộn."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1017|Xảm"
+pdf_page     = 1017
+reading      = "Xảm"
+line         = "揕  Xảm  n."
+gloss        = "dụng dầu chai cùng vật gì mềm mà nhém mà trét, ( ghe thuyền vân vân)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1017|Xâm"
+pdf_page     = 1017
+reading      = "Xâm"
+line         = "侵  Xâm  c."
+gloss        = "lân, giành."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1017|Xán"
+pdf_page     = 1017
+reading      = "Xán"
+line         = "振  Xán  n."
+gloss        = "đập xuông, đánh bể."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1018|Xăn"
+pdf_page     = 1018
+reading      = "Xăn"
+line         = "搷  Xăn  n."
+gloss        = "kéo lên, thâu lên cho gọn."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1018|Xắn"
+pdf_page     = 1018
+reading      = "Xắn"
+line         = "振  Xắn  n."
+gloss        = "dùng cuốc xuổng, hay là đồ gì mà chân xuông,chặt sân xuông ;chia ra."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1018|Xàng"
+pdf_page     = 1018
+reading      = "Xàng"
+line         = "常  Xàng  n."
+gloss        = "thường thường."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1018|Xằng"
+pdf_page     = 1018
+reading      = "Xằng"
+line         = "𦀾  Xằng  n."
+gloss        = "rối rắm, mất nết."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1018|Xảng"
+pdf_page     = 1018
+reading      = "Xảng"
+line         = "拯  Xảng  n."
+gloss        = "mạnh quá, cứng quá, ôp chát, không có nghĩa dịu dàng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1019|Xao"
+pdf_page     = 1019
+reading      = "Xao"
+line         = "敲  Xao  c. n."
+gloss        = "khua động, làm cho nổi tiếng tăm ; tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1019|Xạo"
+pdf_page     = 1019
+reading      = "Xạo"
+line         = "造  Xạo  n."
+gloss        = "rộn ràng."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1019|Xáo"
+pdf_page     = 1019
+reading      = "Xáo"
+line         = "草  Xáo  c."
+gloss        = "giọng (Triều-châu)."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1020|Xấp"
+pdf_page     = 1020
+reading      = "Xấp"
+line         = "𠍱  Xấp  n."
+gloss        = "xếp lại, nhập lại."
+verified_by  = ""
+
+[[gloss_initial_lost]]
+key          = "1025|Xích"
+pdf_page     = 1025
+reading      = "Xích"
+line         = "尺  Xích  c. n."
+gloss        = "thước; (tiếng trợ từ)."
+verified_by  = ""

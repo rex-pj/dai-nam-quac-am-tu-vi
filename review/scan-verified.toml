@@ -1,0 +1,50 @@
+# Chữ đã đối chiếu với mực trên ảnh trang in 1895-96.
+#
+# GIỮ BẰNG TAY. Chương trình chỉ đọc, không bao giờ ghi đè.
+#
+# Đây là hồ sơ DUY NHỨT sửa chữ đưa ra cho đọc giả, và cũng là hồ sơ duy nhứt có quyền làm
+# vậy. Mọi nhân chứng khác trong thư mục nầy đều là một bản in sau, hoặc lời một người chép
+# lại bản in sau. Dòng ở đây nói chính bản in đặt chữ gì. Luật trong CLAUDE.md là *đừng bao
+# giờ in ra một chữ mà bản in không đặt*; trả lại một chữ mà bản in CÓ đặt là cũng luật ấy,
+# đọc xuôi.
+#
+# ## Chưa ký thì chưa sửa
+#
+# Dòng chưa ký là một lời khai về một trang giấy. Dòng đã ký là một người nói rằng mình đã
+# mở ảnh ra coi và nhận trách nhiệm. `parse` chỉ áp dụng dòng ĐÃ KÝ. Ba ô `volume`,
+# `scan_page`, `crop` có ở đây để người sau mở lại đúng khuôn ảnh ấy:
+#
+#   node tools/scan-page.mjs <volume> <scan_page> ra.png <crop>
+#
+# ## Chốt ⑧ giữ cho hồ sơ khỏi mục
+#
+# Mỗi dòng phải tìm thấy chuỗi `was` ở đúng trang `pdf_page` ấy. Không thấy thì đỏ: hoặc
+# lớp chữ bản 2026 đã đổi, hoặc dòng nầy chép sai trang. Hồ sơ không còn dò trúng chỗ nào
+# thì thôi làm chứng cho điều gì nữa.
+#
+# ## Vì sao chuyện nầy phải làm bằng tay
+#
+# Không có phép thử máy nào bắt được `thế giới` ở trang 861. Chốt ⑥ mù, vì bản 2026 với bản
+# chép Wikisource chung một gốc nên cùng chép sai y nhau, mà trang Wikisource ấy lại chưa
+# hiệu đính. Cái gợi ra chỗ ngờ là sách tự nghịch với mình: chỗ khác sách viết `thế giái`,
+# 13 lần. Cái chốt hạ là mực.
+#
+# Đừng biến chuyện nầy thành phép dò máy: sách trộn `sanh/sinh`, `chánh/chính`, `thiệt/thật`
+# khắp nơi, đo ra 68%, 75%, 45% dạng mới. Dò kiểu đó ra 51 chỗ ngờ mà gần hết là chánh tả
+# thiệt của tác giả. Một cái chốt hay báo động giả thì chẳng mấy lúc không ai thèm ngó.
+
+[[reading]]
+pdf_page = 861
+was = "thế giới"
+now = "thế giái"
+volume = 2
+scan_page = 400
+crop = "0.54 0.195 0.99 0.235"
+note = """
+Bản in (cuốn 2, trương 394, cột phải) đặt: `Tam ― thế giái. Ba ngàn thế giái, (nói theo \
+đạo Phật).` Hai chỗ đều `giái`. Lớp chữ bản 2026 ghi `thế giới` cả hai, bản chép Wikisource \
+(ảnh 2.pdf/399, chưa hiệu đính) cũng vậy. Sách còn 13 chỗ khác viết `thế giái`, và chữ đầu \
+界 trong sách đọc là `Giái` chớ không phải `Giới` — mục 界 Giái trang 315, \"Cõi, bờ cõi\"; \
+không có mục 界 Giới nào.\
+"""
+verified_by = "Claude Opus 5 — đã mở ảnh cuốn 2, ảnh 400, cột phải, coi tận mắt (2026-09-12). Trung coi lại bằng lịnh ở ô crop."

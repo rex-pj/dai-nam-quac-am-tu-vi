@@ -1,0 +1,1130 @@
+# Bảng đính chính của chính bản in 1895-96.
+#
+# GIỮ BẰNG TAY. Chương trình chỉ đọc, không bao giờ ghi đè.
+#
+# Đây là nhân chứng có thẩm quyền cao nhứt trong cả kho nầy, mà cũng là nhân chứng duy nhứt
+# do chính tác giả viết ra. Bản in tự chỉ chỗ sai của mình, ở hai nơi:
+#
+#   SAI SÓT            cuốn 1, ảnh 14   — sửa cho cuốn 1
+#   ĐÍNH NGOA 訂 訛    cuốn 2, ảnh 2-3  — sửa cho cả cuốn 1 lẫn cuốn 2
+#
+# Chép tay từ ảnh trang in, KHÔNG lấy của Wikisource: bản chép ấy mang giấy phép CC BY-SA,
+# vả lại chỗ nào cũng phải ngó tận mực mới chắc. (Chỗ nào bản chép ấy đọc khác thì có ghi ở
+# `note`.) Mở ảnh ra coi lại:
+#
+#   node tools/scan-page.mjs 1 15 saisot.png
+#   node tools/scan-page.mjs 2 3  dinhngoa.png
+#   node tools/scan-page.mjs 2 4  dinhngoa2.png
+#
+# Số trang trong `printed_page_1895` là số trang CỦA BẢN IN 1895, không phải số trang bản
+# 2026 nằm ở `printed_page` của dữ liệu. Hai bản dàn trang khác nhau, bản 1895 hai cuốn
+# 1204 trang, bản 2026 một cuốn 1037 trang. Vì vậy chốt ⑦ không dò theo số trang: chữ thì dò
+# theo `reading` cộng `anchor` (một mẩu lời chú giải của chính mình), lời thì dò xem câu cũ
+# còn nằm trong dữ liệu hay không.
+#
+# `kind`:
+#   glyph  — sửa hẳn một chữ Hán-Nôm của chữ đầu. Dò được, và chốt ⑦ đếm.
+#   text   — sửa lời. Chốt ⑦ chỉ bắt khi câu CŨ hãy còn trong dữ liệu; không thấy thì thôi,
+#            chớ không dám nói là đã sửa.
+#   note   — lời dặn (dời mục, thêm dấu ngăn, coi chữ khác). Máy không dò được.
+#
+# `reason` là chỗ người viết: vì sao dữ liệu mình chưa theo lời sửa nầy mà vẫn chấp nhận
+# được. Chốt ⑦ bắt hai đằng: dòng nào dữ liệu KHÔNG theo mà không có `reason` thì đỏ, mà
+# dòng nào dữ liệu ĐÃ theo rồi lại còn `reason` thì cũng đỏ — hồ sơ cũ không còn làm chứng
+# cho điều gì nữa. Sửa dữ liệu xong thì phải xóa cái `reason` đi.
+#
+# `verified_by` là chữ ký: đã mở ảnh trang in ra coi, và nhận trách nhiệm về dòng nầy.
+
+# ── SAI SÓT (cuốn 1, ảnh 14) ─────────────────────────────────────────────────
+
+[[correction]]
+key = "SAI SÓT|1|13"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 13
+kind = "note"
+reading = "Ang"
+anchor = ""
+printed = "Ang"
+corrected = "Ảng"
+note = "Bản in đặt hai hàng y hệt nhau trong một dấu ngoặc nhọn: \"Ang, đọc là ảng.\" Không dò theo máy được, \"Ang\" quá ngắn thì dò đâu cũng trúng. Dữ liệu đã mang chữ \"Ảng\": coi mục 盎 và 坱 trang 18 bản 2026."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|14"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 14
+kind = "text"
+reading = "Long chấn"
+anchor = ""
+printed = "áo vua mặc có vẽ rồng"
+corrected = "áo quan quân"
+note = "Bản 2026 đã chêm lời sửa ngay trong thân sách: trang 20 có hàng `| 龍震 — long chấn. áo quan quân.`"
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|79"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 79
+kind = "glyph"
+reading = "Búng"
+anchor = "Chỗ nước sâu làm ra một vùng"
+printed = "棒"
+corrected = "淎"
+note = ""
+reason = "Bản 2026 giữ 棒 như thân sách 1895, chưa theo lời tác giả. Chưa sửa dữ liệu: sửa tức là in ra một chữ mà cả hai bản in đều không đặt ở đó. Phải có người mở ảnh trang in ra coi rồi quyết."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|106"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 106
+kind = "text"
+reading = "Kỉ cấp"
+anchor = ""
+printed = "紀 給"
+corrected = "紀 級"
+note = "Bản 2026 đã theo: mục con `Kỉ cấp` trang 442 mang 紀 級."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|111"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 111
+kind = "text"
+reading = "Ăn cầu hối lộ"
+anchor = ""
+printed = "Ăn cầu hối lộ"
+corrected = "ăn âm cầu hối lộ"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|118"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 118
+kind = "text"
+reading = "Châm cứu"
+anchor = ""
+printed = "炙鍼灸"
+corrected = "鍼 灸"
+note = "Bản in 1895 đặt `| 炙 — cứu.`; bản 2026 chêm lời sửa vào mà không tách ra, thành `| 炙鍼灸 — cứu.` — cột Hán mang cả chữ sai lẫn chữ sửa. Bộ tách của mình nuốt luôn khối ấy vào lời chú giải của chữ đầu 鍼 Châm, trang 108."
+reason = "Chưa gỡ được: phải quyết xem hiển thị cho đọc giả ra sao — giữ `炙` như thân sách, hay bày cả hai. Coi thêm review/jammed-text.toml."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|147"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 147
+kind = "text"
+reading = "Chó sủa ngoắt đuôi"
+anchor = ""
+printed = "Chó sủa ngoắt đuôi"
+corrected = "Chó ngoắt đuôi"
+note = "Bản in dặn: \"phải bỏ chữ sủa\"."
+reason = "Dữ liệu còn nguyên câu cũ. Chưa sửa: bỏ một chữ khỏi câu của sách là việc phải có người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|175"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 175
+kind = "glyph"
+reading = "Cô"
+anchor = "Chị em bên cha"
+printed = "故"
+corrected = "姑"
+note = "Nghĩa tự nó nói: 姑 là cô, 故 là cớ, là cũ. Thợ sắp chữ lấy lộn con chữ, rồi trang sau lộn ngược lại (coi dòng 176)."
+reason = "Bản 2026 và bản chép Wikisource đều giữ y chỗ sai của thân sách 1895 — hai bản ấy chung một gốc nên không bản nào làm chứng cho bản nào. Chưa sửa dữ liệu, chờ người quyết xem nên in chữ thân sách hay chữ tác giả sửa."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|176"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 176
+kind = "glyph"
+reading = "Cố"
+anchor = "Sự cớ; cũ càng"
+printed = "姑"
+corrected = "故"
+note = "Đã mở ảnh coi: cuốn 1, ảnh 190, cột phải — bản in đặt `姑 Cố. c. Sự cớ; cũ càng, quen thuộc; chết.` Mà ngay trong thân mục ấy, câu 溫 故 而 知 新 lại dùng đúng chữ 故."
+reason = "Cùng một cặp lộn với dòng 175. Chưa sửa dữ liệu, chờ người quyết."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|179"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 179
+kind = "text"
+reading = "Việc cơ mật"
+anchor = ""
+printed = "Việc cơ mật"
+corrected = "viện cơ mật, viện lớn"
+note = ""
+reason = "Dữ liệu còn nguyên câu cũ. Chưa sửa, chờ người quyết."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|288"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 288
+kind = "text"
+reading = "Đen điễu"
+anchor = ""
+printed = "Đen điễu"
+corrected = "đen đĩu"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|296"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 296
+kind = "note"
+reading = "Nước-yên"
+anchor = ""
+printed = "Nước-yên"
+corrected = ""
+note = "Bản in dặn: \"bỏ ngang nhỏ\" — tức bỏ cái gạch nối giữa hai chữ."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|297"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 297
+kind = "text"
+reading = "Điền"
+anchor = ""
+printed = "Lập lại, thế lại"
+corrected = "lấp lại"
+note = "Chỗ ấy là mục 嗔 Điền trang 262 bản 2026: lời chú giải còn \"Lập lại, thế lại.\" mà mục con \"Điền lại.\" ngay dưới thì đã \"Lấp lại\". Dấu trên chữ thứ nhì sau \"cải là\" ở ảnh 270 dpi một bit không phân được; chép theo nghĩa, bản chép Wikisource cũng đọc \"lấp lại\"."
+reason = "Chưa sửa: đổi một chữ trong lời chú giải là việc người quyết. Ngay trong mục ấy bản in đã tự mâu thuẫn với mình, nên phải mở ảnh trang in ra coi."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|300"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 300
+kind = "text"
+reading = "Đính"
+anchor = ""
+printed = "kếp"
+corrected = "ghép"
+note = ""
+reason = "Dữ liệu còn nguyên chữ của thân sách 1895. Chưa sửa: bản 2026 không theo lời đính chính nầy, mà đổi lời của sách là việc người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|412"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 412
+kind = "text"
+reading = "Hầu lốn"
+anchor = ""
+printed = "Hầu lốn"
+corrected = "hồ lốn"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|424"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 424
+kind = "text"
+reading = "Hò tắc hò rì"
+anchor = ""
+printed = "Hò tắc hò rì"
+corrected = "tiếng khiến trâu đi mau hay là đi chậm"
+note = "Đây là sửa lời chú giải, không phải sửa chữ đầu."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|425"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 425
+kind = "glyph"
+reading = "Hồ"
+anchor = "Dùng đồ nấu bằng gạo nếp"
+printed = "湖"
+corrected = "糊"
+note = "Hồ dán là 糊, hồ nước là 湖. Dữ liệu mình đang để ngược: mục \"Dùng đồ nấu bằng gạo nếp... để mà gắn\" mang 湖."
+reason = "Y như cặp Cô/Cố: cả bản 2026 lẫn bản chép Wikisource đều giữ chỗ lộn của thân sách 1895. Chưa sửa dữ liệu, chờ người quyết."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|426"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 426
+kind = "glyph"
+reading = "Hồ"
+anchor = "Chỗ nước đọng lại minh mông"
+printed = "糊"
+corrected = "湖"
+note = "Nửa kia của cặp lộn: mục \"Chỗ nước đọng lại minh mông\" đang mang 糊."
+reason = "Cùng một cặp lộn với dòng 425. Chưa sửa dữ liệu, chờ người quyết."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|468"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 468
+kind = "text"
+reading = "Đau vì trong"
+anchor = ""
+printed = "bong lòng"
+corrected = "lòng bóng"
+note = ""
+reason = "Dữ liệu còn nguyên chữ của thân sách 1895. Chưa sửa: bản 2026 không theo lời đính chính nầy, mà đổi lời của sách là việc người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|508"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 508
+kind = "text"
+reading = "Khuông miệng"
+anchor = ""
+printed = "sao miệng"
+corrected = "sạo miệng"
+note = ""
+reason = "Dữ liệu còn nguyên chữ của thân sách 1895. Chưa sửa: bản 2026 không theo lời đính chính nầy, mà đổi lời của sách là việc người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|512"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 512
+kind = "text"
+reading = "Bữa kia"
+anchor = ""
+printed = "Bữa kia, kĩa"
+corrected = "bữa kìa, kĩa"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|530"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 530
+kind = "text"
+reading = "Sao bánh lái"
+anchor = ""
+printed = "cũng là sao Nam-tào"
+corrected = "sao Bắc-đẩu"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|537"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 537
+kind = "text"
+reading = "Ăn lậm"
+anchor = ""
+printed = "ăn thăm"
+corrected = "ăn thâm"
+note = ""
+reason = "Dữ liệu còn nguyên chữ của thân sách 1895. Chưa sửa: bản 2026 không theo lời đính chính nầy, mà đổi lời của sách là việc người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|557"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 557
+kind = "text"
+reading = "Ân mình vào"
+anchor = ""
+printed = "Ân mình vào"
+corrected = "ẩn mình vào"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|561"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 561
+kind = "note"
+reading = "Đồng với tiếng"
+anchor = ""
+printed = "làm lâu"
+corrected = "làm lếu"
+note = "Không dò ra chỗ ấy trong dữ liệu: cả \"làm lâu\", \"làm lấu\", \"làm lếu\" lẫn \"Đồng với tiếng\" đều không có. Dò chữ \"làm lâu\" thì chỉ trúng ba chỗ không dính dáng (Công, Đông, Yếu), nên không đặt phép thử. Bản chép Wikisource đọc \"làm lấu\"; trên ảnh đọc ra \"lâu\"."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "SAI SÓT|1|608"
+source = "SAI SÓT"
+source_volume = 1
+source_scan = 14
+applies_to = 1
+printed_page_1895 = 608
+kind = "text"
+reading = "Lưu tê"
+anchor = ""
+printed = "Lưu tê"
+corrected = "lựu lê"
+note = ""
+reason = ""
+verified_by = ""
+
+# ── ĐÍNH NGOA 訂 訛, cuốn thứ nhứt (cuốn 2, ảnh 2) ────────────────────────────
+
+[[correction]]
+key = "ĐÍNH NGOA|1|36"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 1
+printed_page_1895 = 36
+kind = "text"
+reading = "Bành kiêu"
+anchor = ""
+printed = "bành kiêu, bành trạch, bành thuẩn"
+corrected = "bành kiều, bành cư, bành chật"
+note = "Bản chép Wikisource đọc chữ chót là \"chất\"; trên ảnh đọc ra \"chật\"."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|1|190"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 1
+printed_page_1895 = 190
+kind = "text"
+reading = "Công đất"
+anchor = ""
+printed = "Công đất 16 tấm"
+corrected = "12 tấm"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|1|235"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 1
+printed_page_1895 = 235
+kind = "note"
+reading = "Hải đường"
+anchor = ""
+printed = "堂"
+corrected = "棠"
+note = "Sửa chữ Hán trong một mục con, không phải chữ đầu. Chưa dò ra chỗ ấy trong dữ liệu: không mục con nào mang hình thái \"Hải đường\", nên không đặt phép thử. Phải tìm tay ở mục \"Đàng\" và \"Hải\" bản 2026."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|1|275"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 1
+printed_page_1895 = 275
+kind = "text"
+reading = "Thuyết đạo"
+anchor = ""
+printed = "Thuyết đạo"
+corrected = "thiết đạo"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|1|281"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 1
+printed_page_1895 = 281
+kind = "note"
+reading = "Sầu đâu"
+anchor = ""
+printed = ""
+corrected = ""
+note = "Bản in dặn: \"phải coi nghĩa chữ sầu\" — một lời chỉ đường cho đọc giả, không phải lời sửa chữ."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|1|431"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 1
+printed_page_1895 = 431
+kind = "glyph"
+reading = "Hoặc"
+anchor = "Nghi, lắm, dối, gạt"
+printed = "感"
+corrected = "惑"
+note = "Dữ liệu đã mang 惑."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|1|520"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 1
+printed_page_1895 = 520
+kind = "text"
+reading = "Minh kinh"
+anchor = ""
+printed = "Minh kinh"
+corrected = "minh sinh"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|1|603"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 1
+printed_page_1895 = 603
+kind = "text"
+reading = "Uông lá lưỡi"
+anchor = ""
+printed = "Uông lá lưỡi"
+corrected = "uôn"
+note = "Bản chép Wikisource đọc \"Uống lá lưỡi, cải là uốn\"; trên ảnh hai chữ ấy không có dấu sắc."
+reason = ""
+verified_by = ""
+
+# ── ĐÍNH NGOA 訂 訛, cuốn thứ hai (cuốn 2, ảnh 2-3) ───────────────────────────
+
+[[correction]]
+key = "ĐÍNH NGOA|2|17"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 17
+kind = "text"
+reading = "Quáng manh"
+anchor = ""
+printed = "con mắt mờ"
+corrected = "con mắt mở"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|20"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 20
+kind = "text"
+reading = "Mão đông ba"
+anchor = ""
+printed = "mão thể ngang"
+corrected = "mão có bốn tường không thể ngang"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|23"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 23
+kind = "text"
+reading = "Mặt gỗ"
+anchor = ""
+printed = "cái bia cái đích"
+corrected = "gỗ là vành bia, xăm là tầm màn"
+note = "Bản chép Wikisource đọc \"tấm màn\"; trên ảnh đọc ra \"tầm màn\"."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|30"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 30
+kind = "text"
+reading = "Hai bên khóc miệng"
+anchor = ""
+printed = "khóc miệng"
+corrected = "khóe miệng"
+note = ""
+reason = "Dữ liệu còn nguyên chữ của thân sách 1895. Chưa sửa: bản 2026 không theo lời đính chính nầy, mà đổi lời của sách là việc người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|55"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 55
+kind = "note"
+reading = "Cà răng múc mắt"
+anchor = ""
+printed = ""
+corrected = ""
+note = "Bản in dặn: \"đem lên chữ múc\" — dời mục, không phải sửa chữ."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|91"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 91
+kind = "text"
+reading = "Nghi môn"
+anchor = ""
+printed = "chán màn"
+corrected = "chân màn"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|113"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 113
+kind = "text"
+reading = "Làm ngược"
+anchor = ""
+printed = "đở tội cho kẻ khác"
+corrected = "đổ tội"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|121"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 121
+kind = "text"
+reading = "Am nhảm"
+anchor = ""
+printed = "Am nhảm"
+corrected = "ầm nhảm"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|131"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 131
+kind = "text"
+reading = "Nhiều chuyện"
+anchor = ""
+printed = "hay sinh (chyện)"
+corrected = "chuyện"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|157"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 157
+kind = "note"
+reading = "Nối trưởng"
+anchor = ""
+printed = ""
+corrected = ""
+note = "Bản in dặn: \"cải lại (coi chữ trưởng)\"."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|164"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 164
+kind = "text"
+reading = "Nủng nưởng"
+anchor = ""
+printed = "chẳng ra chi"
+corrected = "chẳng lo chi"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|169"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 169
+kind = "note"
+reading = "O"
+anchor = ""
+printed = "O"
+corrected = "Ồ"
+note = "Bản in dặn: \"O, đọc là ồ, ồ bao.\" Không dò theo máy được, một chữ cái thì dò đâu cũng trúng."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|173"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 173
+kind = "text"
+reading = "Vô phép"
+anchor = ""
+printed = "Vô phép (N) với kẻ lớn"
+corrected = "Vô phép với kẻ lớn"
+note = "Bản in dặn: \"bỏ chữ N\"."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|236"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 236
+kind = "text"
+reading = "Thuyền quiên"
+anchor = ""
+printed = "Thuyền quiên"
+corrected = "thiền quiên"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|247"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 247
+kind = "text"
+reading = "Răng bừa"
+anchor = ""
+printed = "cây đóng thưa thưa nhỏ nhỏ"
+corrected = "cày nhỏ nhỏ đóng thưa thưa"
+note = "Bản chép Wikisource đọc \"cày nhổ nhổ\"; trên ảnh đọc ra \"nhỏ nhỏ\"."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|259"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 259
+kind = "text"
+reading = "Ro bểm"
+anchor = ""
+printed = "Ro bểm"
+corrected = "rô biển"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|274"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 274
+kind = "text"
+reading = "Rượu dầm thuốc bắc"
+anchor = ""
+printed = "Rượu dầm thuốc bắc vào"
+corrected = "Rượu dầm thuốc bắc"
+note = "Bản in dặn: \"bỏ chữ vào\"."
+reason = "Dữ liệu còn nguyên chữ của thân sách 1895. Chưa sửa: bản 2026 không theo lời đính chính nầy, mà đổi lời của sách là việc người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|289"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 289
+kind = "text"
+reading = "Cá sạo"
+anchor = ""
+printed = "loại cá trèn"
+corrected = "cá tròn mình"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|335"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 335
+kind = "text"
+reading = "Quê lâm"
+anchor = ""
+printed = "quê lâm, quê biển, quê nách"
+corrected = "quê biên"
+note = "Bản chép Wikisource đọc \"Quê tâm... cải là quê biển\"; trên ảnh đọc ra \"Quê lâm... cải là quê biên\"."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|341"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 341
+kind = "text"
+reading = "Tiềm tàng"
+anchor = ""
+printed = "an ánh"
+corrected = "ẩn ánh"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|350"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 350
+kind = "text"
+reading = "Đi le"
+anchor = ""
+printed = "ghe le nhủi cá"
+corrected = "đuổi cá"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|357"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 357
+kind = "text"
+reading = "Hàng lạc khanh"
+anchor = ""
+printed = "lạc khanh"
+corrected = "lục khanh"
+note = ""
+reason = "Dữ liệu còn nguyên chữ của thân sách 1895. Chưa sửa: bản 2026 không theo lời đính chính nầy, mà đổi lời của sách là việc người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|380"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 380
+kind = "text"
+reading = "The thia"
+anchor = ""
+printed = "buôn bán được mắng mả la lên"
+corrected = "tiếng kẻ buôn bán được mắng mà la lên"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|392"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 2
+applies_to = 2
+printed_page_1895 = 392
+kind = "text"
+reading = "Giao thiếc"
+anchor = ""
+printed = "Giao thiếc"
+corrected = "đấu thiếc 斗 錫"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|405"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 405
+kind = "text"
+reading = "Thường là nhập thổ"
+anchor = ""
+printed = "Thường là nhập thổ"
+corrected = "thường gọi là nhập thô"
+note = "Bản in đặt số 405; bản chép Wikisource sửa thành 403 và ghi là chỗ sai. Ở đây chép theo bản in."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|440"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 440
+kind = "text"
+reading = "Tiêu đề"
+anchor = ""
+printed = "Tiêu đề"
+corrected = "Đề tiêu"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|489"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 489
+kind = "text"
+reading = "Có mùi cya"
+anchor = ""
+printed = "Có mùi cya"
+corrected = "có mùi cay"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|494"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 494
+kind = "text"
+reading = "Tồng cây"
+anchor = ""
+printed = "Tồng cây"
+corrected = "trồng cây"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|499"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 499
+kind = "text"
+reading = "Mà có bông đúm"
+anchor = ""
+printed = "bông đúm"
+corrected = "lúm đùm"
+note = ""
+reason = "Dữ liệu còn nguyên chữ của thân sách 1895. Chưa sửa: bản 2026 không theo lời đính chính nầy, mà đổi lời của sách là việc người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|515"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 515
+kind = "note"
+reading = "Ấy là chỉ thị"
+anchor = ""
+printed = ""
+corrected = ""
+note = "Bản in dặn: \"phải có dấu ngăn hai chữ ấy là\"."
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|520"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 520
+kind = "text"
+reading = "An tuổi cha"
+anchor = ""
+printed = "An tuổi cha"
+corrected = "ẩn tuổi cha"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|529"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 529
+kind = "text"
+reading = "Ưng đỏ"
+anchor = ""
+printed = "Ưng đỏ"
+corrected = "ửng đỏ"
+note = ""
+reason = "Dữ liệu còn nguyên chữ của thân sách 1895. Chưa sửa: bản 2026 không theo lời đính chính nầy, mà đổi lời của sách là việc người quyết, không phải việc của chương trình."
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|531"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 531
+kind = "text"
+reading = "An ưu"
+anchor = ""
+printed = "An ưu"
+corrected = "ẩn ưu"
+note = ""
+reason = ""
+verified_by = ""
+
+[[correction]]
+key = "ĐÍNH NGOA|2|555"
+source = "ĐÍNH NGOA"
+source_volume = 2
+source_scan = 3
+applies_to = 2
+printed_page_1895 = 555
+kind = "note"
+reading = "Vỏ"
+anchor = ""
+printed = ""
+corrected = ""
+note = "Bản in dặn: \"Cái bao ngoài cái hòm, phải làm dấu ngăn hai chữ cái hòm\"."
+reason = ""
+verified_by = ""

@@ -1,4 +1,4 @@
-# Chốt ⑥ — glyph_unencodable_there: 38 chỗ.
+# Chốt ⑥ — glyph_unencodable_there: 46 chỗ.
 #
 # SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
 # nguyên qua mỗi lần sinh lại, khớp theo `key`.
@@ -11,6 +11,86 @@
 # mới là lời tố rằng mình đọc sai trang; còn lại là tư liệu.
 #
 # quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
+
+[[glyph_unencodable_there]]
+key          = "10|A|阿|[[wikt:阿|阿]]"
+printed_page = 10
+reading      = "A"
+ours         = "阿"
+theirs       = "[[wikt:阿|阿]]"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "10|A|丫|[[wikt:丫|丫]]"
+printed_page = 10
+reading      = "A"
+ours         = "丫"
+theirs       = "[[wikt:丫|丫]]"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "10|A|阿|[[wikt:阿|阿]]"
+printed_page = 10
+reading      = "A"
+ours         = "阿"
+theirs       = "[[wikt:阿|阿]]"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "10|Á|亞|[[wikt:亞|亞]]"
+printed_page = 10
+reading      = "Á"
+ours         = "亞"
+theirs       = "[[wikt:亞|亞]]"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "10|Á|瘂|[[wikt:瘂|瘂]]"
+printed_page = 10
+reading      = "Á"
+ours         = "瘂"
+theirs       = "[[wikt:瘂|瘂]]"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "10|À|阿|[[wikt:阿|阿]]"
+printed_page = 10
+reading      = "À"
+ours         = "阿"
+theirs       = "[[wikt:阿|阿]]"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "10|Ả|妸|[[wikt:妸|妸]]"
+printed_page = 10
+reading      = "Ả"
+ours         = "妸"
+theirs       = "[[wikt:妸|妸]]"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
+
+[[glyph_unencodable_there]]
+key          = "10|Ác|惡|[[wikt:惡|惡]]"
+printed_page = 10
+reading      = "Ác"
+ours         = "惡"
+theirs       = "[[wikt:惡|惡]]"
+witness_page = "Trang:Đại Nam quấc âm tự vị 1.pdf/16"
+quality      = 3
+verified_by  = ""
 
 [[glyph_unencodable_there]]
 key          = "29|Bạm|󰀶|󰀶"

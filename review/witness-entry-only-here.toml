@@ -1,4 +1,4 @@
-# Chốt ⑥ — entry_only_here: 278 chỗ.
+# Chốt ⑥ — entry_only_here: 271 chỗ.
 #
 # SINH TỰ ĐỘNG bởi `witness` — đừng sửa tay phần thân. Chữ ký ở `verified_by` được giữ
 # nguyên qua mỗi lần sinh lại, khớp theo `key`.
@@ -13,80 +13,10 @@
 # quality: 1 chưa hiệu đính · 3 đã hiệu đính · 4 đã kiểm chứng
 
 [[entry_only_here]]
-key          = "10|A|阿|"
-printed_page = 10
-reading      = "A"
-ours         = "阿"
-theirs       = ""
-witness_page = ""
-quality      = 0
-verified_by  = ""
-
-[[entry_only_here]]
-key          = "10|A|丫|"
-printed_page = 10
-reading      = "A"
-ours         = "丫"
-theirs       = ""
-witness_page = ""
-quality      = 0
-verified_by  = ""
-
-[[entry_only_here]]
-key          = "10|A|阿|"
-printed_page = 10
-reading      = "A"
-ours         = "阿"
-theirs       = ""
-witness_page = ""
-quality      = 0
-verified_by  = ""
-
-[[entry_only_here]]
-key          = "10|Á|亞|"
-printed_page = 10
-reading      = "Á"
-ours         = "亞"
-theirs       = ""
-witness_page = ""
-quality      = 0
-verified_by  = ""
-
-[[entry_only_here]]
-key          = "10|Á|瘂|"
-printed_page = 10
-reading      = "Á"
-ours         = "瘂"
-theirs       = ""
-witness_page = ""
-quality      = 0
-verified_by  = ""
-
-[[entry_only_here]]
-key          = "10|À|阿|"
-printed_page = 10
-reading      = "À"
-ours         = "阿"
-theirs       = ""
-witness_page = ""
-quality      = 0
-verified_by  = ""
-
-[[entry_only_here]]
-key          = "10|Ả|妸|"
-printed_page = 10
-reading      = "Ả"
-ours         = "妸"
-theirs       = ""
-witness_page = ""
-quality      = 0
-verified_by  = ""
-
-[[entry_only_here]]
-key          = "10|Ác|惡|"
-printed_page = 10
+key          = "11|Ác|鵶|"
+printed_page = 11
 reading      = "Ác"
-ours         = "惡"
+ours         = "鵶"
 theirs       = ""
 witness_page = ""
 quality      = 0

@@ -102,7 +102,7 @@ pub fn parse_sub_entry(segments: &[StyledSegment<'_>]) -> Option<SubEntryLine> {
     let text = line_text(segments);
     let form_start = quoc_ngu_starts_at(&text, offsets[first], offsets[last + 1]);
     let after_italic = offsets[last + 1];
-    let form_end = separator_stop_end(&text, after_italic).unwrap_or(after_italic);
+    let form_end = form_end_after(&text, after_italic);
 
     // Count only the italic pieces at or after the column boundary. The stray `| ` piece
     // skipped above is set in italic but sits in the HAN column, so counting it would keep
@@ -283,6 +283,19 @@ fn quoc_ngu_starts_at(text: &str, from: usize, to: usize) -> usize {
 /// on the NEXT line must keep an empty definition, because that emptiness is the signal
 /// [`merge_wrapped_forms`] reads; swallowing the last character of such a line would invent
 /// a sub-entry the book does not print.
+/// Where the form ends: after the separator stop when the line sets one, otherwise where
+/// the italic ended.
+///
+/// This returns a position rather than an `Option`, because both branches are answers. "No
+/// stop on this line" is not a missing value to be papered over with a default — it is the
+/// ordinary case for the 98 wrapped tails, whose form sits on the line above.
+fn form_end_after(text: &str, after_italic: usize) -> usize {
+    match separator_stop_end(text, after_italic) {
+        Some(end) => end,
+        None => after_italic,
+    }
+}
+
 fn separator_stop_end(text: &str, from: usize) -> Option<usize> {
     let rest = text.get(from..)?;
     let lead = rest.len() - rest.trim_start().len();

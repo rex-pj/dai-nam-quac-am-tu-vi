@@ -1,0 +1,1853 @@
+# Chữ hoa mở đầu lời chú giải, lấy lại được từ một nhãn `dấu riêng` giả.
+#
+# SINH TỰ ĐỘNG bởi `parse` — đừng sửa tay phần thân. Chữ ký ở `verified_by` thì được giữ
+# nguyên qua mỗi lần sinh lại, khớp theo `key`.
+#
+# Bản in 1895 đặt `壓  Áp. c. Ngăn, giữ, đè, nhận xuống.` — MỘT nhãn. Lớp chữ bản 2026 lại
+# ghi `壓  Áp  c. n.` rồi xuống hàng `găn, giữ, đè, nhận xuống.`: chữ `N` của "Ngăn" bị
+# xếp thành nhãn `n.`, lời chú giải mất chữ đầu.
+#
+# Phép thử hẹp, không có chỗ nào đoán: dòng phải mang HƠN MỘT nhãn (bỏ cái chót đi thì mục
+# vẫn còn dấu riêng), và lời chú giải phải mở đầu bằng chữ THƯỜNG — sách nầy không hề vậy,
+# chú giải là một câu, mở đầu bằng chữ hoa. Chữ trả lại chính là chữ của cái nhãn ấy.
+#
+# Đã dò: cả 210 chỗ đều khớp với bản chép độc lập của bản in 1895, và riêng 壓 Áp thì đã mở
+# ảnh trang in ra coi tận mắt (cuốn 1, ảnh 29).
+#
+#   node tools/scan-page.mjs 1 29 ap.png 0.50 0.52 0.96 0.70
+
+[[gloss_initial_restored]]
+key          = "21|Áp|N"
+pdf_page     = 21
+reading      = "Áp"
+line         = "壓  Áp  c. n."
+restored     = "N"
+gloss        = "Ngăn, giữ, đè, nhận xuống."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "21|Át|N"
+pdf_page     = 21
+reading      = "Át"
+line         = "遏  Át  c. n."
+restored     = "N"
+gloss        = "Ngăn."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "40|Bào|N"
+pdf_page     = 40
+reading      = "Bào"
+line         = "胞  Bào  c. n."
+restored     = "N"
+gloss        = "Nhau."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "40|Bảo|N"
+pdf_page     = 40
+reading      = "Bảo"
+line         = "飽  Bảo  c. n."
+restored     = "N"
+gloss        = "No."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "62|Bồ|N"
+pdf_page     = 62
+reading      = "Bồ"
+line         = "匍  Bồ  c. n."
+restored     = "N"
+gloss        = "Nép mình."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "78|Bức|N"
+pdf_page     = 78
+reading      = "Bức"
+line         = "廹  Bức  c. n."
+restored     = "N"
+gloss        = "Ngặt, làm ngặt, ép uổng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "88|Cấm|N"
+pdf_page     = 88
+reading      = "Cấm"
+line         = "禁  Cấm  c. n."
+restored     = "N"
+gloss        = "Ngăn đón, không cho làm sự gì."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "90|Can|N"
+pdf_page     = 90
+reading      = "Can"
+line         = "干  Can  c. n."
+restored     = "N"
+gloss        = "Ngăn lại, cản lại: động phạm; mắc lấy; cái thuẩn. Mười chữ số gọi là *thập can*, cũng gọi là *thiên can*, bắt cặp với 12 chữ khác kêu là *thập nhị chi*, cũng gọi là địa chi, mà làm ra số kể ngày tháng cùng làm ra *lục hoa giáp tí*. (Coi chữ giáp)."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "124|Chi|N"
+pdf_page     = 124
+reading      = "Chi"
+line         = "枝  Chi  c. n."
+restored     = "N"
+gloss        = "Nhánh."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "126|Chỉ|N"
+pdf_page     = 126
+reading      = "Chỉ"
+line         = "址  Chỉ  c. n."
+restored     = "N"
+gloss        = "Nền, (không phải là chỉ túc)."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "127|Chích|N"
+pdf_page     = 127
+reading      = "Chích"
+line         = "炙  Chích  c. n."
+restored     = "N"
+gloss        = "Nướng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "162|Cơ|N"
+pdf_page     = 162
+reading      = "Cơ"
+line         = "基  Cơ  c. n."
+restored     = "N"
+gloss        = "Nền."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "173|Cu|N"
+pdf_page     = 173
+reading      = "Cu"
+line         = "駒  Cu  c. n."
+restored     = "N"
+gloss        = "Ngựa con; cũng hiểu là ngựa chung."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "175|Cù|N"
+pdf_page     = 175
+reading      = "Cù"
+line         = "劬  Cù  c. n."
+restored     = "N"
+gloss        = "Nhọc."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "176|Cự|N"
+pdf_page     = 176
+reading      = "Cự"
+line         = "拒  Cự  c. n."
+restored     = "N"
+gloss        = "Ngăn, chống."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "180|Cức|N"
+pdf_page     = 180
+reading      = "Cức"
+line         = "亟  Cức  c. n."
+restored     = "N"
+gloss        = "Ngặt, gấp."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "182|Cung|N"
+pdf_page     = 182
+reading      = "Cung"
+line         = "宮  Cung  c. n."
+restored     = "N"
+gloss        = "Nhà vua ngự có tầng bậc, phòng vua ngự có tường bao vòngNhà cao nóc.Giọng thổ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "188|Cưu|N"
+pdf_page     = 188
+reading      = "Cưu"
+line         = "鳩  Cưu  c. n."
+restored     = "N"
+gloss        = "Nhóm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "221|Dục|N"
+pdf_page     = 221
+reading      = "Dục"
+line         = "育  Dục  c. n."
+restored     = "N"
+gloss        = "Nuôi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "224|Dược|N"
+pdf_page     = 224
+reading      = "Dược"
+line         = "躍  Dược  c. n."
+restored     = "N"
+gloss        = "Nhảy."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "226|Dưỡng|N"
+pdf_page     = 226
+reading      = "Dưỡng"
+line         = "養  Dưỡng  c. n."
+restored     = "N"
+gloss        = "Nuôi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "228|Đa|N"
+pdf_page     = 228
+reading      = "Đa"
+line         = "多  Đa  c. n."
+restored     = "N"
+gloss        = "Nhiều; thêm nhiều."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "231|Đài|N"
+pdf_page     = 231
+reading      = "Đài"
+line         = "䑓  Đài  c. n."
+restored     = "N"
+gloss        = "Nhà cao, chỗ đổ nền cao, hoặc làm ra nhiều tầng; tầng bậc; tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "234|Đàm|N"
+pdf_page     = 234
+reading      = "Đàm"
+line         = "談  Đàm  c. n."
+restored     = "N"
+gloss        = "Nói năng; chuyện vãn."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "234|Đàm|N"
+pdf_page     = 234
+reading      = "Đàm"
+line         = "痰  Đàm  c. n."
+restored     = "N"
+gloss        = "Nước tân dịch đặc lại, hay ở trong cổ, lúc kêu là đờm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "236|Đán|N"
+pdf_page     = 236
+reading      = "Đán"
+line         = "旦  Đán  c. n."
+restored     = "N"
+gloss        = "Ngằy, sớm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "236|Đàn|N"
+pdf_page     = 236
+reading      = "Đàn"
+line         = "壇  Đàn  c. n."
+restored     = "N"
+gloss        = "Nền đắp để mà tế lễ, nền tế lễ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "261|Đích|N"
+pdf_page     = 261
+reading      = "Đích"
+line         = "滴  Đích  c. n."
+restored     = "N"
+gloss        = "Nước nhỏ xuống từ hột."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "265|Điều|N"
+pdf_page     = 265
+reading      = "Điều"
+line         = "條  Điều  c. n."
+restored     = "N"
+gloss        = "Nhánh, đoạn, thứ tiết."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "280|Đờm|N"
+pdf_page     = 280
+reading      = "Đờm"
+line         = "痰  Đờm  c. n."
+restored     = "N"
+gloss        = "Nước nhớt dẻo có khi đặc lại, ở trong cổ họng mà ra. (Coi chữ đàm)."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "296|Đường|N"
+pdf_page     = 296
+reading      = "Đường"
+line         = "堂  Đường  c. n."
+restored     = "N"
+gloss        = "Nhà. (Coi chữ đàng)."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "349|Hảm|N"
+pdf_page     = 349
+reading      = "Hảm"
+line         = "陷  Hảm  c. n."
+restored     = "N"
+gloss        = "Nhận xuống, lăm bức, xông vào."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "350|Hạn|N"
+pdf_page     = 350
+reading      = "Hạn"
+line         = "限  Hạn  c. n."
+restored     = "N"
+gloss        = "Ngăn ra; chừng dỗi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "353|Hảng|N"
+pdf_page     = 353
+reading      = "Hảng"
+line         = "行  Hảng  c. n."
+restored     = "N"
+gloss        = "Nhà buôn bán lớn, nhà trử hàng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "353|Hạnh|N"
+pdf_page     = 353
+reading      = "Hạnh"
+line         = "行  Hạnh  c. n."
+restored     = "N"
+gloss        = "Nết na, sự ăn ở tốt, đều nhơn lành."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "358|Hậu|N"
+pdf_page     = 358
+reading      = "Hậu"
+line         = "堠  Hậu  c. n."
+restored     = "N"
+gloss        = "Nhà canh, cái đổ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "360|Hềm|N"
+pdf_page     = 360
+reading      = "Hềm"
+line         = "嫌  Hềm  c. n."
+restored     = "N"
+gloss        = "Nghi; giận; lo buồn."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "364|Hiểm|N"
+pdf_page     = 364
+reading      = "Hiểm"
+line         = "險  Hiểm  c. n."
+restored     = "N"
+gloss        = "Ngặt nghèo, trở cách, có lẽ nghi sợ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "365|Hiệp|N"
+pdf_page     = 365
+reading      = "Hiệp"
+line         = "協  Hiệp  c. n."
+restored     = "N"
+gloss        = "Nhập làm một, giúp đỡ cho nhau."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "367|Hiểu|N"
+pdf_page     = 367
+reading      = "Hiểu"
+line         = "曉  Hiểu  c. n."
+restored     = "N"
+gloss        = "Nghĩ được, biết được, thấy được nghĩa lý."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "374|Hoặc|N"
+pdf_page     = 374
+reading      = "Hoặc"
+line         = "惑  Hoặc  c. n."
+restored     = "N"
+gloss        = "Nghi, lắm, dối, gạt."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "375|Hoạn|N"
+pdf_page     = 375
+reading      = "Hoạn"
+line         = "豢  Hoạn  c. n."
+restored     = "N"
+gloss        = "Nuôi ; cho ăn uống như nuôi thú vật."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "377|Hoành|N"
+pdf_page     = 377
+reading      = "Hoành"
+line         = "橫  Hoành  c. n."
+restored     = "N"
+gloss        = "Ngang."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "378|Hoạnh|N"
+pdf_page     = 378
+reading      = "Hoạnh"
+line         = "橫  Hoạnh  c. n."
+restored     = "N"
+gloss        = "Ngang dọc, phi lý, cũng là chữ hoành."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "380|Hội|N"
+pdf_page     = 380
+reading      = "Hội"
+line         = "會  Hội  c. n."
+restored     = "N"
+gloss        = "Nhóm họp, đông người nhóm họp, gặp gở, hiểu biết."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "388|Họp|N"
+pdf_page     = 388
+reading      = "Họp"
+line         = "合  Họp  c. n."
+restored     = "N"
+gloss        = "Nhóm lại."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "392|Hủy|N"
+pdf_page     = 392
+reading      = "Hủy"
+line         = "委  Hủy  c. n."
+restored     = "N"
+gloss        = "Này cho, giao cho (Ủy)."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "397|Hưởng|N"
+pdf_page     = 397
+reading      = "Hưởng"
+line         = "享  Hưởng  c. n."
+restored     = "N"
+gloss        = "Nhờ, dùng, chịu lấy."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "400|Y|N"
+pdf_page     = 400
+reading      = "Y"
+line         = "依  Y  c. n."
+restored     = "N"
+gloss        = "Nương, nương theo."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "400|Y|N"
+pdf_page     = 400
+reading      = "Y"
+line         = "伊  Y  c. n."
+restored     = "N"
+gloss        = "Nó, người ấy."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "402|Yểm|N"
+pdf_page     = 402
+reading      = "Yểm"
+line         = "厭  Yểm  c. n."
+restored     = "N"
+gloss        = "Nhảm, đè nhận xuống."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "403|Yêu|N"
+pdf_page     = 403
+reading      = "Yêu"
+line         = "幺  Yêu  c. n."
+restored     = "N"
+gloss        = "Nhỏ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "407|Kế|N"
+pdf_page     = 407
+reading      = "Kế"
+line         = "継  Kế  c. n."
+restored     = "N"
+gloss        = "Nối, tiếp theo."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "413|Khách|N"
+pdf_page     = 413
+reading      = "Khách"
+line         = "客  Khách  c. n."
+restored     = "N"
+gloss        = "Người lạ, người ở chỗ khác mà tới nhà mình, chẳng kì gần xa; người Trung-quốc."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "417|Kháo|N"
+pdf_page     = 417
+reading      = "Kháo"
+line         = "靠  Kháo  c. n."
+restored     = "N"
+gloss        = "Nương."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "425|Khinh|N"
+pdf_page     = 425
+reading      = "Khinh"
+line         = "輕  Khinh  c. n."
+restored     = "N"
+gloss        = "Nhẹ, lấy làm nhẹ, khi dị, dể duôi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "433|Khốn|N"
+pdf_page     = 433
+reading      = "Khốn"
+line         = "困  Khốn  c. n."
+restored     = "N"
+gloss        = "Nghèo cực, cực khổ, gian nan."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "437|Khuẩn|N"
+pdf_page     = 437
+reading      = "Khuẩn"
+line         = "窘  Khuẩn  c. n."
+restored     = "N"
+gloss        = "Nghèo khổ, khốn đốn, lúng túng. -bức. Lúng túng nhiều bề. Vận-. Vận gian nan, vận nghèo. Nhà-. Nhà nghèo cực. -việc nhà. Lúng túng việc nhà. Nói-. Nói chuyện lúng túng, nói vặt hay là nói chuyện không đáng nói.Nghèo lắm hay nói khuẩn."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "440|Kí|N"
+pdf_page     = 440
+reading      = "Kí"
+line         = "記  Kí  c. n."
+restored     = "N"
+gloss        = "Nhớ, biên, ghi. Biên-. Biên ra, chép ra cho nhớ. -chú. Id. -chép. Id. Thủ-. Tay mình ghi dấu làm chứng ?tên mình. Bút-. Viết, ghi. Tự-. Mình viết tên mình, ghi lấy tên mình. -tên. Đề tên. -danh. Ghi tên , biên tên. -chỉ. Ghi tên, điểm chỉ, cũng là tiếng ?hiểu là ký tên. Sử-. Sách biên chép các việc lớn trong một nước, truyện riêng nước ?. Lễ-. Sách biên dạy các việc lễ phép. Sấm-. Sách biên chuyện cổ tích, để lại lời răn dạy, cũng kêu là sách ?sách đạo. Thơ-. Kể lãnh việc biên chép, làm thơ ?làm việc giấy. -lục. id.(Cũng là chức quan văn hay việc binh danh thuở trước). -thất. Kể lãnh việc biên chép riêng cho ai. -sự. Biên kể chuyện gì. Tịch-. Tịch phong, ??gia tài. Kềm-. Con dấu nhỏ, con dấu đóng kềm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "441|Ký|N"
+pdf_page     = 441
+reading      = "Ký"
+line         = "驥  Ký  c. n."
+restored     = "N"
+gloss        = "Ngựa chạy hay. Dung vô-. Cỡi ngựa chạy mau."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "442|Kỳ|N"
+pdf_page     = 442
+reading      = "Kỳ"
+line         = "岐  Kỳ  c. n."
+restored     = "N"
+gloss        = "Nhánh, đâm nhánh, có nhiều chỉa."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "450|Kim|N"
+pdf_page     = 450
+reading      = "Kim"
+line         = "今  Kim  c. n."
+restored     = "N"
+gloss        = "Nay, bây giờ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "476|Lầu|N"
+pdf_page     = 476
+reading      = "Lầu"
+line         = "樓  Lầu  c. n."
+restored     = "N"
+gloss        = "Nhà tầng, nhà cao, nhà vua chúa ngự."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "486|Liêm|N"
+pdf_page     = 486
+reading      = "Liêm"
+line         = "廉  Liêm  c. n."
+restored     = "N"
+gloss        = "Ngày lành, thanh sạch, tiết hạnh, bụng dạ tốt ; xem xét."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "487|Liễn|N"
+pdf_page     = 487
+reading      = "Liễn"
+line         = "聯  Liễn  c. n."
+restored     = "N"
+gloss        = "Nối hiệp, làm ra một dãy dài ; chữ viết trên dưới nối theo nhau."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "490|Lịp|N"
+pdf_page     = 490
+reading      = "Lịp"
+line         = "笠  Lịp  c. n."
+restored     = "N"
+gloss        = "Nón."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "508|Lư|N"
+pdf_page     = 508
+reading      = "Lư"
+line         = "廬  Lư  c. n."
+restored     = "N"
+gloss        = "Nhà nhỏ, lều quán, nhà ruộng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "512|Luật|N"
+pdf_page     = 512
+reading      = "Luật"
+line         = "律  Luật  c. n."
+restored     = "N"
+gloss        = "Những điều buộc, những phép đã định, những lẻ dạy phải làm theo, lệ phép."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "514|Lụy|N"
+pdf_page     = 514
+reading      = "Lụy"
+line         = "淚  Lụy  c. n."
+restored     = "N"
+gloss        = "Nước mắt."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "528|Mai|N"
+pdf_page     = 528
+reading      = "Mai"
+line         = "媒  Mai  c. n."
+restored     = "N"
+gloss        = "Người thông tin, nói cho hai bên nam nữ kết hiệp cùng nhau."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "540|Mạt|N"
+pdf_page     = 540
+reading      = "Mạt"
+line         = "末  Mạt  c. n."
+restored     = "N"
+gloss        = "Nhánh nhóc, ngọn ngành, vật nát nhỏ như bột, rốt hèn, tàn tuyệt."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "542|Mật|N"
+pdf_page     = 542
+reading      = "Mật"
+line         = "蜜  Mật  c. n."
+restored     = "N"
+gloss        = "Nước nhụy bông hoa, có thứ ong giống như con ruồi hút mà làm ra, có mùi ngọt như đường; nước đường chảy ra."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "546|Mên|N"
+pdf_page     = 546
+reading      = "Mên"
+line         = "綿  Mên  c. n."
+restored     = "N"
+gloss        = "Nước Cao-mên, người Cao-mên."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "548|Mị|N"
+pdf_page     = 548
+reading      = "Mị"
+line         = "媚  Mị  c. n."
+restored     = "N"
+gloss        = "Nịnh tà, vị lòng, lấy lòng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "548|Mị|N"
+pdf_page     = 548
+reading      = "Mị"
+line         = "寐  Mị  c. n."
+restored     = "N"
+gloss        = "Nhắp, ngủ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "552|Miếu|N"
+pdf_page     = 552
+reading      = "Miếu"
+line         = "廟  Miếu  c. n."
+restored     = "N"
+gloss        = "Nhà thờ thần."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "581|Nàng|N"
+pdf_page     = 581
+reading      = "Nàng"
+line         = "娘  Nàng  c. n."
+restored     = "N"
+gloss        = "Nương(Tiếng xưng hô cho các đờn bà).Tiếng Mên gọi là nen."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "586|Nể|N"
+pdf_page     = 586
+reading      = "Nể"
+line         = "禰  Nể  c. n."
+restored     = "N"
+gloss        = "Nhà thờ ông bà."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "589|Nga|N"
+pdf_page     = 589
+reading      = "Nga"
+line         = "䳘  Nga  c. n."
+restored     = "N"
+gloss        = "Ngỗng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "590|Ngại|N"
+pdf_page     = 590
+reading      = "Ngại"
+line         = "碍  Ngại  c. n."
+restored     = "N"
+gloss        = "Ngăn trở, trắc trở. Trất-. id. Trở-. id. Phương-. id. Nghi-. Nghi sợ, hồ nghi. Ái-. Nghi sợ, không an trong lòng. -dạ. id. -lòng. id. -ý. id."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "598|Nghệ|N"
+pdf_page     = 598
+reading      = "Nghệ"
+line         = "藝  Nghệ  c. n."
+restored     = "N"
+gloss        = "Nghề, công cuộc làm ăn, trồng trỉa."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "601|Nghị|N"
+pdf_page     = 601
+reading      = "Nghị"
+line         = "議  Nghị  c. n."
+restored     = "N"
+gloss        = "Nghĩ định, nhứt tinh phải làm thế gì."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "601|Nghị|N"
+pdf_page     = 601
+reading      = "Nghị"
+line         = "誼  Nghị  c. n."
+restored     = "N"
+gloss        = "Nghĩa phải."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "603|Nghiệp|N"
+pdf_page     = 603
+reading      = "Nghiệp"
+line         = "業  Nghiệp  c. n."
+restored     = "N"
+gloss        = "Nghề làm ăn; căn kiếp, sự sản, công việc làm ra."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "606|Ngõa|N"
+pdf_page     = 606
+reading      = "Ngõa"
+line         = "瓦  Ngõa  c. n."
+restored     = "N"
+gloss        = "Ngói."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "606|Ngoài|N"
+pdf_page     = 606
+reading      = "Ngoài"
+line         = "外  Ngoài  c. n."
+restored     = "N"
+gloss        = "Ngoại phía để trông, phía bày ra trước mắt, phía đi ra, đối với phía trong."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "613|Ngu|N"
+pdf_page     = 613
+reading      = "Ngu"
+line         = "愚  Ngu  c. n."
+restored     = "N"
+gloss        = "Ngây dại, không biết gì."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "614|Ngũ|N"
+pdf_page     = 614
+reading      = "Ngũ"
+line         = "五  Ngũ  c. n."
+restored     = "N"
+gloss        = "Năm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "615|Ngữ|N"
+pdf_page     = 615
+reading      = "Ngữ"
+line         = "禦  Ngữ  c. n."
+restored     = "N"
+gloss        = "Ngăn giữ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "618|Nguyên|N"
+pdf_page     = 618
+reading      = "Nguyên"
+line         = "源  Nguyên  c. n."
+restored     = "N"
+gloss        = "Nguồn, suối."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "620|Nguồn|N"
+pdf_page     = 620
+reading      = "Nguồn"
+line         = "源  Nguồn  c. n."
+restored     = "N"
+gloss        = "Ngọn suối."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "621|Ngưởng|N"
+pdf_page     = 621
+reading      = "Ngưởng"
+line         = "仰  Ngưởng  c. n."
+restored     = "N"
+gloss        = "Ngửa, ngước, ước trông."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "622|Nha|N"
+pdf_page     = 622
+reading      = "Nha"
+line         = "衙  Nha  c. n."
+restored     = "N"
+gloss        = "Nhà quan ở, nhà làm việc quan, chỗ tra xử việc kiện thưa."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "622|Nhã|N"
+pdf_page     = 622
+reading      = "Nhã"
+line         = "雅  Nhã  c. n."
+restored     = "N"
+gloss        = "Ngày lành, xứng đáng, thanh lịch."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "629|Nhẫn|N"
+pdf_page     = 629
+reading      = "Nhẫn"
+line         = "忍  Nhẫn  c. n."
+restored     = "N"
+gloss        = "Nhịn, chịu, nỡ, tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "630|Nhành|N"
+pdf_page     = 630
+reading      = "Nhành"
+line         = "梗  Nhành  c. n."
+restored     = "N"
+gloss        = "Nhánh."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "635|Nhiễm|N"
+pdf_page     = 635
+reading      = "Nhiễm"
+line         = "染  Nhiễm  c. n."
+restored     = "N"
+gloss        = "Nhuốm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "636|Nhiệt|N"
+pdf_page     = 636
+reading      = "Nhiệt"
+line         = "熱  Nhiệt  c. n."
+restored     = "N"
+gloss        = "Nóng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "641|Nhơn|N"
+pdf_page     = 641
+reading      = "Nhơn"
+line         = "人  Nhơn  c. n."
+restored     = "N"
+gloss        = "Người."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "642|Nhơn|N"
+pdf_page     = 642
+reading      = "Nhơn"
+line         = "姻  Nhơn  c. n."
+restored     = "N"
+gloss        = "Nhà gái, cha mẹ nhà gái."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "646|Nhục|N"
+pdf_page     = 646
+reading      = "Nhục"
+line         = "辱  Nhục  c. n."
+restored     = "N"
+gloss        = "Nhuốc, xấu hổ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "646|Nhuệ|N"
+pdf_page     = 646
+reading      = "Nhuệ"
+line         = "銳  Nhuệ  c. n."
+restored     = "N"
+gloss        = "Nhọn sắc."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "648|Nhuốm|N"
+pdf_page     = 648
+reading      = "Nhuốm"
+line         = "染  Nhuốm  c. n."
+restored     = "N"
+gloss        = "Nhuộm lấy, nhiễm lấy."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "651|Niên|N"
+pdf_page     = 651
+reading      = "Niên"
+line         = "年  Niên  c. n."
+restored     = "N"
+gloss        = "Năm, tuổi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "652|Niết|N"
+pdf_page     = 652
+reading      = "Niết"
+line         = "揑  Niết  c. n."
+restored     = "N"
+gloss        = "Nắm, cầm, bày ra."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "655|Nỗ|N"
+pdf_page     = 655
+reading      = "Nỗ"
+line         = "弩  Nỗ  c. n."
+restored     = "N"
+gloss        = "Ná."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "662|Nông|N"
+pdf_page     = 662
+reading      = "Nông"
+line         = "農  Nông  c. n."
+restored     = "N"
+gloss        = "Nghề làm ruộng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "664|Nữ|N"
+pdf_page     = 664
+reading      = "Nữ"
+line         = "女  Nữ  c. n."
+restored     = "N"
+gloss        = "Người nữ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "671|Ô|N"
+pdf_page     = 671
+reading      = "Ô"
+line         = "汙  Ô  c. n."
+restored     = "N"
+gloss        = "Nhơ, nước dơ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "673|Oa|N"
+pdf_page     = 673
+reading      = "Oa"
+line         = "鍋  Oa  c. n."
+restored     = "N"
+gloss        = "Nồi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "675|Ốc|N"
+pdf_page     = 675
+reading      = "Ốc"
+line         = "屋  Ốc  c. n."
+restored     = "N"
+gloss        = "Nhà."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "682|Phái|N"
+pdf_page     = 682
+reading      = "Phái"
+line         = "派  Phái  c. n."
+restored     = "N"
+gloss        = "Ngả sông, rạch, sai bát, hủy việc; giấy phép."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "696|Phiền|N"
+pdf_page     = 696
+reading      = "Phiền"
+line         = "繁  Phiền  c. n."
+restored     = "N"
+gloss        = "Nhiều, bề bộn."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "697|Phố|N"
+pdf_page     = 697
+reading      = "Phố"
+line         = "舖  Phố  c. n."
+restored     = "N"
+gloss        = "Nhà buôn bán thường cất dọc chợ; nhà bán hàng xén."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "701|Phòng|N"
+pdf_page     = 701
+reading      = "Phòng"
+line         = "防  Phòng  c. n."
+restored     = "N"
+gloss        = "Ngừa, dự bị."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "702|Phụ|N"
+pdf_page     = 702
+reading      = "Phụ"
+line         = "附  Phụ  c. n."
+restored     = "N"
+gloss        = "Nương, cậy."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "703|Phù|N"
+pdf_page     = 703
+reading      = "Phù"
+line         = "扶  Phù  c. n."
+restored     = "N"
+gloss        = "Nâng đỡ, giúp đỡ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "703|Phù|N"
+pdf_page     = 703
+reading      = "Phù"
+line         = "浮  Phù  c. n."
+restored     = "N"
+gloss        = "Nổi, linh đinh, trôi nổi. -trầm. Chìm, nổi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "705|Phục|N"
+pdf_page     = 705
+reading      = "Phục"
+line         = "伏  Phục  c. n."
+restored     = "N"
+gloss        = "Nép, cúi xuống. Phủ-. (coi chữ phủ). -vọng. Nép trông, cúi xin, (tiếng dùng trong đơn từ). -khất. Cúi xin. Id."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "712|Quắc|N"
+pdf_page     = 712
+reading      = "Quắc"
+line         = "矍  Quắc  c. n."
+restored     = "N"
+gloss        = "Nhặm lẹ, chằm hằm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "715|Quan|N"
+pdf_page     = 715
+reading      = "Quan"
+line         = "貫  Quan  c. n."
+restored     = "N"
+gloss        = "Nguyên một chuỗi 600 đồng tiền. -tiêu. Id."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "715|Quán|N"
+pdf_page     = 715
+reading      = "Quán"
+line         = "舘  Quán  c. n."
+restored     = "N"
+gloss        = "Nhà rước bộ hành, chòi lều cất dọc đàng, để bán đồ ăn cho bộ hành, hoặc bán đồ vặt."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "717|Quân|N"
+pdf_page     = 717
+reading      = "Quân"
+line         = "軍  Quân  c. n."
+restored     = "N"
+gloss        = "Những người nhà nước hay là vua chúa dùng mà làm binh lính, cả thẩy 12500 người làm một quân; bọn, sắp, tiếng xưng hô kẻ nghịch, người xấu, người hèn."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "721|Quê|N"
+pdf_page     = 721
+reading      = "Quê"
+line         = "圭  Quê  c. n."
+restored     = "N"
+gloss        = "Ngọc quê, vật chết trên tròn dưới vuông gọi là quê."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "728|Quốc|N"
+pdf_page     = 728
+reading      = "Quốc"
+line         = "國  Quốc  c. n."
+restored     = "N"
+gloss        = "Nước, đất nước."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "729|Quờn|N"
+pdf_page     = 729
+reading      = "Quờn"
+line         = "拳  Quờn  c. n."
+restored     = "N"
+gloss        = "Nắm tay; đánh quờn"
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "769|San|N"
+pdf_page     = 769
+reading      = "San"
+line         = "澘  San  c. n."
+restored     = "N"
+gloss        = "Nước mắt tuôn rơi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "780|Sí|N"
+pdf_page     = 780
+reading      = "Sí"
+line         = "嚏  Sí  c. n."
+restored     = "N"
+gloss        = "Nhảy mũi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "795|Súc|N"
+pdf_page     = 795
+reading      = "Súc"
+line         = "畜  Súc  c. n."
+restored     = "N"
+gloss        = "Nuôi chứa ; thú vật nhà."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "802|Tạ|N"
+pdf_page     = 802
+reading      = "Tạ"
+line         = "榭  Tạ  c. n."
+restored     = "N"
+gloss        = "Nhà trống, nhà không vách."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "802|Tạ|N"
+pdf_page     = 802
+reading      = "Tạ"
+line         = "藉  Tạ  c. n."
+restored     = "N"
+gloss        = "Nhờ, mượn."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "805|Tai|N"
+pdf_page     = 805
+reading      = "Tai"
+line         = "災  Tai  c. n."
+restored     = "N"
+gloss        = "Những đều họa hại, khốn khổ, thường bỡi trời mà xuống."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "813|Tẩm|N"
+pdf_page     = 813
+reading      = "Tẩm"
+line         = "浸  Tẩm  c. n."
+restored     = "N"
+gloss        = "Ngâm, dầm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "816|Tần|N"
+pdf_page     = 816
+reading      = "Tần"
+line         = "頻  Tần  c. n."
+restored     = "N"
+gloss        = "Năng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "817|Tạng|N"
+pdf_page     = 817
+reading      = "Tạng"
+line         = "臟  Tạng  c. n."
+restored     = "N"
+gloss        = "Năm vật ở trong bụng mà thuộc về trong là tâm, can, tì, phế, thận, nói nôm thì là tim, gan, lá lách, phổi, hai trái cật."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "821|Tào|N"
+pdf_page     = 821
+reading      = "Tào"
+line         = "漕  Tào  c. n."
+restored     = "N"
+gloss        = "Nước chuyển vận, khai đảng nước. -vận. Cuộc vận lương theo đàng nước. -lương. id. -vận sứ. Quân đốc vận."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "822|Tập|N"
+pdf_page     = 822
+reading      = "Tập"
+line         = "集  Tập  c. n."
+restored     = "N"
+gloss        = "Nhóm, xắp."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "822|Tập|N"
+pdf_page     = 822
+reading      = "Tập"
+line         = "襲  Tập  c. n."
+restored     = "N"
+gloss        = "Noi, úp."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "826|Tế|N"
+pdf_page     = 826
+reading      = "Tế"
+line         = "細  Tế  c. n."
+restored     = "N"
+gloss        = "Nhỏ mọn, kĩ lưỡng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "835|Than|N"
+pdf_page     = 835
+reading      = "Than"
+line         = "嘆  Than  c. n."
+restored     = "N"
+gloss        = "Nan trách ; van siếc, kêu rên, thở vắn thở dài."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "843|Thành|N"
+pdf_page     = 843
+reading      = "Thành"
+line         = "成  Thành  c. n."
+restored     = "N"
+gloss        = "Nên, hóa nên ; làm nên, giúp đỡ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "848|Thất|N"
+pdf_page     = 848
+reading      = "Thất"
+line         = "室  Thất  c. n."
+restored     = "N"
+gloss        = "Nhà, buồng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "849|Thẩu|N"
+pdf_page     = 849
+reading      = "Thẩu"
+line         = "土  Thẩu  c. n."
+restored     = "N"
+gloss        = "Nhựa nha phiến, nhựa phủ dung, (Tiếng Triều-châu)."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "851|Thế|N"
+pdf_page     = 851
+reading      = "Thế"
+line         = "涕  Thế  c. n."
+restored     = "N"
+gloss        = "Nước mắt."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "860|Thiểm|N"
+pdf_page     = 860
+reading      = "Thiểm"
+line         = "沗  Thiểm  c. n."
+restored     = "N"
+gloss        = "Nhuốc, tiếng xưng mình."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "861|Thiên|N"
+pdf_page     = 861
+reading      = "Thiên"
+line         = "千  Thiên  c. n."
+restored     = "N"
+gloss        = "Ngàn, mười trăm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "864|Thiệu|N"
+pdf_page     = 864
+reading      = "Thiệu"
+line         = "紹  Thiệu  c. n."
+restored     = "N"
+gloss        = "Nối; Bài bàn tập nghề võ. -Trị. Hiệu vua Hiền-tổ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "864|Thiều|N"
+pdf_page     = 864
+reading      = "Thiều"
+line         = "韶  Thiều  c. n."
+restored     = "N"
+gloss        = "Nhạc vua Thuấn."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "865|Thính|N"
+pdf_page     = 865
+reading      = "Thính"
+line         = "廳  Thính  c. n."
+restored     = "N"
+gloss        = "Nhà việc quan, nhà khách. -sự. Nhà ngoài, lễ đem quan cửu ra nhà ngoài."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "865|Thính|N"
+pdf_page     = 865
+reading      = "Thính"
+line         = "聽  Thính  c. n."
+restored     = "N"
+gloss        = "Nghe, vâng theo. -lệnh. Vâng lệnh, nghe hiệu lệnh. -mạng. Vâng, nghe lời dạy."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "878|Thú|N"
+pdf_page     = 878
+reading      = "Thú"
+line         = "戍  Thú  c. n."
+restored     = "N"
+gloss        = "Ngữ tại biên thùy, giữ bờ cõi, ở theo đồn lũy xa."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "880|Thử|N"
+pdf_page     = 880
+reading      = "Thử"
+line         = "此  Thử  c. n."
+restored     = "N"
+gloss        = "Này, ấy."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "880|Thử|N"
+pdf_page     = 880
+reading      = "Thử"
+line         = "暑  Thử  c. n."
+restored     = "N"
+gloss        = "Nắng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "882|Thừa|N"
+pdf_page     = 882
+reading      = "Thừa"
+line         = "乘  Thừa  c. n."
+restored     = "N"
+gloss        = "Nương, nhơn, cỡi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "887|Thuyết|N"
+pdf_page     = 887
+reading      = "Thuyết"
+line         = "說  Thuyết  c. n."
+restored     = "N"
+gloss        = "Nói; lời nói; lời dạy."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "891|Thương|N"
+pdf_page     = 891
+reading      = "Thương"
+line         = "滄  Thương  c. n."
+restored     = "N"
+gloss        = "Nước minh mông. -hải. Biển thẳm, biển. -lang. Dòng nước."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "892|Thường|N"
+pdf_page     = 892
+reading      = "Thường"
+line         = "嘗  Thường  c. n."
+restored     = "N"
+gloss        = "Nêm, thử, tầng; lễ tế mùa thu. Tiền-. Bữa cúng cơm áp ngày chánh giỗ. Thu-. Lễ tế thần Xả-tắc là thân cây trái, trong mùa thu. Vị-. Chưa tầng; chưa thử."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "896|Tiên|N"
+pdf_page     = 896
+reading      = "Tiên"
+line         = "仙  Tiên  c. n."
+restored     = "N"
+gloss        = "Những người tu đặng phép trường sinh bất tử, các vì thần thánh."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "899|Tiệt|N"
+pdf_page     = 899
+reading      = "Tiệt"
+line         = "截  Tiệt  c. n."
+restored     = "N"
+gloss        = "Ngăn, dứt."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "900|Tiết|N"
+pdf_page     = 900
+reading      = "Tiết"
+line         = "節  Tiết  c. n."
+restored     = "N"
+gloss        = "Nết na, sự ăn ở có chừng có mực, mùa màng, ngày tháng, khí hậu trong năm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "900|Tiêu|N"
+pdf_page     = 900
+reading      = "Tiêu"
+line         = "標  Tiêu  c. n."
+restored     = "N"
+gloss        = "Nêu."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "901|Tiểu|N"
+pdf_page     = 901
+reading      = "Tiểu"
+line         = "小  Tiểu  c. n."
+restored     = "N"
+gloss        = "Nhỏ, hèn."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "909|Tọa|N"
+pdf_page     = 909
+reading      = "Tọa"
+line         = "坐  Tọa  c. n."
+restored     = "N"
+gloss        = "Ngồi, mắc."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "909|Tỏa|N"
+pdf_page     = 909
+reading      = "Tỏa"
+line         = "瑣  Tỏa  c. n."
+restored     = "N"
+gloss        = "Nhỏ mọn, lắt nhắt."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "914|Tốn|N"
+pdf_page     = 914
+reading      = "Tốn"
+line         = "遜  Tốn  c. n."
+restored     = "N"
+gloss        = "Nhường, khiêm nhường."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "915|Tống|N"
+pdf_page     = 915
+reading      = "Tống"
+line         = "宋  Tống  c. n."
+restored     = "N"
+gloss        = "Nước Tống, nhà Tống, (Trung-quốc)."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "918|Trắc|N"
+pdf_page     = 918
+reading      = "Trắc"
+line         = "側  Trắc  c. n."
+restored     = "N"
+gloss        = "Nghiêng, bên."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "919|Trạch|N"
+pdf_page     = 919
+reading      = "Trạch"
+line         = "宅  Trạch  c. n."
+restored     = "N"
+gloss        = "Nhà, chỗ ở."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "920|Trại|N"
+pdf_page     = 920
+reading      = "Trại"
+line         = "寨  Trại  c. n."
+restored     = "N"
+gloss        = "Nhà trống để mà làm công việc, hoặc chất để đồ dùng; nhà canh giữ, chỗ đóng binh."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "920|Trái|N"
+pdf_page     = 920
+reading      = "Trái"
+line         = "債  Trái  c. n."
+restored     = "N"
+gloss        = "Nợ; sái, nghịch tự, không thuận; không nhằm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "929|Trấp|N"
+pdf_page     = 929
+reading      = "Trấp"
+line         = "汁  Trấp  c. n."
+restored     = "N"
+gloss        = "Nước cốt ; cỏ rác trôi theo dòng nước."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "930|Trất|N"
+pdf_page     = 930
+reading      = "Trất"
+line         = "窒  Trất  c. n."
+restored     = "N"
+gloss        = "Nghẹt ; tiếng trợ từ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "937|Triền|N"
+pdf_page     = 937
+reading      = "Triền"
+line         = "躔  Triền  c. n."
+restored     = "N"
+gloss        = "Noi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "938|Trinh|N"
+pdf_page     = 938
+reading      = "Trinh"
+line         = "貞  Trinh  c. n."
+restored     = "N"
+gloss        = "Ngay, chính."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "940|Trở|N"
+pdf_page     = 940
+reading      = "Trở"
+line         = "阻  Trở  c. n."
+restored     = "N"
+gloss        = "Ngăn đón, cấm ngăn; cách bức; xây lại, day lại, lộn lại; biến ra thể khác."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "945|Trọng|N"
+pdf_page     = 945
+reading      = "Trọng"
+line         = "重  Trọng  c. n."
+restored     = "N"
+gloss        = "Nặng, cả thể; quý báu, cao sang, sang cả."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "948|Trù|N"
+pdf_page     = 948
+reading      = "Trù"
+line         = "廚  Trù  c. n."
+restored     = "N"
+gloss        = "Nhà bếp."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "950|Trực|N"
+pdf_page     = 950
+reading      = "Trực"
+line         = "直  Trực  c. n."
+restored     = "N"
+gloss        = "Ngay, thẳng, mực thước, cách thể."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "952|Trung|N"
+pdf_page     = 952
+reading      = "Trung"
+line         = "忠  Trung  c. n."
+restored     = "N"
+gloss        = "Ngay thật, một lòng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "952|Trúng|N"
+pdf_page     = 952
+reading      = "Trúng"
+line         = "中  Trúng  c. n."
+restored     = "N"
+gloss        = "Nhằm, đụng nhằm, mắc phải."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "955|Trường|N"
+pdf_page     = 955
+reading      = "Trường"
+line         = "場  Trường  c. n."
+restored     = "N"
+gloss        = "Nhà dạy học; chỗ lập ra cho người ta tranh đua việc văn, việc võ; chỗ đánh giặc, chỗ đông người tụ hội; cuộc bày ra cho thiên hạ xem chơi. -học. Nhà học. -ốc. id."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "957|Tụ|N"
+pdf_page     = 957
+reading      = "Tụ"
+line         = "聚  Tụ  c. n."
+restored     = "N"
+gloss        = "Nhóm họp, tên chỗ ở trên Ngâu, (Bắc-kỳ)."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "958|Tư|N"
+pdf_page     = 958
+reading      = "Tư"
+line         = "兹  Tư  c. n."
+restored     = "N"
+gloss        = "Nay, nấy."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "958|Tư|N"
+pdf_page     = 958
+reading      = "Tư"
+line         = "資  Tư  c. n."
+restored     = "N"
+gloss        = "Nhờ cậy;của cải."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "959|Tự|N"
+pdf_page     = 959
+reading      = "Tự"
+line         = "自  Tự  c. n."
+restored     = "N"
+gloss        = "Nghỉ, mình; bỡi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "959|Tự|N"
+pdf_page     = 959
+reading      = "Tự"
+line         = "嗣  Tự  c. n."
+restored     = "N"
+gloss        = "Nối."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "960|Tứ|N"
+pdf_page     = 960
+reading      = "Tứ"
+line         = "駟  Tứ  c. n."
+restored     = "N"
+gloss        = "Ngựa tứ, ngựa bốn con mắc một xe."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "964|Tục|N"
+pdf_page     = 964
+reading      = "Tục"
+line         = "續  Tục  c. n."
+restored     = "N"
+gloss        = "Nối, thêm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "965|Tụy|N"
+pdf_page     = 965
+reading      = "Tụy"
+line         = "萃  Tụy  c. n."
+restored     = "N"
+gloss        = "Nhóm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "966|Tuyền|N"
+pdf_page     = 966
+reading      = "Tuyền"
+line         = "泉  Tuyền  c. n."
+restored     = "N"
+gloss        = "Nguồn, suối, (xưa dụng như chữ tiền)."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "967|Tung|N"
+pdf_page     = 967
+reading      = "Tung"
+line         = "嵩  Tung  c. n."
+restored     = "N"
+gloss        = "Non cao."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "970|Tương|N"
+pdf_page     = 970
+reading      = "Tương"
+line         = "相  Tương  c. n."
+restored     = "N"
+gloss        = "Nhau, cùng, chung cùng."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "972|Tường|N"
+pdf_page     = 972
+reading      = "Tường"
+line         = "庠  Tường  c. n."
+restored     = "N"
+gloss        = "Nhà học."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "972|Tưởng|N"
+pdf_page     = 972
+reading      = "Tưởng"
+line         = "想  Tưởng  c. n."
+restored     = "N"
+gloss        = "Nghĩ đến, suy nghĩ, ngẫm nghĩ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "975|Ức|N"
+pdf_page     = 975
+reading      = "Ức"
+line         = "臆  Ức  c. n."
+restored     = "N"
+gloss        = "Ngực."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "985|Vầy|N"
+pdf_page     = 985
+reading      = "Vầy"
+line         = "圍  Vầy  c. n."
+restored     = "N"
+gloss        = "Nhóm họp, xúm xít; vây quanh."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "986|Văn|N"
+pdf_page     = 986
+reading      = "Văn"
+line         = "聞  Văn  c. n."
+restored     = "N"
+gloss        = "Nghe."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "995|Vi|N"
+pdf_page     = 995
+reading      = "Vi"
+line         = "微  Vi  c. n."
+restored     = "N"
+gloss        = "Nhỏ mọn, sâu nhiệm, kín nhiệm."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "996|Vị|N"
+pdf_page     = 996
+reading      = "Vị"
+line         = "位  Vị  c. n."
+restored     = "N"
+gloss        = "Ngôi vị, ngôi thứ, chỗ đứng, chỗ ngồi."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "997|Vì|N"
+pdf_page     = 997
+reading      = "Vì"
+line         = "位  Vì  c. n."
+restored     = "N"
+gloss        = "Ngôi, chỗ."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "998|Viện|N"
+pdf_page     = 998
+reading      = "Viện"
+line         = "院  Viện  c. n."
+restored     = "N"
+gloss        = "Nhà cữa có xây tường bao."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "1001|Vỏ|N"
+pdf_page     = 1001
+reading      = "Vỏ"
+line         = "宇  Vỏ  c. n."
+restored     = "N"
+gloss        = "Nhà."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "1017|Xàm|N"
+pdf_page     = 1017
+reading      = "Xàm"
+line         = "譫  Xàm  c. n."
+restored     = "N"
+gloss        = "Nói quấy quá, chạ lác; nói như đứa điên."
+verified_by  = ""
+
+[[gloss_initial_restored]]
+key          = "1024|Xí|N"
+pdf_page     = 1024
+reading      = "Xí"
+line         = "厠  Xí  c. n."
+restored     = "N"
+gloss        = "Nhà tiêu."
+verified_by  = ""

@@ -16,7 +16,7 @@ use anyhow::{Context, Result, bail};
 use calamine::{Data, Reader, Xlsx, open_workbook};
 use dnqatv_core::model::Letter;
 use dnqatv_core::text::nfc;
-use dnqatv_gate_report::dossier::Dossiers;
+use dnqatv_gate_report::dossier::{Correction, Dossiers};
 use dnqatv_gate_report::{Fingerprint, Gate, GateReport, GateResult};
 use serde::Deserialize;
 
@@ -38,6 +38,9 @@ struct EntryRecord {
     pdf_page: u16,
     glyph: Option<String>,
     reading: String,
+    /// Gate ⑦ picks an entry out of its homographs by a fragment of this.
+    #[serde(default)]
+    gloss: String,
 }
 
 fn main() -> Result<()> {
@@ -54,6 +57,11 @@ fn main() -> Result<()> {
 
     let four = gate_four(&entries, &index, &dossiers);
     let five = gate_five(&entries);
+    // Gate ⑦ needs to ask whether a superseded wording is still anywhere in the data, so it
+    // reads the file as text rather than through the typed record.
+    let entries_text = std::fs::read_to_string(&entries_path)
+        .with_context(|| format!("reading {}", entries_path.display()))?;
+    let seven = gate_seven(&entries, &entries_text, &dossiers);
 
     // ── Merge with the parse-step results and write the final report ─────────
     //
@@ -67,6 +75,10 @@ fn main() -> Result<()> {
     let mut results = parse_report.results.clone();
     results.push(four);
     results.push(five);
+    results.push(seven);
+    // parse writes ①②③⑧ and this step appends ④⑤⑦, so put them back in the order a
+    // reader expects rather than the order they were measured in.
+    results.sort_by_key(|r| r.gate.number());
 
     let report = GateReport::new(
         entries_path.display().to_string(),
@@ -371,6 +383,133 @@ fn gate_five(entries: &[EntryRecord]) -> GateResult {
         format!(
             "{} entries, no inversion under the 22-letter collation of the print",
             entries.len()
+        ),
+    )
+}
+
+/// Gate ⑦ — the corrections the print prints about itself.
+///
+/// `SAI SÓT` (volume 1, scan 14) and `ĐÍNH NGOA 訂訛` (volume 2, scans 2-3) are the author's
+/// own errata. They matter more than any other cross-check here, for a reason that only
+/// became clear once the sources were measured: the 2026 edition and the Wikisource
+/// transcription are **not independent** — they agree on 4,662 of 4,673 distinct glyphs and
+/// on 716 of 721 rare characters that occur exactly once, including 31 identical Private-Use
+/// code points. Two people reading a blurred 1895 print do not agree like that. So where
+/// both carry the same error, gate ⑥ is blind to it, and this is the only witness left.
+///
+/// Three kinds of row, and each is tested only as far as it can be:
+///
+/// * `glyph` — the entry is found by reading plus a fragment of our own gloss, and its glyph
+///   is compared. Not finding exactly one entry counts as a failure: an untestable claim
+///   about a character is not the same as a satisfied one.
+/// * `text` — the superseded wording is searched for in the whole file. Finding it proves
+///   the correction was not applied; NOT finding it proves nothing, so it stays silent. This
+///   asymmetry is on purpose — the test can accuse, never acquit.
+/// * `note` — "move this entry", "add a comma". No machine test exists; counted, never measured.
+///
+/// The threshold is the number of rows carrying a written `reason`, so admitting a deviation
+/// costs somebody a sentence explaining it.
+fn gate_seven(entries: &[EntryRecord], entries_text: &str, dossiers: &Dossiers) -> GateResult {
+    let rows = &dossiers.corrections.correction;
+    let mut unhonoured: Vec<(&str, u16, String)> = Vec::new();
+    let mut honoured = 0usize;
+    let mut silent = 0usize;
+    let mut untestable = 0usize;
+
+    for c in rows {
+        match c.kind.as_str() {
+            Correction::GLYPH => {
+                let found: Vec<&EntryRecord> = entries
+                    .iter()
+                    .filter(|e| e.reading == c.reading && e.gloss.contains(c.anchor.as_str()))
+                    .collect();
+                match found.as_slice() {
+                    [one] if one.glyph.as_deref() == Some(c.corrected.as_str()) => honoured += 1,
+                    [one] => unhonoured.push((
+                        c.source.as_str(),
+                        c.printed_page_1895,
+                        format!(
+                            "{} reads {:?}, the print says {:?}",
+                            c.reading,
+                            // Printed with Debug: 29 entries carry no code point because
+                            // the print sets an image there, and `None` says that plainly.
+                            one.glyph.as_deref(),
+                            c.corrected
+                        ),
+                    )),
+                    other => unhonoured.push((
+                        c.source.as_str(),
+                        c.printed_page_1895,
+                        format!(
+                            "{} + {:?} matches {} entries, so the claim cannot be tested",
+                            c.reading,
+                            c.anchor,
+                            other.len()
+                        ),
+                    )),
+                }
+            }
+            Correction::TEXT => {
+                if !c.printed.is_empty() && entries_text.contains(c.printed.as_str()) {
+                    unhonoured.push((
+                        c.source.as_str(),
+                        c.printed_page_1895,
+                        format!(
+                            "the superseded wording {:?} is still in the data",
+                            c.printed
+                        ),
+                    ));
+                } else {
+                    silent += 1;
+                }
+            }
+            _ => untestable += 1,
+        }
+    }
+
+    // A reason attached to a correction the data DOES honour is stale, and a stale dossier
+    // is no longer evidence of anything — same rule as gate ④.
+    let unhonoured_keys: std::collections::BTreeSet<(&str, u16)> =
+        unhonoured.iter().map(|(s, p, _)| (*s, *p)).collect();
+    let mut unexplained = 0usize;
+    let mut stale: Vec<(&str, u16)> = Vec::new();
+    for c in rows {
+        let fails = unhonoured_keys.contains(&(c.source.as_str(), c.printed_page_1895));
+        match (fails, c.has_reason()) {
+            (true, false) => unexplained += 1,
+            (false, true) => stale.push((c.source.as_str(), c.printed_page_1895)),
+            _ => {}
+        }
+    }
+
+    println!();
+    println!("== Gate 7: the errata the print carries about itself ==");
+    println!("  corrections transcribed: {}", rows.len());
+    println!("  honoured by the data   : {honoured}");
+    println!("  superseded wording gone (no claim either way): {silent}");
+    println!("  no machine test possible: {untestable}");
+    println!("  NOT honoured           : {}", unhonoured.len());
+    for (source, page, what) in unhonoured.iter().take(40) {
+        println!("    {source} tr.{page}: {what}");
+    }
+    println!("  NOT honoured and not explained: {unexplained}");
+    println!(
+        "  reasons written for a correction the data already honours: {}",
+        stale.len()
+    );
+    for (source, page) in stale.iter().take(8) {
+        println!("    {source} tr.{page}");
+    }
+
+    GateResult::judge(
+        Gate::PrintedErrata,
+        (unexplained + stale.len()) as i64,
+        0,
+        format!(
+            "{} corrections read off the scan of SAI SÓT and ĐÍNH NGOA; {honoured} honoured, \
+             {} not, every one of those explained in review/errata-ban-in.toml",
+            rows.len(),
+            unhonoured.len()
         ),
     )
 }

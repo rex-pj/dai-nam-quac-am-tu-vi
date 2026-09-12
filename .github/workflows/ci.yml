@@ -86,3 +86,8 @@ jobs:
 
       - name: Comments must be English
         run: node tools/check-comment-language.mjs
+
+      # The scan reader is hand-written, so it carries its own checks: a G4 round trip
+      # that needs no PDF, and an ink-coverage check that runs when docs/ is present.
+      - name: The scan reader
+        run: node tools/check-scan-page.mjs
