@@ -148,7 +148,8 @@ function splitForm(form) {
 // different entries — so an accented match must always beat an unaccented one.
 //
 // WHICH tier a mode consults is this edition's own rule, not a copy of the Postgres query
-// plan, and the data-quality page says so rather than implying the two rank alike.
+// plan. The data-quality page states the tier order and what "Toàn văn" actually matches, so
+// a reader is told how results are ranked rather than left to assume.
 
 const TIERS = [
   { key: 'trung-khit', label: 'Trùng khít' },
@@ -561,8 +562,9 @@ ${
 <div class="page-image-missing">
   <p>Chưa có ảnh chụp trang này.</p>
   <p>
-    Bản điện tử 2026 là bản tái sắp chữ, không phải bản scan; ảnh trang phải được render riêng
-    và bước đó chưa chạy. Trang này <strong>không hứa</strong> điều chưa làm được.
+    Bản điện tử 2026 là bản tái sắp chữ chớ không phải ảnh bản in; ảnh trang phải lấy riêng từ
+    bản in 1895–1896, và bước ấy chưa làm. Trang này <strong>không hứa</strong> điều chưa
+    làm được.
   </p>
 </div>
 <div class="section-head"><h2>Chữ đầu của trang này</h2><span class="muted">${number(rows.length)} chữ đầu</span></div>
@@ -648,9 +650,8 @@ async function viewAbout(slug) {
 <div class="section-head"><h1>Giới thiệu</h1><span class="muted">${frontMatter.length} trang đầu sách</span></div>
 <div class="prose">
   <p>
-    Đây là <strong>bản tĩnh</strong> của tự vị: một trang web không có máy chủ, đọc thẳng các
-    tập JSON dựng sẵn. Nội dung lấy từ bản điện tử 2026 của <em>Đại Nam Quấc Âm Tự Vị</em>
-    (Huình-Tịnh Paulus Của, Sài Gòn 1895–1896).
+    Trang này chép trọn <em>Đại Nam Quấc Âm Tự Vị</em> của Huình-Tịnh Paulus Của
+    (Sài Gòn, 1895–1896) theo bản điện tử 2026, để tra chữ đầu, mục con và tự dạng.
   </p>
   <p>
     Phần dưới là <strong>nguyên văn mấy trang đầu sách</strong> — TIỂU TỰ, DẤU RIÊNG, PRÉFACE,
@@ -672,6 +673,76 @@ ${navPair(
 )}`;
 }
 
+/* What each gate settles, in the reader's language.
+ *
+ * The report itself is written for whoever runs the pipeline: its notes are English and count
+ * things only that person can act on, so they are not put on the page. What a reader needs is
+ * the question the gate asks, and that is written here.
+ *
+ * A gate absent from this map is shown by its own name and nothing else — inventing a
+ * description for a check nobody has described is the guess this edition forbids.
+ * `tools/check-static-site.mjs` fails when that happens, so it is noticed at build time. */
+const GATE_TEXT = {
+  UnmappedGlyphs: {
+    title: 'Không đoán tự dạng',
+    about:
+      'Mỗi chữ Hán-Nôm trong bản điện tử được ghi bằng một mã. Gặp mã tra không ra, chương trình dừng lại và báo lỗi, chớ không thay bằng một chữ trông gần giống.',
+  },
+  HeadwordCoverage: {
+    title: 'Dòng chữ đầu không sót phần nào',
+    about:
+      'Mỗi dòng chữ đầu được cắt thành tự dạng, âm, dấu riêng, lời giải nghĩa. Ghép các phần ấy lại phải ra đúng dòng ban đầu, không mẩu nào bị bỏ ra ngoài.',
+  },
+  CharacterConservation: {
+    title: 'Không mất, không nhân đôi con chữ',
+    about: 'Mọi con chữ của thân sách phải nằm trong đúng một phần, đúng một lần.',
+  },
+  IndexReconciliation: {
+    title: 'Đối chứng với bảng tra đi kèm',
+    about:
+      'Mọi tự dạng rút được đều đem so với bảng “Mục Từ” do người lập, để bắt những chữ chương trình có mà bảng không có — tức những chữ chương trình có thể đã đặt ra.',
+  },
+  CollationOrder: {
+    title: 'Thứ lớp chữ đầu đúng như sách',
+    about:
+      'Sách xếp mục theo bảng 22 chữ riêng của nó, không theo bảng chữ Latin. Đọc suốt từ đầu đến cuối, không mục nào được đứng trật lên trước mục lẽ ra đi trước nó.',
+  },
+  PrintedErrata: {
+    title: 'Bảng đính chính của chính bản in',
+    about:
+      'Bản in tự chỉ chỗ sai của mình ở hai bảng do chính tác giả lập — SAI SÓT và ĐÍNH NGOA. Mỗi chỗ trong đó hoặc được theo, hoặc phải nói rõ vì sao không theo.',
+  },
+  ScanVerified: {
+    title: 'Chỗ đã đối chiếu ảnh trang',
+    about:
+      'Mấy chỗ đã mở ảnh trang bản in ra coi rồi ký nhận: mỗi chỗ vẫn phải tìm được đúng lời ấy trên trang mà nó dẫn.',
+  },
+};
+
+function gateStatus(status) {
+  if (status === 'Green') return 'đạt';
+  if (status === 'Red') return 'chưa đạt';
+  return status;
+}
+
+/** The two numbers of a gate, said as a sentence. The allowed number *is* the number of
+ *  deviations a person has written a reason for — there is no threshold to loosen. */
+function gateCount(r) {
+  if (r.measured === 0 && r.allowed === 0) return 'Không có chỗ lệch nào.';
+  if (r.measured === r.allowed) {
+    return r.measured === 1
+      ? '1 chỗ lệch, và chỗ ấy đã có hồ sơ người xét.'
+      : `${number(r.measured)} chỗ lệch, chỗ nào cũng đã có hồ sơ người xét.`;
+  }
+  return `${number(r.measured)} chỗ lệch, ${number(r.allowed)} chỗ đã có hồ sơ.`;
+}
+
+function gateEntry(r) {
+  const text = GATE_TEXT[r.gate];
+  return h`<dt>${text === undefined ? r.gate : text.title} <span class="muted">— ${gateStatus(r.status)}</span></dt>
+<dd>${text === undefined ? '' : text.about} <span class="muted">${gateCount(r)}</span></dd>`;
+}
+
 function viewQuality() {
   const s = manifest.stats;
   const gates = manifest.gates;
@@ -680,7 +751,7 @@ function viewQuality() {
 <div class="prose">
   <p>
     Với một cuốn tự vị, <strong>nói ra chỗ còn yếu mới là chỗ đáng tin</strong>. Trang này
-    không quảng cáo; nó liệt kê chỗ dữ liệu chưa chắc và chỗ bản tĩnh này làm ít hơn bản đầy đủ.
+    không quảng cáo; nó liệt kê chỗ dữ liệu chưa chắc và chỗ trang này còn làm chưa tới.
   </p>
 </div>
 
@@ -698,31 +769,38 @@ function viewQuality() {
   ban biên tập cố ý không gán một mã “gần giống”, và bản này giữ đúng quyết định ấy.
 </p>
 
-<div class="section-head"><h2>Các chốt kiểm</h2></div>
+<section class="section--prose">
+<div class="section-head"><h2>Các phép kiểm phải đạt trước khi nạp</h2></div>
 <div class="prose">
   <p>
-    Dữ liệu chỉ được nạp khi qua hết các chốt. Báo cáo dưới đây chép từ
-    <code>data/gates.json</code> của lần dựng này.
+    Dữ liệu chỉ được nạp khi qua hết các phép kiểm dưới đây; còn một phép chưa đạt thì không
+    nạp. Kết quả dưới đây là của chính lần dựng ra trang này.
   </p>
 </div>
-<ul>${Object.entries(gates)
-    .filter(([, v]) => v !== null && typeof v === 'object')
-    .map(([name, v]) => h`<li><code>${name}</code> — ${JSON.stringify(v)}</li>`)}</ul>
+<dl class="glossary">${gates.results.map(gateEntry)}</dl>
+<p class="note">
+  Bản phúc trình này đi liền với tập dữ liệu mà nó đã kiểm. Một bản phúc trình toàn “đạt”
+  nhưng của lần chạy trước còn nguy hơn là không có bản nào, nên đem nạp một tập dữ liệu khác
+  với tập đã kiểm thì cũng không nạp được.
+</p>
+</section>
 
-<div class="section-head"><h2>Bản tĩnh này làm ít hơn ở chỗ nào</h2></div>
+<section class="section--prose">
+<div class="section-head"><h2>Chỗ trang này còn làm chưa tới</h2></div>
 <div class="prose">
   <p>
-    Bản đầy đủ chạy trên PostgreSQL và xếp hạng kết quả bằng chỉ mục toàn văn của nó.
-    Bản tĩnh không có máy chủ, nên nó <strong>xếp hạng theo quy tắc riêng</strong> viết trong
-    <code>tinh/app.js</code>: trùng khít → trùng tự dạng → bắt đầu bằng → bỏ dấu → gần giống,
-    còn “toàn văn” là một phép tìm chuỗi trên bảng chữ đã bỏ dấu. Hai bên cùng thứ bậc nhưng
-    <em>không</em> cùng một phép tính — và nói ra vẫn hơn để người đọc tưởng chúng như nhau.
+    Tra tìm ở đây xếp kết quả theo một <strong>thứ bậc cố định</strong>: trùng khít → trùng tự
+    dạng → bắt đầu bằng → bỏ dấu → gần giống. Còn “toàn văn” là phép tìm đúng cụm chữ trong
+    lời giải nghĩa, tìm trên chữ đã bỏ dấu: nó đo mặt chữ chớ không đo nghĩa, nên một tiếng
+    đồng nghĩa mà viết khác thì nó không đem về.
   </p>
   <p>
     Trang in ở đây chỉ liệt kê chữ đầu, <strong>chưa có ảnh chụp trang</strong>: bản điện tử
-    2026 là bản tái sắp chữ, ảnh trang phải render riêng và bước đó chưa chạy.
+    2026 là bản tái sắp chữ chớ không phải ảnh bản in, nên ảnh trang phải lấy riêng từ bản in
+    1895–1896, và bước ấy chưa làm.
   </p>
-</div>`;
+</div>
+</section>`;
 }
 
 function notFound(message) {
