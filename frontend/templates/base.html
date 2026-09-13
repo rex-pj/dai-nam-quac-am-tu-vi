@@ -40,8 +40,8 @@
 </header>
 
 {# A two-column grid with named areas. Naming the areas rather than leaning on child order is
-   deliberate: on mobile the DISPLAYED order changes (search → content → letters) while the
-   DOM order stays put. #}
+   deliberate: on mobile the left column stops being a column and its two halves become rows
+   of their own (search → letters → content) while the DOM order stays put. #}
 <div class="wrap shell">
   {% include "partial/rail.html" %}
 

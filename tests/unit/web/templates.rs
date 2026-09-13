@@ -885,8 +885,9 @@ fn the_rail_sticks_as_one_block_not_piece_by_piece() {
 
 #[test]
 fn the_rail_splits_in_two_on_mobile() {
-    // Content must be able to sit BETWEEN the search box and the browse section. The `.rail`
-    // wrapper prevents that unless it removes itself from the grid with `display: contents`.
+    // The two halves of the rail must be grid cells in their own right, so the stacked order
+    // is the grid's to choose. The `.rail` wrapper prevents that unless it removes itself
+    // from the grid with `display: contents`.
     let css = without_comments(dnqatv_adapter_web::template::STYLESHEET);
     let mobile = css
         .split("@media (max-width: 899px)")
@@ -898,10 +899,26 @@ fn the_rail_splits_in_two_on_mobile() {
     );
     assert!(mobile.contains("grid-area: search"));
     assert!(mobile.contains("grid-area: browse"));
-    // And on mobile the search box is the sticky one — browsing already sits below the content.
+    // And on mobile the search box is the sticky one; the letter chips scroll away under it.
     assert!(
         mobile.contains("position: sticky"),
         "the search box must stick on mobile"
+    );
+    // The stacked order: search, then the letter chips, then the content. Buried under the
+    // content the chips were unreachable on a phone without scrolling a whole letter's list.
+    let areas = mobile
+        .split("grid-template-areas:")
+        .nth(1)
+        .and_then(|chunk| chunk.split(';').next())
+        .expect("the mobile grid must name its areas");
+    let order: Vec<&str> = areas
+        .split(|c: char| !c.is_ascii_alphanumeric() && c != '-')
+        .filter(|w| !w.is_empty())
+        .collect();
+    assert_eq!(
+        order,
+        ["search", "browse", "content"],
+        "the letter chips belong between the search box and the content"
     );
 }
 

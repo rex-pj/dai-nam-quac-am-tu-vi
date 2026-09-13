@@ -177,9 +177,9 @@ a:hover { text-decoration-color: var(--son); }
 }
 
 /* ── The two-column shell ──────────────────────────────────────────────────
-   NAMED AREAS rather than child order: on mobile the displayed order changes
-   (search → content → letters) without the DOM order moving, so no JavaScript is
-   needed and no markup has to be duplicated.
+   NAMED AREAS rather than child order: on mobile the two halves of the left column stop
+   being a column and become rows of their own (search → letters → content) without the
+   DOM order moving, so no JavaScript is needed and no markup has to be duplicated.
    ─────────────────────────────────────────────────────────────────────────── */
 .shell {
   display: grid;
@@ -856,33 +856,35 @@ pre { overflow-x: auto; background: var(--paper-raised); padding: var(--gap-3); 
   :root { --rail: 12rem; }
 }
 
-/* Below this breakpoint everything stacks, and the ORDER CHANGES: the search box (used every
-   single time) goes above the content, the 22 letter chips (browsing, secondary on a phone)
-   below it.
+/* Below this breakpoint everything stacks. The stacked order keeps the two ways IN to the
+   book together at the top — search box, then the 22 letter chips — and lets the content
+   follow. Split either side of the content, the letter chips sat below a list that can run
+   to 443 entries, so on a phone they were reachable only by scrolling past everything.
 
-   Done with grid areas, so no JavaScript. The trade: the DOM order (search → letters →
-   content) differs from the seen order, so a screen reader hears navigation before content —
-   which is the usual "nav then main", with the skip-link at the top to jump it. */
+   Here the stacked order matches the DOM order (search → letters → content), so what a
+   screen reader hears is what the eye sees: the usual "nav then main", with the skip-link at
+   the top to jump it. */
 @media (max-width: 899px) {
   .shell {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "search"
-      "content"
-      "browse";
+      "browse"
+      "content";
     gap: var(--gap-6);
   }
   /* `display: contents` makes `.rail` vanish from the grid and promotes its two children to
-     grid cells of their own — which is what lets the content sit BETWEEN the search box and
-     the letter browser. */
+     grid cells of their own — without it the two would move as one block and could not be
+     spaced by the grid's own gap. */
   .rail {
     display: contents;
   }
   .rail-search { grid-area: search; }
   .content { grid-area: content; }
   .rail-browse { grid-area: browse; }
-  /* On mobile only the search box sticks. Here it does NOT cover the letter browser the way
-     it did on desktop, because that now sits below the content, screens away.
+  /* On mobile only the search box sticks. The letter chips now sit directly under it and
+     scroll away beneath it, which is what a sticky bar is for — on desktop the two were one
+     sticky block because there the chips must stay reachable in a column of their own.
 
      Negative margins either side let the bar run the full width: left inside `.wrap` its
      ground would only be as wide as the text column, and content scrolling behind it would
@@ -906,15 +908,35 @@ pre { overflow-x: auto; background: var(--paper-raised); padding: var(--gap-3); 
     border-left: 0;
     padding-left: 0;
   }
+  /* The rule goes BELOW the chips, not above them: above, it would sit a hair under the
+     sticky bar's own `border-bottom` and read as a doubled line. Below, it does the one job
+     left — telling the navigation band apart from the content. */
   .rail-browse {
-    border-top: 1px solid var(--rule);
-    padding-top: var(--gap-4);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: var(--gap-4);
   }
+  /* `.letters` carries a bottom margin for the desktop column, where the chips are the last
+     thing in the rail. Here `.rail-browse` owns the spacing. */
+  .rail-browse .letters { margin-bottom: 0; }
 
   /* Touch targets. 1.9rem = 30px is a size for a POINTER, not for a finger; the common
      guidance is 44px minimum. On desktop the chips are small so that five fit a row in a
-     14rem column — that constraint is gone once stacked, so they grow back. */
+     14rem column — that constraint is gone once stacked, so they grow back.
+
+     Stacked they are also a block the eye reads before the content, so they are laid out as
+     a grid rather than left to wrap: equal columns across the full width, which lines the
+     rows up under each other. `auto-fit` picks the column count from the width, so no
+     breakpoint has to name one. */
+  .letters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.75rem, 1fr));
+  }
+  /* The grid cell is the `<li>`; the chip inside it is what is seen and what is pressed, so
+     it has to take the whole cell. Left at its `min-width` it would sit at the left of a
+     wider cell, and the gaps between chips would come out uneven across the row. */
+  .letters > li { display: flex; }
   .letter-chip {
+    flex: 1;
     min-width: 2.75rem;
     height: 2.75rem;
     font-size: 1.05rem;
@@ -932,9 +954,32 @@ pre { overflow-x: auto; background: var(--paper-raised); padding: var(--gap-3); 
 }
 
 @media (max-width: 640px) {
-  /* The three columns of today's entry break down here; stack, and left-align provenance. */
-  .featured { grid-template-columns: auto 1fr; }
-  .featured__meta { grid-column: 1 / -1; text-align: left; }
+  /* The three columns of today's entry break down here: the glyph keeps its column, the
+     reading and the definition keep theirs, and provenance drops to a row of its own.
+
+     That row is laid out ALONG the line, not down it. Stacked, the badge and the page link
+     were two short lines with a 1.5rem gap above them and the width of the card empty beside
+     them — an `n.` adrift in a corner. Side by side they read as one caption, which is what
+     they are.
+
+     It starts in column 2, so its left edge is the left edge of the reading and the gloss:
+     one text column, not a third alignment. */
+  .featured {
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: var(--gap-4);
+    row-gap: var(--gap-3);
+  }
+  .featured__meta {
+    grid-column: 2 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--gap-2) var(--gap-4);
+    text-align: left;
+  }
+  /* The margin below each line is for the stacked desktop column; the flex `gap` does the
+     spacing here, and a leftover margin would drop the row off its own baseline. */
+  .featured__meta p { margin: 0; }
 
   /* A result row: PLACED EXPLICITLY, never left to auto-placement.
 

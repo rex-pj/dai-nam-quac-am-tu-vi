@@ -439,7 +439,7 @@ async function viewEntry(slug) {
           ? h`<p>
         <span class="chip-no-unicode">Chữ chưa có mã Unicode</span>
         <span class="muted">— bản in 2026 dùng ảnh cho tự dạng này, và ban biên tập cố ý không
-          gán một mã “gần giống”. Bản tĩnh này chưa có ảnh trang, nên chỗ này để trống.</span>
+          gán một mã “gần giống”. Trang này chưa có ảnh chụp trang, nên chỗ này để trống.</span>
       </p>${
         d.shapeNote === null
           ? ''
